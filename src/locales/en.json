@@ -1,0 +1,261 @@
+{
+  "home": {
+    "title": "Welcome to",
+    "school": "Driving School",
+    "description": "Choose excellence in training competent and responsible drivers. With extensive experience in the field, TopalX offers you the best theoretical and practical training programs tailored to your needs. Our team of professional instructors is here to guide you on the road to success.",
+    "learn_more": "Learn more",
+    "metaDescription": "Learn more about TopalX Driving School. We offer car driving courses with professional instructors. Enroll now!",
+    "metaKeywords": "driving school, driving courses, car driving license, motorcycle driving license, driving instructors"
+  },
+  "about": {
+    "title": "About Us - Driving School",
+    "metaDescription": "Learn more about our company and the team dedicated to providing high-quality driving education in Bucharest.",
+    "headerTitle": "Who are we?",
+    "keyInformation": {
+      "title": "Key Information",
+      "founded": "Founded: 2022",
+      "employees": "Employees: 5",
+      "location": "Location: Bucharest, Romania"
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "At TopalX Driving School, we are dedicated to training responsible and confident drivers who actively contribute to road safety. We offer personalized, high-quality driving courses using modern teaching methods and updated vehicles to ensure complete and effective training. However, you don’t have to just take our word for it. Our pride comes from the reviews and success stories of our students who have not only obtained their driving licenses but also enjoyed a learning experience tailored to their needs. We invite you to visit the testimonials section on our website to discover authentic accounts that highlight the quality of our services and their positive impact on the driving community."
+    },
+    "team": {
+      "title": "Meet the Team",
+      "description": "Our team consists of experienced professionals passionate about driving education. Meet the people who make it all possible."
+    },
+    "companyDescription": {
+      "title": "About Us",
+      "paragraph1": "Founded by a driving instructor with over 25 years of experience, TopalX is the result of a shared passion with his wife for quality driving education. The school's name comes from the family name, bringing with it a tradition and dedication to road safety and education. The founder's dedication, stemming from decades of experience in driver training, is deeply embedded in every aspect of the courses offered.",
+      "paragraph2": "The goal of TopalX is not only to prepare students to pass the driving test but also to cultivate responsibility and deep respect for traffic rules. Each training program is meticulously planned to ensure that every student understands not only the mechanics of driving but also the importance of preventive behavior on public roads. By using teaching methods tailored to the individual needs of students and employing a modern vehicle fleet equipped to high standards, the school ensures that every new driver is fully prepared to navigate various traffic situations safely and confidently.",
+      "paragraph3": "Additionally, TopalX places great emphasis on developing ethical behavior behind the wheel, promoting values of respect and caution essential for harmonious coexistence in traffic. With a team of passionate and dedicated instructors from various branches of the automotive field, the school guarantees a complete and deeply human learning experience aimed at developing responsible drivers who are aware of their impact on the community."
+    },
+    "carIntro": "Meet our cars",
+    "categoryB": "Category B",
+    "button": "Choose the Right Package"
+  },
+  "header": {
+    "welcome": "Welcome to",
+    "schoolName": "TopalX Driving School",
+    "tagline": "- driving school -"
+  },
+  "navigation": {
+    "home": "Home ",
+    "about": "About ",
+    "services": "Services ",
+    "testimonials": "Testimonials ",
+    "gallery": "Gallery ",
+    "contact": "Contact "
+  },
+
+  "contactPage": {
+    "title": "Connect at a click away!",
+    "locationTitle": "Our Location",
+    "address": "<strong>Address:</strong> Calea Vitan 148A,",
+    "address2": "031301 Bucharest, Romania",
+    "secretariat": "<strong>Secretariat:</strong> 0736 470 629",
+    "manager": "<strong>Manager:</strong> 0723 007 454",
+    "email": "<strong>Email:</strong> topalxtrans@gmail.com",
+    "metaDescription": "Find out how to get in touch with TopalX Driving School. We offer support for inquiries and enrollments in our courses.",
+    "metaKeywords": "contact driving school TopalX"
+  },
+
+  "carCard": {
+    "alias": "Or"
+  },
+  "services": {
+    "title": "Offered Services",
+    "serviceList": [
+      {
+        "name": "Theoretical Preparation Courses",
+        "description": "We offer complete theory modules covering all the necessary aspects to succeed in the theoretical exam.",
+        "available": "Available",
+        "unavailable": "Unavailable"
+      },
+      {
+        "name": "Practical Preparation Courses",
+        "description": "Practical driving sessions with experienced instructors, tailored to each student's level.",
+        "available": "Available",
+        "unavailable": "Unavailable"
+      },
+      {
+        "name": "Medical Tests",
+        "description": "We facilitate all necessary medical tests for obtaining or renewing a driving license.",
+        "available": "Available",
+        "unavailable": "Unavailable"
+      },
+      {
+        "name": "Psychological Test",
+        "description": "Psychological tests conducted by specialists, essential for a responsible driver profile.",
+        "available": "Available",
+        "unavailable": "Unavailable"
+      },
+      {
+        "name": "Car Reservation on Exam Day",
+        "description": "We ensure the availability of the school's car for the practical exam, facilitating a worry-free experience.",
+        "available": "Available",
+        "unavailable": "Unavailable"
+      },
+      {
+        "name": "Additional Driving Sessions",
+        "description": "We offer the possibility to schedule additional driving sessions for intensive training.",
+        "available": "Available",
+        "unavailable": "Unavailable"
+      },
+      {
+        "name": "D.R.P.C.I.V. Appointment File",
+        "description": "We organize and manage the entire file necessary for scheduling the exam, simplifying administrative procedures.",
+        "available": "Available",
+        "unavailable": "Unavailable"
+      },
+      {
+        "name": "Fuel",
+        "description": "All fuel costs are included in the course fees, with no hidden charges.",
+        "available": "Available",
+        "unavailable": "Unavailable"
+      },
+      {
+        "name": "High-Performance Cars",
+        "description": "We use modern and well-maintained cars, equipped with the latest technologies, to ensure the safety and comfort of our students.",
+        "available": "Available",
+        "unavailable": "Unavailable"
+      }
+    ]
+  },
+  "carPackages": {
+    "title": "Car Packages",
+    "price": "Price",
+    "transmission": "Transmission",
+    "fuelType": "Fuel Type",
+    "packages": [
+      {
+        "name": "PRESIDENT PACKAGE MERCEDES BENZ",
+        "price": "2900 Lei",
+        "transmission": "Automatic/Diesel",
+        "fuelType": "Diesel",
+        "features": [
+          "Medical tests + psychological approval 150 Lei + 150 Lei",
+          "Theoretical road legislation courses",
+          "Practical training courses – 30 teaching hours",
+          "Fuel",
+          "Appointment file for D.R.P.C.I.V"
+        ],
+        "note": "Medical tests and psychological approval are not included in the package!"
+      },
+      {
+        "name": "SENSATION PACKAGE VOLVO",
+        "price": "2500 Lei",
+        "transmission": "Manual/Diesel",
+        "fuelType": "Diesel",
+        "features": [
+          "Medical tests + psychological approval 150 Lei + 150 Lei",
+          "Theoretical road legislation courses",
+          "Practical training courses – 30 teaching hours",
+          "Fuel",
+          "Appointment file for D.R.P.C.I.V"
+        ],
+        "note": "Medical tests and psychological approval are not included in the package!"
+      },
+      {
+        "name": "FIAT 500 PACKAGE",
+        "price": "2350 Lei",
+        "transmission": "Manual – Petrol",
+        "fuelType": "Petrol",
+        "features": [
+          "Medical tests + psychological approval 150 Lei + 150 Lei",
+          "Theoretical road legislation courses",
+          "Practical training courses – 30 teaching hours",
+          "Fuel",
+          "Appointment file for D.R.P.C.I.V"
+        ],
+        "note": "Medical tests and psychological approval are not included in the package!"
+      },
+      {
+        "name": "CITY BREAK PACKAGE SKODA",
+        "price": "2500 Lei",
+        "transmission": "Manual/Petrol",
+        "fuelType": "Petrol",
+        "features": [
+          "Medical tests + psychological approval 150 Lei + 150 Lei",
+          "Theoretical road legislation courses",
+          "Practical training courses – 30 teaching hours",
+          "Fuel",
+          "Appointment file for D.R.P.C.I.V"
+        ],
+        "note": "Medical tests and psychological approval are not included in the package!"
+      }
+    ]
+  },
+  "title": "Student Experiences",
+  "testimonials": [
+    {
+      "id": 1,
+      "caption": "' Extraordinary people, the instructors are very well prepared and very patient. '"
+    },
+    {
+      "id": 2,
+      "caption": "' Thank you for the support, from now on we will meet in traffic! '"
+    },
+    {
+      "id": 3,
+      "caption": "' Very well-prepared instructors, availability, motivation. '"
+    },
+    {
+      "id": 4,
+      "caption": "' Always there when you need support. '"
+    },
+    {
+      "id": 5,
+      "caption": "' A team of professional people, I highly recommend the TopalX driving school! '"
+    },
+    {
+      "id": 6,
+      "caption": "' Everyone, from the instructors to the secretary, are wonderful and kind people and it was a pleasure to learn to drive and get my license with the help of TopalX. '"
+    },
+    {
+      "id": 7,
+      "caption": "' I wholeheartedly recommend it! At TopalX School I met people who do their job with great passion and dedication. '"
+    },
+    {
+      "id": 8,
+      "caption": "' I especially want to mention their amazing behavior towards all students! '"
+    },
+    {
+      "id": 9,
+      "caption": "' Wonderful people, well-prepared instructors with experience and a lot of patience. For this, I am enormously grateful today when I was declared passed! '"
+    },
+    {
+      "id": 10,
+      "caption": "' The secretary was definitely the nicest person I have ever met, making sure you feel comfortable and not stressed. I definitely recommend this school. '"
+    }
+  ],
+  "footer": {
+    "rights": "&copy; 2024 TopalX. All rights reserved.",
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "contactForm": {
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send",
+    "sending": "Sending...",
+    "success": "Thank you for your message!",
+    "error": "There was an error submitting your message. Please try again."
+  },
+  "topHeader": {
+    "phone": "0736 470 629",
+    "email": "topalxtrans@gmail.com",
+    "workingHours": "Monday - Friday: 08.00 - 20.00"
+  },
+  "galleryTitle": "Moments of Success: Our Gallery",
+  "galleryDescription": "Discover in our gallery the moments of triumph of our students along with their instructors, upon receiving their driver's license. Each photograph is a celebration of individual success, capturing the joy and pride of achieving this important milestone. These images speak of our team's dedication and professionalism, demonstrating the positive impact of our training.",
+
+  "loadingMessage": {
+    "heading": "Loading, please wait...",
+    "subheading": "We are getting things ready for you."
+  }
+}
