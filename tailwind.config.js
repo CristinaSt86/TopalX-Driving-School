@@ -26,7 +26,7 @@ module.exports = {
       },
       backgroundImage: {
         "custom-img": "url('/src/images/bgZid.jpg')",
-        "custom-home": "url('/src/images/bgHome2.webp')",
+        "custom-home": "url('/src/images/bgHome2.jpg')",
         "custom-contact": "url('/src/images/l-r.webp')",
         "custom-services": "url('/src/images/visitCard.webp')",
         "custom-packages": "url('/src/images/logo.webp')",
