@@ -24,7 +24,13 @@ const HomePage: React.FC = () => {
   return (
     <div>
       <div
-        className={`shadow-custom pt-16 pb-48 mt-0 bg-home text-white px-4 sm:p-24 text-center mb-8 h-auto md:pt-24 md:pb-48`}
+        style={{
+          backgroundImage: `url('/images/bgHome2.webp')`,
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+          backgroundAttachment: 'fixed',
+        }}
+        className="shadow-custom pt-16 pb-48 mt-0 text-white px-4 sm:p-24 text-center mb-8 h-auto md:pt-24 md:pb-48"
       >
         <h1
           className={`mt-8 text-xl sm:text-4xl font-extrabold mb-4 sm:mb-10 leading-normal backdrop-blur ${
