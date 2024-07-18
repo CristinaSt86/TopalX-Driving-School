@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
+
 import AboutPage from "./AboutPage";
 import Gallery from "../components/Gallery";
 import ContactPage from "./ContactPage";
@@ -23,7 +24,7 @@ const HomePage: React.FC = () => {
   return (
     <div>
       <div
-        className={`shadow-custom pt-16 pb-48 mt-0 bg-home text-white px-4 sm:p-24 text-center mb-8 h-auto md:pt-24 md:pb-48`}
+        className={`shadow-custom pt-16 sm:pt-40 pb-48 mt-0 bg-custom-home bg-center bg-cover bg-fixed text-white px-4 sm:p-24 text-center mb-8 h-auto md:pt-24 md:pb-48`}
       >
         <h1
           className={`mt-8 text-xl sm:text-4xl font-extrabold mb-4 sm:mb-10 leading-normal backdrop-blur ${
@@ -34,7 +35,7 @@ const HomePage: React.FC = () => {
           <span className="text-secondary">{t("home.school")}</span> TopalX!
         </h1>
         <p
-          className={`text-lg p-6 sm:text-2xl md:p-0 md:text-4xl mt-2 sm:mt-4 leading-normal -tracking-wide ${
+          className={`text-lg sm:text-2xl md:text-4xl mt-2 sm:mt-4 leading-normal -tracking-wide ${
             animate ? "slide-in" : ""
           }`}
         >

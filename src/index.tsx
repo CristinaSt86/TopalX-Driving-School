@@ -11,9 +11,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-    <div className="bg-[url('/images/bgZid.jpg')] bg-cover bg-center bg-fixed">
-        <App />
-      </div>
+      <App />
     </BrowserRouter>
   </React.StrictMode>
 );
