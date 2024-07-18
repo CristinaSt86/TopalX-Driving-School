@@ -4,7 +4,6 @@ import ContactForm from "../components/ContactForm";
 import Loader from "../components/Loader";
 import "../index.css";
 
-
 const GoogleMapComponent = lazy(
   () => import("../components/GoogleMapComponent")
 );
@@ -23,7 +22,6 @@ const ContactPage: React.FC = () => {
 
   useEffect(() => {
     setAnimate(true);
-    console.log(t("contactPage.title"));
   }, [t]);
 
   return (
