@@ -40,10 +40,10 @@ const AboutPage: React.FC = () => {
       <div className="mt-4 sm:mt-8 md:mt-12">
         <main className="container mx-auto px-2 flex flex-col flex-wrap md:flex-row items-center justify-center gap-4 sm:gap-8 md:gap-16 md:mx-auto">
           <section className="backdrop-blur rounded-2xl mb-4 border-l border-r border-b border-2 border-secondary p-4 sm:p-6 shadow-custom">
-            <h2 className="text-xl sm:text-2xl md:text-3xl mb-2">
+            <h2 className="text-xl sm:text-2xl md:text-3xl mb-2 font-semibold">
               {t("about.keyInformation.titleInfo")}
             </h2>
-            <ul className="list-disc pl-5 font-bold">
+            <ul className="text-base leading-6 list-disc pl-5 font-medium">
               <li>{t("about.keyInformation.founded")}</li>
               <li>{t("about.keyInformation.employees")}</li>
               <li>{t("about.keyInformation.location")}</li>
@@ -53,10 +53,10 @@ const AboutPage: React.FC = () => {
             onClick={scrollToTestimonials}
             className="relative backdrop-blur rounded-2xl mb-4 border-l border-r border-b border-2 border-secondary p-4 sm:p-6 shadow-custom ease-in hover:bg-logoBlue hover:text-white transition-transform duration-300 hover:scale-105 md:hover:scale-105 :flex-row cursor-pointer"
           >
-            <h2 className="text-xl sm:text-2xl md:text-3xl mb-4">
+            <h2 className="text-xl sm:text-2xl md:text-3xl mb-4 font-semibold">
               {t("about.mission.title")}
             </h2>
-            <p className="text-sm sm:text-base md:text-lg font-bold">
+            <p className="text-base leading-6 sm:text-base md:text-lg font-medium">
               {t("about.mission.description")}
             </p>
             <div className="absolute bottom-4 right-4 text-white animate-bounce">
@@ -67,10 +67,10 @@ const AboutPage: React.FC = () => {
             onClick={scrollToTeam}
             className="relative backdrop-blur rounded-2xl mb-4 border-l border-r border-b border-2 border-secondary p-4 sm:p-6 shadow-custom ease-in hover:bg-logoBlue hover:text-white transition-transform duration-300 hover:scale-105 md:hover:scale-105 cursor-pointer"
           >
-            <h2 className="text-xl sm:text-2xl md:text-3xl mb-4">
+            <h2 className="text-xl sm:text-2xl md:text-3xl mb-4 font-semibold">
               {t("about.team.title")}
             </h2>
-            <p className="text-sm sm:text-base md:text-lg font-bold">
+            <p className="text-base leading-6 sm:text-base md:text-lg font-medium">
               {t("about.team.description")}
             </p>
             <div className="absolute bottom-4 right-4 text-white animate-bounce">
@@ -79,7 +79,7 @@ const AboutPage: React.FC = () => {
           </section>
         </main>
       </div>
-      <div className="shadow-2xl border-2 rounded-2xl border-solid border-white bg-gradient-to-r from-yellow-100 via-yellow-200 to-yellow-300 p-5 container mx-auto mt-8 mb-16">
+      <div className="shadow-2xl border-2 rounded-2xl border-solid border-white bg-gradient-to-r from-yellow-100 via-yellow-200 to-yellow-300 p-3 container mx-auto mt-8 mb-16">
         <h1 className="text-4xl font-bold text-center mb-8 mt-8">
           {t("about.companyDescription.title")}
         </h1>
