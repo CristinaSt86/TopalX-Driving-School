@@ -151,3 +151,26 @@ body {
 .clip-hexagon img {
   @apply absolute top-0 left-0 w-full h-full object-cover;
 }
+
+.bg-home {
+  background-image: url('/public/images/bgHome2.webp');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-main {
+  background-image: url('/public/images/bgZid.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh; 
+}
+
+.bg-services {
+  background-image: url('/public/images/visitCard.webp');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+

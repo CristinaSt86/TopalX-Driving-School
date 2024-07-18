@@ -11,7 +11,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <div className="bg-custom-img bg-cover bg-center bg-fixed">
+      <div className="bg-main">
         <App />
       </div>
     </BrowserRouter>
