@@ -30,16 +30,17 @@ const Navigation: React.FC = () => {
   }, [isOpen]);
 
   return (
-    <nav className="p-4 md:p-5 bg-primary text-white sm:p-2 rounded-md">
+    <nav className="shadow-2xl p-4 md:py-2 md:px-6 bg-primary text-white sm:p-2 rounded-md" aria-label="Main Navigation">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="md:hidden" onClick={toggleMenu}>
+        <button className="md:hidden" onClick={toggleMenu} aria-expanded={isOpen} aria-controls="primary-menu">
           {isOpen ? (
             <FaTimes className="w-6 h-6" />
           ) : (
             <FaBars className="w-6 h-6" />
           )}
-        </div>
+        </button>
         <ul
+          id="primary-menu"
           ref={menuRef}
           className={`pt-1 pb-1 z-1000 gap-3 flex-col md:flex-row md:flex space-y-2 md:space-y-0 md:space-x-4 absolute md:static bg-primary md:bg-transparent w-full md:w-auto left-0 md:left-auto top-24 md:top-auto ${
             isOpen ? "flex items-center" : "hidden"
@@ -49,6 +50,7 @@ const Navigation: React.FC = () => {
             <Link
               to="/"
               className="hover:scale-125 hover:underline hover:-rotate-6 hover:text-secondary block md:inline-block p-2 md:p-0 transition-transform duration-200"
+              onClick={toggleMenu}
             >
               {t('navigation.home')}
             </Link>
@@ -57,6 +59,7 @@ const Navigation: React.FC = () => {
             <Link
               to="/about"
               className="hover:scale-125 hover:underline hover:-rotate-6 hover:text-secondary block md:inline-block p-2 md:p-0 transition-transform duration-200"
+              onClick={toggleMenu}
             >
               {t('navigation.about')}
             </Link>
@@ -65,6 +68,7 @@ const Navigation: React.FC = () => {
             <Link
               to="/services"
               className="hover:scale-125 hover:underline hover:-rotate-6 hover:text-secondary block md:inline-block p-2 md:p-0 transition-transform duration-200"
+              onClick={toggleMenu}
             >
               {t('navigation.services')}
             </Link>
@@ -73,6 +77,7 @@ const Navigation: React.FC = () => {
             <Link
               to="/testimonials"
               className="hover:scale-125 hover:underline hover:-rotate-6 hover:text-secondary block md:inline-block p-2 md:p-0 transition-transform duration-200"
+              onClick={toggleMenu}
             >
               {t('navigation.testimonials')}
             </Link>
@@ -81,6 +86,7 @@ const Navigation: React.FC = () => {
             <Link
               to="/gallery"
               className="hover:scale-125 hover:underline hover:-rotate-6 hover:text-secondary block md:inline-block p-2 md:p-0 transition-transform duration-200"
+              onClick={toggleMenu}
             >
               {t('navigation.gallery')}
             </Link>
@@ -89,6 +95,7 @@ const Navigation: React.FC = () => {
             <Link
               to="/contact"
               className="hover:scale-125 hover:underline hover:-rotate-6 hover:text-secondary block md:inline-block p-2 md:p-0 transition-transform duration-200"
+              onClick={toggleMenu}
             >
               {t('navigation.contact')}
             </Link>

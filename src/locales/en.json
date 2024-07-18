@@ -1,18 +1,18 @@
 {
   "home": {
-    "title": "Welcome to",
+    "title": "Home - TopalX",
+    "descriptionHelm": "Welcome to our homepage.",
+    "title2": "Welcome to",
     "school": "Driving School",
     "description": "Choose excellence in training competent and responsible drivers. With extensive experience in the field, TopalX offers you the best theoretical and practical training programs tailored to your needs. Our team of professional instructors is here to guide you on the road to success.",
-    "learn_more": "Learn more",
-    "metaDescription": "Learn more about TopalX Driving School. We offer car driving courses with professional instructors. Enroll now!",
-    "metaKeywords": "driving school, driving courses, car driving license, motorcycle driving license, driving instructors"
+    "learn_more": "Learn more"
   },
   "about": {
-    "title": "About Us - Driving School",
-    "metaDescription": "Learn more about our company and the team dedicated to providing high-quality driving education in Bucharest.",
+    "title": "About Us - TopalX",
+    "description": "Learn more about us on our About page.",
     "headerTitle": "Who are we?",
     "keyInformation": {
-      "title": "Key Information",
+      "titleInfo": "Key Information",
       "founded": "Founded: 2022",
       "employees": "Employees: 5",
       "location": "Location: Bucharest, Romania"
@@ -45,26 +45,28 @@
     "about": "About ",
     "services": "Services ",
     "testimonials": "Testimonials ",
-    "gallery": "Gallery ",
+    "gallery": "Photo Gallery ",
     "contact": "Contact "
   },
 
   "contactPage": {
-    "title": "Connect at a click away!",
+    "titleHelm": "Contact Us - TopalX",
+    "description": "Get in touch with us.",
+    "title": "Your Driving License is Just a Click Away",
     "locationTitle": "Our Location",
     "address": "<strong>Address:</strong> Calea Vitan 148A,",
     "address2": "031301 Bucharest, Romania",
     "secretariat": "<strong>Secretariat:</strong> 0736 470 629",
     "manager": "<strong>Manager:</strong> 0723 007 454",
-    "email": "<strong>Email:</strong> topalxtrans@gmail.com",
-    "metaDescription": "Find out how to get in touch with TopalX Driving School. We offer support for inquiries and enrollments in our courses.",
-    "metaKeywords": "contact driving school TopalX"
+    "email": "<strong>Email:</strong> topalxtrans@gmail.com"
   },
 
   "carCard": {
     "alias": "Or"
   },
   "services": {
+    "titleHelm": "Services - TopalX",
+    "description": "Discover our range of services.",
     "title": "Offered Services",
     "serviceList": [
       {
@@ -187,75 +189,213 @@
       }
     ]
   },
-  "title": "Student Experiences",
-  "testimonials": [
-    {
-      "id": 1,
-      "caption": "' Extraordinary people, the instructors are very well prepared and very patient. '"
-    },
-    {
-      "id": 2,
-      "caption": "' Thank you for the support, from now on we will meet in traffic! '"
-    },
-    {
-      "id": 3,
-      "caption": "' Very well-prepared instructors, availability, motivation. '"
-    },
-    {
-      "id": 4,
-      "caption": "' Always there when you need support. '"
-    },
-    {
-      "id": 5,
-      "caption": "' A team of professional people, I highly recommend the TopalX driving school! '"
-    },
-    {
-      "id": 6,
-      "caption": "' Everyone, from the instructors to the secretary, are wonderful and kind people and it was a pleasure to learn to drive and get my license with the help of TopalX. '"
-    },
-    {
-      "id": 7,
-      "caption": "' I wholeheartedly recommend it! At TopalX School I met people who do their job with great passion and dedication. '"
-    },
-    {
-      "id": 8,
-      "caption": "' I especially want to mention their amazing behavior towards all students! '"
-    },
-    {
-      "id": 9,
-      "caption": "' Wonderful people, well-prepared instructors with experience and a lot of patience. For this, I am enormously grateful today when I was declared passed! '"
-    },
-    {
-      "id": 10,
-      "caption": "' The secretary was definitely the nicest person I have ever met, making sure you feel comfortable and not stressed. I definitely recommend this school. '"
-    }
-  ],
+
+  "testimonials": {
+    "titleHelm": "Testimonials - TopalX",
+    "description": "Read what our customers say about us.",
+    "title": "Students Experiences",
+    "items": [
+      {
+        "id": 1,
+        "caption": "' Extraordinary people, the instructors are very well prepared and very patient. '"
+      },
+      {
+        "id": 2,
+        "caption": "' Thank you for the support, from now on we will meet in traffic! '"
+      },
+      {
+        "id": 3,
+        "caption": "' Very well-prepared instructors, availability, motivation. '"
+      },
+      {
+        "id": 4,
+        "caption": "' Always there when you need support. '"
+      },
+      {
+        "id": 5,
+        "caption": "' A team of professional people, I highly recommend the TopalX driving school! '"
+      },
+      {
+        "id": 6,
+        "caption": "' Everyone, from the instructors to the secretary, are wonderful and kind people and it was a pleasure to learn to drive and get my license with the help of TopalX. '"
+      },
+      {
+        "id": 7,
+        "caption": "' I wholeheartedly recommend it! At TopalX School I met people who do their job with great passion and dedication. '"
+      },
+      {
+        "id": 8,
+        "caption": "' I especially want to mention their amazing behavior towards all students! '"
+      },
+      {
+        "id": 9,
+        "caption": "' Wonderful people, well-prepared instructors with experience and a lot of patience. For this, I am enormously grateful today when I was declared passed! '"
+      },
+      {
+        "id": 10,
+        "caption": "' The secretary was definitely the nicest person I have ever met, making sure you feel comfortable and not stressed. I definitely recommend this school. '"
+      }
+    ]
+  },
   "footer": {
-    "rights": "&copy; 2024 TopalX. All rights reserved.",
+    "rights": "© 2024 All rights reserved.",
     "home": "Home",
-    "about": "About Us",
+    "about": "About",
     "services": "Services",
-    "contact": "Contact"
+    "contact": "Contact",
+    "privacyPolicy": "Privacy Policy",
+    "termsAndConditions": "Terms and Conditions",
+    "info": "To obtain your driver's license, our school assists you with the first step out of the 100 required steps, which is registration at our office located at 148A Vitan Road. You only need your ID for this first step!"
   },
   "contactForm": {
     "name": "Name",
     "email": "Email",
     "message": "Message",
-    "send": "Send",
     "sending": "Sending...",
-    "success": "Thank you for your message!",
-    "error": "There was an error submitting your message. Please try again."
+    "send": "Send",
+    "success": "Your message has been sent successfully!",
+    "error": "There was an error sending your message.",
+    "consent": "I agree to the",
+    "privacyPolicy": "Privacy Policy",
+    "consentRequired": "Your agreement with the privacy policy is required."
   },
   "topHeader": {
     "phone": "0736 470 629",
     "email": "topalxtrans@gmail.com",
     "workingHours": "Monday - Friday: 08.00 - 20.00"
   },
-  "galleryTitle": "Moments of Success: Our Gallery",
-  "galleryDescription": "Discover in our gallery the moments of triumph of our students along with their instructors, upon receiving their driver's license. Each photograph is a celebration of individual success, capturing the joy and pride of achieving this important milestone. These images speak of our team's dedication and professionalism, demonstrating the positive impact of our training.",
-
+  "gallery": {
+    "title": "Gallery - TopalX",
+    "description": "Browse our gallery.",
+    "galleryTitle": "Moments of Success: Our Gallery",
+    "galleryDescription": "Discover in our gallery the moments of triumph of our students along with their instructors, upon receiving their driving licenses. Each photograph is a celebration of individual success, capturing the joy and pride of achieving this important milestone. These images speak of our team's dedication and professionalism, demonstrating the positive impact of our training."
+  },
   "loadingMessage": {
     "heading": "Loading, please wait...",
     "subheading": "We are getting things ready for you."
+  },
+
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "intro": "This Privacy Policy describes how TopalX Driving School collects, uses, and protects your personal data when you use our website and services.",
+    "sections": {
+      "introduction": {
+        "title": "1. Introduction",
+        "content": "This Privacy Policy describes how TopalX - Driving School collects, uses, and protects your personal data when you use our website and services."
+      },
+      "dataCollection": {
+        "title": "2. Data Collection",
+        "content": "We collect the following personal data through the contact form:",
+        "list": [
+          "Name",
+          "Email address",
+          "Phone number (optional)",
+          "Your message"
+        ]
+      },
+      "purpose": {
+        "title": "3. Purpose of Data Collection",
+        "content": "We use this data to respond to your inquiries and to provide you with information about our services."
+      },
+      "storage": {
+        "title": "4. Data Storage and Protection",
+        "content": "Your data is stored securely and will not be shared with third parties without your consent. The data is kept for the necessary period for the purposes for which it was collected, after which it will be deleted."
+      },
+      "rights": {
+        "title": "5. User Rights",
+        "content": "According to GDPR, you have the following rights:",
+        "list": [
+          "Right of access: You can request access to your personal data that we hold.",
+          "Right to rectification: You can request the correction of your personal data if it is inaccurate.",
+          "Right to erasure: You can request the deletion of your personal data.",
+          "Right to restrict processing: You can request the restriction of the processing of your personal data.",
+          "Right to data portability: You can request the transfer of your personal data to another operator.",
+          "Right to object: You can object to the processing of your personal data."
+        ]
+      },
+      "contact": {
+        "title": "6. Contact",
+        "content": "If you have any questions or concerns regarding this Privacy Policy, you can contact us at:",
+        "email": "Email - topalxtrans@gmail.com",
+        "address": "Address - Calea Vitan 148A, 031301 Bucharest, Romania."
+      }
+    }
+  },
+  "termsAndConditions": {
+    "title": "Terms and Conditions",
+    "intro": "These terms and conditions govern the use of the website and the services offered by TopalX Driving School. By using this site, you fully accept these terms and conditions.",
+    "sections": {
+      "services": {
+        "title": "1. Services Offered",
+        "content": "TopalX Driving School offers theoretical and practical courses for obtaining a category B driving license. All services are provided in accordance with the applicable legal regulations."
+      },
+      "registration": {
+        "title": "2. Registration",
+        "content": "To enroll in our courses, you must complete the registration form available on the website or contact us by phone and provide accurate and complete information. We reserve the right to refuse or cancel registration in case of violation of the terms and conditions."
+      },
+      "payments": {
+        "title": "3. Payments",
+        "content": "The payment for the courses is made according to the information presented on the website. All payments are non-refundable, except in cases of course cancellation by the school."
+      },
+      "cancellation": {
+        "title": "4. Cancellations",
+        "content": "If you wish to cancel your participation in the courses, you must notify us in writing at least 7 days before the course start date. Cancellations made after this period will not be refunded."
+      },
+      "privacy": {
+        "title": "5. Privacy",
+        "content": "Personal data collected through this website will be used exclusively for processing registrations and communicating with students. Data will not be shared with third parties without your consent."
+      },
+      "liability": {
+        "title": "6. Liability",
+        "content": "TopalX Driving School is not liable for any accidents or damages occurring during practical courses, except in cases of negligence on the part of the instructors."
+      },
+      "modifications": {
+        "title": "7. Modifications to the Terms and Conditions",
+        "content": "We reserve the right to modify these terms and conditions at any time. Any changes will be posted on this page and will take effect immediately."
+      },
+      "contact": {
+        "title": "8. Contact",
+        "content": "For any questions or concerns regarding these terms and conditions, please contact us at:",
+        "email": "Email: topalxtrans@gmail.com",
+        "address": "Address: Calea Vitan 148A, 031301 Bucharest, Romania"
+      }
+    }
+  },
+  "team": {
+    "titleHelm": "Our Team - TopalX",
+    "descriptionHelm": "Meet our dedicated team.",
+    "title": "The Professionals Who Make a Difference",
+    "members": [
+      {
+        "name": "Constantin Topala",
+        "role": "Management",
+        "description": "With over 25 years of experience, the founder of the driving school and also an instructor, Mr. Topala is a dedicated leader and a true visionary. With his vast expertise and integrated approach, he ensures excellence in driver education for all learners. Over the years, he has trained thousands of responsible and confident drivers."
+      },
+      {
+        "name": "Raluca Topala",
+        "role": "Secretariat",
+        "description": "Secretary and wife of the driving school manager with over 10 years experience. Raluca is extremely sociable, empathetic and always willing to help everyone. She handles all administrative aspects with professionalism and efficiency, ensuring that every learner has a pleasant and hassle-free experience."
+      },
+      {
+        "name": "Stefan Puscasu",
+        "role": "Driving Instructor",
+        "description": "Mr. Stefan, with more than 15 years of experience, is known for his exemplary patience, consummate professionalism and ability to inspire confidence in his learners. He dedicates his time to ensure that each learner fully understands the rules and techniques of driving, offering practical advice and constant encouragement."
+      },
+      {
+        "name": "Laurentiu Marin",
+        "role": "Driving Instructor",
+        "description": "Mr. Laurentiu stands out for his vast experience in the field and his calm and methodical approach in training future drivers. Dedicated and passionate about his profession, Mr. Laurentiu is a true mentor to the trainees. With a friendly and open attitude, he creates a comfortable and stimulating learning environment."
+      },
+      {
+        "name": "Viorel Neagu",
+        "role": "Legislation Teacher",
+        "description": "Mr. Viorel has a wealth of experience in the field. He is appreciated for his effective pedagogical methods and his dedication to preparing learners to become responsible and knowledgeable drivers. Viorel is always up to date with the latest legislative changes and ensures that all his trainees are well prepared for their theory exams."
+      }
+    ]
+  },
+  "default": {
+    "title": "TopalX Driving School - Excellence in Driver Training",
+    "description": "TopalX Driving School offers professional driving courses with experienced instructors. Enroll now and master the art of safe driving.",
+    "keywords": "driving school, driver training, driving lessons, safe driving, driving license, car driving courses"
   }
 }

@@ -12,7 +12,7 @@ const TopHeader: React.FC = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 bg-primary text-white text-base sm:text-lg hidden custom:flex flex-col custom:flex-row justify-between items-center p-3">
+    <div className="shadow-custom2 fixed top-0 left-0 right-0 z-50 bg-primary text-white text-base sm:text-lg hidden custom:flex flex-col custom:flex-row justify-between items-center p-3">
       <div className="flex w-full justify-between items-center sm:hidden">
         <a
           href="https://www.facebook.com/scoaladesoferitopalx/"

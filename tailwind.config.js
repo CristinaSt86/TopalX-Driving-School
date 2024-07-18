@@ -16,19 +16,19 @@ module.exports = {
         customFooter: "970px",
       },
       textShadow: {
-        outline:
-          "2px 2px 0 #000, -2px -2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000",
+        outline: "2px 2px 0 #000, -2px -2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000",
       },
       scale: ["hover"], // Enable hover for scaling
       boxShadow: {
-        custom: "0 0 10px 5px rgba(0, 0, 0, 0.5)", // Custom shadow
+        custom: "0 0 10px 5px rgba(0, 0, 0, 0.5)",
+        custom2: "0 0 10px 5px rgba(255, 255, 255, 0.7)" // Custom shadow
       },
       backgroundImage: {
         "custom-img": "url('/src/images/bgZid.jpg')",
-        "custom-home": "url('/src/images/bgHome2.jpg')",
-        "custom-contact": "url('/src/images/l-r.jpg')",
-        "custom-services": "url('/src/images/visitCard.jpg')",
-        "custom-packages": "url('/src/images/bgHome1.jpg')",
+        "custom-home": "url('/src/images/bgHome2.webp')",
+        "custom-contact": "url('/src/images/l-r.webp')",
+        "custom-services": "url('/src/images/visitCard.webp')",
+        "custom-packages": "url('/src/images/logo.webp')",
       },
       colors: {
         primary: "rgba(55, 73, 87, 0.9)",
@@ -44,12 +44,15 @@ module.exports = {
       },
       keyframes: {
         drive: {
-          "0%": { left: "-150px" },
-          "100%": { left: "100vw" },
+          '0%': { transform: 'translateX(600%)' },
+          '100%': { transform: 'translateX(-100%)' },
         },
       },
       animation: {
-        drive: "drive 5s linear infinite",
+        drive: "drive 7s linear infinite",
+      },
+      clipPath: {
+        'hexagon': 'polygon(25% 6.7%, 75% 6.7%, 100% 50%, 75% 93.3%, 25% 93.3%, 0% 50%)',
       },
     },
   },
@@ -57,8 +60,10 @@ module.exports = {
     function ({ addUtilities }) {
       addUtilities({
         ".text-shadow-outline": {
-          "text-shadow":
-            "2px 2px 0 #000, -2px -2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000",
+          "text-shadow": "2px 2px 0 #000, -2px -2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000",
+        },
+        '.clip-hexagon': {
+          clipPath: 'polygon(25% 6.7%, 75% 6.7%, 100% 50%, 75% 93.3%, 25% 93.3%, 0% 50%)',
         },
       });
     },

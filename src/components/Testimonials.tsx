@@ -10,13 +10,13 @@ import c1 from "../images/c1.jpg";
 import c2 from "../images/c2.jpg";
 import c3 from "../images/c3.jpg";
 import c4 from "../images/c4.jpg";
-import c5 from "../images/c5.jpg";
 import c6 from "../images/c6.jpg";
-import c7 from "../images/c7.jpg";
-import c8 from "../images/c8.jpg";
-import c9 from "../images/c9.jpg";
-import c10 from "../images/c10.jpg";
+import c7 from "../images/c7.webp";
+import c8 from "../images/c8.webp";
+import c9 from "../images/c9.webp";
+import c10 from "../images/c10.webp";
 import "../index.css";
+
 
 export type Testimonial = {
   id: number;
@@ -45,16 +45,15 @@ const Testimonials = forwardRef<TestimonialsHandle, TestimonialsProps>(
     }));
 
     const localTestimonials: Testimonial[] = [
-      { id: 1, avatar: c1, caption: t("testimonials.0.caption") },
-      { id: 2, avatar: c2, caption: t("testimonials.1.caption") },
-      { id: 3, avatar: c3, caption: t("testimonials.2.caption") },
-      { id: 7, avatar: c7, caption: t("testimonials.6.caption") },
-      { id: 9, avatar: c9, caption: t("testimonials.8.caption") },
-      { id: 10, avatar: c10, caption: t("testimonials.9.caption") },
-      // { id: 5, avatar: c5, caption: t("testimonials.4.caption") },
-      { id: 6, avatar: c6, caption: t("testimonials.5.caption") },
-      { id: 4, avatar: c4, caption: t("testimonials.3.caption") },
-      { id: 8, avatar: c8, caption: t("testimonials.7.caption") },
+      { id: 1, avatar: c1, caption: t("testimonials.items.0.caption") },
+      { id: 2, avatar: c2, caption: t("testimonials.items.1.caption") },
+      { id: 3, avatar: c3, caption: t("testimonials.items.2.caption") },
+      { id: 7, avatar: c7, caption: t("testimonials.items.6.caption") },
+      { id: 9, avatar: c9, caption: t("testimonials.items.8.caption") },
+      { id: 10, avatar: c10, caption: t("testimonials.items.9.caption") },
+      { id: 6, avatar: c6, caption: t("testimonials.items.5.caption") },
+      { id: 4, avatar: c4, caption: t("testimonials.items.3.caption") },
+      { id: 8, avatar: c8, caption: t("testimonials.items.7.caption") },
     ];
 
     useEffect(() => {
@@ -62,12 +61,11 @@ const Testimonials = forwardRef<TestimonialsHandle, TestimonialsProps>(
     }, []);
 
     return (
-      <div className={` ${animate ? "slide-in" : ""}`}>
-        <h2 className="text-3xl font-bold text-center mt-16">{t("title")}</h2>
-        <div
-          ref={internalRef}
-          className="bg-gray-100 p-8 mb-16 mt-16 shadow-custom  ellipse-img"
-        >
+      <div ref={internalRef} className={` ${animate ? "slide-in" : ""}`}>
+        <h2 className="text-3xl font-bold text-center mt-16">
+          {t("testimonials.title")}
+        </h2>
+        <div className="bg-gray-100 p-8 mb-16 mt-16 shadow-custom  ellipse-img">
           <div className="container mx-auto">
             <div className="flex flex-wrap justify-center items-center">
               {localTestimonials.map(({ id, avatar, caption }, index) => (
