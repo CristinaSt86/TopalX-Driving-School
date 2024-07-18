@@ -29,7 +29,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
 
   return (
     <div className="flex justify-center">
-      <div className="shadow-custom pb-6 pt-6 container w-[80%] rounded-2xl backdrop-blur md:w-1/2 md:pl-6 md:pr-6">
+      <div className="shadow-custom pb-6 pt-6 container w-[90%] rounded-2xl backdrop-blur md:w-1/2 md:pl-6 md:pr-6">
         <form
           onSubmit={handleSubmit}
           className="max-w-md mx-auto p-4 md:mx-auto flex flex-col gap-4"

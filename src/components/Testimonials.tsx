@@ -89,7 +89,7 @@ const Testimonials = forwardRef<TestimonialsHandle, TestimonialsProps>(
                   />
                   {caption && (
                     <div className="px-6 py-4 hover:scale-125 transition-transform duration-300">
-                      <p className="text-gray-700 text-base">{caption}</p>
+                      <p className="text-gray-700 text-base pt-3">{caption}</p>
                     </div>
                   )}
                 </div>
