@@ -1,5 +1,4 @@
 import React, { useRef, useEffect, useState } from "react";
-
 import AboutPage from "./AboutPage";
 import Gallery from "../components/Gallery";
 import ContactPage from "./ContactPage";

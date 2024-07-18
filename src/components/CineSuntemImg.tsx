@@ -1,35 +1,25 @@
 import React, { useEffect, useState } from "react";
-import s1 from "../images/s1.webp";
-import sisCosti from "../images/sisCostiElev.webp";
-import s4 from "../images/s4.jpg";
-import s5 from "../images/s5.webp";
-import s6 from "../images/s6.webp";
-import cuplu from "../images/cuplu.webp";
-import sis from "../images/sis.jpg";
-import sis2 from "../images/sis2.jpg";
-import clasa from "../images/clasa.webp";
-import clasa3 from "../images/clasa3.webp";
-import servicii from "../images/servicii.webp";
-import iCan from "../images/canDoIt.webp";
 import { useTranslation } from "react-i18next";
 
 const CineSuntemImg: React.FC = () => {
   const [animate, setAnimate] = useState(false);
 
   const { t } = useTranslation();
+
+  // Use absolute paths for images in the public directory
   const images: string[] = [
-    cuplu,
-    s1,
-    clasa3,
-    sisCosti,
-    sis,
-    iCan,
-    clasa,
-    s4,
-    servicii,
-    s5,
-    sis2,
-    s6,
+    "/images/cuplu.webp",
+    "/images/s1.webp",
+    "/images/clasa3.webp",
+    "/images/sisCostiElev.webp",
+    "/images/sis.jpg",
+    "/images/canDoIt.webp",
+    "/images/clasa.webp",
+    "/images/s4.jpg",
+    "/images/servicii.webp",
+    "/images/s5.webp",
+    "/images/sis2.jpg",
+    "/images/s6.webp",
   ];
 
   useEffect(() => {

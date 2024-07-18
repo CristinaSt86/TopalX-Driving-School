@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import logo from "../images/logo.webp";
 import SocialLinks from "./SocialLinks";
 import NavigationLinks from "./NavigationLinks";
 import LegalLinks from "./LegalLinks";
 
 const Footer: React.FC = () => {
   const { t } = useTranslation();
+  const logo = "/images/logo.webp"; // Use an absolute path for the logo image
 
   return (
     <footer className="bg-gray-800 bg-opacity-75 text-white py-4 px-4 mx-auto">
@@ -25,9 +25,9 @@ const Footer: React.FC = () => {
             {t("footer.info")}
           </span>
           <p
-          className="text-sm pt-10 hidden md:block"
-          dangerouslySetInnerHTML={{ __html: t("footer.rights") }}
-        ></p>
+            className="text-sm pt-10 hidden md:block"
+            dangerouslySetInnerHTML={{ __html: t("footer.rights") }}
+          ></p>
         </p>
         <div className="flex flex-col items-center md:flex-row md:space-x-8 md:pl-8 md:pr-0">
           <NavigationLinks />

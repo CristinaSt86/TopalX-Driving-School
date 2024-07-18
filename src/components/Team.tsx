@@ -1,12 +1,6 @@
 import React from "react";
-import fiatDrive from "../images/FiatDrive.webp";
-import "../index.css";
-import cos2 from "../images/cos2.webp";
-import sisOffice from "../images/sisOffice.webp";
-import ins1 from "../images/ins1.webp";
-import ins2 from "../images/ins2.webp";
-import prof1 from "../images/prof1.webp";
 import { useTranslation } from "react-i18next";
+import "../index.css";
 
 const Team = React.forwardRef<HTMLDivElement, any>((props, ref) => {
   const { t } = useTranslation();
@@ -17,37 +11,38 @@ const Team = React.forwardRef<HTMLDivElement, any>((props, ref) => {
       name: t("team.members.0.name"),
       role: t("team.members.0.role"),
       description: t("team.members.0.description"),
-      image: cos2,
+      image: "/images/cos2.webp",
     },
     {
       id: 2,
       name: t("team.members.1.name"),
       role: t("team.members.1.role"),
       description: t("team.members.1.description"),
-      image: sisOffice,
+      image: "/images/sisOffice.webp",
     },
     {
       id: 3,
       name: t("team.members.2.name"),
       role: t("team.members.2.role"),
       description: t("team.members.2.description"),
-      image: ins2,
+      image: "/images/ins2.webp",
     },
     {
       id: 4,
       name: t("team.members.3.name"),
       role: t("team.members.3.role"),
       description: t("team.members.3.description"),
-      image: ins1,
+      image: "/images/ins1.webp",
     },
     {
       id: 5,
       name: t("team.members.4.name"),
       role: t("team.members.4.role"),
       description: t("team.members.4.description"),
-      image: prof1,
+      image: "/images/prof1.webp",
     },
   ];
+
   return (
     <>
       <h2
@@ -60,7 +55,7 @@ const Team = React.forwardRef<HTMLDivElement, any>((props, ref) => {
       <section className="bg-white pb-3 mb-10 shadow-2xl">
         <div className="relative w-full h-48 overflow-hidden">
           <div className="absolute bottom-1 left-0 w-80 h-auto animate-drive">
-            <img src={fiatDrive} alt="Car" />
+            <img src="/images/FiatDrive.webp" alt="Car" />
           </div>
         </div>
 

@@ -1,12 +1,12 @@
 import React from "react";
-import Navigation from "./Navigation";
-import logo from "../images/logo.webp";
-import "../index.css";
-import TopHeader from "./TopHeader";
 import { Link } from "react-router-dom";
+import Navigation from "./Navigation";
+import TopHeader from "./TopHeader";
 import LanguageButton from "./LanguageButton";
+import "../index.css";
 
 const Header: React.FC = () => {
+  const logo = "/images/logo.webp"; 
   return (
     <>
       <TopHeader />

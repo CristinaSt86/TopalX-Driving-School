@@ -2,15 +2,17 @@ import React, { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import "../index.css";
 import CarCard from "../components/CarCard";
-import fiat from "../images/f3.jpg";
-import mercedes from "../images/mercedes2.jpg";
-import skoda from "../images/sc2.webp";
-import volvo from "../images/volvo1.jpg";
 import Team from "../components/Team";
 import Services from "../components/Services";
 import Testimonials from "../components/Testimonials";
 import { PiHandTapLight } from "react-icons/pi";
 import CineSuntemImg from "../components/CineSuntemImg";
+
+// Images referenced from the public directory
+const fiat = "/images/f3.jpg";
+const mercedes = "/images/mercedes2.jpg";
+const skoda = "/images/sc2.webp";
+const volvo = "/images/volvo1.jpg";
 
 const AboutPage: React.FC = () => {
   const { t } = useTranslation();
@@ -34,6 +36,7 @@ const AboutPage: React.FC = () => {
   useEffect(() => {
     setAnimate(true);
   }, []);
+
   return (
     <>
       <CineSuntemImg />
@@ -51,7 +54,7 @@ const AboutPage: React.FC = () => {
           </section>
           <section
             onClick={scrollToTestimonials}
-            className="relative backdrop-blur rounded-2xl mb-4 border-l border-r border-b border-2 border-secondary p-4 sm:p-6 shadow-custom ease-in hover:bg-logoBlue hover:text-white transition-transform duration-300 hover:scale-105 md:hover:scale-105 :flex-row cursor-pointer"
+            className="relative backdrop-blur rounded-2xl mb-4 border-l border-r border-b border-2 border-secondary p-4 sm:p-6 shadow-custom ease-in hover:bg-logoBlue hover:text-white transition-transform duration-300 hover:scale-105 md:hover:scale-105 cursor-pointer"
           >
             <h2 className="text-xl sm:text-2xl md:text-3xl mb-4 font-semibold">
               {t("about.mission.title")}
