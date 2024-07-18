@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { useEffect, useState } from "react";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
@@ -100,7 +99,7 @@ const Gallery: React.FC = () => {
             <div key={index} className="relative w-full h-48 overflow-hidden">
               <img
                 src={image.original}
-                alt={`Gallery Image ${index + 1}`}
+                alt={`Gallery Item ${index + 1}`}
                 className="w-full h-full object-cover cursor-pointer hover:opacity-75 transition-opacity duration-300 rounded-lg"
                 onClick={() => handleImageClick(index)}
               />

@@ -17,7 +17,6 @@ import c9 from "../images/c9.webp";
 import c10 from "../images/c10.webp";
 import "../index.css";
 
-
 export type Testimonial = {
   id: number;
   avatar: string;
@@ -25,7 +24,7 @@ export type Testimonial = {
 };
 
 interface TestimonialsProps {
-  testimonials: Testimonial[];
+  testimonials?: Testimonial[];
 }
 
 interface TestimonialsHandle {
@@ -33,7 +32,7 @@ interface TestimonialsHandle {
 }
 
 const Testimonials = forwardRef<TestimonialsHandle, TestimonialsProps>(
-  ({ testimonials }, ref) => {
+  ({ testimonials = [] }, ref) => {
     const internalRef = useRef<HTMLDivElement>(null);
     const { t } = useTranslation();
     const [animate, setAnimate] = useState(false);
@@ -56,6 +55,10 @@ const Testimonials = forwardRef<TestimonialsHandle, TestimonialsProps>(
       { id: 8, avatar: c8, caption: t("testimonials.items.7.caption") },
     ];
 
+    const finalTestimonials = testimonials.length
+      ? testimonials
+      : localTestimonials;
+
     useEffect(() => {
       setAnimate(true);
     }, []);
@@ -65,15 +68,15 @@ const Testimonials = forwardRef<TestimonialsHandle, TestimonialsProps>(
         <h2 className="text-3xl font-bold text-center mt-16">
           {t("testimonials.title")}
         </h2>
-        <div className="bg-gray-100 p-8 mb-16 mt-16 shadow-custom  ellipse-img">
+        <div className="bg-gray-100 p-8 mb-16 mt-16 shadow-custom ellipse-img">
           <div className="container mx-auto">
             <div className="flex flex-wrap justify-center items-center">
-              {localTestimonials.map(({ id, avatar, caption }, index) => (
+              {finalTestimonials.map(({ id, avatar, caption }, index) => (
                 <div
                   key={id}
                   className={`p-10 max-w-sm shadow-custom overflow-hidden m-4 ellipse-img ${
                     animate
-                      ? index < localTestimonials.length / 2
+                      ? index < finalTestimonials.length / 2
                         ? "slide-in-left"
                         : "slide-in-right"
                       : ""

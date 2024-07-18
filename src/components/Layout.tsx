@@ -1,4 +1,3 @@
-// src/components/Layout.tsx
 import React, { ReactNode } from "react";
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { useTranslation } from "react-i18next";

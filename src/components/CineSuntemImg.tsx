@@ -13,11 +13,11 @@ import servicii from "../images/servicii.webp";
 import iCan from "../images/canDoIt.webp";
 import { useTranslation } from "react-i18next";
 
-const CineSuntemImg = () => {
+const CineSuntemImg: React.FC = () => {
   const [animate, setAnimate] = useState(false);
 
-  const {t} = useTranslation()
-  const images = [
+  const { t } = useTranslation();
+  const images: string[] = [
     cuplu,
     s1,
     clasa3,
@@ -31,9 +31,11 @@ const CineSuntemImg = () => {
     sis2,
     s6,
   ];
+
   useEffect(() => {
     setAnimate(true);
   }, []);
+
   return (
     <div>
       <div
