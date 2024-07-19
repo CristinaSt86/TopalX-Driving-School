@@ -12,6 +12,7 @@ module.exports = {
         1000: "1000",
       },
       screens: {
+        custom1: "768px",
         custom: "850px", // Custom breakpoint
         customFooter: "970px",
       },
@@ -28,8 +29,6 @@ module.exports = {
         "custom-img": "url('/public/images/bgZid.jpg')",
         "custom-home": "url('/public/images/bgHome2.webp')",
         "custom-services": "url('/public/images/visitCard.webp')",
-        
-     
       },
       colors: {
         primary: "rgba(55, 73, 87, 0.9)",
