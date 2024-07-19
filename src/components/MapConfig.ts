@@ -18,9 +18,9 @@ const CONFIGURATION: Configuration = {
     zoom: 4,
     zoomControl: true,
     maxZoom: 17,
-    mapId: process.env.R_APP_GOOGLE_MAPS_MAP_ID || "",
+    mapId: process.env.REACT_APP_GOOGLE_MAPS_MAP_ID || "",
   },
-  mapsApiKey: process.env.R_APP_GOOGLE_MAPS_API_K || "",
+  mapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY || "",
   capabilities: {
     input: false,
     autocomplete: false,

@@ -18,7 +18,7 @@ const ContactPage: React.FC = () => {
     email: string;
     message: string;
   }) => {
-    console.log("Form Data Submitted:", formData);
+   
   };
 
   useEffect(() => {

@@ -9,10 +9,6 @@ type LayoutProps = {
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   const { t } = useTranslation();
 
-  // Debugging
-  console.log("Title:", t("default.title"));
-  console.log("Description:", t("default.description"));
-  console.log("Keywords:", t("default.keywords"));
 
   return (
     <HelmetProvider>
