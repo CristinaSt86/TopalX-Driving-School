@@ -66,7 +66,7 @@ const Gallery: React.FC = () => {
         <p className="text-center mb-16 font-semibold">
           {t("gallery.galleryDescription")}
         </p>
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           {images.map((image, index) => (
             <div key={index} className="relative w-full h-48 overflow-hidden">
               <img

@@ -4,8 +4,10 @@
 
 body {
   @apply text-textColor;
-  @apply bg-custom-img bg-cover bg-center bg-fixed;
+  @apply bg-custom-img bg-cover bg-center bg-fixed h-screen overflow-y-auto;
 }
+
+
 
 .oblique-border {
   position: absolute;
