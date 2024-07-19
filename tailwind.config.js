@@ -28,6 +28,7 @@ module.exports = {
         "custom-img": "url('/public/images/bgZid.jpg')",
         "custom-home": "url('/public/images/bgHome2.webp')",
         "custom-services": "url('/public/images/visitCard.webp')",
+        
      
       },
       colors: {

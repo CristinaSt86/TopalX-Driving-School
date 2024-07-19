@@ -1,7 +1,7 @@
 import React, { useRef, useImperativeHandle, useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import CarPackages from "./CarPackages";
-import "../index.css"; // Ensure this is imported to apply the styles
+import "../index.css";
 
 export interface ServicesRef {
   scrollToPackages: () => void;
@@ -35,18 +35,18 @@ const Services = React.forwardRef((props, ref) => {
   }, []);
 
   return (
-    <div className={` ${animate ? "slide-in" : ""}`}>
+    <div className={` ${animate ? "slide-in" : ""} `}>
       <h1 className="text-3xl font-bold text-center mt-16">
         {t("services.title")}
       </h1>
       <div
-        className="p-2 mx-auto md:p-6 border-2 border-solid border-white mt-16 mb-16 bg-services"
+        className="  bg-custom-services bg-center bg-cover bg-fixed p-2 mx-auto md:p-6 border-2 border-solid border-white mt-16 mb-16 bg-services"
       >
         <ul className="bg-customBg rounded-2xl p-2">
           {services.map((service, index) => (
             <li
               key={index}
-              className="w-fit bg-white rounded-r-full shadow-md p-4 mb-4"
+              className="w-fit bg-white rounded-r-xl shadow-md p-2 mb-4"
             >
               <h2 className="text-xl font-semibold underline">
                 {service.name}

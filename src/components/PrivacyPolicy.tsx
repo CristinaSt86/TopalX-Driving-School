@@ -27,8 +27,12 @@ const PrivacyPolicy: React.FC = () => {
           </div>
         ))}
         <div>
-          <p>{t("privacyPolicy.sections.contact.email")}</p>
-          <p>{t("privacyPolicy.sections.contact.address")}</p>
+          <h2 className="text-2xl font-semibold mt-4">{t("privacyPolicy.contact.title")}</h2>
+          <p>{t("privacyPolicy.contact.content")}</p>
+          <p>{t("privacyPolicy.contact.email")}</p>
+          <p>{t("privacyPolicy.contact.address")}</p>
+          <p>{t("privacyPolicy.contact.telephone")}</p>
+          <p>{t("privacyPolicy.contact.telephone1")}</p>
         </div>
       </div>
     </div>

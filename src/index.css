@@ -4,10 +4,7 @@
 
 body {
   @apply text-textColor;
-}
-
-body {
-  @apply bg-custom-img bg-cover bg-center bg-fixed h-screen;
+  @apply bg-custom-img bg-cover bg-center bg-fixed;
 }
 
 .oblique-border {

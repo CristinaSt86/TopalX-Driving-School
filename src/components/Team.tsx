@@ -8,37 +8,37 @@ const Team = React.forwardRef<HTMLDivElement, any>((props, ref) => {
   const teamMembers = [
     {
       id: 1,
-      name: t("team.members.0.name"),
-      role: t("team.members.0.role"),
-      description: t("team.members.0.description"),
+      name: t("team2.members.0.name"),
+      role: t("team2.members.0.role"),
+      description: t("team2.members.0.description"),
       image: "/images/cos2.webp",
     },
     {
       id: 2,
-      name: t("team.members.1.name"),
-      role: t("team.members.1.role"),
-      description: t("team.members.1.description"),
+      name: t("team2.members.1.name"),
+      role: t("team2.members.1.role"),
+      description: t("team2.members.1.description"),
       image: "/images/sisOffice.webp",
     },
     {
       id: 3,
-      name: t("team.members.2.name"),
-      role: t("team.members.2.role"),
-      description: t("team.members.2.description"),
+      name: t("team2.members.2.name"),
+      role: t("team2.members.2.role"),
+      description: t("team2.members.2.description"),
       image: "/images/ins2.webp",
     },
     {
       id: 4,
-      name: t("team.members.3.name"),
-      role: t("team.members.3.role"),
-      description: t("team.members.3.description"),
+      name: t("team2.members.3.name"),
+      role: t("team2.members.3.role"),
+      description: t("team2.members.3.description"),
       image: "/images/ins1.webp",
     },
     {
       id: 5,
-      name: t("team.members.4.name"),
-      role: t("team.members.4.role"),
-      description: t("team.members.4.description"),
+      name: t("team2.members.4.name"),
+      role: t("team2.members.4.role"),
+      description: t("team2.members.4.description"),
       image: "/images/prof1.webp",
     },
   ];
@@ -49,7 +49,7 @@ const Team = React.forwardRef<HTMLDivElement, any>((props, ref) => {
         ref={ref}
         className="text-center text-3xl font-bold text-gray-800 mb-16 mt-16"
       >
-        {t("team.title")}
+        {t("team2.title")}
       </h2>
 
       <section className="bg-white pb-3 mb-10 shadow-2xl">

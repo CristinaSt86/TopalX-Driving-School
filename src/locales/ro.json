@@ -19,7 +19,7 @@
     },
     "mission": {
       "title": "Misiunea Noastră",
-      "description": "La Scoala de soferi TopalX, ne dedicăm formării șoferilor responsabili și încrezători, care să contribuie activ la siguranța rutieră. Oferim cursuri de conducere personalizate, de înaltă calitate, folosind metode moderne de predare și vehicule actualizate pentru a asigura o pregătire completă și eficientă. Însă, nu trebuie să vă bazați doar pe cuvintele noastre. Mândria noastră provine din recenziile și poveștile de succes ale cursanților noștri, care nu doar că au obținut permisul de conducere, dar s-au bucurat de o experiență de învățare adaptată nevoilor lor. Vă invităm să vizitați secțiunea de testimoniale de pe site-ul nostru pentru a descoperi relatări autentice care subliniază calitatea serviciilor noastre și impactul lor pozitiv asupra comunității de șoferi."
+      "description": "La Școala de șoferi TopalX, ne dedicăm formării șoferilor responsabili și încrezători, care să contribuie activ la siguranța rutieră. Oferim cursuri de conducere personalizate, de înaltă calitate, folosind metode moderne de predare și autoturisme de ultimă generație pentru a asigura o pregătire completă și eficientă. Însă, nu trebuie să vă bazați doar pe cuvintele noastre. Mândria noastră provine din recenziile și poveștile de succes ale cursanților noștri, care nu doar că au obținut permisul de conducere, dar s-au bucurat de o experiență de învățare adaptată nevoilor lor. Vă invităm să vizitați secțiunea de testimoniale de pe site-ul nostru pentru a descoperi relatări autentice care subliniază calitatea serviciilor noastre și impactul lor pozitiv asupra comunității de șoferi."
     },
     "team": {
       "title": "Cunoașteți Echipa",
@@ -28,7 +28,7 @@
     "companyDescription": {
       "title": "Despre Noi",
       "paragraph1": "Fondată de un instructor auto cu peste 25 de ani de experiență, TopalX este rezultatul pasiunii partajate cu soția sa pentru educația auto de calitate. Numele școlii provine din numele de familie, aducând cu sine o tradiție și o dedicare pentru siguranța și educația rutieră. Dedicația fondatorului, datorată decadelor de experiență în domeniul instruirii auto, este profund ancorată în fiecare aspect al cursurilor oferite.",
-      "paragraph2": "Scopul școlii de soferi TopalX nu este doar de a pregăti cursanții pentru a trece examenul de conducere, ci de a cultiva responsabilitate și respect profund pentru regulile de circulație. Fiecare program de instruire este meticulos planificat pentru a asigura că fiecare cursant înțelege nu doar mecanicile conducerei, ci și importanța unei conduite preventive pe drumurile publice. Prin utilizarea unor metode de predare adaptate nevoilor individuale ale cursanților și prin folosirea unui parc auto modern, echipat la standarde înalte, școala se asigură că fiecare nou șofer este complet pregătit să navigheze diversele situații de trafic în siguranță și încrezător.",
+      "paragraph2": "Scopul școlii de șoferi TopalX nu este doar de a pregăti cursanții pentru a trece examenul de conducere, ci și de a cultiva responsabilitate și respect profund pentru regulile de circulație. Fiecare program de instruire este meticulos planificat pentru a asigura că fiecare cursant înțelege nu doar tehnicile de conducere, ci și importanța unei conduite preventive pe drumurile publice. Prin utilizarea unor metode de predare adaptate nevoilor individuale ale cursanților și prin folosirea unui parc auto modern, echipat la standarde înalte, școala se asigură că fiecare nou șofer este complet pregătit să navigheze diversele situații de trafic în siguranță și încrezător.",
       "paragraph3": "În plus, TopalX pune un accent deosebit pe formarea unui comportament etic la volan, promovând valori de respect și prudență, esențiale pentru coexistența armonioasă în trafic. Cu un colectiv de instructori pasionați și dedicați, proveniți din diverse ramuri ale domeniului auto, școala garantează o experiență de învățare completă și profund umană, orientată spre formarea unor șoferi responsabili și conștienți de impactul lor asupra comunității."
     },
     "carIntro": "Faceti cunostinta cu autoturismele noastre",
@@ -93,7 +93,7 @@
       },
       {
         "name": "Rezervarea mașinii în data examenului",
-        "description": "Asigurăm disponibilitatea mașinii școlii pentru examenul practic, facilitând o experiență fără griji.",
+        "description": "Deoarece proba practică trebuie susținută în localitatea de domiciliu conform legii, asigurăm disponibilitatea mașinii școlii pentru examenul practic în localitatea respectivă. Acest serviciu este disponibil pentru o taxă suplimentară, asigurând o experiență fără griji și adaptată nevoilor dumneavoastră.",
         "available": "Disponibil",
         "unavailable": "Indisponibil"
       },
@@ -187,7 +187,6 @@
       }
     ]
   },
-
   "testimonials": {
     "titleHelm": "Testimoniale - TopalX",
     "description": "Citește ce spun clienții noștri despre noi.",
@@ -310,30 +309,35 @@
           "Dreptul de a vă opune: Puteți să vă opuneți prelucrării datelor dvs. personale."
         ]
       },
-      "contact": {
-        "title": "6. Contact",
-        "content": "Dacă aveți întrebări sau nelămuriri cu privire la această Politică de Confidențialitate, ne puteți contacta la:",
-        "email": "Email - topalxtrans@gmail.com",
-        "address": "Adresă - Calea Vitan 148A, 031301 București, România."
+      "consent": {
+        "title": "6. Consimțământ pentru Prelucrarea Datelor",
+        "content": "Subsemnatul/subsemnata…………………………………………………………………, in calitate de MANDANT, persoana fizica, imi exprim, dau acordul, in mod expres, cu privire la utilizarea si/sau prelucrarea datelor mele cu caracter personal, de catre S.C TOPALX TRANS S.R.L, pentru ducerea la indeplinirea prezentului MANDAT, cu conditia respectarii dispozitiilor legale in materie si in vigoare la data prelucrarii/utilizarii datelor cu caracter personal. Totodata sunt de acord ca MANDATARUL sa poata utiliza si/sau prelucra datele mele cu caracter personal in vederea indeplinirii scopului propriu, si acela de ofertare si/sau vanzare produse/servicii, pana la momentul in care imi retrag in mod expres acordul/consimtamantul dat, si este oprit sa incerce sa obtina acordul meu cu scopul de a-mi prelucra datele mele in scop de marketing. Precizez ca am fost informat/a ca aceste date vor fi tratate confidential, in conformitate cu dispozitiile Regulamentului UE nr. 679/2016 privind protectia datelor fizice in ceea ce priveste prelucrarea datelor cu caracter personal si protectia vietii private in sectorul comunicatiilor electronice."
       }
+    },
+    "contact": {
+      "title": "6. Contact",
+      "content": "Dacă aveți întrebări sau nelămuriri cu privire la această Politică de Confidențialitate, ne puteți contacta la:",
+      "email": "Email - topalxtrans@gmail.com",
+      "address": "Adresă - Calea Vitan 148A, 031301 București, România.",
+      "telephone": "Secretariat - 0736 470 629 ",
+      "telephone1": "Manager - 0723 007 454 "
     }
   },
-
   "termsAndConditions": {
     "title": "Termeni și Condiții",
     "intro": "Acești termeni și condiții reglementează utilizarea site-ului web și serviciile oferite de Școala de Șoferi TopalX. Prin utilizarea acestui site, acceptați acești termeni și condiții în întregime.",
     "sections": {
       "services": {
         "title": "1. Servicii Oferite",
-        "content": "Școala de Șoferi TopalX oferă cursuri teoretice și practice pentru obținerea permisului de conducere categoria B. Toate serviciile sunt oferite conform reglementărilor legale în vigoare."
+        "content": "Școala de Șoferi TopalX oferă cursuri teoretice și practice pentru obținerea permisului de conducere categoria B. Toate serviciile sunt oferite conform reglementărilor legale în vigoare. Scoala asigura organizarea cursurilor practice si teoretice la un nivel adecvat, in vederea insusirii de catre cursant a cunostintelor necesare obtinerii permisului de conducere categoria B."
       },
       "registration": {
         "title": "2. Înregistrare",
-        "content": "Pentru a vă înscrie la cursurile noastre, trebuie să completați formularul de înscriere disponibil pe site sau să ne contactați telefonic și să furnizați informații corecte și complete. Ne rezervăm dreptul de a refuza sau anula înscrierea în caz de încălcare a termenilor și condițiilor."
+        "content": "Pentru a vă înscrie la cursurile noastre, trebuie să completați formularul de înscriere disponibil pe site sau să ne contactați telefonic și să furnizați informații corecte și complete. Pregătirea va începe numai după depunerea cererii de înscriere, a copiei actului de identitate și a cazierului judiciar în original cu mențiunea pentru examen auto."
       },
       "payments": {
         "title": "3. Plăți",
-        "content": "Plata cursurilor se efectuează conform informațiilor prezentate pe site. Toate plățile sunt nerambursabile, cu excepția cazurilor de anulare a cursurilor din partea școlii."
+        "content": "Plata cursurilor se efectuează conform informațiilor prezentate pe site. Toate plățile sunt nerambursabile, cu excepția cazurilor de anulare a cursurilor din partea școlii. Pentru orice întrebări sau clarificări, vă rugăm să contactați secretariatul. Contravaloarea contractului este platibila integral sau in 3 rate, conform contractului de școlarizare."
       },
       "cancellation": {
         "title": "4. Anulări",
@@ -341,7 +345,7 @@
       },
       "privacy": {
         "title": "5. Confidențialitate",
-        "content": "Datele personale colectate prin intermediul acestui site vor fi utilizate exclusiv pentru procesarea înscrierilor și comunicarea cu cursanții. Datele nu vor fi partajate cu terțe părți fără consimțământul dumneavoastră."
+        "content": "Datele personale colectate prin intermediul acestui site vor fi utilizate exclusiv pentru procesarea înscrierilor și comunicarea cu cursanții. Datele vor fi partajate cu terțe părți doar cu consimțământul dumneavoastră sau în conformitate cu cerințele legale. Datele sunt transmise către ARR (Autoritatea Rutieră Română) pentru raportarea ședințelor."
       },
       "liability": {
         "title": "6. Răspundere",
@@ -354,40 +358,42 @@
       "contact": {
         "title": "8. Contact",
         "content": "Pentru orice întrebări sau nelămuriri cu privire la acești termeni și condiții, vă rugăm să ne contactați la:",
-        "email": "Email: topalxtrans@gmail.com",
-        "address": "Adresă: Calea Vitan 148A, 031301 București, România"
+        "email": "topalxtrans@gmail.com",
+        "address": "Calea Vitan 148A, 031301 București, România",
+        "telephone": "Secretariat - 0736 470 629",
+        "telephone1": "Manager - 0723 007 454"
       }
     }
   },
-  "team": {
-    "titleHelm": "Echipa Noastră - TopalX",
+  "team2": {
+    "titleHelm": "Echipa noastra - TopalX",
     "descriptionHelm": "Cunoaște echipa noastră dedicată.",
-    "title": "Profesioniștii Care Fac Diferența",
+    "title": "Profesioniștii care fac diferența",
     "members": [
       {
         "name": "Constantin Topala",
         "role": "Management",
-        "description": "Cu peste 25 de ani de experiență, fondatorul școlii de șoferi și totodată instructor, domnul Topala este un lider dedicat și un adevărat vizionar. Prin expertiza sa vastă și abordarea sa integrată, asigură excelența în educația rutieră pentru toți cursanții. De-a lungul anilor, a format mii de șoferi responsabili și încrezători."
+        "description": "Cu peste 25 de ani de experiență, fondatorul școlii de șoferi și totodată instructor, domnul profesor Topala este un lider dedicat și un adevărat vizionar. Prin expertiza sa vastă și abordarea sa integrată, asigură excelența în educația rutieră pentru toți cursanții. De-a lungul anilor, a format mii de șoferi responsabili și încrezători."
       },
       {
         "name": "Raluca Topala",
         "role": "Secretariat",
-        "description": "Secretara și soția managerului de la școala de șoferi, cu peste 10 ani de experiență. Raluca este extrem de sociabilă, empatică și întotdeauna dispusă să ajute pe toată lumea. Ea gestionează toate aspectele administrative cu profesionalism și eficiență, asigurându-se că fiecare cursant are o experiență plăcută și fără griji."
+        "description": "Secretara și susținătoarea numărul 1 a elevilor la școala de șoferi, cu peste 10 ani de experiență. Raluca este extrem de sociabilă, empatică și întotdeauna dispusă să ajute pe toată lumea. Ea gestionează toate aspectele administrative cu profesionalism și eficiență, asigurându-se că fiecare cursant are o experiență plăcută și fără griji."
       },
       {
         "name": "Stefan Puscasu",
         "role": "Instructor Auto",
-        "description": "Domnul Stefan, cu peste 15 ani de experiență, este cunoscut pentru răbdarea sa exemplară, profesionalismul desăvârșit și abilitatea de a inspira încredere în cursanți. El își dedică timpul pentru a se asigura că fiecare elev înțelege pe deplin regulile și tehnicile de conducere, oferind sfaturi practice și încurajări constante."
+        "description": "Domnul Profesor Stefan, cu peste 15 ani de experiență, este cunoscut pentru răbdarea sa exemplară, profesionalismul desăvârșit și abilitatea de a inspira încredere în cursanți. El își dedică timpul pentru a se asigura că fiecare elev înțelege pe deplin regulile și tehnicile de conducere, oferind sfaturi practice și încurajări constante."
       },
       {
         "name": "Laurentiu Marin",
         "role": "Instructor Auto",
-        "description": "Domnul Laurențiu se remarcă printr-o vastă experiență în domeniu și o abordare calmă și metodică în instruirea viitorilor șoferi. Dedicat și pasionat de meseria sa, domnul Laurențiu este un adevărat mentor pentru cursanți. Cu o atitudine prietenoasă și deschisă, el creează un mediu de învățare confortabil și stimulant."
+        "description": "Domnul Profesor Laurențiu se remarcă printr-o vastă experiență în domeniu și o abordare calmă și metodică în instruirea viitorilor șoferi. Dedicat și pasionat de meseria sa, domnul Laurențiu este un adevărat mentor pentru cursanți. Cu o atitudine prietenoasă și deschisă, el creează un mediu de învățare confortabil și stimulant."
       },
       {
         "name": "Viorel Neagu",
         "role": "Profesor Legislatie",
-        "description": "Domnul Viorel poseda o experiență bogată în domeniu. Acesta este apreciat pentru metodele sale pedagogice eficiente și dedicarea sa în a pregăti cursanții pentru a deveni șoferi responsabili și bine informați. Viorel este mereu la curent cu ultimele schimbări legislative și se asigură că toți cursanții săi sunt bine pregătiți pentru examenele teoretice."
+        "description": "Domnul Profesor Viorel poseda o experiență bogată în domeniu. Acesta este apreciat pentru metodele sale pedagogice eficiente și dedicarea sa în a pregăti cursanții pentru a deveni șoferi responsabili și bine informați. Viorel este mereu la curent cu ultimele schimbări legislative și se asigură că toți cursanții săi sunt bine pregătiți pentru examenele teoretice."
       }
     ]
   },

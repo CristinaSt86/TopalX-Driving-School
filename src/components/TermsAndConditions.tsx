@@ -1,4 +1,4 @@
-// src/pages/TermsAndConditions.tsx
+
 import React from "react";
 import { useTranslation } from "react-i18next";
 
@@ -30,6 +30,8 @@ const TermsAndConditions: React.FC = () => {
         <div>
           <p>{t("termsAndConditions.sections.contact.email")}</p>
           <p>{t("termsAndConditions.sections.contact.address")}</p>
+          <p>{t("termsAndConditions.sections.contact.telephone")}</p>
+          <p>{t("termsAndConditions.sections.contact.telephone1")}</p>
         </div>
       </div>
     </div>

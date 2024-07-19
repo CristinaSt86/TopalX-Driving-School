@@ -23,7 +23,16 @@ i18n
     fallbackLng: "ro",
     lng: "ro", // set the default language to Romanian
     detection: {
-      order: ["querystring", "cookie", "localStorage", "sessionStorage", "navigator", "htmlTag", "path", "subdomain"],
+      order: [
+        "querystring",
+        "cookie",
+        "localStorage",
+        "sessionStorage",
+        "navigator",
+        "htmlTag",
+        "path",
+        "subdomain",
+      ],
       caches: ["cookie"],
     },
     react: {
