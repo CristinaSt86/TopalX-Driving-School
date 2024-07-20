@@ -4,7 +4,7 @@
 
 body {
   @apply text-textColor;
-  @apply bg-custom-img bg-cover bg-center bg-fixed h-screen overflow-y-auto;
+  @apply bg-custom-img bg-cover bg-center bg-fixed bg-no-repeat h-screen overflow-y-auto;
 }
 
 

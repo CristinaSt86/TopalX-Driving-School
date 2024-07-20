@@ -19,6 +19,7 @@ const AboutPage: React.FC = () => {
   const teamRef = useRef<HTMLDivElement>(null);
   const servicesRef = useRef<{ scrollToPackages: () => void }>(null);
   const testimonialsRef = useRef<{ scrollToTestimonials: () => void }>(null);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [animate, setAnimate] = useState(false);
 
   const scrollToTeam = () => {

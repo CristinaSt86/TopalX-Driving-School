@@ -6,6 +6,7 @@
     "@formspree/react": "^2.5.1",
     "@fullhuman/postcss-purgecss": "^6.0.0",
     "@googlemaps/js-api-loader": "^1.16.6",
+    "@headlessui/react": "^2.1.2",
     "@react-google-maps/api": "^2.19.3",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@testing-library/jest-dom": "^5.17.0",
