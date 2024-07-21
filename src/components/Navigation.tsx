@@ -33,7 +33,7 @@ const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
 
   return (
     <nav
-      className="shadow-2xl p-4 md:py-2 md:px-6 bg-primary text-white sm:p-2 rounded-md"
+      className="shadow-2xl p-3 md:py-1 md:px-6 bg-primary text-white sm:p-3 rounded-md"
       aria-label="Main Navigation"
     >
       <div className="container mx-auto flex justify-between items-center">

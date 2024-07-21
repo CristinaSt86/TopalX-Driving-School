@@ -2,7 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+#root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
 body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
   @apply text-textColor;
   @apply bg-custom-img bg-cover bg-center bg-fixed bg-no-repeat h-screen overflow-y-auto;
 }
