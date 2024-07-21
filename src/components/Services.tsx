@@ -40,7 +40,7 @@ const Services = React.forwardRef((props, ref) => {
         {t("services.title")}
       </h1>
       <div
-        className="  bg-custom-services bg-center bg-cover bg-fixed bg-no-repeat p-2 mx-auto md:p-6 border-2 border-solid border-white mt-16 mb-16 bg-services"
+        className="  bg-custom-home bg-center bg-cover bg-fixed bg-no-repeat p-2 mx-auto md:p-6 border-2 border-solid border-white mt-16 mb-16 bg-services"
       >
         <ul className="bg-customBg rounded-2xl p-2">
           {services.map((service, index) => (
