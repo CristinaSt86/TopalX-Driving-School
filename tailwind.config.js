@@ -49,7 +49,7 @@ module.exports = {
         },
       },
       animation: {
-        drive: "drive 7s linear infinite",
+        drive: "drive 5s linear infinite",
       },
       clipPath: {
         hexagon:
