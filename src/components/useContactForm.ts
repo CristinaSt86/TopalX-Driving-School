@@ -52,28 +52,21 @@ const useContactForm = () => {
         body: JSON.stringify(formData),
       });
 
-      // Log the raw response
-      console.log('Raw response:', response);
+      // Log the response and response data
+      const responseData = await response.json();
+      console.log('Response:', response);
+      console.log('Response Data:', responseData);
 
-      // Check if the response is okay
       if (response.ok) {
-        const data = await response.json();
-        // Log the parsed data
-        console.log('Parsed data:', data);
-
         setSuccess(t("contactForm.success"));
         setFormData({ name: "", email: "", message: "" });
         setConsent(false);
       } else {
-        // Log the response status and status text for debugging
-        console.log('Response status:', response.status);
-        console.log('Response status text:', response.statusText);
         throw new Error(t("contactForm.error"));
       }
     } catch (error) {
-      if (error instanceof Error) setError(error.message);
-      // Log the error for debugging
       console.error('Fetch error:', error);
+      if (error instanceof Error) setError(error.message);
     } finally {
       setSubmitting(false);
     }
