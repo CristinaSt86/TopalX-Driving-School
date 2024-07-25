@@ -36,7 +36,7 @@ const Services = React.forwardRef((props, ref) => {
 
   return (
     <div className={` ${animate ? "slide-in" : ""} `}>
-      <h1 className="text-3xl font-bold text-center mt-16">
+      <h1 className="text-3xl font-bold text-center mt-16 pl-3 pr-3">
         {t("services.title")}
       </h1>
       <div

@@ -80,13 +80,13 @@ const CarPackages = React.forwardRef<HTMLDivElement>(
 
     return (
       <div ref={ref}>
-        <h1 className="text-3xl font-bold text-center mb-16 mt-16">
+        <h1 className="text-3xl font-bold text-center mb-16 mt-16 pl-3 pr-3 textShadow-mt">
           {t("carPackages.title")}
         </h1>
         {carPackages.map((pkg, index) => (
           <section
             key={index}
-            className={`shadow-custom mx-auto md:mx-auto flex flex-col backdrop-blur border-black border-y-2 items-center justify-around mb-16 md:flex-row ${
+            className={` mx-auto md:mx-auto flex flex-col  items-center justify-around mb-16 md:flex-row ${
               index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
             }`}
           >
@@ -110,7 +110,7 @@ const CarPackages = React.forwardRef<HTMLDivElement>(
               </ul>
               <p className="text-red-500">{pkg.note}</p>
             </div>
-            <div className="w-full md:w-1/2 flex justify-center">
+            <div className="w-full md:w-1/2 flex justify-center shadow-custom backdrop-blur-sm border-black border-y-2">
               <img
                 src={pkg.image}
                 alt={pkg.name}

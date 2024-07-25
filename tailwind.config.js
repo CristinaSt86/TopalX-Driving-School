@@ -38,6 +38,7 @@ module.exports = {
         logo: "rgb(255,241,12)",
         logoBlue: "rgb(40,56,144)",
         customBg: "rgba(211,211,211, 0.5)",
+        customTextBg: "rgba(0, 0, 0, 0.2)",
       },
       fontFamily: {
         sans: ["Helvetica Neue", "Helvetica", "Arial", "sans-serif"],

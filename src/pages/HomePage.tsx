@@ -84,10 +84,10 @@ const HomePage: React.FC = () => {
   return (
     <div>
       <div
-        className={`shadow-custom pt-12 sm:pt-16 pb-48 mt-0 bg-custom-home bg-center bg-cover bg-fixed bg-no-repeat text-white px-4 sm:p-16 text-center mb-8 h-auto md:pt-24 md:pb-48`}
+        className={`flex flex-col items-center justify-center shadow-custom pt-12 sm:pt-16 pb-48 mt-0 bg-custom-home bg-center bg-cover bg-fixed bg-no-repeat text-white px-4 sm:p-16 text-center mb-8 h-auto md:pt-24 md:pb-48`}
       >
         <h1
-          className={`mt-8 text-xl sm:text-4xl font-extrabold mb-4 sm:mb-10 leading-normal backdrop-blur ${
+          className={`mt-8 text-xl sm:text-4xl font-extrabold mb-4 sm:mb-10 leading-normal backdrop-blur bg-customTextBg w-fit rounded-xl px-2 ${
             animate ? "slide-in" : ""
           }`}
         >
@@ -95,7 +95,7 @@ const HomePage: React.FC = () => {
           <span className="text-secondary">{t("home.school")}</span> TopalX!
         </h1>
         <p
-          className={`text-lg sm:text-2xl md:text-4xl mt-2 sm:mt-4 leading-normal -tracking-wide ${
+          className={`text-lg sm:text-2xl md:text-4xl mt-2 sm:mt-4 md:leading-normal -tracking-normal bg-customTextBg w-fit rounded-2xl ${
             animate ? "slide-in" : ""
           }`}
         >

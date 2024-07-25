@@ -47,7 +47,7 @@ const Team = React.forwardRef<HTMLDivElement, any>((props, ref) => {
     <>
       <h2
         ref={ref}
-        className="text-center text-3xl font-bold text-gray-800 mb-16 mt-16"
+        className="text-center text-3xl font-bold text-gray-800 mb-16 mt-16 pl-3 pr-3"
       >
         {t("team2.title")}
       </h2>

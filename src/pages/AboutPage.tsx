@@ -147,6 +147,7 @@ const AboutPage: React.FC = () => {
   const teamRef = useRef<HTMLDivElement>(null);
   const servicesRef = useRef<{ scrollToPackages: () => void }>(null);
   const testimonialsRef = useRef<{ scrollToTestimonials: () => void }>(null);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [animate, setAnimate] = useState(false);
 
   const scrollToTeam = () => {
@@ -170,7 +171,7 @@ const AboutPage: React.FC = () => {
       <CineSuntemImg />
       <div className="mt-4 sm:mt-8 md:mt-12">
         <main className="container mx-auto px-2 flex flex-col flex-wrap md:flex-row items-center justify-center gap-4 sm:gap-8 md:gap-16 md:mx-auto">
-          <section className="backdrop-blur rounded-2xl mb-4 border-l border-r border-b border-2 border-secondary p-4 sm:p-6 shadow-custom">
+          <section className="backdrop-blur-sm rounded-2xl mb-4 border-l border-r border-b border-2 border-secondary p-4 sm:p-6 shadow-custom">
             <h2 className="text-xl sm:text-2xl md:text-3xl mb-2 font-semibold">
               {t("about.keyInformation.titleInfo")}
             </h2>
@@ -182,7 +183,7 @@ const AboutPage: React.FC = () => {
           </section>
           <section
             onClick={scrollToTestimonials}
-            className="relative backdrop-blur rounded-2xl mb-4 border-l border-r border-b border-2 border-secondary p-4 sm:p-6 shadow-custom ease-in hover:bg-logoBlue hover:text-white transition-transform duration-300 hover:scale-105 md:hover:scale-105 cursor-pointer"
+            className="relative backdrop-blur-sm rounded-2xl mb-4 border-l border-r border-b border-2 border-secondary p-4 sm:p-6 shadow-custom ease-in hover:bg-logoBlue hover:text-white transition-transform duration-300 hover:scale-105 md:hover:scale-105 cursor-pointer"
           >
             <h2 className="text-xl sm:text-2xl md:text-3xl mb-4 font-semibold">
               {t("about.mission.title")}
@@ -196,7 +197,7 @@ const AboutPage: React.FC = () => {
           </section>
           <section
             onClick={scrollToTeam}
-            className="relative backdrop-blur rounded-2xl mb-4 border-l border-r border-b border-2 border-secondary p-4 sm:p-6 shadow-custom ease-in hover:bg-logoBlue hover:text-white transition-transform duration-300 hover:scale-105 md:hover:scale-105 cursor-pointer"
+            className="relative backdrop-blur-sm rounded-2xl mb-4 border-l border-r border-b border-2 border-secondary p-4 sm:p-6 shadow-custom ease-in hover:bg-logoBlue hover:text-white transition-transform duration-300 hover:scale-105 md:hover:scale-105 cursor-pointer"
           >
             <h2 className="text-xl sm:text-2xl md:text-3xl mb-4 font-semibold">
               {t("about.team.title")}
@@ -222,7 +223,7 @@ const AboutPage: React.FC = () => {
           <p>{t("about.companyDescription.paragraph3")}</p>
         </section>
         <div className="flex flex-col items-center justify-center">
-          <h1 className="text-3xl font-bold text-center mt-8 mb-8">
+          <h1 className="text-3xl font-bold text-center mt-8 mb-8 pr-3 pl-3">
             {t("about.carIntro")}{" "}
             <span className="bounce inline-block">&darr;</span>
           </h1>

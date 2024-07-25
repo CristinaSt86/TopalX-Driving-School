@@ -56,7 +56,7 @@ const Testimonials = forwardRef<TestimonialsHandle, TestimonialsProps>(
 
     return (
       <div ref={internalRef} className={` ${animate ? "slide-in" : ""}`}>
-        <h2 className="text-3xl font-bold text-center mt-16">
+        <h2 className="text-3xl font-bold text-center mt-16 pl-3 pr-3">
           {t("testimonials.title")}
         </h2>
         <div className="bg-gray-100 p-8 mb-16 mt-16 shadow-custom ellipse-img">
