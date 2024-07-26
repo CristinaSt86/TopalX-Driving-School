@@ -9,10 +9,10 @@ import { PiHandTapLight } from "react-icons/pi";
 import CineSuntemImg from "../components/CineSuntemImg";
 
 // Images referenced from the public directory
-const fiat = "/images/f3.jpg";
-const mercedes = "/images/mercedes2.jpg";
-const skoda = "/images/sc2.webp";
-const volvo = "/images/volvo1.jpg";
+const fiat = "public/images/f3.jpg";
+const mercedes = "public/images/mercedes2.jpg";
+const skoda = "public/images/sc2.webp";
+const volvo = "public/images/volvo1.jpg";
 
 const AboutPage: React.FC = () => {
   const { t } = useTranslation();
