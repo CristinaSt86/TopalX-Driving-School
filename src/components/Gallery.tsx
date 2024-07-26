@@ -92,14 +92,7 @@ const Gallery: React.FC = () => {
   };
 
 
-  useEffect(() => {
-    if (isOpen) {
-      const modalElement = document.querySelector('.fixed.inset-0') as HTMLElement;
-      if (modalElement) {
-        modalElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      }
-    }
-  }, [isOpen]); // <-- Added useEffect to handle scrolling when modal opens
+
 
   useEffect(() => {
     setAnimate(true);
