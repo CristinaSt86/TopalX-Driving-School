@@ -2,7 +2,7 @@
   "name": "topalx",
   "version": "0.1.0",
   "private": true,
-  "homepage":  "https://topalxscoalaauto.ro/",
+  "homepage": "https://topalxscoalaauto.ro/",
   "dependencies": {
     "@formspree/react": "^2.5.1",
     "@fullhuman/postcss-purgecss": "^6.0.0",
