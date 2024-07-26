@@ -26,9 +26,9 @@ module.exports = {
         custom2: "0 0 10px 5px rgba(255, 255, 255, 0.7)",
       },
       backgroundImage: {
-        "custom-img": "url('/public/images/bgZid.jpg')",
-        "custom-home": "url('/public/images/bgHome2.webp')",
-        "custom-services": "url('/public/images/visitCard.webp')",
+        "custom-img": "url('/src/images/bgZid.jpg')",
+        "custom-home": "url('/src/images/bgHome2.webp')",
+        "custom-services": "url('/src/images/visitCard.webp')",
       },
       colors: {
         primary: "rgba(55, 73, 87, 0.9)",

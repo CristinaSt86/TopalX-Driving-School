@@ -7,12 +7,10 @@ import Services from "../components/Services";
 import Testimonials from "../components/Testimonials";
 import { PiHandTapLight } from "react-icons/pi";
 import CineSuntemImg from "../components/CineSuntemImg";
-
-// Images referenced from the public directory
-const fiat = "public/images/f3.jpg";
-const mercedes = "public/images/mercedes2.jpg";
-const skoda = "public/images/sc2.webp";
-const volvo = "public/images/volvo1.jpg";
+import fiat from "../images/f3.jpg";
+import skoda from "../images/sc2.webp";
+import mercedes from "../images/mercedes2.jpg";
+import volvo from "../images/volvo1.jpg";
 
 const AboutPage: React.FC = () => {
   const { t } = useTranslation();

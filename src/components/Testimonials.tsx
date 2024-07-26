@@ -7,6 +7,15 @@ import React, {
 } from "react";
 import { useTranslation } from "react-i18next";
 import "../index.css";
+import c1 from "../images/c1.jpg";
+import c2 from "../images/c2.jpg";
+import c3 from "../images/c3.jpg";
+import c7 from "../images/c7.webp";
+import c9 from "../images/c9.webp";
+import c10 from "../images/c10.webp";
+import c6 from "../images/c6.jpg";
+import c4 from "../images/c4.jpg";
+import c8 from "../images/c8.webp";
 
 export type Testimonial = {
   id: number;
@@ -35,15 +44,15 @@ const Testimonials = forwardRef<TestimonialsHandle, TestimonialsProps>(
     }));
 
     const localTestimonials: Testimonial[] = [
-      { id: 1, avatar: "/images/c1.jpg", caption: t("testimonials.items.0.caption") },
-      { id: 2, avatar: "/images/c2.jpg", caption: t("testimonials.items.1.caption") },
-      { id: 3, avatar: "/images/c3.jpg", caption: t("testimonials.items.2.caption") },
-      { id: 7, avatar: "/images/c7.webp", caption: t("testimonials.items.6.caption") },
-      { id: 9, avatar: "/images/c9.webp", caption: t("testimonials.items.8.caption") },
-      { id: 10, avatar: "/images/c10.webp", caption: t("testimonials.items.9.caption") },
-      { id: 6, avatar: "/images/c6.jpg", caption: t("testimonials.items.5.caption") },
-      { id: 4, avatar: "/images/c4.jpg", caption: t("testimonials.items.3.caption") },
-      { id: 8, avatar: "/images/c8.webp", caption: t("testimonials.items.7.caption") },
+      { id: 1, avatar: c1, caption: t("testimonials.items.0.caption") },
+      { id: 2, avatar: c2, caption: t("testimonials.items.1.caption") },
+      { id: 3, avatar: c3, caption: t("testimonials.items.2.caption") },
+      { id: 7, avatar: c7, caption: t("testimonials.items.6.caption") },
+      { id: 9, avatar: c9, caption: t("testimonials.items.8.caption") },
+      { id: 10, avatar: c10, caption: t("testimonials.items.9.caption") },
+      { id: 6, avatar: c6, caption: t("testimonials.items.5.caption") },
+      { id: 4, avatar: c4, caption: t("testimonials.items.3.caption") },
+      { id: 8, avatar: c8, caption: t("testimonials.items.7.caption") },
     ];
 
     const finalTestimonials = testimonials.length

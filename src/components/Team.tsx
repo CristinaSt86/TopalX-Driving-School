@@ -1,6 +1,12 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import "../index.css";
+import cos2 from "../images/cos2.webp";
+import sisOffice from "../images/sisOffice.webp";
+import ins2 from "../images/ins2.webp";
+import ins1 from "../images/ins1.webp";
+import prof1 from "../images/prof1.webp";
+import FiatDrive from "../images/FiatDrive.webp";
 
 const Team = React.forwardRef<HTMLDivElement, any>((props, ref) => {
   const { t } = useTranslation();
@@ -11,35 +17,35 @@ const Team = React.forwardRef<HTMLDivElement, any>((props, ref) => {
       name: t("team2.members.0.name"),
       role: t("team2.members.0.role"),
       description: t("team2.members.0.description"),
-      image: "/images/cos2.webp",
+      image: cos2,
     },
     {
       id: 2,
       name: t("team2.members.1.name"),
       role: t("team2.members.1.role"),
       description: t("team2.members.1.description"),
-      image: "/images/sisOffice.webp",
+      image: sisOffice,
     },
     {
       id: 3,
       name: t("team2.members.2.name"),
       role: t("team2.members.2.role"),
       description: t("team2.members.2.description"),
-      image: "/images/ins2.webp",
+      image: ins2,
     },
     {
       id: 4,
       name: t("team2.members.3.name"),
       role: t("team2.members.3.role"),
       description: t("team2.members.3.description"),
-      image: "/images/ins1.webp",
+      image: ins1,
     },
     {
       id: 5,
       name: t("team2.members.4.name"),
       role: t("team2.members.4.role"),
       description: t("team2.members.4.description"),
-      image: "/images/prof1.webp",
+      image: prof1,
     },
   ];
 
@@ -55,7 +61,7 @@ const Team = React.forwardRef<HTMLDivElement, any>((props, ref) => {
       <section className="bg-white pb-3 mb-10 shadow-2xl">
         <div className="relative w-full h-48 overflow-hidden">
           <div className="absolute bottom-1 left-0 w-80 h-auto animate-drive">
-            <img src="/images/FiatDrive.webp" alt="Car" />
+            <img src={FiatDrive} alt="Car" />
           </div>
         </div>
 

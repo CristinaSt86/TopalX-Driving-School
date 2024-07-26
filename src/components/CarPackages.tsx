@@ -1,5 +1,9 @@
 import React, { ForwardedRef } from "react";
 import { useTranslation } from "react-i18next";
+import mer from "../images/mer.webp";
+import vol from "../images/vol.webp";
+import f3 from "../images/f3.webp";
+import sk1 from "../images/sk1.webp";
 
 interface CarPackage {
   name: string;
@@ -29,7 +33,7 @@ const CarPackages = React.forwardRef<HTMLDivElement>(
           t("carPackages.packages.0.features.4"),
         ],
         note: t("carPackages.packages.0.note"),
-        image: "/images/mer.webp", // Use absolute paths for images
+        image: mer,
       },
       {
         name: t("carPackages.packages.1.name"),
@@ -44,7 +48,7 @@ const CarPackages = React.forwardRef<HTMLDivElement>(
           t("carPackages.packages.1.features.4"),
         ],
         note: t("carPackages.packages.1.note"),
-        image: "/images/vol.webp",
+        image: vol,
       },
       {
         name: t("carPackages.packages.2.name"),
@@ -59,7 +63,7 @@ const CarPackages = React.forwardRef<HTMLDivElement>(
           t("carPackages.packages.2.features.4"),
         ],
         note: t("carPackages.packages.2.note"),
-        image: "/images/f3.webp",
+        image: f3,
       },
       {
         name: t("carPackages.packages.3.name"),
@@ -74,7 +78,7 @@ const CarPackages = React.forwardRef<HTMLDivElement>(
           t("carPackages.packages.3.features.4"),
         ],
         note: t("carPackages.packages.3.note"),
-        image: "/images/sk1.webp",
+        image: sk1,
       },
     ];
 
