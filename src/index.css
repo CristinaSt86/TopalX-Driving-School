@@ -15,7 +15,7 @@ body {
   padding: 0;
   overflow-x: hidden;
   @apply text-textColor;
-  @apply bg-custom-img bg-cover bg-center bg-fixed bg-no-repeat overflow-y-auto;
+  @apply bg-custom-img bg-cover bg-center bg-fixed bg-no-repeat h-screen overflow-y-auto;
 }
 
 
