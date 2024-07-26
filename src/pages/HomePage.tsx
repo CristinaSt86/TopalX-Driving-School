@@ -87,7 +87,7 @@ const HomePage: React.FC = () => {
   return (
     <div>
       <div
-        className={`flex flex-col items-center justify-center shadow-custom pt-12 sm:pt-16 pb-48 mt-0 bg-custom-home bg-center bg-cover bg-no-repeat text-white px-4 sm:p-16 text-center mb-8 h-auto md:pt-24 md:pb-48 ${
+        className={`flex flex-col items-center justify-center shadow-custom pt-12 sm:pt-16 pb-48 mt-0 bg-custom-home bg-center bg-cover bg-no-repeat overflow-x-hidden text-white px-4 sm:p-16 text-center mb-8 h-auto md:pt-24 md:pb-48 ${
           window.innerWidth > 850 ? "bg-fixed" : "bg-scroll"
         }`}
       >
