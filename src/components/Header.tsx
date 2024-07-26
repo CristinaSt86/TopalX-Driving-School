@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import Navigation from "./Navigation";
 import TopHeader from "./TopHeader";
 import "../index.css";
+import logo from "../images/logo.webp";
 
 const Header: React.FC = () => {
-  const logo = "/images/logo.webp";
   const [isMobileView, setIsMobileView] = useState(false);
 
   useEffect(() => {
@@ -52,7 +52,7 @@ const Header: React.FC = () => {
       </header>
       <div className={`${isMobileView ? "mt-16" : "mt-0 custom1:mt-20"}`}>
         <main className="container mx-auto p-4">
-          {/* Your main content goes here */}
+          {/*main content goes here */}
         </main>
       </div>
     </>

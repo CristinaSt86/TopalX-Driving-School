@@ -4,10 +4,10 @@ import { useTranslation } from "react-i18next";
 import SocialLinks from "./SocialLinks";
 import NavigationLinks from "./NavigationLinks";
 import LegalLinks from "./LegalLinks";
+import logo from "../images/logo.webp";
 
 const Footer: React.FC = () => {
   const { t } = useTranslation();
-  const logo = "/images/logo.webp"; 
 
   return (
     <footer className="bg-gray-800 bg-opacity-75 text-white py-4 px-4 mx-auto">
