@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 import { useTranslation } from "react-i18next";
@@ -79,32 +79,34 @@ const Gallery: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [photoIndex, setPhotoIndex] = useState(0);
   const [animate, setAnimate] = useState(false);
+  const imageRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const modalRef = useRef<HTMLDivElement>(null);
 
   const handleImageClick = (index: number) => {
     setPhotoIndex(index);
     setIsOpen(true);
-    setTimeout(() => {
-      const modalElement = document.querySelector('.fixed.inset-0') as HTMLElement;
-      if (modalElement) {
-        modalElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      }
-    }, 100); // Adjust timeout as needed
   };
 
-
-
-
   useEffect(() => {
-    setAnimate(true);
-  }, []);
-
+    if (isOpen) {
+      setTimeout(() => {
+        const currentImageRef = imageRefs.current[photoIndex];
+        if (currentImageRef) {
+          currentImageRef.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+        if (modalRef.current) {
+          modalRef.current.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+      }, 0);
+    }
+  }, [isOpen, photoIndex]);
 
   useEffect(() => {
     setAnimate(true);
   }, []);
 
   return (
-    <div className={` ${animate ? "slide-in" : ""}`}>
+    <div className={`${animate ? "slide-in" : ""}`}>
       <h2 className="text-center text-3xl font-bold mb-16 mt-16 pl-4 pr-4">
         {t("gallery.galleryTitle")}
       </h2>
@@ -114,7 +116,11 @@ const Gallery: React.FC = () => {
         </p>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           {images.map((image, index) => (
-            <div key={index} className="relative w-full h-48 overflow-hidden">
+            <div
+              key={index}
+              className="relative w-full h-48 overflow-hidden"
+              ref={(el) => (imageRefs.current[index] = el)}
+            >
               <img
                 src={image.original}
                 alt={`Gallery Item ${index + 1}`}
@@ -126,18 +132,20 @@ const Gallery: React.FC = () => {
         </div>
 
         <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
-          <ImageGallery
-            items={images}
-            startIndex={photoIndex}
-            showThumbnails={false}
-            onSlide={(currentIndex) => setPhotoIndex(currentIndex)}
-            infinite={true}
-            showPlayButton={false}
-            showFullscreenButton={true}
-            showIndex={false}
-            showBullets={false}
-            autoPlay={true}
-          />
+          <div className="w-full h-full flex justify-center items-center" ref={modalRef}>
+            <ImageGallery
+              items={images}
+              startIndex={photoIndex}
+              showThumbnails={false}
+              onSlide={(currentIndex) => setPhotoIndex(currentIndex)}
+              infinite={true}
+              showPlayButton={false}
+              showFullscreenButton={true}
+              showIndex={false}
+              showBullets={false}
+              autoPlay={false}
+            />
+          </div>
         </Modal>
       </div>
     </div>
