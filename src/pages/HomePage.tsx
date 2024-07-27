@@ -117,7 +117,7 @@ const HomePage: React.FC = () => {
         />
         <meta
           name="keywords"
-          content="școală de șoferi, cursuri de conducere avansate, permis auto, școala de șoferi București,Scoala de soferi TopalX, pregătire examen auto, instructori auto profesioniști, lecții de conducere, școală de șoferi ieftină, școală de șoferi de calitate, școala de șoferi sector 3, școala de șoferi sector 4, mașini moderne"
+          content="școală de șoferi, scoala de soferi in engleza, scoala de soferi cat b pret, scoala de soferi topalx, cursuri de conducere avansate, preturi avantajoase, chestionare auto, scoala rutiera, permis auto, școala de șoferi București,Scoala de soferi TopalX, pregătire examen auto, instructori auto profesioniști, lecții de conducere, școală de șoferi ieftină, școală de șoferi de calitate, școala de șoferi sector 3, școala de șoferi sector 4, mașini moderne"
         />
         <meta name="author" content="Scoala de soferi TopalX" />
         <meta name="robots" content="index, follow" />
