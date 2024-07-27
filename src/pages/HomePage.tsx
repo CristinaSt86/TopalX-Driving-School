@@ -57,6 +57,53 @@ const HomePage: React.FC = () => {
     "sameAs": [
       "https://www.facebook.com/scoaladesoferitopalx/",
       "https://www.instagram.com/scoaladesoferitopalx/"
+    ],
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://www.topalxscoalaauto.ro/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    },
+    "service": {
+      "@type": "Service",
+      "serviceType": "Driving Lessons",
+      "description": "Professional driving lessons with experienced instructors to help you get your driver's license quickly and efficiently."
+    }
+  };
+
+  const breadcrumbData = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Acasa",
+        "item": "https://www.topalxscoalaauto.ro"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Prezentare",
+        "item": "https://www.topalxscoalaauto.ro/about"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Servicii",
+        "item": "https://www.topalxscoalaauto.ro/services"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "Galerie",
+        "item": "https://www.topalxscoalaauto.ro/gallery"
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "name": "Contact",
+        "item": "https://www.topalxscoalaauto.ro/contact"
+      }
     ]
   };
 
@@ -66,7 +113,7 @@ const HomePage: React.FC = () => {
         <title>Scoala de soferi TopalX | Cea mai bună școală de șoferi din București</title>
         <meta
           name="description"
-          content="TopalX  Școală de șoferi de top în București. Oferim cursuri de conducere avansate, permis auto, și pregătire pentru examen auto."
+          content="TopalX | Școală de șoferi de top în București. Oferim cursuri de conducere avansate, permis auto, și pregătire pentru examen auto."
         />
         <meta
           name="keywords"
@@ -90,6 +137,9 @@ const HomePage: React.FC = () => {
         <meta property="twitter:creator" content="@TopalXScoalaAuto" />
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbData)}
         </script>
       </Helmet>
       <div
