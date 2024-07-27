@@ -37,7 +37,8 @@ const HomePage: React.FC = () => {
 
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "DrivingSchool",
+    "@type": "LocalBusiness",
+    "additionalType": "http://www.schema.org/DrivingSchool",
     "name": "TopalX",
     "description": "Școală de șoferi de top în București. Oferim cursuri de conducere avansate, permis auto, și pregătire pentru examen auto.",
     "url": "https://www.topalxscoalaauto.ro",
@@ -45,7 +46,7 @@ const HomePage: React.FC = () => {
       "@type": "PostalAddress",
       "streetAddress": "Calea Vitan 148A",
       "addressLocality": "București",
-      "postalCode": "031301 ",
+      "postalCode": "031301",
       "addressCountry": "RO"
     },
     "contactPoint": {
@@ -56,14 +57,8 @@ const HomePage: React.FC = () => {
     "sameAs": [
       "https://www.facebook.com/scoaladesoferitopalx/",
       "https://www.instagram.com/scoaladesoferitopalx/"
-    ],
-    // "potentialAction": {
-    //   "@type": "SearchAction",
-    //   "target": "https://www.topalxscoalaauto.ro/search?q={search_term_string}",
-    //   "query-input": "required name=search_term_string"
-    // }
-  }
-  
+    ]
+  };
 
   return (
     <div className="overflow-x-hidden max-w-full mx-auto">
@@ -71,17 +66,17 @@ const HomePage: React.FC = () => {
         <title>TopalX - Cea mai bună școală de șoferi din București</title>
         <meta
           name="description"
-          content="TopalX - Școală de șoferi profesionistă în București. Oferim cursuri de conducere defensive, permis auto, și pregătire pentru examen auto."
+          content="TopalX - Școală de șoferi de top în București. Oferim cursuri de conducere avansate, permis auto, și pregătire pentru examen auto."
         />
         <meta
           name="keywords"
-          content="școală de șoferi, cursuri de conducere defensive, permis auto, școala de șoferi București, pregătire examen auto, instructori auto profesioniști, lecții de conducere, școală de șoferi ieftină, școală de șoferi de calitate, școala de șoferi sector 3, școala de șoferi sector 4, mașini moderne"
+          content="școală de șoferi, cursuri de conducere avansate, permis auto, școala de șoferi București, pregătire examen auto, instructori auto profesioniști, lecții de conducere, școală de șoferi ieftină, școală de șoferi de calitate, școala de șoferi sector 3, școala de șoferi sector 4, mașini moderne"
         />
         <meta name="author" content="TopalX" />
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta property="og:title" content="TopalX - Cea mai bună școală de șoferi din București" />
-        <meta property="og:description" content="TopalX - Școală de șoferi profesionistă în București. Oferim cursuri de conducere defensive, permis auto, și pregătire pentru examen auto." />
+        <meta property="og:description" content="TopalX - Școală de șoferi de top în București. Oferim cursuri de conducere avansate, permis auto, și pregătire pentru examen auto." />
         <meta property="og:url" content="https://www.topalxscoalaauto.ro" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://www.topalxscoalaauto.ro/images/homepage.jpg" />
@@ -89,7 +84,7 @@ const HomePage: React.FC = () => {
         <meta property="og:site_name" content="TopalX Scoala Auto" />
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:title" content="TopalX - Cea mai bună școală de șoferi din București" />
-        <meta property="twitter:description" content="TopalX - Școală de șoferi profesionistă în București. Oferim cursuri de conducere defensive, permis auto, și pregătire pentru examen auto." />
+        <meta property="twitter:description" content="TopalX - Școală de șoferi de top în București. Oferim cursuri de conducere avansate, permis auto, și pregătire pentru examen auto." />
         <meta property="twitter:image" content="https://www.topalxscoalaauto.ro/images/homepage.jpg" />
         <meta property="twitter:site" content="@TopalXScoalaAuto" />
         <meta property="twitter:creator" content="@TopalXScoalaAuto" />
