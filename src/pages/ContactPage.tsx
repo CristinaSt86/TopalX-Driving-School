@@ -33,6 +33,8 @@ const ContactPage: React.FC = () => {
           name="description"
           content="Contactați TopalX - școala de șoferi ieftină și de calitate din București. Oferim cursuri de conducere defensive, permis auto, și pregătire pentru examen auto."
         />
+           <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+           <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <meta
           name="keywords"
           content="școală de șoferi ieftină, școală de șoferi București, cursuri de conducere defensive, permis auto, pregătire examen auto"
