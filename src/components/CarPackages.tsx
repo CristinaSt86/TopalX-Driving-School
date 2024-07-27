@@ -86,7 +86,7 @@ const CarPackages = React.forwardRef<HTMLDivElement>(
     return (
       <div ref={ref}>
         <Helmet>
-          <title>Pachete Auto - TopalX - Școala de Șoferi din București</title>
+          <title>Pachete Auto | TopalX | Școala de Șoferi din București</title>
           <meta
             name="description"
             content="Descoperă pachetele auto oferite de TopalX - școală de șoferi din București. Alege dintre mașini moderne și instrucție profesională pentru a obține permisul auto."

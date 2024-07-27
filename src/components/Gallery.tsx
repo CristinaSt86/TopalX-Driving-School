@@ -115,7 +115,7 @@ const Gallery: React.FC = () => {
   return (
     <div className={`${animate ? "slide-in" : ""}`}>
       <Helmet>
-        <title>Galerie Foto - TopalX - Școala de Șoferi din București</title>
+        <title>Galerie Foto | TopalX | Școala de Șoferi din București</title>
         <meta
           name="description"
           content="Explorează galeria foto a TopalX - școala de șoferi din București. Vezi imagini cu instructorii noștri profesioniști, mașinile moderne și cursurile de conducere defensive."

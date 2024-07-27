@@ -31,7 +31,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
   return (
     <div className="flex justify-center">
       <Helmet>
-        <title>Contact - TopalX - Școala de Șoferi din București</title>
+        <title>Contact | TopalX | Școala de Șoferi din București</title>
         <meta
           name="description"
           content="Contactați-ne la TopalX - școală de șoferi din București. Suntem aici pentru a răspunde la toate întrebările dvs. despre cursurile de conducere și obținerea permisului auto."

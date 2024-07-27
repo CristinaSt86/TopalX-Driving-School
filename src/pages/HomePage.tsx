@@ -66,7 +66,7 @@ const HomePage: React.FC = () => {
         <title>TopalX - Cea mai bună școală de șoferi din București</title>
         <meta
           name="description"
-          content="TopalX - Școală de șoferi de top în București. Oferim cursuri de conducere avansate, permis auto, și pregătire pentru examen auto."
+          content="TopalX  Școală de șoferi de top în București. Oferim cursuri de conducere avansate, permis auto, și pregătire pentru examen auto."
         />
         <meta
           name="keywords"

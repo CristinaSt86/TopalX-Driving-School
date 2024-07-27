@@ -27,7 +27,7 @@ const ContactPage: React.FC = () => {
     <div className={` ${animate ? "slide-in" : ""}`}>
       <Helmet>
         <title>
-          Contact TopalX - Școală de șoferi accesibila și de calitate în București
+          Contact TopalX | Școală de șoferi accesibila și de calitate în București
         </title>
         <meta
           name="description"

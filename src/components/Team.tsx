@@ -54,7 +54,7 @@ const Team = React.forwardRef<HTMLDivElement, any>((props, ref) => {
     <>
       <Helmet>
         <title>
-          Echipa - TopalX - Instructori cu Experiență și Profesionism în
+          Echipa | TopalX | Instructori cu Experiență și Profesionism în
           București
         </title>
         <meta

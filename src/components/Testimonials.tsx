@@ -67,7 +67,7 @@ const Testimonials = forwardRef<TestimonialsHandle, TestimonialsProps>(
     return (
       <div ref={internalRef} className={` ${animate ? "slide-in" : ""}`}>
         <Helmet>
-          <title>Testimoniale - TopalX - Școala de Șoferi din București</title>
+          <title>Testimoniale | TopalX | Școala de Șoferi din București</title>
           <meta
             name="description"
             content="Citiți mărturiile studenților noștri despre experiența lor cu TopalX - școală de șoferi de încredere din București. Află de ce suntem alegerea potrivită pentru obținerea permisului auto."
