@@ -54,27 +54,27 @@ const Team = React.forwardRef<HTMLDivElement, any>((props, ref) => {
     <>
       <Helmet>
         <title>
-          Echipa | TopalX | Instructori cu Experiență și Profesionism în
+          Echipa | Scoala de soferi TopalX | Instructori cu Experiență și Profesionism în
           București
         </title>
         <meta
           name="description"
-          content="Cunoaște echipa noastră de la TopalX - școală de șoferi din București. Instructori cu experiență, profesionism, management dedicat și servicii de secretariat eficiente."
+          content="Cunoaște echipa noastră de la Scoala de soferi TopalX - școală de șoferi din București. Instructori cu experiență, profesionism, management dedicat și servicii de secretariat eficiente."
         />
         <meta
           name="keywords"
           content="echipă școală de șoferi, instructori cu experiență, profesioniști auto, management școală de șoferi, secretariat școală de șoferi, TopalX București, instructori auto București, cursuri de conducere defensive, permis auto"
         />
-        <meta name="author" content="TopalX" />
+        <meta name="author" content="Scoala de soferi TopalX" />
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           property="og:title"
-          content="Echipa - TopalX - Instructori cu Experiență și Profesionism în București"
+          content="Echipa - Scoala de soferi TopalX - Instructori cu Experiență și Profesionism în București"
         />
         <meta
           property="og:description"
-          content="Cunoaște echipa noastră de la TopalX - școală de șoferi din București. Instructori cu experiență, profesionism, management dedicat și servicii de secretariat eficiente."
+          content="Cunoaște echipa noastră de la Scoala de soferi TopalX - școală de șoferi din București. Instructori cu experiență, profesionism, management dedicat și servicii de secretariat eficiente."
         />
         <meta
           property="og:url"
@@ -90,11 +90,11 @@ const Team = React.forwardRef<HTMLDivElement, any>((props, ref) => {
         <meta property="twitter:card" content="summary_large_image" />
         <meta
           property="twitter:title"
-          content="Echipa - TopalX - Instructori cu Experiență și Profesionism în București"
+          content="Echipa - Scoala de soferi TopalX - Instructori cu Experiență și Profesionism în București"
         />
         <meta
           property="twitter:description"
-          content="Cunoaște echipa noastră de la TopalX - școală de șoferi din București. Instructori cu experiență, profesionism, management dedicat și servicii de secretariat eficiente."
+          content="Cunoaște echipa noastră de la Scoala de soferi TopalX - școală de șoferi din București. Instructori cu experiență, profesionism, management dedicat și servicii de secretariat eficiente."
         />
         <meta
           property="twitter:image"

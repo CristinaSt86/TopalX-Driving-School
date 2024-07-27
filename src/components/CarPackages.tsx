@@ -86,16 +86,16 @@ const CarPackages = React.forwardRef<HTMLDivElement>(
     return (
       <div ref={ref}>
         <Helmet>
-          <title>Pachete Auto | TopalX | Școala de Șoferi din București</title>
+          <title>Pachete Auto | Scoala de soferi TopalX | Școala de Șoferi din București</title>
           <meta
             name="description"
-            content="Descoperă pachetele auto oferite de TopalX - școală de șoferi din București. Alege dintre mașini moderne și instrucție profesională pentru a obține permisul auto."
+            content="Descoperă pachetele auto oferite de Scoala de soferi TopalX - școală de șoferi din București. Alege dintre mașini moderne și instrucție profesională pentru a obține permisul auto."
           />
           <meta
             name="keywords"
-            content="pachete auto, școală de șoferi, TopalX, cursuri de conducere, permis auto, mașini moderne, școală de șoferi București, instructori profesioniști, transmisie manuală, transmisie automată"
+            content="pachete auto, școală de șoferi, Scoala de soferi TopalX, cursuri de conducere, permis auto, mașini moderne, școală de șoferi București, instructori profesioniști, transmisie manuală, transmisie automată"
           />
-          <meta name="author" content="TopalX" />
+          <meta name="author" content="Scoala de soferi TopalX" />
           <meta name="robots" content="index, follow" />
           <meta
             name="viewport"
@@ -103,11 +103,11 @@ const CarPackages = React.forwardRef<HTMLDivElement>(
           />
           <meta
             property="og:title"
-            content="Pachete Auto - TopalX - Școala de Șoferi din București"
+            content="Pachete Auto - Scoala de soferi TopalX - Școala de Șoferi din București"
           />
           <meta
             property="og:description"
-            content="Descoperă pachetele auto oferite de TopalX - școală de șoferi din București. Alege dintre mașini moderne și instrucție profesională pentru a obține permisul auto."
+            content="Descoperă pachetele auto oferite de Scoala de soferi TopalX - școală de șoferi din București. Alege dintre mașini moderne și instrucție profesională pentru a obține permisul auto."
           />
           <meta
             property="og:url"
@@ -123,11 +123,11 @@ const CarPackages = React.forwardRef<HTMLDivElement>(
           <meta property="twitter:card" content="summary_large_image" />
           <meta
             property="twitter:title"
-            content="Pachete Auto - TopalX - Școala de Șoferi din București"
+            content="Pachete Auto - Scoala de soferi TopalX - Școala de Șoferi din București"
           />
           <meta
             property="twitter:description"
-            content="Descoperă pachetele auto oferite de TopalX - școală de șoferi din București. Alege dintre mașini moderne și instrucție profesională pentru a obține permisul auto."
+            content="Descoperă pachetele auto oferite de Scoala de soferi TopalX - școală de șoferi din București. Alege dintre mașini moderne și instrucție profesională pentru a obține permisul auto."
           />
           <meta
             property="twitter:image"

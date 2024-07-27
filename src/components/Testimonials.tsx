@@ -67,16 +67,16 @@ const Testimonials = forwardRef<TestimonialsHandle, TestimonialsProps>(
     return (
       <div ref={internalRef} className={` ${animate ? "slide-in" : ""}`}>
         <Helmet>
-          <title>Testimoniale | TopalX | Școala de Șoferi din București</title>
+          <title>Testimoniale | Scoala de soferi TopalX | Școala de Șoferi din București</title>
           <meta
             name="description"
-            content="Citiți mărturiile studenților noștri despre experiența lor cu TopalX - școală de șoferi de încredere din București. Află de ce suntem alegerea potrivită pentru obținerea permisului auto."
+            content="Citiți mărturiile studenților noștri despre experiența lor cu Scoala de soferi TopalX - școală de șoferi de încredere din București. Află de ce suntem alegerea potrivită pentru obținerea permisului auto."
           />
           <meta
             name="keywords"
-            content="testimoniale școală de șoferi, mărturii studenți TopalX, experiențe școală de șoferi București, TopalX București, permis auto, cursuri de conducere defensive"
+            content="testimoniale școală de șoferi, mărturii studenți Scoala de soferi TopalX, experiențe școală de șoferi București, TopalX București, permis auto, cursuri de conducere defensive"
           />
-          <meta name="author" content="TopalX" />
+          <meta name="author" content="Scoala de soferi TopalX" />
           <meta name="robots" content="index, follow" />
           <meta
             name="viewport"
@@ -84,11 +84,11 @@ const Testimonials = forwardRef<TestimonialsHandle, TestimonialsProps>(
           />
           <meta
             property="og:title"
-            content="Testimoniale - TopalX - Școala de Șoferi din București"
+            content="Testimoniale - Scoala de soferi TopalX - Școala de Șoferi din București"
           />
           <meta
             property="og:description"
-            content="Citiți mărturiile studenților noștri despre experiența lor cu TopalX - școală de șoferi de încredere din București. Află de ce suntem alegerea potrivită pentru obținerea permisului auto."
+            content="Citiți mărturiile studenților noștri despre experiența lor cu Scoala de soferi TopalX - școală de șoferi de încredere din București. Află de ce suntem alegerea potrivită pentru obținerea permisului auto."
           />
           <meta
             property="og:url"
@@ -104,11 +104,11 @@ const Testimonials = forwardRef<TestimonialsHandle, TestimonialsProps>(
           <meta property="twitter:card" content="summary_large_image" />
           <meta
             property="twitter:title"
-            content="Testimoniale - TopalX - Școala de Șoferi din București"
+            content="Testimoniale - Scoala de soferi TopalX - Școala de Șoferi din București"
           />
           <meta
             property="twitter:description"
-            content="Citiți mărturiile studenților noștri despre experiența lor cu TopalX - școală de șoferi de încredere din București. Află de ce suntem alegerea potrivită pentru obținerea permisului auto."
+            content="Citiți mărturiile studenților noștri despre experiența lor cu Scoala de soferi TopalX - școală de șoferi de încredere din București. Află de ce suntem alegerea potrivită pentru obținerea permisului auto."
           />
           <meta
             property="twitter:image"

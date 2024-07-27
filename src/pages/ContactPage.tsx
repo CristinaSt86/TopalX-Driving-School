@@ -27,24 +27,24 @@ const ContactPage: React.FC = () => {
     <div className={` ${animate ? "slide-in" : ""}`}>
       <Helmet>
         <title>
-          Contact TopalX | Școală de șoferi accesibila și de calitate în București
+          Contact Scoala de soferi TopalX | Școală de șoferi accesibila și de calitate în București
         </title>
         <meta
           name="description"
-          content="Contactați TopalX - școala de șoferi ieftină și de calitate din București. Oferim cursuri de conducere defensive, permis auto, și pregătire pentru examen auto."
+          content="Contactați Scoala de soferi TopalX - școala de șoferi accesibila și de calitate din București. Oferim cursuri de conducere defensive, permis auto, și pregătire pentru examen auto."
         />
         <meta
           name="keywords"
           content="școală de șoferi ieftină, școală de șoferi București, cursuri de conducere defensive, permis auto, pregătire examen auto"
         />
-        <meta name="author" content="TopalX" />
+        <meta name="author" content="Scoala de soferi TopalX" />
         <meta
           property="og:title"
-          content="Contact TopalX - Școală de șoferi ieftină și de calitate în București"
+          content="Contact Scoala de soferi TopalX - Școală de șoferi ieftină și de calitate în București"
         />
         <meta
           property="og:description"
-          content="Contactați TopalX - școala de șoferi ieftină și de calitate din București. Oferim cursuri de conducere defensive, permis auto, și pregătire pentru examen auto."
+          content="Contactați Scoala de soferi TopalX - școala de șoferi accesibila și de calitate din București. Oferim cursuri de conducere defensive, permis auto, și pregătire pentru examen auto."
         />
         <meta
           property="og:url"

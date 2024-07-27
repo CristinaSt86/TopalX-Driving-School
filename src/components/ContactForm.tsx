@@ -31,25 +31,25 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
   return (
     <div className="flex justify-center">
       <Helmet>
-        <title>Contact | TopalX | Școala de Șoferi din București</title>
+        <title>Contact | Scoala de soferi TopalX | Școala de Șoferi din București</title>
         <meta
           name="description"
-          content="Contactați-ne la TopalX - școală de șoferi din București. Suntem aici pentru a răspunde la toate întrebările dvs. despre cursurile de conducere și obținerea permisului auto."
+          content="Contactați-ne la Scoala de soferi TopalX - școală de șoferi din București. Suntem aici pentru a răspunde la toate întrebările dvs. despre cursurile de conducere și obținerea permisului auto."
         />
         <meta
           name="keywords"
-          content="contact școală de șoferi, TopalX, contact TopalX, școală de șoferi București, întrebări cursuri de conducere, permis auto, informații contact școală de șoferi"
+          content="contact școală de șoferi, Scoala de soferi TopalX, contact Scoala de soferi TopalX, școală de șoferi București, întrebări cursuri de conducere, permis auto, informații contact școală de șoferi"
         />
-        <meta name="author" content="TopalX" />
+        <meta name="author" content="Scoala de soferi TopalX" />
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           property="og:title"
-          content="Contact - TopalX - Școala de Șoferi din București"
+          content="Contact - Scoala de soferi TopalX - Școala de Șoferi din București"
         />
         <meta
           property="og:description"
-          content="Contactați-ne la TopalX - școală de șoferi din București. Suntem aici pentru a răspunde la toate întrebările dvs. despre cursurile de conducere și obținerea permisului auto."
+          content="Contactați-ne la Scoala de soferi TopalX - școală de șoferi din București. Suntem aici pentru a răspunde la toate întrebările dvs. despre cursurile de conducere și obținerea permisului auto."
         />
         <meta
           property="og:url"
@@ -65,11 +65,11 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
         <meta property="twitter:card" content="summary_large_image" />
         <meta
           property="twitter:title"
-          content="Contact - TopalX - Școala de Șoferi din București"
+          content="Contact - Scoala de soferi TopalX - Școala de Șoferi din București"
         />
         <meta
           property="twitter:description"
-          content="Contactați-ne la TopalX - școală de șoferi din București. Suntem aici pentru a răspunde la toate întrebările dvs. despre cursurile de conducere și obținerea permisului auto."
+          content="Contactați-ne la Scoala de soferi TopalX - școală de șoferi din București. Suntem aici pentru a răspunde la toate întrebările dvs. despre cursurile de conducere și obținerea permisului auto."
         />
         <meta
           property="twitter:image"
