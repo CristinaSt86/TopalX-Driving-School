@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { Helmet } from "react-helmet";
 import "../index.css";
 import cos2 from "../images/cos2.webp";
 import sisOffice from "../images/sisOffice.webp";
@@ -51,6 +52,57 @@ const Team = React.forwardRef<HTMLDivElement, any>((props, ref) => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          Echipa - TopalX - Instructori cu Experiență și Profesionism în
+          București
+        </title>
+        <meta
+          name="description"
+          content="Cunoaște echipa noastră de la TopalX - școală de șoferi din București. Instructori cu experiență, profesionism, management dedicat și servicii de secretariat eficiente."
+        />
+        <meta
+          name="keywords"
+          content="echipă școală de șoferi, instructori cu experiență, profesioniști auto, management școală de șoferi, secretariat școală de șoferi, TopalX București, instructori auto București, cursuri de conducere defensive, permis auto"
+        />
+        <meta name="author" content="TopalX" />
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          property="og:title"
+          content="Echipa - TopalX - Instructori cu Experiență și Profesionism în București"
+        />
+        <meta
+          property="og:description"
+          content="Cunoaște echipa noastră de la TopalX - școală de șoferi din București. Instructori cu experiență, profesionism, management dedicat și servicii de secretariat eficiente."
+        />
+        <meta
+          property="og:url"
+          content="https://www.topalxscoalaauto.ro/team"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://www.topalxscoalaauto.ro/images/team.jpg"
+        />
+        <meta property="og:locale" content="ro_RO" />
+        <meta property="og:site_name" content="TopalX Scoala Auto" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta
+          property="twitter:title"
+          content="Echipa - TopalX - Instructori cu Experiență și Profesionism în București"
+        />
+        <meta
+          property="twitter:description"
+          content="Cunoaște echipa noastră de la TopalX - școală de șoferi din București. Instructori cu experiență, profesionism, management dedicat și servicii de secretariat eficiente."
+        />
+        <meta
+          property="twitter:image"
+          content="https://www.topalxscoalaauto.ro/images/team.jpg"
+        />
+        <meta property="twitter:site" content="@TopalXScoalaAuto" />
+        <meta property="twitter:creator" content="@TopalXScoalaAuto" />
+      </Helmet>
       <h2
         ref={ref}
         className="text-center text-3xl font-bold text-gray-800 mb-16 mt-16 pl-3 pr-3"

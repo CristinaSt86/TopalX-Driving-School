@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
+import { Helmet } from "react-helmet";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 import { useTranslation } from "react-i18next";
@@ -92,10 +93,16 @@ const Gallery: React.FC = () => {
       setTimeout(() => {
         const currentImageRef = imageRefs.current[photoIndex];
         if (currentImageRef) {
-          currentImageRef.scrollIntoView({ behavior: "smooth", block: "center" });
+          currentImageRef.scrollIntoView({
+            behavior: "smooth",
+            block: "center",
+          });
         }
         if (modalRef.current) {
-          modalRef.current.scrollIntoView({ behavior: "smooth", block: "center" });
+          modalRef.current.scrollIntoView({
+            behavior: "smooth",
+            block: "center",
+          });
         }
       }, 0);
     }
@@ -107,6 +114,54 @@ const Gallery: React.FC = () => {
 
   return (
     <div className={`${animate ? "slide-in" : ""}`}>
+      <Helmet>
+        <title>Galerie Foto - TopalX - Școala de Șoferi din București</title>
+        <meta
+          name="description"
+          content="Explorează galeria foto a TopalX - școala de șoferi din București. Vezi imagini cu instructorii noștri profesioniști, mașinile moderne și cursurile de conducere defensive."
+        />
+        <meta
+          name="keywords"
+          content="galerie foto școală de șoferi, imagini școală de șoferi, instructori profesioniști, mașini moderne, cursuri de conducere defensive, permis auto, TopalX București"
+        />
+        <meta name="author" content="TopalX" />
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          property="og:title"
+          content="Galerie Foto - TopalX - Școala de Șoferi din București"
+        />
+        <meta
+          property="og:description"
+          content="Explorează galeria foto a TopalX - școala de șoferi din București. Vezi imagini cu instructorii noștri profesioniști, mașinile moderne și cursurile de conducere defensive."
+        />
+        <meta
+          property="og:url"
+          content="https://www.topalxscoalaauto.ro/gallery"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://www.topalxscoalaauto.ro/images/gallery.jpg"
+        />
+        <meta property="og:locale" content="ro_RO" />
+        <meta property="og:site_name" content="TopalX Scoala Auto" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta
+          property="twitter:title"
+          content="Galerie Foto - TopalX - Școala de Șoferi din București"
+        />
+        <meta
+          property="twitter:description"
+          content="Explorează galeria foto a TopalX - școala de șoferi din București. Vezi imagini cu instructorii noștri profesioniști, mașinile moderne și cursurile de conducere defensive."
+        />
+        <meta
+          property="twitter:image"
+          content="https://www.topalxscoalaauto.ro/images/gallery.jpg"
+        />
+        <meta property="twitter:site" content="@TopalXScoalaAuto" />
+        <meta property="twitter:creator" content="@TopalXScoalaAuto" />
+      </Helmet>
       <h2 className="text-center text-3xl font-bold mb-16 mt-16 pl-4 pr-4">
         {t("gallery.galleryTitle")}
       </h2>
@@ -132,7 +187,10 @@ const Gallery: React.FC = () => {
         </div>
 
         <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
-          <div className="w-full h-full flex justify-center items-center" ref={modalRef}>
+          <div
+            className="w-full h-full flex justify-center items-center"
+            ref={modalRef}
+          >
             <ImageGallery
               items={images}
               startIndex={photoIndex}

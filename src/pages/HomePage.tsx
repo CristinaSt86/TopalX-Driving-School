@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 import { useTranslation } from "react-i18next";
 import AboutPage from "./AboutPage";
 import Gallery from "../components/Gallery";
@@ -34,8 +35,68 @@ const HomePage: React.FC = () => {
     };
   }, []);
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "DrivingSchool",
+    "name": "TopalX",
+    "description": "Școală de șoferi de top în București. Oferim cursuri de conducere avansate, permis auto, și pregătire pentru examen auto.",
+    "url": "https://www.topalxscoalaauto.ro",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Calea Vitan 148A",
+      "addressLocality": "București",
+      "postalCode": "031301 ",
+      "addressCountry": "RO"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+40736 470 629",
+      "contactType": "Customer Service"
+    },
+    "sameAs": [
+      "https://www.facebook.com/scoaladesoferitopalx/",
+      "https://www.instagram.com/scoaladesoferitopalx/"
+    ],
+    // "potentialAction": {
+    //   "@type": "SearchAction",
+    //   "target": "https://www.topalxscoalaauto.ro/search?q={search_term_string}",
+    //   "query-input": "required name=search_term_string"
+    // }
+  }
+  
+
   return (
     <div className="overflow-x-hidden max-w-full mx-auto">
+      <Helmet>
+        <title>TopalX - Cea mai bună școală de șoferi din București</title>
+        <meta
+          name="description"
+          content="TopalX - Școală de șoferi profesionistă în București. Oferim cursuri de conducere defensive, permis auto, și pregătire pentru examen auto."
+        />
+        <meta
+          name="keywords"
+          content="școală de șoferi, cursuri de conducere defensive, permis auto, școala de șoferi București, pregătire examen auto, instructori auto profesioniști, lecții de conducere, școală de șoferi ieftină, școală de șoferi de calitate, școala de șoferi sector 3, școala de șoferi sector 4, mașini moderne"
+        />
+        <meta name="author" content="TopalX" />
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:title" content="TopalX - Cea mai bună școală de șoferi din București" />
+        <meta property="og:description" content="TopalX - Școală de șoferi profesionistă în București. Oferim cursuri de conducere defensive, permis auto, și pregătire pentru examen auto." />
+        <meta property="og:url" content="https://www.topalxscoalaauto.ro" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.topalxscoalaauto.ro/images/homepage.jpg" />
+        <meta property="og:locale" content="ro_RO" />
+        <meta property="og:site_name" content="TopalX Scoala Auto" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content="TopalX - Cea mai bună școală de șoferi din București" />
+        <meta property="twitter:description" content="TopalX - Școală de șoferi profesionistă în București. Oferim cursuri de conducere defensive, permis auto, și pregătire pentru examen auto." />
+        <meta property="twitter:image" content="https://www.topalxscoalaauto.ro/images/homepage.jpg" />
+        <meta property="twitter:site" content="@TopalXScoalaAuto" />
+        <meta property="twitter:creator" content="@TopalXScoalaAuto" />
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
+      </Helmet>
       <div
         className={`flex flex-col items-center justify-center shadow-custom pt-12 sm:pt-16 pb-48 mt-0 bg-custom-home bg-center bg-cover bg-no-repeat text-white px-4 sm:p-16 text-center mb-8 h-auto md:pt-24 md:pb-48 ${
           window.innerWidth > 850 ? "bg-fixed" : "bg-scroll"

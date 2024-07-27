@@ -6,6 +6,7 @@ import React, {
   useEffect,
 } from "react";
 import { useTranslation } from "react-i18next";
+import { Helmet } from "react-helmet";
 import "../index.css";
 import c1 from "../images/c1.jpg";
 import c2 from "../images/c2.jpg";
@@ -65,6 +66,57 @@ const Testimonials = forwardRef<TestimonialsHandle, TestimonialsProps>(
 
     return (
       <div ref={internalRef} className={` ${animate ? "slide-in" : ""}`}>
+        <Helmet>
+          <title>Testimoniale - TopalX - Școala de Șoferi din București</title>
+          <meta
+            name="description"
+            content="Citiți mărturiile studenților noștri despre experiența lor cu TopalX - școală de șoferi de încredere din București. Află de ce suntem alegerea potrivită pentru obținerea permisului auto."
+          />
+          <meta
+            name="keywords"
+            content="testimoniale școală de șoferi, mărturii studenți TopalX, experiențe școală de șoferi București, TopalX București, permis auto, cursuri de conducere defensive"
+          />
+          <meta name="author" content="TopalX" />
+          <meta name="robots" content="index, follow" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+          />
+          <meta
+            property="og:title"
+            content="Testimoniale - TopalX - Școala de Șoferi din București"
+          />
+          <meta
+            property="og:description"
+            content="Citiți mărturiile studenților noștri despre experiența lor cu TopalX - școală de șoferi de încredere din București. Află de ce suntem alegerea potrivită pentru obținerea permisului auto."
+          />
+          <meta
+            property="og:url"
+            content="https://www.topalxscoalaauto.ro/testimonials"
+          />
+          <meta property="og:type" content="website" />
+          <meta
+            property="og:image"
+            content="https://www.topalxscoalaauto.ro/images/testimonials.jpg"
+          />
+          <meta property="og:locale" content="ro_RO" />
+          <meta property="og:site_name" content="TopalX Scoala Auto" />
+          <meta property="twitter:card" content="summary_large_image" />
+          <meta
+            property="twitter:title"
+            content="Testimoniale - TopalX - Școala de Șoferi din București"
+          />
+          <meta
+            property="twitter:description"
+            content="Citiți mărturiile studenților noștri despre experiența lor cu TopalX - școală de șoferi de încredere din București. Află de ce suntem alegerea potrivită pentru obținerea permisului auto."
+          />
+          <meta
+            property="twitter:image"
+            content="https://www.topalxscoalaauto.ro/images/testimonials.jpg"
+          />
+          <meta property="twitter:site" content="@TopalXScoalaAuto" />
+          <meta property="twitter:creator" content="@TopalXScoalaAuto" />
+        </Helmet>
         <h2 className="text-3xl font-bold text-center mt-16 pl-3 pr-3">
           {t("testimonials.title")}
         </h2>

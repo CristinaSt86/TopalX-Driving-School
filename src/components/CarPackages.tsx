@@ -1,5 +1,6 @@
 import React, { ForwardedRef } from "react";
 import { useTranslation } from "react-i18next";
+import { Helmet } from "react-helmet";
 import mer from "../images/mer.webp";
 import vol from "../images/vol.webp";
 import f3 from "../images/f3.webp";
@@ -84,6 +85,57 @@ const CarPackages = React.forwardRef<HTMLDivElement>(
 
     return (
       <div ref={ref}>
+        <Helmet>
+          <title>Pachete Auto - TopalX - Școala de Șoferi din București</title>
+          <meta
+            name="description"
+            content="Descoperă pachetele auto oferite de TopalX - școală de șoferi din București. Alege dintre mașini moderne și instrucție profesională pentru a obține permisul auto."
+          />
+          <meta
+            name="keywords"
+            content="pachete auto, școală de șoferi, TopalX, cursuri de conducere, permis auto, mașini moderne, școală de șoferi București, instructori profesioniști, transmisie manuală, transmisie automată"
+          />
+          <meta name="author" content="TopalX" />
+          <meta name="robots" content="index, follow" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+          />
+          <meta
+            property="og:title"
+            content="Pachete Auto - TopalX - Școala de Șoferi din București"
+          />
+          <meta
+            property="og:description"
+            content="Descoperă pachetele auto oferite de TopalX - școală de șoferi din București. Alege dintre mașini moderne și instrucție profesională pentru a obține permisul auto."
+          />
+          <meta
+            property="og:url"
+            content="https://www.topalxscoalaauto.ro/car-packages"
+          />
+          <meta property="og:type" content="website" />
+          <meta
+            property="og:image"
+            content="https://www.topalxscoalaauto.ro/images/car-packages.jpg"
+          />
+          <meta property="og:locale" content="ro_RO" />
+          <meta property="og:site_name" content="TopalX Scoala Auto" />
+          <meta property="twitter:card" content="summary_large_image" />
+          <meta
+            property="twitter:title"
+            content="Pachete Auto - TopalX - Școala de Șoferi din București"
+          />
+          <meta
+            property="twitter:description"
+            content="Descoperă pachetele auto oferite de TopalX - școală de șoferi din București. Alege dintre mașini moderne și instrucție profesională pentru a obține permisul auto."
+          />
+          <meta
+            property="twitter:image"
+            content="https://www.topalxscoalaauto.ro/images/car-packages.jpg"
+          />
+          <meta property="twitter:site" content="@TopalXScoalaAuto" />
+          <meta property="twitter:creator" content="@TopalXScoalaAuto" />
+        </Helmet>
         <h1 className="text-3xl font-bold text-center mb-16 mt-16 pl-3 pr-3 textShadow-mt">
           {t("carPackages.title")}
         </h1>
@@ -100,16 +152,15 @@ const CarPackages = React.forwardRef<HTMLDivElement>(
                 <strong>{t("carPackages.price")}:</strong> {pkg.price}
               </p>
               <p>
-                <strong>{t("carPackages.transmission")}:</strong> {pkg.transmission}
+                <strong>{t("carPackages.transmission")}:</strong>{" "}
+                {pkg.transmission}
               </p>
               <p>
                 <strong>{t("carPackages.fuelType")}:</strong> {pkg.fuelType}
               </p>
               <ul className="list-disc list-inside">
                 {pkg.features.map((feature, idx) => (
-                  <li key={idx}>
-                    {feature} &#10003;
-                  </li>
+                  <li key={idx}>{feature} &#10003;</li>
                 ))}
               </ul>
               <p className="text-red-500">{pkg.note}</p>

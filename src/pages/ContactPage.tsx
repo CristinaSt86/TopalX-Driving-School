@@ -1,9 +1,9 @@
 import React, { Suspense, lazy, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import ContactForm from "../components/ContactForm";
+import { Helmet } from "react-helmet";
 import Loader from "../components/Loader";
 import "../index.css";
-
 
 const GoogleMapComponent = lazy(
   () => import("../components/GoogleMapComponent")
@@ -17,17 +17,46 @@ const ContactPage: React.FC = () => {
     name: string;
     email: string;
     message: string;
-  }) => {
-   
-  };
+  }) => {};
 
   useEffect(() => {
     setAnimate(true);
-   
   }, [t]);
 
   return (
     <div className={` ${animate ? "slide-in" : ""}`}>
+      <Helmet>
+        <title>
+          Contact TopalX - Școală de șoferi accesibila și de calitate în București
+        </title>
+        <meta
+          name="description"
+          content="Contactați TopalX - școala de șoferi ieftină și de calitate din București. Oferim cursuri de conducere defensive, permis auto, și pregătire pentru examen auto."
+        />
+        <meta
+          name="keywords"
+          content="școală de șoferi ieftină, școală de șoferi București, cursuri de conducere defensive, permis auto, pregătire examen auto"
+        />
+        <meta name="author" content="TopalX" />
+        <meta
+          property="og:title"
+          content="Contact TopalX - Școală de șoferi ieftină și de calitate în București"
+        />
+        <meta
+          property="og:description"
+          content="Contactați TopalX - școala de șoferi ieftină și de calitate din București. Oferim cursuri de conducere defensive, permis auto, și pregătire pentru examen auto."
+        />
+        <meta
+          property="og:url"
+          content="https://www.topalxscoalaauto.ro/contact"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://www.topalxscoalaauto.ro/images/contact.jpg"
+        />
+      </Helmet>
+
       <h1 className=" px-3 mt-16 mb-16 text-3xl font-bold text-center md:mb-16 md:mt-16 ">
         {t("contactPage.title")}
       </h1>

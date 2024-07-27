@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { Helmet } from "react-helmet";
 import "../index.css";
 import CarCard from "../components/CarCard";
 import Team from "../components/Team";
@@ -38,6 +39,54 @@ const AboutPage: React.FC = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Despre Noi - TopalX - Școala de Șoferi din București</title>
+        <meta
+          name="description"
+          content="Află mai multe despre TopalX - școală de șoferi accesibilă și de calitate din București. Oferim cursuri de conducere defensive, permis auto, și pregătire pentru examen auto."
+        />
+        <meta
+          name="keywords"
+          content="școală de șoferi accesibilă, școală de șoferi București, cursuri de conducere defensive, permis auto, pregătire examen auto, instructori auto profesioniști, mașini moderne, prețuri accesibile"
+        />
+        <meta name="author" content="TopalX" />
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          property="og:title"
+          content="Despre Noi - TopalX - Școala de Șoferi din București"
+        />
+        <meta
+          property="og:description"
+          content="Află mai multe despre TopalX - școală de șoferi accesibilă și de calitate din București. Oferim cursuri de conducere defensive, permis auto, și pregătire pentru examen auto."
+        />
+        <meta
+          property="og:url"
+          content="https://www.topalxscoalaauto.ro/about"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://www.topalxscoalaauto.ro/images/about.jpg"
+        />
+        <meta property="og:locale" content="ro_RO" />
+        <meta property="og:site_name" content="TopalX Scoala Auto" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta
+          property="twitter:title"
+          content="Despre Noi - TopalX - Școala de Șoferi din București"
+        />
+        <meta
+          property="twitter:description"
+          content="Află mai multe despre TopalX - școală de șoferi accesibilă și de calitate din București. Oferim cursuri de conducere defensive, permis auto, și pregătire pentru examen auto."
+        />
+        <meta
+          property="twitter:image"
+          content="https://www.topalxscoalaauto.ro/images/about.jpg"
+        />
+        <meta property="twitter:site" content="@TopalXScoalaAuto" />
+        <meta property="twitter:creator" content="@TopalXScoalaAuto" />
+      </Helmet>
       <CineSuntemImg />
       <div className="mt-4 sm:mt-8 md:mt-12">
         <main className="container mx-auto px-2 flex flex-col flex-wrap md:flex-row items-center justify-center gap-4 sm:gap-8 md:gap-16 md:mx-auto">

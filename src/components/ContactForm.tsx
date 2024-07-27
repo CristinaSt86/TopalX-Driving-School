@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { Helmet } from "react-helmet";
 import InputField from "./InputField";
 import TextareaField from "./TextareaField";
 import CheckboxField from "./CheckboxField";
@@ -29,6 +30,54 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
 
   return (
     <div className="flex justify-center">
+      <Helmet>
+        <title>Contact - TopalX - Școala de Șoferi din București</title>
+        <meta
+          name="description"
+          content="Contactați-ne la TopalX - școală de șoferi din București. Suntem aici pentru a răspunde la toate întrebările dvs. despre cursurile de conducere și obținerea permisului auto."
+        />
+        <meta
+          name="keywords"
+          content="contact școală de șoferi, TopalX, contact TopalX, școală de șoferi București, întrebări cursuri de conducere, permis auto, informații contact școală de șoferi"
+        />
+        <meta name="author" content="TopalX" />
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          property="og:title"
+          content="Contact - TopalX - Școala de Șoferi din București"
+        />
+        <meta
+          property="og:description"
+          content="Contactați-ne la TopalX - școală de șoferi din București. Suntem aici pentru a răspunde la toate întrebările dvs. despre cursurile de conducere și obținerea permisului auto."
+        />
+        <meta
+          property="og:url"
+          content="https://www.topalxscoalaauto.ro/contact"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://www.topalxscoalaauto.ro/images/contact.jpg"
+        />
+        <meta property="og:locale" content="ro_RO" />
+        <meta property="og:site_name" content="TopalX Scoala Auto" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta
+          property="twitter:title"
+          content="Contact - TopalX - Școala de Șoferi din București"
+        />
+        <meta
+          property="twitter:description"
+          content="Contactați-ne la TopalX - școală de șoferi din București. Suntem aici pentru a răspunde la toate întrebările dvs. despre cursurile de conducere și obținerea permisului auto."
+        />
+        <meta
+          property="twitter:image"
+          content="https://www.topalxscoalaauto.ro/images/contact.jpg"
+        />
+        <meta property="twitter:site" content="@TopalXScoalaAuto" />
+        <meta property="twitter:creator" content="@TopalXScoalaAuto" />
+      </Helmet>
       <div className="shadow-custom pb-6 pt-6 container w-[90%] rounded-2xl backdrop-blur md:w-1/2 md:pl-6 md:pr-6">
         <form
           onSubmit={handleSubmit}
