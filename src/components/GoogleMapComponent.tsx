@@ -162,7 +162,7 @@ const GoogleMapComponent: React.FC = () => {
       iconElement.style.height = "32px";
 
       const labelElement = document.createElement("div");
-      labelElement.innerHTML = "TopalX - Scoala de Soferi";
+      labelElement.innerHTML = "Scoala de soferi TopalX";
       labelElement.style.color = "black";
       labelElement.style.fontFamily = "Arial";
       labelElement.style.fontSize = "14px";
@@ -174,13 +174,13 @@ const GoogleMapComponent: React.FC = () => {
       const marker = new AdvancedMarkerElement({
         map,
         position: center,
-        title: "TopalX",
+        title: "Scoala de soferi TopalX",
         content: markerContent,
       });
 
       const infoWindow = new google.maps.InfoWindow({
         content: `<div style="font-family: Arial; font-size: 14px;">
-          <strong>TopalX - Scoala de Soferi</strong><br>
+          <strong>Scoala de soferi TopalX</strong><br>
           Calea Vitan 148A<br>
           București 031287<br>
           Romania<br>
