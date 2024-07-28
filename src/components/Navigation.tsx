@@ -62,8 +62,8 @@ const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
         <ul
           id="primary-menu"
           ref={menuRef}
-          className={`pt-1 pb-1 z-1000 gap-3 flex-col md:flex-row md:items-center md:flex space-y-2 md:space-y-0 md:space-x-4 absolute md:static bg-primary md:bg-transparent w-full md:w-auto left-0 md:left-auto top-24 md:top-auto ${
-            isOpen ? "flex items-center max-h-96 overflow-y-auto" : "hidden"
+          className={`pt-1 pb-2 z-1000 gap-3 flex-col md:flex-row md:items-center md:flex space-y-2 md:space-y-0 md:space-x-4 absolute md:static bg-primary md:bg-transparent w-full md:w-auto left-0 md:left-auto top-24 md:top-auto ${
+            isOpen ? "flex items-center max-h-98 overflow-y-auto" : "hidden"
           }`}
         >
           <li>
@@ -126,7 +126,7 @@ const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
           {isOpen && isMobileView && (
             <>
               <li className="flex flex-col items-center space-y-4 pb-4">
-                <div className="flex items-center space-x-2 hover:text-gray-400">
+                <div className="flex items-center space-x-2 hover:text-secondary border-2 border-secondary rounded-md p-1">
                   <FaPhoneAlt />
                   <a href="tel:0736470629">0736 470 629</a>
                 </div>

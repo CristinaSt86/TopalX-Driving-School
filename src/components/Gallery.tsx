@@ -126,7 +126,6 @@ const Gallery: React.FC = () => {
         />
         <meta name="author" content="Scoala de soferi TopalX" />
         <meta name="robots" content="index, follow" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           property="og:title"
           content="Galerie Foto - Scoala de soferi TopalX - Școala de Șoferi din București"

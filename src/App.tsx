@@ -27,8 +27,8 @@ const App: React.FC = () => {
 
   
   return (
-    <div className="flex flex-col min-h-screen">
-      <main className="flex-grow">
+    <div className="flex flex-col min-h-screen ">
+      <main className="flex-grow ">
         <I18nextProvider i18n={i18n}>
           <LanguageProvider>
             <Suspense fallback={<Loader />}>

@@ -13,12 +13,12 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 body {
   @apply text-textColor;
-  @apply bg-custom-img bg-cover bg-center bg-no-repeat h-screen overflow-y-auto;
+  @apply bg-custom-img bg-cover bg-center bg-no-repeat overflow-y-auto ;
 }
 
 @media (max-width: 850px) {
@@ -168,3 +168,27 @@ body {
 .clip-hexagon img {
   @apply absolute top-0 left-0 w-full h-full object-cover;
 }
+
+/* .enlarge-container {
+  position: relative;
+  overflow: visible;
+}
+
+.enlarge-on-hover {
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+ 
+}
+
+.enlarge-container:hover .enlarge-on-hover {
+  transform: scale(1.2); 
+  z-index: 1000;
+  height: 100vh;
+  background-color: #fff;
+ 
+} properties for the gallery when the modal is removed */ 
