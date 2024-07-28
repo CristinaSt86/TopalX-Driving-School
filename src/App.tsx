@@ -12,6 +12,20 @@ import Layout from "./components/Layout";
 import ScrollToTop from "./components/ScrollToTop";
 
 const App: React.FC = () => {
+  console.error = (() => {
+    const error = console.error;
+    return (...args) => {
+      if (
+        typeof args[0] === "string" &&
+        args[0].includes("UNSAFE_componentWillMount")
+      ) {
+        return;
+      }
+      error(...args);
+    };
+  })();
+
+  
   return (
     <div className="flex flex-col min-h-screen">
       <main className="flex-grow">

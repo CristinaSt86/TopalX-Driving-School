@@ -1,6 +1,14 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import { FaBars, FaTimes, FaFacebook, FaInstagram, FaEnvelope, FaPhoneAlt, FaRegClock } from "react-icons/fa";
+import {
+  FaBars,
+  FaTimes,
+  FaFacebook,
+  FaInstagram,
+  FaEnvelope,
+  FaPhoneAlt,
+  FaRegClock,
+} from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import LanguageButton from "./LanguageButton";
 
@@ -38,6 +46,7 @@ const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
       <div className="container mx-auto flex justify-between items-center">
         {isMobileView && (
           <button
+            title="btn"
             className="md:hidden"
             onClick={toggleMenu}
             aria-expanded={isOpen}
@@ -126,11 +135,16 @@ const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
                   <span>{t("topHeader.workingHours")}</span>
                 </div>
                 <div className="flex items-center space-x-4 hover:text-gray-400">
-                  <a href="mailto:topalxtrans@gmail.com" className="flex items-center">
+                  <a
+                    title="mail"
+                    href="mailto:topalxtrans@gmail.com"
+                    className="flex items-center"
+                  >
                     <FaEnvelope className="mr-1" />
                     {t("topHeader.email")}
                   </a>
                   <a
+                    title="fb"
                     href="https://www.facebook.com/scoaladesoferitopalx/"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -139,6 +153,7 @@ const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
                     <FaFacebook />
                   </a>
                   <a
+                    title="insta"
                     href="https://www.instagram.com/scoaladesoferitopalx/"
                     target="_blank"
                     rel="noopener noreferrer"

@@ -15,6 +15,7 @@ const TopHeader: React.FC = () => {
     <div className="shadow-custom2 fixed top-0 left-0 right-0 z-50 bg-primary text-white text-base sm:text-lg hidden custom:flex flex-col custom:flex-row justify-between items-center p-3">
       <div className="flex w-full justify-between items-center sm:hidden">
         <a
+          title="fb"
           href="https://www.facebook.com/scoaladesoferitopalx/"
           target="_blank"
           rel="noopener noreferrer"
@@ -23,6 +24,7 @@ const TopHeader: React.FC = () => {
           <FaFacebook className="text-white" />
         </a>
         <a
+          title="insta"
           href="https://www.instagram.com/scoaladesoferitopalx/"
           target="_blank"
           rel="noopener noreferrer"
@@ -43,6 +45,7 @@ const TopHeader: React.FC = () => {
           </a>
 
           <a
+            title="mail"
             href="mailto:topalxtrans@gmail.com"
             className="inline-flex items-center mb-2 sm:mb-0"
           >
@@ -60,6 +63,7 @@ const TopHeader: React.FC = () => {
 
       <div className="hidden sm:flex sm:justify-between w-full sm:w-auto">
         <a
+          title="fb"
           href="https://www.facebook.com/scoaladesoferitopalx/"
           target="_blank"
           rel="noopener noreferrer"
@@ -68,6 +72,7 @@ const TopHeader: React.FC = () => {
           <FaFacebook className="text-white" />
         </a>
         <a
+          title="insta"
           href="https://www.instagram.com/scoaladesoferitopalx/"
           target="_blank"
           rel="noopener noreferrer"

@@ -4,6 +4,7 @@ import { FaFacebook, FaInstagram, FaEnvelope } from "react-icons/fa";
 const SocialLinks: React.FC = () => (
   <div className="flex flex-row gap-4 ">
     <a
+      title="fb"
       href="https://www.facebook.com/scoaladesoferitopalx/"
       className="text-white hover:text-gray-400"
       target="_blank"
@@ -12,6 +13,7 @@ const SocialLinks: React.FC = () => (
       <FaFacebook className="w-6 h-6" />
     </a>
     <a
+      title="insta"
       href="https://www.instagram.com/scoaladesoferitopalx/"
       className="text-white hover:text-gray-400"
       target="_blank"
@@ -20,6 +22,7 @@ const SocialLinks: React.FC = () => (
       <FaInstagram className="w-6 h-6" />
     </a>
     <a
+      title="mail"
       href="mailto:topalxtrans@gmail.com"
       className="text-white hover:text-gray-400"
       target="_blank"
