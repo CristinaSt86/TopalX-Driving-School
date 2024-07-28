@@ -40,7 +40,7 @@ const AboutPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Despre Noi -  Scoala de soferi TopalX - Școala de Șoferi din București</title>
+        <title>Despre Noi | Scoala de soferi TopalX | Școala de Șoferi din București</title>
         <meta
           name="description"
           content="Află mai multe despre Scoala de soferi TopalX - școală de șoferi accesibilă și de calitate din București. Oferim cursuri de conducere defensive, permis auto, și pregătire pentru examen auto."
