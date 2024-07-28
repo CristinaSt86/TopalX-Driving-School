@@ -65,7 +65,9 @@ const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
           className={`pt-1 pb-2 z-1000 gap-3 flex-col md:flex-row md:items-center md:flex space-y-2 md:space-y-0 md:space-x-4 absolute md:static bg-primary md:bg-transparent w-full md:w-auto left-0 md:left-auto top-24 md:top-auto ${
             isOpen ? "flex items-center max-h-98 overflow-y-auto" : "hidden"
           }`}
+          style={{ maxHeight: isOpen ? 'calc(100vh - 96px)' : 'auto', overflowY: isOpen ? 'auto' : 'hidden' }}
         >
+          
           <li>
             <Link
               to="/"
