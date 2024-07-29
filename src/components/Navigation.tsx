@@ -7,7 +7,6 @@ import {
   FaInstagram,
   FaEnvelope,
   FaPhoneAlt,
-  FaRegClock,
 } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import LanguageButton from "./LanguageButton";
@@ -65,9 +64,7 @@ const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
           className={`pt-1 pb-2 z-1000 gap-3 flex-col md:flex-row md:items-center md:flex space-y-2 md:space-y-0 md:space-x-4 absolute md:static bg-primary md:bg-transparent w-full md:w-auto left-0 md:left-auto top-24 md:top-auto ${
             isOpen ? "flex items-center max-h-98 overflow-y-auto" : "hidden"
           }`}
-          // style={{ maxHeight: isOpen ? 'calc(100vh - 96px)' : 'auto', overflowY: isOpen ? 'auto' : 'hidden' }}
         >
-          
           <li>
             <Link
               to="/"
@@ -126,46 +123,12 @@ const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
             <LanguageButton />
           </li>
           {isOpen && isMobileView && (
-            <>
-              <li className="flex flex-col items-center space-y-4 pb-4">
-                <div className="flex items-center space-x-2 hover:text-secondary border-2 border-secondary rounded-md p-2">
-                  <FaPhoneAlt />
-                  <a href="tel:0736470629">0736 470 629</a>
-                </div>
-                {/* <div className="flex items-center space-x-2 hover:text-gray-400">
-                  <FaRegClock />
-                  <span>{t("topHeader.workingHours")}</span>
-                </div>
-                <div className="flex items-center space-x-4 hover:text-gray-400">
-                  <a
-                    title="mail"
-                    href="mailto:topalxtrans@gmail.com"
-                    className="flex items-center"
-                  >
-                    <FaEnvelope className="mr-1" />
-                    {t("topHeader.email")}
-                  </a>
-                  <a
-                    title="fb"
-                    href="https://www.facebook.com/scoaladesoferitopalx/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center"
-                  >
-                    <FaFacebook />
-                  </a>
-                  <a
-                    title="insta"
-                    href="https://www.instagram.com/scoaladesoferitopalx/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center"
-                  >
-                    <FaInstagram />
-                  </a>
-                </div> */}
-              </li>
-            </>
+            <li className="flex flex-col items-center space-y-4 pb-4">
+              <div className="flex items-center space-x-2 hover:text-secondary border-2 border-secondary rounded-md p-1">
+                <FaPhoneAlt />
+                <a href="tel:0736470629">0736 470 629</a>
+              </div>
+            </li>
           )}
         </ul>
       </div>
