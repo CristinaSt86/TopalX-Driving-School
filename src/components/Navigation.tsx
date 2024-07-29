@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import {
   FaBars,
   FaTimes,
-  FaFacebook,
-  FaInstagram,
-  FaEnvelope,
+  // FaFacebook,
+  // FaInstagram,
+  // FaEnvelope,
   FaPhoneAlt,
 } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
