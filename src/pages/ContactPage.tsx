@@ -66,11 +66,11 @@ const ContactPage: React.FC = () => {
             <ContactForm onSubmit={handleFormSubmit} />
           </Suspense>
         </div>
-        <div className="w-full md:w-auto flex md:flex-row justify-between items-start mt-8 mb-8">
-          <h2 className="shadow-custom text-2xl text-white font-semibold mb-10 mt-10 bg-primary p-3 w-fit rounded-r-full">
+        <div className="w-full md:w-auto flex md:flex-row gap-2 justify-between items-start mt-8 mb-8">
+          <h2 className="shadow-custom text-2xl text-white font-semibold mb-10 mt-10 bg-primary p-3 w-fit rounded-r-2xl">
             {t("contactPage.locationTitle")}
           </h2>
-          <div className="shadow-custom text-right text-white mb-10 mt-10 bg-primary p-11 w-fit rounded-l-full">
+          <div className="shadow-custom  text-white mb-10 mt-10 bg-primary p-4 w-fit rounded-l-3xl">
             <p
               className="mb-2 whitespace-nowrap"
               dangerouslySetInnerHTML={{ __html: t("contactPage.address") }}
@@ -87,7 +87,7 @@ const ContactPage: React.FC = () => {
               dangerouslySetInnerHTML={{ __html: t("contactPage.manager") }}
             ></p>
             <p
-              className="mb-4"
+              className="mb-2 "
               dangerouslySetInnerHTML={{ __html: t("contactPage.email") }}
             ></p>
           </div>
@@ -103,3 +103,5 @@ const ContactPage: React.FC = () => {
 };
 
 export default ContactPage;
+
+
