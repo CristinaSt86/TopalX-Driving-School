@@ -49,7 +49,7 @@ const CineSuntemImg: React.FC = () => {
               key={index}
               src={image}
               alt=""
-              className="w-24 h-24 sm:w-36 sm:h-36 md:w-52 md:h-52 rounded-full object-cover m-1 sm:m-2 border-4 sm:border-6 md:border-8 border-solid border-white"
+              className="shadow-custom w-24 h-24 sm:w-36 sm:h-36 md:w-52 md:h-52 rounded-full object-cover m-1 sm:m-2 border-4 sm:border-6 md:border-8 border-solid border-white"
             />
           ))}
         </div>
@@ -64,7 +64,7 @@ const CineSuntemImg: React.FC = () => {
               key={index}
               src={image}
               alt=""
-              className="w-24 h-24 sm:w-36 sm:h-36 md:w-52 md:h-52 rounded-full object-cover m-1 sm:m-2 border-4 sm:border-6 md:border-8 border-solid border-white"
+              className="shadow-custom w-24 h-24 sm:w-36 sm:h-36 md:w-52 md:h-52 rounded-full object-cover m-1 sm:m-2 border-4 sm:border-6 md:border-8 border-solid border-white"
             />
           ))}
         </div>

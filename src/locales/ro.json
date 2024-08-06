@@ -31,7 +31,7 @@
       "paragraph2": "Scopul școlii de șoferi TopalX nu este doar de a pregăti cursanții pentru a trece examenul de conducere, ci și de a cultiva responsabilitate și respect profund pentru regulile de circulație. Fiecare program de instruire este meticulos planificat pentru a asigura că fiecare cursant înțelege nu doar tehnicile de conducere, ci și importanța unei conduite preventive pe drumurile publice. Prin utilizarea unor metode de predare adaptate nevoilor individuale ale cursanților și prin folosirea unui parc auto modern, echipat la standarde înalte, școala se asigură că fiecare nou șofer este complet pregătit să navigheze diversele situații de trafic în siguranță și încrezător.",
       "paragraph3": "În plus, TopalX pune un accent deosebit pe formarea unui comportament etic la volan, promovând valori de respect și prudență, esențiale pentru coexistența armonioasă în trafic. Cu un colectiv de instructori pasionați și dedicați, proveniți din diverse ramuri ale domeniului auto, școala garantează o experiență de învățare completă și profund umană, orientată spre formarea unor șoferi responsabili și conștienți de impactul lor asupra comunității."
     },
-    "carIntro": "Faceti cunostinta cu autoturismele noastre",
+    "carIntro": "Faceți cunoștință cu autoturismele noastre",
     "categoryB": "Categoria B",
     "button": "Alege Pachetul Potrivit"
   },
@@ -41,7 +41,7 @@
     "tagline": "- scoala de soferi -"
   },
   "navigation": {
-    "home": "Acasa ",
+    "home": "Acasă",
     "about": "Prezentare ",
     "services": "Servicii",
     "testimonials": "Testimoniale ",
@@ -130,7 +130,7 @@
     "fuelType": "Tip Combustibil",
     "packages": [
       {
-        "name": "PAKET PRESIDENT MERCEDES BENZ",
+        "name": "PACHET PRESIDENT MERCEDES BENZ",
         "price": "2900 Lei",
         "transmission": "Cutie automată/diesel",
         "fuelType": "Diesel",
@@ -144,7 +144,7 @@
         "note": "Analizele medicale și avizul psihologic nu sunt incluse în pachet!"
       },
       {
-        "name": "PAKET SENSATION VOLVO",
+        "name": "PACHET SENSATION VOLVO",
         "price": "2500 Lei",
         "transmission": "Cutie manuală/diesel",
         "fuelType": "Diesel",
@@ -158,7 +158,7 @@
         "note": "Analizele medicale și avizul psihologic nu sunt incluse în pachet!"
       },
       {
-        "name": "PAKET FIAT 500",
+        "name": "PACHET FIAT 500",
         "price": "2350 Lei",
         "transmission": "Cutie manuală – benzină",
         "fuelType": "Benzină",
@@ -172,7 +172,7 @@
         "note": "Analizele medicale și avizul psihologic nu sunt incluse în pachet!"
       },
       {
-        "name": "PAKET CITY BREAK SKODA",
+        "name": "PACHET CITY BREAK SKODA",
         "price": "2500 Lei",
         "transmission": "Cutie manuală/benzină",
         "fuelType": "Benzină",
@@ -194,23 +194,23 @@
     "items": [
       {
         "id": 1,
-        "caption": "' Oameni extraordinari, instructorii sunt foarte bine pregatiti si cu multa rabdare.  '"
+        "caption": "' Oameni extraordinari, instructorii sunt foarte bine pregătiți și cu multă răbdare.  '"
       },
       {
         "id": 2,
-        "caption": "' Va multumesc pentru suport, de acum ne intalnim in trafic! '"
+        "caption": "' Vă mulțumesc pentru suport, de acum ne întâlnim în trafic! '"
       },
       {
         "id": 3,
-        "caption": "' Instructori foarte bine pregatiti, disponibilitate, motivatie. '"
+        "caption": "' Instructori foarte bine pregătiți, disponibilitate, motivație. '"
       },
       {
         "id": 4,
-        "caption": "' Mereu acolo cand ai nevoie de sprijin.  '"
+        "caption": "' Mereu acolo când ai nevoie de sprijin.  '"
       },
       {
         "id": 5,
-        "caption": "' O echipa de oameni profesionisti, recomand cu incredere scoala de soferi TopalX! '"
+        "caption": "' O echipă de oameni profesioniști, recomand cu încredere școala de șoferi TopalX! '"
       },
       {
         "id": 6,
@@ -218,7 +218,7 @@
       },
       {
         "id": 7,
-        "caption": "' Recomand cu toata inima! La Scoala TopalX am intalnit oameni care isi fac treaba cu mult drag si daruire. '"
+        "caption": "' Recomand cu toată inima! La Școala TopalX am întâlnit oameni care își fac treaba cu mult drag și dăruire. '"
       },
       {
         "id": 8,
@@ -226,7 +226,7 @@
       },
       {
         "id": 9,
-        "caption": "' Oameni minunati, instructori pregatiti, cu experianta si multa rabdare.Pentru asta le multumesc enorm azi, cand am fost declarata admisa! '"
+        "caption": "' Oameni minunați, instructori pregătiți, cu experiență și multă răbdare. Pentru asta le mulțumesc enorm azi, când am fost declarată admisă! '"
       },
       {
         "id": 10,
@@ -242,7 +242,7 @@
     "contact": "Contact",
     "privacyPolicy": "Politica de Confidențialitate",
     "termsAndConditions": "Termeni și Condiții",
-    "info": "Pentru a-ti obtine permisul de conducere, scoala noastră îți vine în ajutor cu primul pas din cei 100 care trebuiesc parcurși, acesta fiind înscrierea la sediul nostru din Calea Vitan nr 148A. Ai nevoie doar de buletin pentru acest prim pas!"
+    "info": "Pentru a-ți obține permisul de conducere, școala noastră îți vine în ajutor cu primul pas din cei 100 care trebuie parcurși, acesta fiind înscrierea la sediul nostru din Calea Vitan nr. 148A. Ai nevoie doar de buletin pentru acest prim pas!"
   },
   "contactForm": {
     "name": "Nume",
@@ -371,28 +371,28 @@
     "title": "Profesioniștii care fac diferența",
     "members": [
       {
-        "name": "Constantin Topala",
+        "name": "Constantin Topală",
         "role": "Management",
-        "description": "Cu peste 25 de ani de experiență, fondatorul școlii de șoferi și totodată instructor, domnul profesor Topala este un lider dedicat și un adevărat vizionar. Prin expertiza sa vastă și abordarea sa integrată, asigură excelența în educația rutieră pentru toți cursanții. De-a lungul anilor, a format mii de șoferi responsabili și încrezători."
+        "description": "Cu peste 25 de ani de experiență, fondatorul școlii de șoferi și totodată instructor, domnul profesor Topală este un lider dedicat și un adevărat vizionar. Prin expertiza sa vastă și abordarea sa integrată, asigură excelența în educația rutieră pentru toți cursanții. De-a lungul anilor, a format mii de șoferi responsabili și încrezători."
       },
       {
-        "name": "Raluca Topala",
+        "name": "Raluca Topală",
         "role": "Secretariat",
         "description": "Doamna secretara și susținătoarea numărul 1 a elevilor la școala de șoferi, cu peste 10 ani de experiență. Raluca este extrem de sociabilă, empatică și întotdeauna dispusă să ajute pe toată lumea. Ea gestionează toate aspectele administrative cu profesionalism și eficiență, asigurându-se că fiecare cursant are o experiență plăcută și fără griji."
       },
       {
-        "name": "Stefan Puscasu",
+        "name": "Ștefan Pușcașu",
         "role": "Instructor Auto",
-        "description": "Domnul Profesor Stefan, cu peste 15 ani de experiență, este cunoscut pentru răbdarea sa exemplară, profesionalismul desăvârșit și abilitatea de a inspira încredere în cursanți. El își dedică timpul pentru a se asigura că fiecare elev înțelege pe deplin regulile și tehnicile de conducere, oferind sfaturi practice și încurajări constante."
+        "description": "Domnul Profesor Ștefan, cu peste 15 ani de experiență, este cunoscut pentru răbdarea sa exemplară, profesionalismul desăvârșit și abilitatea de a inspira încredere în cursanți. El își dedică timpul pentru a se asigura că fiecare elev înțelege pe deplin regulile și tehnicile de conducere, oferind sfaturi practice și încurajări constante."
       },
       {
-        "name": "Laurentiu Marin",
+        "name": "Laurențiu Marin",
         "role": "Instructor Auto",
         "description": "Domnul Profesor Laurențiu se remarcă printr-o vastă experiență în domeniu și o abordare calmă și metodică în instruirea viitorilor șoferi. Dedicat și pasionat de meseria sa, domnul Laurențiu este un adevărat mentor pentru cursanți. Cu o atitudine prietenoasă și deschisă, el creează un mediu de învățare confortabil și stimulant."
       },
       {
         "name": "Viorel Neagu",
-        "role": "Profesor Legislatie",
+        "role": "Profesor Legislație",
         "description": "Domnul Profesor Viorel poseda o experiență bogată în domeniu. Acesta este apreciat pentru metodele sale pedagogice eficiente și dedicarea sa în a pregăti cursanții pentru a deveni șoferi responsabili și bine informați. Viorel este mereu la curent cu ultimele schimbări legislative și se asigură că toți cursanții săi sunt bine pregătiți pentru examenele teoretice."
       }
     ]

@@ -6,7 +6,7 @@ import CarCard from "../components/CarCard";
 import Team from "../components/Team";
 import Services from "../components/Services";
 import Testimonials from "../components/Testimonials";
-import { PiHandTapLight } from "react-icons/pi";
+import { PiArrowDownLight } from "react-icons/pi";
 import CineSuntemImg from "../components/CineSuntemImg";
 import fiat from "../images/f3.jpg";
 import skoda from "../images/sc2.webp";
@@ -40,7 +40,9 @@ const AboutPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Despre Noi | Scoala de soferi TopalX | Școala de Șoferi din București</title>
+        <title>
+          Despre Noi | Scoala de soferi TopalX | Școala de Șoferi din București
+        </title>
         <meta
           name="description"
           content="Află mai multe despre Scoala de soferi TopalX - școală de șoferi accesibilă și de calitate din București. Oferim cursuri de conducere defensive, permis auto, și pregătire pentru examen auto."
@@ -109,10 +111,9 @@ const AboutPage: React.FC = () => {
             </h2>
             <p className="text-base leading-6 sm:text-base md:text-lg font-medium">
               {t("about.mission.description")}
+
+              <PiArrowDownLight className="absolute bottom-0 right-0 mb-4 mr-4 bounce-effect " />
             </p>
-            <div className="absolute bottom-4 right-4 text-white animate-bounce">
-              <PiHandTapLight size={22} className="text-primary" />
-            </div>
           </section>
           <section
             onClick={scrollToTeam}
@@ -123,10 +124,8 @@ const AboutPage: React.FC = () => {
             </h2>
             <p className="text-base leading-6 sm:text-base md:text-lg font-medium">
               {t("about.team.description")}
+              <PiArrowDownLight className="absolute bottom-0 right-0 mb-2 mr-2 bounce-effect  " />
             </p>
-            <div className="absolute bottom-4 right-4 text-white animate-bounce">
-              <PiHandTapLight size={22} className="text-primary" />
-            </div>
           </section>
         </main>
       </div>
@@ -153,11 +152,11 @@ const AboutPage: React.FC = () => {
             <CarCard name="Mercedes" nickname="Topul Mare" image={mercedes} />
             <CarCard name="Volvo V40" nickname="Topul Mic" image={volvo} />
             <CarCard name="Skoda Fabia" nickname="Bombonica" image={skoda} />
-            <CarCard name="Fiat 500" nickname="Gargarita" image={fiat} />
+            <CarCard name="Fiat 500" nickname="Gărgărița" image={fiat} />
           </div>
           <button
             onClick={scrollToPackages}
-            className="mt-8 mb-8 bg-white text-textColor py-2 px-6 rounded-full font-semibold hover:bg-secondary transition duration-300 transform hover:scale-150 hover:shadow-lg"
+            className="mt-8 mb-8 bg-white text-textColor py-2 px-6 rounded-full font-semibold hover:bg-secondary transition duration-300 bounce-effect "
           >
             {t("about.button")}
           </button>

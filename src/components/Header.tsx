@@ -7,6 +7,7 @@ import logo from "../images/logo.webp";
 
 const Header: React.FC = () => {
   const [isMobileView, setIsMobileView] = useState(false);
+  
 
   useEffect(() => {
     const handleResize = () => {

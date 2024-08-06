@@ -164,7 +164,7 @@ const HomePage: React.FC = () => {
         </p>
         <button
           onClick={scrollToAboutPage}
-          className="mt-10 sm:mt-16 bg-white text-textColor py-2 px-4 sm:px-6 rounded-full font-semibold hover:bg-secondary transition duration-300 transform hover:scale-110 sm:hover:scale-150 hover:shadow-lg"
+          className="bounce-effect mt-10 sm:mt-16 bg-white text-textColor py-2 px-4 sm:px-6 rounded-full font-semibold hover:bg-secondary transition duration-300 transform hover:scale-110 sm:hover:scale-150 hover:shadow-lg"
         >
           {t("home.learn_more")}{" "}
           <span className="bounce inline-block">&darr;</span>
