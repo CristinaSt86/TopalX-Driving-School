@@ -173,8 +173,7 @@ body {
 .image-gallery-thumbnail {
   width: 6.25rem !important; /* Set the width you prefer */
   height: 6.25rem !important; /* Set the height you prefer */
-  border-radius: 1rem; /* Adjust the border-radius as needed */
-  overflow: hidden; /* Ensure the image fits within the border-radius */
+
 }
 
 .image-gallery-thumbnail img {
