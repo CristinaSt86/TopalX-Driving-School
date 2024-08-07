@@ -180,7 +180,7 @@ body {
 .image-gallery-thumbnail img {
   object-fit: cover; /* Ensure the image covers the thumbnail area */
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 
