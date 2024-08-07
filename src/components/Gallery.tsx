@@ -356,7 +356,7 @@ const Gallery: React.FC = () => {
           <ImageGallery
             items={images}
             showThumbnails={true}
-            showPlayButton={false}
+            showPlayButton={true}
             showFullscreenButton={true}
             showIndex={false}
             autoPlay={false}

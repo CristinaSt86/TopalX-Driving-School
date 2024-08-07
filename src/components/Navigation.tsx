@@ -140,7 +140,7 @@
 
 
 
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useCallback } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes, FaPhoneAlt } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
@@ -159,11 +159,11 @@ const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
     setIsOpen(false);
   };
 
-  const handleClickOutside = (event: MouseEvent) => {
+  const handleClickOutside = useCallback((event: MouseEvent) => {
     if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
       closeMenu();
     }
-  };
+  }, [closeMenu]);
 
   useEffect(() => {
     if (isOpen) {
@@ -174,7 +174,7 @@ const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [isOpen]);
+  }, [isOpen, handleClickOutside]);
 
   return (
     <nav
