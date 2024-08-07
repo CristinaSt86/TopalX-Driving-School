@@ -139,7 +139,6 @@
 // export default Navigation;
 
 
-
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes, FaPhoneAlt } from "react-icons/fa";
@@ -151,13 +150,13 @@ const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
   const { t } = useTranslation();
   const menuRef = useRef<HTMLUListElement>(null);
 
-  const toggleMenu = () => {
+  const toggleMenu = useCallback(() => {
     setIsOpen((prev) => !prev);
-  };
+  }, []);
 
-  const closeMenu = () => {
+  const closeMenu = useCallback(() => {
     setIsOpen(false);
-  };
+  }, []);
 
   const handleClickOutside = useCallback((event: MouseEvent) => {
     if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
