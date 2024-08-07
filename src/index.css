@@ -170,11 +170,19 @@ body {
 }
 
 
+.image-gallery-thumbnails-wrapper {
+  display: flex;
+  align-items: flex-end; /* Align items to the bottom */
+}
+
 .image-gallery-thumbnail {
   width: 6.25rem;
   height: 6.25rem;
-  border-radius:1rem;
-  overflow:hidden;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: flex-end; /* Align content to the bottom */
 }
 
 .image-gallery-thumbnail img {
