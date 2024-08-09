@@ -5,6 +5,8 @@ import mer from "../images/mer.webp";
 import vol from "../images/vol.webp";
 import f3 from "../images/f3.webp";
 import sk1 from "../images/sk1.webp";
+import { Link, useNavigate } from "react-router-dom";
+import Button from "./Button";
 
 interface CarPackage {
   name: string;
@@ -19,6 +21,7 @@ interface CarPackage {
 const CarPackages = React.forwardRef<HTMLDivElement>(
   (props, ref: ForwardedRef<HTMLDivElement>) => {
     const { t } = useTranslation();
+    const navigate = useNavigate();
 
     const carPackages: CarPackage[] = [
       {
@@ -83,10 +86,17 @@ const CarPackages = React.forwardRef<HTMLDivElement>(
       },
     ];
 
+    const goToContactPage = () => {
+      navigate("/contact");
+    };
+
     return (
       <div ref={ref}>
         <Helmet>
-          <title>Pachete Auto | Scoala de soferi TopalX | Școala de Șoferi din București</title>
+          <title>
+            Pachete Auto | Scoala de soferi TopalX | Școala de Șoferi din
+            București
+          </title>
           <meta
             name="description"
             content="Descoperă pachetele auto oferite de Scoala de soferi TopalX - școală de șoferi din București. Alege dintre mașini moderne și instrucție profesională pentru a obține permisul auto."
@@ -132,7 +142,7 @@ const CarPackages = React.forwardRef<HTMLDivElement>(
           <meta property="twitter:site" content="@TopalXScoalaAuto" />
           <meta property="twitter:creator" content="@TopalXScoalaAuto" />
         </Helmet>
-        <h1 className="text-3xl font-bold text-center mb-16 mt-16 pl-3 pr-3 textShadow-mt">
+        <h1 className="text-3xl font-bold text-center mb-16 md:mb-28 md:mt-28 pl-3 pr-3 textShadow-mt">
           {t("carPackages.title")}
         </h1>
         {carPackages.map((pkg, index) => (
@@ -161,7 +171,7 @@ const CarPackages = React.forwardRef<HTMLDivElement>(
               </ul>
               <p className="text-red-500">{pkg.note}</p>
             </div>
-            <div className="w-full md:w-1/2 flex justify-center shadow-custom backdrop-blur-sm border-black border-y-2">
+            <div className="w-full md:w-1/2 flex justify-center shadow-2xl backdrop-blur-sm border-black border-y-2">
               <img
                 src={pkg.image}
                 alt={pkg.name}
@@ -170,6 +180,24 @@ const CarPackages = React.forwardRef<HTMLDivElement>(
             </div>
           </section>
         ))}
+        <div className="flex flex-col items-center justify-center ">
+          <p className="text-center mb-8 text-2xl px-4  md:px-24 font-semibold mt-16">
+            {t("carPackages.introText")}{" "}
+            <Link to="/contact" className="text-logoBlue underline">{" "}
+              {t("carPackages.registrationFormText")}
+            </Link>{" "}
+            {t("carPackages.orCallText")}{" "}
+            <a href="tel:+40736470629" className="text-logoBlue underline">{" "}
+              0736 470 629
+            </a>
+            .
+          </p>
+          <Button
+            onClick={goToContactPage}
+            textKey="carPackages.buttonText"
+            additionalClasses="border-4 border-secondary mb-16"
+          />
+        </div>
       </div>
     );
   }

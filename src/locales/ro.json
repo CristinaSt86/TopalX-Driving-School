@@ -125,6 +125,10 @@
   },
   "carPackages": {
     "title": "Pachete Auto",
+    "introText": "Acum este momentul să obțineți permisul de conducere! Ce mai așteptați? Îndepliniți-vă dorința de mult timp și înscrieți-vă acum. Completați ",
+    "registrationFormText": "formularul de înscriere",
+    "orCallText":"sau sunați-ne la ",
+    "buttonText": "Înscrie-te acum",
     "price": "Preț",
     "transmission": "Transmisie",
     "fuelType": "Tip Combustibil",
@@ -400,6 +404,12 @@
   "default": {
     "title": "Scoala de Soferi TopalX | Școala de șoferi de top din București",
     "description": "Scoala de Soferi TopalX | Școala de șoferi de top din București. Învățați să conduceți cu cei mai buni instructori auto și obțineți permisul auto rapid și eficient. Oferim cursuri de conducere în sector 1/2/3/4/5/6, școală de șoferi accesibilă, lecții de condus pentru începători și avansați, și mașini noi și bine echipate.Școala de Șoferi TopalX oferă cursuri de conducere profesionale cu instructori experimentați. Înscrie-te acum și învață să conduci în siguranță.",
-   "keywords": "scoala de soferi, cursuri de conducere, instructori auto, permis auto, București, sector 1, sector 2, sector 3, sector 4, sector 5, sector 6, școală de șoferi, lecții de condus, școala de șoferi accesibilă, mașini noi, pregătire examen auto, școală de șoferi top, școală de șoferi București, siguranta la volan."
+    "keywords": "scoala de soferi, cursuri de conducere, instructori auto, permis auto, București, sector 1, sector 2, sector 3, sector 4, sector 5, sector 6, școală de șoferi, lecții de condus, școala de șoferi accesibilă, mașini noi, pregătire examen auto, școală de șoferi top, școală de șoferi București, siguranta la volan."
+  },
+  "offer": {
+    "title": "Pachet ședințe suplimentare de pregătire 4+1 cadou!",
+    "description1": "🎖️ Inclusiv pentru posesorii de permis.",
+    "description2": "Alege între cutie automată sau manuală 🚗🚙",
+    "btnText": "Profită de ofertă!"
   }
 }

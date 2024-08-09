@@ -117,10 +117,11 @@ const Testimonials = forwardRef<TestimonialsHandle, TestimonialsProps>(
           <meta property="twitter:site" content="@TopalXScoalaAuto" />
           <meta property="twitter:creator" content="@TopalXScoalaAuto" />
         </Helmet>
-        <h2 className="text-3xl font-bold text-center mt-16 pl-3 pr-3">
+       
+        <div className="bg-gray-100 p-8 mb-16 mt-16 shadow-custom ellipse-img">
+        <h2 className="text-3xl font-bold text-center mt-16 mb-16 pl-3 pr-3">
           {t("testimonials.title")}
         </h2>
-        <div className="bg-gray-100 p-8 mb-16 mt-16 shadow-custom ellipse-img">
           <div className="container mx-auto">
             <div className="flex flex-wrap justify-center items-center">
               {finalTestimonials.map(({ id, avatar, caption }, index) => (

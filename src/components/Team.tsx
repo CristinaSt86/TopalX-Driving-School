@@ -8,6 +8,7 @@ import ins2 from "../images/ins2.webp";
 import ins1 from "../images/ins1.webp";
 import prof1 from "../images/prof1.webp";
 import FiatDrive from "../images/FiatDrive.webp";
+import Offer from "./Offer";
 
 const Team = React.forwardRef<HTMLDivElement, any>((props, ref) => {
   const { t } = useTranslation();
@@ -54,8 +55,8 @@ const Team = React.forwardRef<HTMLDivElement, any>((props, ref) => {
     <>
       <Helmet>
         <title>
-          Echipa | Scoala de soferi TopalX | Instructori cu Experiență și Profesionism în
-          București
+          Echipa | Scoala de soferi TopalX | Instructori cu Experiență și
+          Profesionism în București
         </title>
         <meta
           name="description"
@@ -103,14 +104,14 @@ const Team = React.forwardRef<HTMLDivElement, any>((props, ref) => {
         <meta property="twitter:site" content="@TopalXScoalaAuto" />
         <meta property="twitter:creator" content="@TopalXScoalaAuto" />
       </Helmet>
-      <h2
-        ref={ref}
-        className="text-center text-3xl font-bold text-gray-800 mb-16 mt-16 pl-3 pr-3"
-      >
-        {t("team2.title")}
-      </h2>
 
-      <section className="bg-white pb-3 mb-10 shadow-2xl">
+      <section className="bg-white pb-3 mb-28 mt-28 shadow-2xl">
+        <h2
+          ref={ref}
+          className="text-center text-3xl font-bold text-gray-800 mt-16 pl-3 pr-3 pt-12"
+        >
+          {t("team2.title")}
+        </h2>
         <div className="relative w-full h-48 overflow-hidden">
           <div className="absolute bottom-1 left-0 w-80 h-auto animate-drive">
             <img src={FiatDrive} alt="Car" />
@@ -146,6 +147,8 @@ const Team = React.forwardRef<HTMLDivElement, any>((props, ref) => {
           </div>
         </div>
       </section>
+
+      <Offer />
     </>
   );
 });

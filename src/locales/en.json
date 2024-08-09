@@ -128,6 +128,10 @@
   },
   "carPackages": {
     "title": "Car Packages",
+    "introText": "Is time to get your driving license! What are you waiting for? Fulfill your long-held wish and sign up now. Fill out the",
+    "registrationFormText": "registration form",
+    "orCallText": "or call us at",
+    "buttonText": "Sign Up Now",
     "price": "Price",
     "transmission": "Transmission",
     "fuelType": "Fuel Type",
@@ -403,10 +407,15 @@
       }
     ]
   },
-    "default": {
-      "title": "TopalX Driving School | Top Driving School in Bucharest",
-      "description": "TopalX Driving School | Top driving school in Bucharest. Learn to drive with the best driving instructors and get your driver's license quickly and efficiently. We offer driving courses in sectors 1/2/3/4/5/6, affordable driving school, driving lessons for beginners and advanced, and new and well-equipped cars. TopalX Driving School offers professional driving courses with experienced instructors. Enroll now and learn to drive safely.",
-      "keywords": "driving school, driving courses, driving instructors, driver's license, Bucharest, sector 1, sector 2, sector 3, sector 4, sector 5, sector 6, driving school, driving lessons, affordable driving school, new cars, driving exam preparation, top driving school, Bucharest driving school, driving safety."
-    }
+  "default": {
+    "title": "TopalX Driving School | Top Driving School in Bucharest",
+    "description": "TopalX Driving School | Top driving school in Bucharest. Learn to drive with the best driving instructors and get your driver's license quickly and efficiently. We offer driving courses in sectors 1/2/3/4/5/6, affordable driving school, driving lessons for beginners and advanced, and new and well-equipped cars. TopalX Driving School offers professional driving courses with experienced instructors. Enroll now and learn to drive safely.",
+    "keywords": "driving school, driving courses, driving instructors, driver's license, Bucharest, sector 1, sector 2, sector 3, sector 4, sector 5, sector 6, driving school, driving lessons, affordable driving school, new cars, driving exam preparation, top driving school, Bucharest driving school, driving safety."
+  },
+  "offer": {
+    "title": "Supplementary training package 4+1 free!",
+    "description1": "🎖️ Including for license holders.",
+    "description2": "Choose between automatic or manual transmission 🚗🚙",
+    "btnText": "Claim the Offer!"
   }
-  
+}

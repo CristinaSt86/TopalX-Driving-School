@@ -5,6 +5,7 @@ import AboutPage from "./AboutPage";
 import Gallery from "../components/Gallery";
 import ContactPage from "./ContactPage";
 import "../index.css";
+import Button from "../components/Button";
 
 const HomePage: React.FC = () => {
   const { t } = useTranslation();
@@ -38,79 +39,83 @@ const HomePage: React.FC = () => {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "additionalType": "http://www.schema.org/DrivingSchool",
-    "name": "Scoala de soferi TopalX",
-    "description": "Școală de șoferi de top în București. Oferim cursuri de conducere avansate, permis auto, și pregătire pentru examen auto.",
-    "url": "https://www.topalxscoalaauto.ro",
-    "address": {
+    additionalType: "http://www.schema.org/DrivingSchool",
+    name: "Scoala de soferi TopalX",
+    description:
+      "Școală de șoferi de top în București. Oferim cursuri de conducere avansate, permis auto, și pregătire pentru examen auto.",
+    url: "https://www.topalxscoalaauto.ro",
+    address: {
       "@type": "PostalAddress",
-      "streetAddress": "Calea Vitan 148A",
-      "addressLocality": "București",
-      "postalCode": "031301",
-      "addressCountry": "RO"
+      streetAddress: "Calea Vitan 148A",
+      addressLocality: "București",
+      postalCode: "031301",
+      addressCountry: "RO",
     },
-    "contactPoint": {
+    contactPoint: {
       "@type": "ContactPoint",
-      "telephone": "+40736 470 629",
-      "contactType": "Customer Service"
+      telephone: "+40736 470 629",
+      contactType: "Customer Service",
     },
-    "sameAs": [
+    sameAs: [
       "https://www.facebook.com/scoaladesoferitopalx/",
-      "https://www.instagram.com/scoaladesoferitopalx/"
+      "https://www.instagram.com/scoaladesoferitopalx/",
     ],
-    "potentialAction": {
+    potentialAction: {
       "@type": "SearchAction",
-      "target": "https://www.topalxscoalaauto.ro/search?q={search_term_string}",
-      "query-input": "required name=search_term_string"
+      target: "https://www.topalxscoalaauto.ro/search?q={search_term_string}",
+      "query-input": "required name=search_term_string",
     },
-    "service": {
+    service: {
       "@type": "Service",
-      "serviceType": "Driving Lessons",
-      "description": "Professional driving lessons with experienced instructors to help you get your driver's license quickly and efficiently."
-    }
+      serviceType: "Driving Lessons",
+      description:
+        "Professional driving lessons with experienced instructors to help you get your driver's license quickly and efficiently.",
+    },
   };
 
   const breadcrumbData = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    "itemListElement": [
+    itemListElement: [
       {
         "@type": "ListItem",
-        "position": 1,
-        "name": "Acasa",
-        "item": "https://www.topalxscoalaauto.ro"
+        position: 1,
+        name: "Acasa",
+        item: "https://www.topalxscoalaauto.ro",
       },
       {
         "@type": "ListItem",
-        "position": 2,
-        "name": "Prezentare",
-        "item": "https://www.topalxscoalaauto.ro/about"
+        position: 2,
+        name: "Prezentare",
+        item: "https://www.topalxscoalaauto.ro/about",
       },
       {
         "@type": "ListItem",
-        "position": 3,
-        "name": "Servicii",
-        "item": "https://www.topalxscoalaauto.ro/services"
+        position: 3,
+        name: "Servicii",
+        item: "https://www.topalxscoalaauto.ro/services",
       },
       {
         "@type": "ListItem",
-        "position": 4,
-        "name": "Galerie",
-        "item": "https://www.topalxscoalaauto.ro/gallery"
+        position: 4,
+        name: "Galerie",
+        item: "https://www.topalxscoalaauto.ro/gallery",
       },
       {
         "@type": "ListItem",
-        "position": 5,
-        "name": "Contact",
-        "item": "https://www.topalxscoalaauto.ro/contact"
-      }
-    ]
+        position: 5,
+        name: "Contact",
+        item: "https://www.topalxscoalaauto.ro/contact",
+      },
+    ],
   };
 
   return (
     <div className="overflow-x-hidden max-w-full mx-auto">
       <Helmet>
-        <title>Scoala de soferi TopalX | Cea mai bună școală de șoferi din București</title>
+        <title>
+          Scoala de soferi TopalX | Cea mai bună școală de șoferi din București
+        </title>
         <meta
           name="description"
           content="TopalX | Școală de șoferi de top în București. Oferim cursuri de conducere avansate, permis auto, și pregătire pentru examen auto."
@@ -122,17 +127,35 @@ const HomePage: React.FC = () => {
         <meta name="author" content="Scoala de soferi TopalX" />
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta property="og:title" content="Scoala de soferi TopalX - Cea mai bună școală de șoferi din București" />
-        <meta property="og:description" content="Scoala de soferi TopalX - Școală de șoferi de top în București. Oferim cursuri de conducere avansate, permis auto, și pregătire pentru examen auto." />
+        <meta
+          property="og:title"
+          content="Scoala de soferi TopalX - Cea mai bună școală de șoferi din București"
+        />
+        <meta
+          property="og:description"
+          content="Scoala de soferi TopalX - Școală de șoferi de top în București. Oferim cursuri de conducere avansate, permis auto, și pregătire pentru examen auto."
+        />
         <meta property="og:url" content="https://www.topalxscoalaauto.ro" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://www.topalxscoalaauto.ro/images/homepage.jpg" />
+        <meta
+          property="og:image"
+          content="https://www.topalxscoalaauto.ro/images/homepage.jpg"
+        />
         <meta property="og:locale" content="ro_RO" />
         <meta property="og:site_name" content="TopalX Scoala Auto" />
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:title" content="Scoala de soferi TopalX - Cea mai bună școală de șoferi din București" />
-        <meta property="twitter:description" content="Scoala de soferi TopalX - Școală de șoferi de top în București. Oferim cursuri de conducere avansate, permis auto, și pregătire pentru examen auto." />
-        <meta property="twitter:image" content="https://www.topalxscoalaauto.ro/images/homepage.jpg" />
+        <meta
+          property="twitter:title"
+          content="Scoala de soferi TopalX - Cea mai bună școală de șoferi din București"
+        />
+        <meta
+          property="twitter:description"
+          content="Scoala de soferi TopalX - Școală de șoferi de top în București. Oferim cursuri de conducere avansate, permis auto, și pregătire pentru examen auto."
+        />
+        <meta
+          property="twitter:image"
+          content="https://www.topalxscoalaauto.ro/images/homepage.jpg"
+        />
         <meta property="twitter:site" content="@TopalXScoalaAuto" />
         <meta property="twitter:creator" content="@TopalXScoalaAuto" />
         <script type="application/ld+json">
@@ -162,13 +185,7 @@ const HomePage: React.FC = () => {
         >
           {t("home.description")}
         </p>
-        <button
-          onClick={scrollToAboutPage}
-          className="bounce-effect mt-10 sm:mt-16 bg-white text-textColor py-2 px-4 sm:px-6 rounded-full font-semibold hover:bg-secondary transition duration-300 transform hover:scale-110 sm:hover:scale-150 hover:shadow-lg"
-        >
-          {t("home.learn_more")}{" "}
-          <span className="bounce inline-block">&darr;</span>
-        </button>
+        <Button onClick={scrollToAboutPage} textKey="home.learn_more" />
       </div>
 
       <div ref={aboutPageRef}>
