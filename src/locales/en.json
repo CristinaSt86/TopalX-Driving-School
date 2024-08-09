@@ -139,7 +139,7 @@
       {
         "name": "PRESIDENT PACKAGE MERCEDES BENZ",
         "price": "2900 Lei",
-        "transmission": "Automatic/Diesel",
+        "transmission": "Automatic",
         "fuelType": "Diesel",
         "features": [
           "Medical tests + psychological approval 150 Lei + 150 Lei",
@@ -153,7 +153,7 @@
       {
         "name": "SENSATION PACKAGE VOLVO",
         "price": "2500 Lei",
-        "transmission": "Manual/Diesel",
+        "transmission": "Manual",
         "fuelType": "Diesel",
         "features": [
           "Medical tests + psychological approval 150 Lei + 150 Lei",
@@ -167,7 +167,7 @@
       {
         "name": "FIAT 500 PACKAGE",
         "price": "2350 Lei",
-        "transmission": "Manual – Petrol",
+        "transmission": "Manual",
         "fuelType": "Petrol",
         "features": [
           "Medical tests + psychological approval 150 Lei + 150 Lei",
@@ -181,7 +181,7 @@
       {
         "name": "CITY BREAK PACKAGE SKODA",
         "price": "2500 Lei",
-        "transmission": "Manual/Petrol",
+        "transmission": "Manual",
         "fuelType": "Petrol",
         "features": [
           "Medical tests + psychological approval 150 Lei + 150 Lei",
@@ -197,7 +197,7 @@
 
   "testimonials": {
     "titleHelm": "Testimonials - TopalX",
-    "description": "Read what our customers say about us.",
+    "description": "Read what our customers say.",
     "title": "Students Experiences",
     "items": [
       {
@@ -243,13 +243,14 @@
     ]
   },
   "footer": {
-    "rights": "© 2024 All rights reserved.",
+    "rights": "© 2024 TopalX. All rights reserved.",
     "home": "Home",
     "about": "About",
     "services": "Services",
     "contact": "Contact",
     "privacyPolicy": "Privacy Policy",
     "termsAndConditions": "Terms and Conditions",
+    "faq":"FAQ",
     "info": "To obtain your driver's license, our school assists you with the first step out of the 100 required steps, which is registration at our office located at 148A Vitan Road. You only need your ID for this first step!"
   },
   "contactForm": {
@@ -407,15 +408,47 @@
       }
     ]
   },
-  "default": {
-    "title": "TopalX Driving School | Top Driving School in Bucharest",
-    "description": "TopalX Driving School | Top driving school in Bucharest. Learn to drive with the best driving instructors and get your driver's license quickly and efficiently. We offer driving courses in sectors 1/2/3/4/5/6, affordable driving school, driving lessons for beginners and advanced, and new and well-equipped cars. TopalX Driving School offers professional driving courses with experienced instructors. Enroll now and learn to drive safely.",
-    "keywords": "driving school, driving courses, driving instructors, driver's license, Bucharest, sector 1, sector 2, sector 3, sector 4, sector 5, sector 6, driving school, driving lessons, affordable driving school, new cars, driving exam preparation, top driving school, Bucharest driving school, driving safety."
-  },
   "offer": {
     "title": "Supplementary training package 4+1 free!",
     "description1": "🎖️ Including for license holders.",
     "description2": "Choose between automatic or manual transmission 🚗🚙",
     "btnText": "Claim the Offer!"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "What are the steps to enroll in the driving school?",
+        "answer": "To enroll you only need your ID card/residence permit and a minimum advance payment of 700 lei. Later, you must bring the criminal record with the mention for the driving exam."
+      },
+      {
+        "question": "What documents are needed for enrollment?",
+        "answer": "For enrollment you only need your ID card."
+      },
+      {
+        "question": "How long do the theoretical and practical courses last?",
+        "answer": "The theoretical courses last 7 days. The practical courses last a minimum of 5 weeks and a maximum of 6 months."
+      },
+      {
+        "question": "What types of cars are available for driving lessons?",
+        "answer": "We offer a wide range of modern and well-maintained cars with manual or automatic transmission, depending on preferences."
+      },
+      {
+        "question": "What are the fees for driving courses?",
+        "answer": "The fees vary depending on the type of course chosen. For more details, please visit the services section on our website."
+      },
+      {
+        "question": "How can I schedule driving lessons?",
+        "answer": "Driving lessons are scheduled at the secretariat according to the student's schedule and the availability of the instructor."
+      },
+      {
+        "question": "What happens if I don't pass the exam?",
+        "answer": "If you don't pass the exam, you can retake the courses and schedule to better prepare. We will work together to ensure you're ready for the next attempt."
+      },
+      {
+        "question": "Are there any discounts for students or groups?",
+        "answer": "Yes, we offer discounts for students and groups. Contact us for more details about our current offers."
+      }
+    ]
   }
 }

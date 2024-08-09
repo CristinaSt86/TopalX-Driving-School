@@ -136,7 +136,7 @@
       {
         "name": "PACHET PRESIDENT MERCEDES BENZ",
         "price": "2900 Lei",
-        "transmission": "Cutie automată/diesel",
+        "transmission": "Cutie automată",
         "fuelType": "Diesel",
         "features": [
           "Analize medicale + aviz psihologic 150 lei + 150 lei",
@@ -150,7 +150,7 @@
       {
         "name": "PACHET SENSATION VOLVO",
         "price": "2500 Lei",
-        "transmission": "Cutie manuală/diesel",
+        "transmission": "Cutie manuală",
         "fuelType": "Diesel",
         "features": [
           "Analize medicale + aviz psihologic 150 lei + 150 lei",
@@ -164,7 +164,7 @@
       {
         "name": "PACHET FIAT 500",
         "price": "2350 Lei",
-        "transmission": "Cutie manuală – benzină",
+        "transmission": "Cutie manuală",
         "fuelType": "Benzină",
         "features": [
           "Analize medicale + aviz psihologic 150 lei + 150 lei",
@@ -178,7 +178,7 @@
       {
         "name": "PACHET CITY BREAK SKODA",
         "price": "2500 Lei",
-        "transmission": "Cutie manuală/benzină",
+        "transmission": "Cutie manuală",
         "fuelType": "Benzină",
         "features": [
           "Analize medicale + aviz psihologic 150 lei + 150 lei",
@@ -193,7 +193,7 @@
   },
   "testimonials": {
     "titleHelm": "Testimoniale - TopalX",
-    "description": "Citește ce spun clienții noștri despre noi.",
+    "description": "Citește ce spun clienții noștri.",
     "title": "Experiențele cursanților",
     "items": [
       {
@@ -239,13 +239,14 @@
     ]
   },
   "footer": {
-    "rights": "© 2024 Toate drepturile rezervate.",
+    "rights": "© 2024 TopalX. Toate drepturile rezervate.",
     "home": "Acasă",
     "about": "Despre noi",
     "services": "Servicii",
     "contact": "Contact",
     "privacyPolicy": "Politica de Confidențialitate",
     "termsAndConditions": "Termeni și Condiții",
+    "faq":"Întrebări frecvente",
     "info": "Pentru a-ți obține permisul de conducere, școala noastră îți vine în ajutor cu primul pas din cei 100 care trebuie parcurși, acesta fiind înscrierea la sediul nostru din Calea Vitan nr. 148A. Ai nevoie doar de buletin pentru acest prim pas!"
   },
   "contactForm": {
@@ -401,15 +402,47 @@
       }
     ]
   },
-  "default": {
-    "title": "Scoala de Soferi TopalX | Școala de șoferi de top din București",
-    "description": "Scoala de Soferi TopalX | Școala de șoferi de top din București. Învățați să conduceți cu cei mai buni instructori auto și obțineți permisul auto rapid și eficient. Oferim cursuri de conducere în sector 1/2/3/4/5/6, școală de șoferi accesibilă, lecții de condus pentru începători și avansați, și mașini noi și bine echipate.Școala de Șoferi TopalX oferă cursuri de conducere profesionale cu instructori experimentați. Înscrie-te acum și învață să conduci în siguranță.",
-    "keywords": "scoala de soferi, cursuri de conducere, instructori auto, permis auto, București, sector 1, sector 2, sector 3, sector 4, sector 5, sector 6, școală de șoferi, lecții de condus, școala de șoferi accesibilă, mașini noi, pregătire examen auto, școală de șoferi top, școală de șoferi București, siguranta la volan."
-  },
   "offer": {
     "title": "Pachet ședințe suplimentare de pregătire 4+1 cadou!",
     "description1": "🎖️ Inclusiv pentru posesorii de permis.",
     "description2": "Alege între cutie automată sau manuală 🚗🚙",
     "btnText": "Profită de ofertă!"
+  },
+  "faq": {
+    "title": "Întrebări frecvente",
+    "items": [
+      {
+        "question": "Care sunt pașii pentru a mă înscrie la școala de șoferi?",
+        "answer": "Pentru înscriere este nevoie doar de buletin/cartea de identitate/permis de ședere și un avans de minim 700 lei. Ulterior trebuie adus cazierul cu mențiunea pentru examen auto."
+      },
+      {
+        "question": "Ce documente sunt necesare pentru înscriere?",
+        "answer": "Ca și documente pentru înscriere doar cartea de identitate."
+      },
+      {
+        "question": "Cât durează cursurile teoretice și practice?",
+        "answer": "Cursurile teoretice durează 7 zile. Cursurile practice minim 5 săptămâni - maxim 6 luni."
+      },
+      {
+        "question": "Ce tipuri de mașini sunt disponibile pentru orele de conducere?",
+        "answer": "Oferim o gamă variată de mașini moderne și bine întreținute cu transmisie manuală sau automată în funcție de preferințe."
+      },
+      {
+        "question": "Care sunt tarifele pentru cursurile de șoferi?",
+        "answer": "Tarifele variază în funcție de tipul pachetului ales. Pentru mai multe detalii, te rugăm să vizitezi secțiunea de servicii a site-ului nostru."
+      },
+      {
+        "question": "Cum pot programa orele de conducere?",
+        "answer": "Orele de conducere practică se programează la secretariat în funcție de programul elevului și de disponibilitatea programatorului."
+      },
+      {
+        "question": "Ce se întâmplă dacă nu promovez examenul?",
+        "answer": "Dacă nu promovezi examenul, poți relua cursurile și programările pentru a te pregăti mai bine. Vom lucra împreună pentru a ne asigura că ești pregătit pentru următoarea încercare."
+      },
+      {
+        "question": "Există reduceri pentru studenți sau grupuri?",
+        "answer": "Da, oferim reduceri pentru studenți și pentru grupuri. Contactează-ne pentru a afla mai multe detalii despre ofertele noastre actuale."
+      }
+    ]
   }
 }

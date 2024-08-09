@@ -18,6 +18,11 @@ const LegalLinks: React.FC = () => {
             {t("footer.termsAndConditions")}
           </Link>
         </li>
+        <li>
+          <Link to="/faq" className="hover:text-gray-400">
+            {t("footer.faq")}
+          </Link>
+        </li>
       </ul>
     </div>
   );

@@ -195,7 +195,7 @@ const CarPackages = React.forwardRef<HTMLDivElement>(
           <Button
             onClick={goToContactPage}
             textKey="carPackages.buttonText"
-            additionalClasses="border-4 border-secondary mb-16"
+            additionalClasses="border-4 border-secondary mb-12"
           />
         </div>
       </div>

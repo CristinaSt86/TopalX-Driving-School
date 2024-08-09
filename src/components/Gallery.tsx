@@ -345,10 +345,11 @@ const Gallery: React.FC = () => {
         <meta property="twitter:site" content="@TopalXScoalaAuto" />
         <meta property="twitter:creator" content="@TopalXScoalaAuto" />
       </Helmet>
+     
+      <div className="shadow-2xl container mx-auto rounded-2xl p-4 mb-16 mt-10 border-2 border-secondary">
       <h2 className="text-center text-3xl font-bold mb-16 mt-16 pl-4 pr-4">
         {t("gallery.galleryTitle")}
       </h2>
-      <div className="shadow-2xl bg-customBg container mx-auto rounded-2xl p-4 mb-16 mt-10 border-2 border-secondary">
         <p className="text-center mb-16 font-semibold">
           {t("gallery.galleryDescription")}
         </p>

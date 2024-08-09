@@ -57,10 +57,11 @@ const ContactPage: React.FC = () => {
         />
       </Helmet>
 
-      <h1 className=" px-3 mt-16 mb-16 text-3xl font-bold text-center md:mb-16 md:mt-16 ">
+    
+      <div className="shadow-custom relative items-center justify-center bg-opacity-custom pt-20 pb-20 md:flex-row md:gap-8 md:m-0">
+      <h1 className=" px-3 mt-8 mb-16 text-3xl font-bold text-center md:mb-16 md:mt-16 ">
         {t("contactPage.title")}
       </h1>
-      <div className="shadow-custom relative items-center justify-center bg-opacity-custom pt-20 pb-20 md:flex-row md:gap-8 md:m-0">
         <div className="relative z-10">
           <Suspense fallback={<Loader />}>
             <ContactForm onSubmit={handleFormSubmit} />

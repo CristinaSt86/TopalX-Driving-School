@@ -8,7 +8,6 @@ import { LanguageProvider } from "./LanguageContext";
 import { I18nextProvider } from "react-i18next";
 import i18n from "./i18n";
 import RoutesConfig from "./RoutesConfig";
-import Layout from "./components/Layout";
 import ScrollToTop from "./components/ScrollToTop";
 
 const App: React.FC = () => {
@@ -25,20 +24,17 @@ const App: React.FC = () => {
   //   };
   // })();
 
-  
   return (
     <div className="flex flex-col min-h-screen ">
       <main className="flex-grow ">
         <I18nextProvider i18n={i18n}>
           <LanguageProvider>
             <Suspense fallback={<Loader />}>
-              <Layout>
-                <ScrollToTop />
-                <Header />
-                <RoutesConfig />
-                <BackToTopButton />
-                <Footer />
-              </Layout>
+              <ScrollToTop />
+              <Header />
+              <RoutesConfig />
+              <BackToTopButton />
+              <Footer />
             </Suspense>
           </LanguageProvider>
         </I18nextProvider>

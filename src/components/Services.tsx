@@ -92,7 +92,7 @@ const Services = React.forwardRef((props, ref) => {
       </Helmet>
 
       <div
-        className={`bg-custom-services bg-center bg-cover bg-no-repeat p-2 mx-auto md:p-6 border-2 border-solid border-white mt-16 mb-16 ${
+        className={`bg-custom-services bg-center bg-cover bg-no-repeat p-2 mx-auto md:p-6 border-2 border-solid border-white mt-8 mb-16 ${
           window.innerWidth > 850 ? "bg-fixed" : "bg-scroll"
         }`}
       >
