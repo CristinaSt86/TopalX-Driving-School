@@ -5,7 +5,7 @@ import SocialLinks from "./SocialLinks";
 import NavigationLinks from "./NavigationLinks";
 import LegalLinks from "./LegalLinks";
 import logo from "../images/logo.webp";
-import FAQ from "./FAQ";
+
 
 const Footer: React.FC = () => {
   const { t } = useTranslation();
