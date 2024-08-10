@@ -250,7 +250,7 @@
     "contact": "Contact",
     "privacyPolicy": "Privacy Policy",
     "termsAndConditions": "Terms and Conditions",
-    "faq":"FAQ",
+    "faq": "FAQ",
     "info": "To obtain your driver's license, our school assists you with the first step out of the 100 required steps, which is registration at our office located at 148A Vitan Road. You only need your ID for this first step!"
   },
   "contactForm": {
@@ -263,7 +263,8 @@
     "error": "There was an error sending your message.",
     "consent": "I agree to the",
     "privacyPolicy": "Privacy Policy",
-    "consentRequired": "Your agreement with the privacy policy is required."
+    "consentRequired": "Your agreement with the privacy policy is required.",
+    "recaptchaRequired": "Please complete the reCAPTCHA verification to proceed."
   },
   "topHeader": {
     "phone": "0736 470 629",
@@ -443,7 +444,11 @@
       },
       {
         "question": "What happens if I don't pass the exam?",
-        "answer": "If you don't pass the exam, you can retake the courses and schedule to better prepare. We will work together to ensure you're ready for the next attempt."
+        "answer": "If you do not pass the theoretical exam, you may retake it after a 16-day period. Should you not pass the practical exam, you will be required to attend 3 mandatory additional sessions, after which you will receive a certificate that allows you to reschedule the driving test."
+      },
+      {
+        "question": "Are there any discounts for students or groups?",
+        "answer": "Yes, we offer discounts for students and groups. Contact us for more details about our current offers."
       }
     ]
   }

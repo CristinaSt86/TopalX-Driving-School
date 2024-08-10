@@ -127,7 +127,7 @@
     "title": "Pachete Auto",
     "introText": "Acum este momentul să obțineți permisul de conducere! Ce mai așteptați? Îndepliniți-vă dorința de mult timp și înscrieți-vă acum. Completați ",
     "registrationFormText": "formularul de înscriere",
-    "orCallText":"sau sunați-ne la ",
+    "orCallText": "sau sunați-ne la ",
     "buttonText": "Înscrie-te acum",
     "price": "Preț",
     "transmission": "Transmisie",
@@ -246,7 +246,7 @@
     "contact": "Contact",
     "privacyPolicy": "Politica de Confidențialitate",
     "termsAndConditions": "Termeni și Condiții",
-    "faq":"Întrebări frecvente",
+    "faq": "Întrebări frecvente",
     "info": "Pentru a-ți obține permisul de conducere, școala noastră îți vine în ajutor cu primul pas din cei 100 care trebuie parcurși, acesta fiind înscrierea la sediul nostru din Calea Vitan nr. 148A. Ai nevoie doar de buletin pentru acest prim pas!"
   },
   "contactForm": {
@@ -259,7 +259,8 @@
     "error": "A apărut o eroare la trimiterea mesajului.",
     "consent": "Sunt de acord cu",
     "privacyPolicy": " Politica de Confidențialitate",
-    "consentRequired": "Acordul dumneavoastră cu politica de confidențialitate este necesar."
+    "consentRequired": "Acordul dumneavoastră cu politica de confidențialitate este necesar.",
+    "recaptchaRequired": "Vă rugăm să completați verificarea reCAPTCHA pentru a continua."
   },
   "topHeader": {
     "phone": "0736 470 629",
@@ -437,7 +438,11 @@
       },
       {
         "question": "Ce se întâmplă dacă nu promovez examenul?",
-        "answer": "Dacă nu promovezi examenul, poți relua cursurile și programările pentru a te pregăti mai bine. Vom lucra împreună pentru a ne asigura că ești pregătit pentru următoarea încercare."
+        "answer": "În cazul în care nu promovezi examenul teoretic, ai posibilitatea de a-l susține din nou după o perioadă de 16 zile. Dacă nu promovezi examenul practic, va fi necesar să participi la 3 ședințe suplimentare obligatorii, după care vei primi o adeverință ce îți va permite să te reprogramezi pentru proba practică."
+      },
+      {
+        "question": "Există reduceri pentru studenți sau grupuri?",
+        "answer": "Da, oferim reduceri pentru studenți și pentru grupuri. Contactează-ne pentru a afla mai multe detalii despre ofertele noastre actuale."
       }
     ]
   }

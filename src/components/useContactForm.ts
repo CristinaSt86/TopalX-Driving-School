@@ -18,6 +18,7 @@ const useContactForm = () => {
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState<string | null>(null);
+  const [recaptchaToken, setRecaptchaToken] = useState<string | null>(null); 
 
   const handleChange = (
     event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -39,6 +40,10 @@ const useContactForm = () => {
       setError(t("contactForm.consentRequired"));
       return;
     }
+    if (!recaptchaToken) { 
+      setError(t("contactForm.recaptchaRequired"));
+      return;
+    }
     setSubmitting(true);
     setError(null);
     setSuccess(null);
@@ -49,10 +54,9 @@ const useContactForm = () => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({ ...formData, recaptchaToken }), 
       });
 
-      // Log the response and response data
       const responseData = await response.json();
       console.log('Response:', response);
       console.log('Response Data:', responseData);
@@ -61,6 +65,7 @@ const useContactForm = () => {
         setSuccess(t("contactForm.success"));
         setFormData({ name: "", email: "", message: "" });
         setConsent(false);
+        setRecaptchaToken(null);
       } else {
         throw new Error(t("contactForm.error"));
       }
@@ -80,6 +85,7 @@ const useContactForm = () => {
     success,
     handleChange,
     handleSubmit,
+    setRecaptchaToken, 
   };
 };
 

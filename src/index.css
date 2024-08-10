@@ -149,7 +149,7 @@ body {
   background-image: url("/src/images/logoTopContact.webp");
   background-repeat: repeat;
   background-position: center;
-  opacity: 0.2;
+  opacity: 0.1;
   z-index: -1;
 }
 
@@ -172,7 +172,7 @@ body {
 
 .image-gallery-thumbnails-wrapper {
   display: flex;
-  align-items: flex-end; /* Align items to the bottom */
+  align-items: flex-end; 
 }
 
 .image-gallery-thumbnail {
@@ -246,26 +246,3 @@ body {
 
 
 
-/* .enlarge-container {
-  position: relative;
-  overflow: visible;
-}
-
-.enlarge-on-hover {
-  transition: transform 0.3s ease-in-out;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
- 
-}
-
-.enlarge-container:hover .enlarge-on-hover {
-  transform: scale(1.2); 
-  z-index: 1000;
-  height: 100vh;
-  background-color: #fff;
- 
-} properties for the gallery when the modal is removed */ 

@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet";
 import InputField from "./InputField";
 import TextareaField from "./TextareaField";
 import CheckboxField from "./CheckboxField";
+import ReCAPTCHA from "react-google-recaptcha"; 
 import useContactForm from "./useContactForm";
 
 interface ContactFormData {
@@ -26,12 +27,19 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
     success,
     handleChange,
     handleSubmit,
+    setRecaptchaToken, 
   } = useContactForm();
+
+  const handleRecaptchaChange = (token: string | null) => {
+    setRecaptchaToken(token);
+  };
 
   return (
     <div className="flex justify-center">
       <Helmet>
-        <title>Contact | Scoala de soferi TopalX | Școala de Șoferi din București</title>
+        <title>
+          Contact | Scoala de soferi TopalX | Școala de Șoferi din București
+        </title>
         <meta
           name="description"
           content="Contactați-ne la Scoala de soferi TopalX - școală de șoferi din București. Suntem aici pentru a răspunde la toate întrebările dvs. despre cursurile de conducere și obținerea permisului auto."
@@ -111,10 +119,14 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
             linkUrl="/privacy-policy"
           />
           <div className="flex flex-col items-center">
+            <ReCAPTCHA
+              sitekey="6Lc19iMqAAAAAMrb6o40FSUwtyCiUQBrkQeWV615" 
+              onChange={handleRecaptchaChange}
+            />
             <button
               type="submit"
               disabled={submitting}
-              className="w-fit bg-white text-textColor py-2 px-6 rounded-full font-semibold hover:bg-secondary transition duration-300 transform hover:scale-150 hover:shadow-lg"
+              className="mt-6 w-fit bg-white text-textColor py-2 px-6 rounded-full font-semibold hover:bg-secondary transition duration-300 transform hover:scale-150 hover:shadow-lg"
             >
               {submitting ? t("contactForm.sending") : t("contactForm.send")}
             </button>
