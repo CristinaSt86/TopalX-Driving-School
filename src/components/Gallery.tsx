@@ -346,7 +346,7 @@ const Gallery: React.FC = () => {
         <meta property="twitter:creator" content="@TopalXScoalaAuto" />
       </Helmet>
      
-      <div className="shadow-2xl container mx-auto rounded-2xl p-4 mb-16 mt-10 border-2 border-secondary">
+      {/* <div className="shadow-2xl container mx-auto rounded-2xl p-4 mb-16 mt-10 border-2 border-secondary"> */}
       <h2 className="text-center text-3xl font-bold mb-16 mt-16 pl-4 pr-4">
         {t("gallery.galleryTitle")}
       </h2>
@@ -366,7 +366,7 @@ const Gallery: React.FC = () => {
           />
         </div>
       </div>
-    </div>
+    // </div>
   );
 };
 
