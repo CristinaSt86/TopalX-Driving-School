@@ -170,10 +170,10 @@ body {
 }
 
 
-.image-gallery-thumbnails-wrapper {
+/* .image-gallery-thumbnails-wrapper {
   display: flex;
   align-items: center;
-}
+} */
 
 .image-gallery-thumbnail {
   width: 6.25rem;
