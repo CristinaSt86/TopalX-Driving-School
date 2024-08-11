@@ -4,8 +4,8 @@ import { Helmet } from "react-helmet";
 import InputField from "./InputField";
 import TextareaField from "./TextareaField";
 import CheckboxField from "./CheckboxField";
-import ReCAPTCHA from "react-google-recaptcha"; 
-import useContactForm from "./useContactForm";
+import ReCAPTCHA from "react-google-recaptcha";
+import useContactForm from "../utils/useContactForm";
 
 interface ContactFormData {
   name: string;
@@ -27,12 +27,14 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
     success,
     handleChange,
     handleSubmit,
-    setRecaptchaToken, 
+    setRecaptchaToken,
   } = useContactForm();
 
   const handleRecaptchaChange = (token: string | null) => {
     setRecaptchaToken(token);
   };
+
+  const siteKey = process.env.REACT_APP_RECAPTCHA_KEY || "default-site-key";
 
   return (
     <div className="flex justify-center">
@@ -119,10 +121,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
             linkUrl="/privacy-policy"
           />
           <div className="flex flex-col items-center">
-            <ReCAPTCHA
-              sitekey="6Lc19iMqAAAAAMrb6o40FSUwtyCiUQBrkQeWV615" 
-              onChange={handleRecaptchaChange}
-            />
+            <ReCAPTCHA sitekey={siteKey} onChange={handleRecaptchaChange} />
             <button
               type="submit"
               disabled={submitting}

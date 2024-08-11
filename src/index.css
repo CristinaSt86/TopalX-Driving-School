@@ -172,7 +172,7 @@ body {
 
 .image-gallery-thumbnails-wrapper {
   display: flex;
-  align-items: flex-end; 
+  align-items: center;
 }
 
 .image-gallery-thumbnail {
