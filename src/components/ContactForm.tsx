@@ -34,10 +34,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
     setRecaptchaToken(token);
   };
 
-  const siteKey = process.env.REACT_APP_RECAPTCHA_KEY || "default-site-key";
-  if (!siteKey) {
-  throw new Error("reCAPTCHA site key is missing.");
-}
+  const siteKey = process.env.REACT_APP_RECAPTCHA_KEY as string;
 
   return (
     <div className="flex justify-center">
