@@ -5,7 +5,7 @@ import mer from "../images/mer.webp";
 import vol from "../images/vol.webp";
 import f3 from "../images/f3.webp";
 import sk1 from "../images/sk1.webp";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Button from "./Button";
 
 interface CarPackage {
@@ -21,7 +21,7 @@ interface CarPackage {
 const CarPackages = React.forwardRef<HTMLDivElement>(
   (props, ref: ForwardedRef<HTMLDivElement>) => {
     const { t } = useTranslation();
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
     const carPackages: CarPackage[] = [
       {
@@ -86,9 +86,19 @@ const CarPackages = React.forwardRef<HTMLDivElement>(
       },
     ];
 
-    const goToContactPage = () => {
-      navigate("/contact");
+    // const goToContactPage = () => {
+    //   navigate("/contact");
+    // };
+
+    const scrollToSection = (sectionId: string) => {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
     };
+  
+
+
 
     return (
       <div ref={ref}>
@@ -183,17 +193,19 @@ const CarPackages = React.forwardRef<HTMLDivElement>(
         <div className="flex flex-col items-center justify-center ">
           <p className="text-center mb-8 text-2xl px-4  md:px-24 font-semibold mt-16">
             {t("carPackages.introText")}{" "}
-            <Link to="/contact" className="text-logoBlue underline">{" "}
+            <Link to="/contact" className="text-logoBlue underline">
+              {" "}
               {t("carPackages.registrationFormText")}
             </Link>{" "}
             {t("carPackages.orCallText")}{" "}
-            <a href="tel:+40736470629" className="text-logoBlue underline">{" "}
+            <a href="tel:+40736470629" className="text-logoBlue underline">
+              {" "}
               0736 470 629
             </a>
             .
           </p>
           <Button
-            onClick={goToContactPage}
+            onClick={() => scrollToSection("contact")}
             textKey="carPackages.buttonText"
             additionalClasses="border-4 border-secondary mb-12"
           />

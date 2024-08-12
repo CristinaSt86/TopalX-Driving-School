@@ -1,6 +1,6 @@
 import React, { useRef, useImperativeHandle, useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import CarPackages from "./CarPackages";
+import CarPackages from "../components/CarPackages"
 import { Helmet } from "react-helmet";
 import "../index.css";
 
@@ -36,7 +36,7 @@ const Services = React.forwardRef((props, ref) => {
   }, []);
 
   return (
-    <div className={` ${animate ? "slide-in" : ""} `}>
+    <div id="services" className={` ${animate ? "slide-in" : ""} `}>
       <Helmet>
         <title>
           Servicii | Scoala de soferi TopalX | Școala de Șoferi din București

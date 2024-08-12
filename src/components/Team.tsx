@@ -51,6 +51,8 @@ const Team = React.forwardRef<HTMLDivElement, any>((props, ref) => {
     },
   ];
 
+  
+
   return (
     <>
       <Helmet>

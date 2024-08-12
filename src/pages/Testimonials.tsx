@@ -65,7 +65,7 @@ const Testimonials = forwardRef<TestimonialsHandle, TestimonialsProps>(
     }, []);
 
     return (
-      <div ref={internalRef} className={` ${animate ? "slide-in" : ""}`}>
+      <div id="testimonials" ref={internalRef} className={` ${animate ? "slide-in" : ""}`}>
         <Helmet>
           <title>Testimoniale | Scoala de soferi TopalX | Școala de Șoferi din București</title>
           <meta

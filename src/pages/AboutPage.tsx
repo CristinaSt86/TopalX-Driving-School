@@ -1,11 +1,11 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, {  useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet";
 import "../index.css";
 import CarCard from "../components/CarCard";
 import Team from "../components/Team";
-import Services from "../components/Services";
-import Testimonials from "../components/Testimonials";
+import Services from "./Services";
+import Testimonials from "./Testimonials";
 import { PiArrowDownLight } from "react-icons/pi";
 import CineSuntemImg from "../components/CineSuntemImg";
 import fiat from "../images/f3.jpg";
@@ -20,7 +20,7 @@ const AboutPage: React.FC = () => {
   const servicesRef = useRef<{ scrollToPackages: () => void }>(null);
   const testimonialsRef = useRef<{ scrollToTestimonials: () => void }>(null);
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [animate, setAnimate] = useState(false);
+  // const [animate, setAnimate] = useState(false);
 
   const scrollToTeam = () => {
     teamRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -34,9 +34,9 @@ const AboutPage: React.FC = () => {
     testimonialsRef.current?.scrollToTestimonials();
   };
 
-  useEffect(() => {
-    setAnimate(true);
-  }, []);
+  // useEffect(() => {
+  //   setAnimate(true);
+  // }, []);
 
   return (
     <>
@@ -91,7 +91,7 @@ const AboutPage: React.FC = () => {
         <meta property="twitter:creator" content="@TopalXScoalaAuto" />
       </Helmet>
       <CineSuntemImg />
-      <div className="mt-4 sm:mt-8 md:mt-12">
+      <div id="about" className="mt-4 sm:mt-8 md:mt-12">
         <main className="container mx-auto px-2 flex flex-col flex-wrap md:flex-row items-center justify-center gap-10 md:gap-16 md:mx-auto">
           <section className="backdrop-blur-sm rounded-2xl mb-4 border-l border-r border-b border-2 border-secondary p-4 sm:p-6 shadow-2xl">
             <h2 className="text-xl sm:text-2xl md:text-3xl mb-2 font-semibold">

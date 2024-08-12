@@ -140,7 +140,7 @@
 
 
 import React, { useState, useEffect, useRef, useCallback } from "react";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 import { FaBars, FaTimes, FaPhoneAlt } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import LanguageButton from "./LanguageButton";
@@ -149,6 +149,18 @@ const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
   const [isOpen, setIsOpen] = useState(false);
   const { t } = useTranslation();
   const menuRef = useRef<HTMLUListElement>(null);
+
+
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+
+
+
 
   const toggleMenu = useCallback(() => {
     setIsOpen((prev) => !prev);
@@ -204,58 +216,93 @@ const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
           }`}
         >
           <li>
-            <Link
+          <button
+              onClick={() => scrollToSection("home")}
+              className="hover:text-secondary"
+            >
+              {t("navigation.home")}</button>
+            {/* <Link
               to="/"
               className="hover:scale-125 hover:underline hover:-rotate-6 hover:text-secondary block md:inline-block p-2 md:p-0 transition-transform duration-200"
               onClick={closeMenu}
             >
               {t("navigation.home")}
-            </Link>
+            </Link> */}
           </li>
           <li>
-            <Link
+          <button
+              onClick={() => scrollToSection("about")}
+              className="hover:text-secondary"
+            >
+              {t("navigation.about")}
+            </button>
+            {/* <Link
               to="/about"
               className="hover:scale-125 hover:underline hover:-rotate-6 hover:text-secondary block md:inline-block p-2 md:p-0 transition-transform duration-200"
               onClick={closeMenu}
             >
               {t("navigation.about")}
-            </Link>
+            </Link> */}
           </li>
           <li>
-            <Link
+          <button
+              onClick={() => scrollToSection("services")}
+              className="hover:text-secondary"
+            >
+              {t("navigation.services")}
+            </button>
+            {/* <Link
               to="/services"
               className="hover:scale-125 hover:underline hover:-rotate-6 hover:text-secondary block md:inline-block p-2 md:p-0 transition-transform duration-200"
               onClick={closeMenu}
             >
               {t("navigation.services")}
-            </Link>
+            </Link> */}
           </li>
           <li>
-            <Link
+          <button
+              onClick={() => scrollToSection("testimonials")}
+              className="hover:text-secondary"
+            >
+              {t("navigation.testimonials")}
+            </button>
+            {/* <Link
               to="/testimonials"
               className="hover:scale-125 hover:underline hover:-rotate-6 hover:text-secondary block md:inline-block p-2 md:p-0 transition-transform duration-200"
               onClick={closeMenu}
             >
               {t("navigation.testimonials")}
-            </Link>
+            </Link> */}
           </li>
           <li>
-            <Link
+          <button
+              onClick={() => scrollToSection("gallery")}
+              className="hover:text-secondary"
+            >
+              {t("navigation.gallery")}
+            </button>
+            {/* <Link
               to="/gallery"
               className="hover:scale-125 hover:underline hover:-rotate-6 hover:text-secondary block md:inline-block p-2 md:p-0 transition-transform duration-200"
               onClick={closeMenu}
             >
               {t("navigation.gallery")}
-            </Link>
+            </Link> */}
           </li>
           <li>
-            <Link
+          <button
+              onClick={() => scrollToSection("contact")}
+              className="hover:text-secondary"
+            >
+              {t("navigation.contact")}
+            </button>
+            {/* <Link
               to="/contact"
               className="hover:scale-125 hover:underline hover:-rotate-6 hover:text-secondary block md:inline-block p-2 md:p-0 transition-transform duration-200"
               onClick={closeMenu}
             >
               {t("navigation.contact")}
-            </Link>
+            </Link> */}
           </li>
           <li>
             <LanguageButton />

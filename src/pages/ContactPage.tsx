@@ -24,7 +24,7 @@ const ContactPage: React.FC = () => {
   }, [t]);
 
   return (
-    <div className={` ${animate ? "slide-in" : ""}`}>
+    <div id="contact" className={` ${animate ? "slide-in" : ""}`}>
       <Helmet>
         <title>
           Contact Scoala de soferi TopalX | Școală de șoferi accesibila și de calitate în București

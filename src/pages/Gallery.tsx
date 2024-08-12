@@ -218,7 +218,7 @@ import "react-image-gallery/styles/css/image-gallery.css";
 import '../index.css'
 import { useTranslation } from "react-i18next";
 
-// Import images from src/images directory
+
 import e1 from "../images/e1.jpg";
 import e2 from "../images/e2.webp";
 import e3 from "../images/e3.webp";
@@ -297,7 +297,7 @@ const Gallery: React.FC = () => {
   }, []);
 
   return (
-    <div className={`${animate ? "slide-in" : ""}`}>
+    <div id="gallery" className={`${animate ? "slide-in" : ""}`}>
       <Helmet>
         <title>Galerie Foto | Scoala de soferi TopalX | Școala de Șoferi din București</title>
         <meta
