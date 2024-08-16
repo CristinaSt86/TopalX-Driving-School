@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import "../index.css";
 import cos2 from "../images/cos2.webp";
 import sisOffice from "../images/sisOffice.webp";
@@ -8,7 +8,8 @@ import ins2 from "../images/ins2.webp";
 import ins1 from "../images/ins1.webp";
 import prof1 from "../images/prof1.webp";
 import FiatDrive from "../images/FiatDrive.webp";
-import Offer from "./Offer";
+import { Link } from "react-router-dom";
+import Button from "./Button";
 
 const Team = React.forwardRef<HTMLDivElement, any>((props, ref) => {
   const { t } = useTranslation();
@@ -51,7 +52,12 @@ const Team = React.forwardRef<HTMLDivElement, any>((props, ref) => {
     },
   ];
 
-  
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <>
@@ -150,7 +156,27 @@ const Team = React.forwardRef<HTMLDivElement, any>((props, ref) => {
         </div>
       </section>
 
-      <Offer />
+      {/* <Offer /> */}
+      <div className="flex flex-col items-center justify-center ">
+        <p className="text-center mb-8 text-2xl px-4  md:px-24 font-semibold mt-16">
+          {t("carPackages.introText")}{" "}
+          <Link to="/contact" className="text-logoBlue underline">
+            {" "}
+            {t("carPackages.registrationFormText")}
+          </Link>{" "}
+          {t("carPackages.orCallText")}{" "}
+          <a href="tel:+40736470629" className="text-logoBlue underline">
+            {" "}
+            0736 470 629
+          </a>
+          .
+        </p>
+        <Button
+          onClick={() => scrollToSection("contact")}
+          textKey="carPackages.buttonText"
+          additionalClasses="border-4 border-secondary mb-12"
+        />
+      </div>
     </>
   );
 });

@@ -20,7 +20,7 @@ module.exports = {
         outline:
           "2px 2px 0 #000, -2px -2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000",
       },
-      scale: ["hover"], // Enable hover for scaling
+      scale: ["hover"], 
       boxShadow: {
         custom: "0 0 10px 5px rgba(0, 0, 0, 0.5)",
         custom2: "0 0 10px 5px rgba(255, 255, 255, 0.7)",

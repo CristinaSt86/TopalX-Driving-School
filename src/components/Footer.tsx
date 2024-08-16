@@ -10,15 +10,24 @@ import logo from "../images/logo.webp";
 const Footer: React.FC = () => {
   const { t } = useTranslation();
 
+
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+
   return (
     <footer className="bg-gray-800 bg-opacity-75 text-white py-4 px-4 mx-auto">
       <div className="container mx-auto flex flex-col items-center md:flex-row md:justify-between">
         <div className="flex flex-col justify-center items-center mb-4 md:mb-0 md:gap-4 md:w-[269.71px] md:pr-8">
-          <Link to="/" className="mb-4 md:mb-0">
+          <button onClick={() => scrollToSection("home")} className="mb-4 md:mb-0">
             <div className="aspect-w-1 aspect-h-1 w-16 rounded-full overflow-hidden">
               <img src={logo} alt="Logo" className="object-cover" />
             </div>
-          </Link>
+          </button>
           <SocialLinks />
         </div>
         <div className="text-sm mt-4 mb-4 relative max-w-xs md:max-w-md text-center md:px-8 lg:px-12">

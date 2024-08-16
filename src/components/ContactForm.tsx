@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import InputField from "./InputField";
 import TextareaField from "./TextareaField";
 import CheckboxField from "./CheckboxField";

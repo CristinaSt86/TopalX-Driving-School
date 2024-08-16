@@ -1,17 +1,18 @@
-import React, { useRef, useEffect } from "react";
-import { Helmet } from "react-helmet";
+import React, { useRef, useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import AboutPage from "./AboutPage";
 import Gallery from "./Gallery";
 import ContactPage from "./ContactPage";
 import "../index.css";
 import Button from "../components/Button";
+import Acasa from "../components/Acasa";
 //import Team from "../components/Team";
 
 const HomePage: React.FC = () => {
   const { t } = useTranslation();
   const aboutPageRef = useRef<HTMLDivElement>(null);
-  // const [animate, setAnimate] = useState(false);
+  const [animate, setAnimate] = useState(false);
 
   const scrollToAboutPage = () => {
     if (aboutPageRef.current) {
@@ -19,9 +20,9 @@ const HomePage: React.FC = () => {
     }
   };
 
-  // useEffect(() => {
-  //   setAnimate(true);
-  // }, [t]);
+  useEffect(() => {
+    setAnimate(true);
+  }, [t]);
 
   useEffect(() => {
     const handleTouchMove = (event: TouchEvent) => {
@@ -172,30 +173,23 @@ const HomePage: React.FC = () => {
           window.innerWidth > 850 ? "bg-fixed" : "bg-scroll"
         }`}
       >
-        {/* <h1
+        <h1
           className={`mt-8 text-xl sm:text-4xl font-extrabold mb-4 sm:mb-10 leading-normal backdrop-blur bg-customTextBg w-fit rounded-xl px-2 ${
             animate ? "slide-in" : ""
           }`}
         >
           {t("home.title2")}{" "}
           <span className="text-secondary">{t("home.school")}</span> TopalX!
-        </h1> */}
-        <h1 className="mt-8 text-xl sm:text-4xl font-extrabold mb-4 sm:mb-10 leading-normal backdrop-blur bg-customTextBg w-fit rounded-xl px-2">
-          {t("home.title2")}{" "}
-          <span className="text-secondary">{t("home.school")}</span> TopalX!
         </h1>
-        {/* <p
+
+        <p
           className={`text-lg sm:text-2xl md:text-4xl mt-2 sm:mt-4 md:leading-normal -tracking-normal bg-customTextBg w-fit rounded-2xl ${
             animate ? "slide-in" : ""
           }`}
         >
           {t("home.description")}
-        </p> */}
-        <p
-          className="text-lg sm:text-2xl md:text-4xl mt-2 sm:mt-4 md:leading-normal -tracking-normal bg-customTextBg w-fit rounded-2xl"
-        >
-          {t("home.description")}
-        </p> 
+        </p>
+
         <Button onClick={scrollToAboutPage} textKey="home.learn_more" />
       </div>
 
@@ -203,6 +197,7 @@ const HomePage: React.FC = () => {
         <AboutPage />
         <Gallery />
         <ContactPage />
+        <Acasa />
       </div>
     </div>
   );

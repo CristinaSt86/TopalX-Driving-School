@@ -1,7 +1,7 @@
 import React, { Suspense, lazy, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import ContactForm from "../components/ContactForm";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import Loader from "../components/Loader";
 import "../index.css";
 
@@ -27,7 +27,8 @@ const ContactPage: React.FC = () => {
     <div id="contact" className={` ${animate ? "slide-in" : ""}`}>
       <Helmet>
         <title>
-          Contact Scoala de soferi TopalX | Școală de șoferi accesibila și de calitate în București
+          Contact Scoala de soferi TopalX | Școală de șoferi accesibila și de
+          calitate în București
         </title>
         <meta
           name="description"
@@ -56,12 +57,10 @@ const ContactPage: React.FC = () => {
           content="https://www.topalxscoalaauto.ro/images/contact.jpg"
         />
       </Helmet>
-
-    
       <div className="shadow-custom relative items-center justify-center bg-opacity-custom pt-20 pb-20 md:flex-row md:gap-8 md:m-0">
-      <h1 className=" px-3 mt-8 mb-16 text-3xl font-bold text-center md:mb-16 md:mt-16 ">
-        {t("contactPage.title")}
-      </h1>
+        <h1 className=" px-3 mt-8 mb-16 text-3xl font-bold text-center md:mb-16 md:mt-16 ">
+          {t("contactPage.title")}
+        </h1>
         <div className="relative z-10">
           <Suspense fallback={<Loader />}>
             <ContactForm onSubmit={handleFormSubmit} />
@@ -104,5 +103,3 @@ const ContactPage: React.FC = () => {
 };
 
 export default ContactPage;
-
-

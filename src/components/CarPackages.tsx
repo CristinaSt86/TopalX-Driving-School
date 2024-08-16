@@ -1,12 +1,13 @@
 import React, { ForwardedRef } from "react";
 import { useTranslation } from "react-i18next";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import mer from "../images/mer.webp";
 import vol from "../images/vol.webp";
 import f3 from "../images/f3.webp";
 import sk1 from "../images/sk1.webp";
 import { Link } from "react-router-dom";
 import Button from "./Button";
+import Offer from "./Offer";
 
 interface CarPackage {
   name: string;
@@ -90,15 +91,7 @@ const CarPackages = React.forwardRef<HTMLDivElement>(
     //   navigate("/contact");
     // };
 
-    const scrollToSection = (sectionId: string) => {
-      const element = document.getElementById(sectionId);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-      }
-    };
-  
-
-
+   
 
     return (
       <div ref={ref}>
@@ -165,7 +158,8 @@ const CarPackages = React.forwardRef<HTMLDivElement>(
             <div className="p-6 rounded-xl shadow-custom mb-4 mt-4 ml-2 mr-2 bg-white md:w-1/3">
               <h2 className="text-2xl font-semibold mb-4">{pkg.name}</h2>
               <p>
-                <strong>{t("carPackages.price")}:</strong> {pkg.price}
+                <strong>{t("carPackages.price")}:</strong>
+                <span className="font-bold text-xl"> {pkg.price}</span>
               </p>
               <p>
                 <strong>{t("carPackages.transmission")}:</strong>{" "}
@@ -190,26 +184,8 @@ const CarPackages = React.forwardRef<HTMLDivElement>(
             </div>
           </section>
         ))}
-        <div className="flex flex-col items-center justify-center ">
-          <p className="text-center mb-8 text-2xl px-4  md:px-24 font-semibold mt-16">
-            {t("carPackages.introText")}{" "}
-            <Link to="/contact" className="text-logoBlue underline">
-              {" "}
-              {t("carPackages.registrationFormText")}
-            </Link>{" "}
-            {t("carPackages.orCallText")}{" "}
-            <a href="tel:+40736470629" className="text-logoBlue underline">
-              {" "}
-              0736 470 629
-            </a>
-            .
-          </p>
-          <Button
-            onClick={() => scrollToSection("contact")}
-            textKey="carPackages.buttonText"
-            additionalClasses="border-4 border-secondary mb-12"
-          />
-        </div>
+        <Offer />
+        
       </div>
     );
   }

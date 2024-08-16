@@ -1,4 +1,3 @@
-// ./src/App.tsx
 import React, { Suspense } from "react";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -7,23 +6,11 @@ import BackToTopButton from "./components/BackToTopButton";
 import { LanguageProvider } from "./LanguageContext";
 import { I18nextProvider } from "react-i18next";
 import i18n from "./i18n";
+import { HelmetProvider } from "react-helmet-async";
 import RoutesConfig from "./RoutesConfig";
 import ScrollToTop from "./components/ScrollToTop";
 
 const App: React.FC = () => {
-  // console.error = (() => {
-  //   const error = console.error;
-  //   return (...args) => {
-  //     if (
-  //       typeof args[0] === "string" &&
-  //       args[0].includes("UNSAFE_componentWillMount")
-  //     ) {
-  //       return;
-  //     }
-  //     error(...args);
-  //   };
-  // })();
-
   return (
     <div className="flex flex-col min-h-screen ">
       <main className="flex-grow ">
@@ -32,7 +19,9 @@ const App: React.FC = () => {
             <Suspense fallback={<Loader />}>
               <ScrollToTop />
               <Header />
-              <RoutesConfig />
+              <HelmetProvider>
+                <RoutesConfig />
+              </HelmetProvider>
               <BackToTopButton />
               <Footer />
             </Suspense>
