@@ -126,6 +126,7 @@ import { useTranslation } from "react-i18next";
 import CarPackages from "../components/CarPackages";
 import { Helmet } from "react-helmet-async";
 import "../index.css";
+import { PiArrowLeftLight, PiArrowRightLight } from "react-icons/pi";
 
 export interface ServicesRef {
   scrollToPackages: () => void;
@@ -231,9 +232,13 @@ const Services = React.forwardRef((props, ref) => {
                     <h2 className="text-xl font-semibold mb-2">
                       {service.name}
                     </h2>
-                    <span className="text-green-500 text-center">
+                    <span className="text-green-500 text-center mb-4">
                       {service.available}
                     </span>
+                    <div className="flip-icon-container">
+                      <PiArrowLeftLight className="flip-arrow" />
+                      <PiArrowRightLight className="flip-arrow" />
+                    </div>
                   </div>
                 </div>
                 <div className="flip-card-back overflow-y-auto">
