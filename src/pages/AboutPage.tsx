@@ -113,7 +113,7 @@ const AboutPage: React.FC = () => {
               </h2>
               <p className="text-base leading-6 sm:text-base md:text-lg font-medium">
                 {t("about.mission.description")}
-                <PiArrowDownLight className="absolute bottom-0 right-0 mb-4 mr-4 bounce-effect " />
+                <PiArrowDownLight className="absolute bottom-0 right-0 mb-4 mr-4 bounce-effect text-textColor hover:text-white " />
               </p>
             </section>
 
