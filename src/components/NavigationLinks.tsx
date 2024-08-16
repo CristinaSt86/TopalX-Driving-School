@@ -5,8 +5,10 @@ const NavigationLinks: React.FC = () => {
   const { t } = useTranslation();
   
   // State to track if the menu is open
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [isOpen, setIsOpen] = useState(false);
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const toggleMenu = useCallback(() => {
     setIsOpen((prev) => !prev);
   }, []);

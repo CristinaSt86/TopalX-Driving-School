@@ -5,8 +5,6 @@ import mer from "../images/mer.webp";
 import vol from "../images/vol.webp";
 import f3 from "../images/f3.webp";
 import sk1 from "../images/sk1.webp";
-import { Link } from "react-router-dom";
-import Button from "./Button";
 import Offer from "./Offer";
 
 interface CarPackage {
