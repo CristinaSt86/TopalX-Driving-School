@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef, useCallback } from "react";
 import { FaBars, FaTimes, FaPhoneAlt } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import LanguageButton from "./LanguageButton";
-import ErrorBoundary from "./ErrB"; // Make sure this is the correct path
+import ErrorBoundary from "./ErrB"; 
 
 const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -70,7 +70,7 @@ const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
           <ul
             id="primary-menu"
             ref={menuRef}
-            className={`pt-1 pb-2 z-1000 gap-3 pl-1 pr-1 flex-col md:flex-row md:items-center md:flex space-y-2 md:space-y-0 md:space-x-4 absolute md:static bg-primary md:bg-transparent w-full md:w-auto left-0 md:left-auto top-24 md:top-auto ${
+            className={`pt-6 md:pt-2 pb-2 z-1000 gap-6 md:gap-3  pl-1 pr-1 flex-col md:flex-row md:items-center md:flex space-y-2 md:space-y-0 md:space-x-4 absolute md:static bg-primary md:bg-transparent w-full md:w-auto left-0 md:left-auto top-24 md:top-auto ${
               isOpen
                 ? "flex items-center max-h-98 overflow-y-auto"
                 : "hidden md:flex"

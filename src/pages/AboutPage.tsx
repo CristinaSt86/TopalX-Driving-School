@@ -1,4 +1,4 @@
-import React, {  useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
 import "../index.css";
@@ -103,32 +103,32 @@ const AboutPage: React.FC = () => {
               <li>{t("about.keyInformation.location")}</li>
             </ul>
           </section>
-          <div className="flex gap-8">
-          <section
-            onClick={scrollToTestimonials}
-            className="relative backdrop-blur-sm rounded-2xl mb-4 border-l border-r border-b border-2 border-secondary p-4 sm:p-6 shadow-2xl ease-in hover:bg-logoBlue hover:text-white transition-transform duration-300 hover:scale-105 md:hover:scale-105 cursor-pointer"
-          >
-            <h2 className="text-xl sm:text-2xl md:text-3xl mb-4 font-semibold">
-              {t("about.mission.title")}
-            </h2>
-            <p className="text-base leading-6 sm:text-base md:text-lg font-medium">
-              {t("about.mission.description")}
+          <div className="flex flex-col md:flex-col lg:flex-row gap-4 md:gap-8 items-center">
+            <section
+              onClick={scrollToTestimonials}
+              className="flex-1 h-fit max-h-fit-content overflow-hidden backdrop-blur-sm rounded-2xl mb-4 border-l border-r border-b border-2 border-secondary p-4 sm:p-6 shadow-2xl ease-in hover:bg-logoBlue hover:text-white transition-transform duration-300 hover:scale-105 cursor-pointer"
+            >
+              <h2 className="text-xl sm:text-2xl md:text-3xl mb-4 font-semibold">
+                {t("about.mission.title")}
+              </h2>
+              <p className="text-base leading-6 sm:text-base md:text-lg font-medium">
+                {t("about.mission.description")}
+                <PiArrowDownLight className="absolute bottom-0 right-0 mb-4 mr-4 bounce-effect " />
+              </p>
+            </section>
 
-              <PiArrowDownLight className="absolute bottom-0 right-0 mb-4 mr-4 bounce-effect " />
-            </p>
-          </section>
-          <section
-            onClick={scrollToTeam}
-            className="relative backdrop-blur-sm rounded-2xl mb-4 border-l border-r border-b border-2 border-secondary p-4 sm:p-6 shadow-2xl ease-in hover:bg-logoBlue hover:text-white transition-transform duration-300 hover:scale-105 md:hover:scale-105 cursor-pointer"
-          >
-            <h2 className="text-xl sm:text-2xl md:text-3xl mb-4 font-semibold">
-              {t("about.team.title")}
-            </h2>
-            <p className="text-base leading-6 sm:text-base md:text-lg font-medium">
-              {t("about.team.description")}
-              <PiArrowDownLight className="absolute bottom-0 right-0 mb-2 mr-2 bounce-effect  " />
-            </p>
-          </section>
+            <section
+              onClick={scrollToTeam}
+              className="flex-1 h-fit max-h-fit-content overflow-hidden backdrop-blur-sm rounded-2xl mb-4 border-l border-r border-b border-2 border-secondary p-4 sm:p-6 shadow-2xl ease-in hover:bg-logoBlue hover:text-white transition-transform duration-300 hover:scale-105 cursor-pointer"
+            >
+              <h2 className="text-xl sm:text-2xl md:text-3xl mb-4 font-semibold">
+                {t("about.team.title")}
+              </h2>
+              <p className="text-base leading-6 sm:text-base md:text-lg font-medium">
+                {t("about.team.description")}
+                <PiArrowDownLight className="absolute bottom-0 right-0 mb-2 mr-2 bounce-effect  " />
+              </p>
+            </section>
           </div>
         </main>
       </div>
@@ -174,10 +174,6 @@ const AboutPage: React.FC = () => {
 };
 
 export default AboutPage;
-
-
-
-
 
 // import React, { useEffect, useRef, useState } from "react";
 // import { useTranslation } from "react-i18next";

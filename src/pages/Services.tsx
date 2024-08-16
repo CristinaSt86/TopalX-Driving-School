@@ -241,7 +241,7 @@ const Services = React.forwardRef((props, ref) => {
                     </div>
                   </div>
                 </div>
-                <div className="flip-card-back overflow-y-auto">
+                <div className="flip-card-back overflow-y-auto pt-6">
                   <p>{service.description}</p>
                 </div>
               </div>
