@@ -8,7 +8,7 @@ import { I18nextProvider } from "react-i18next";
 import i18n from "./i18n";
 import { HelmetProvider } from "react-helmet-async";
 import RoutesConfig from "./RoutesConfig";
-import ScrollToTop from "./components/ScrollToTop";
+// import ScrollToTop from "./components/ScrollToTop";
 
 const App: React.FC = () => {
   return (
@@ -17,7 +17,7 @@ const App: React.FC = () => {
         <I18nextProvider i18n={i18n}>
           <LanguageProvider>
             <Suspense fallback={<Loader />}>
-              <ScrollToTop />
+              {/* <ScrollToTop /> */}
               <Header />
               <HelmetProvider>
                 <RoutesConfig />
