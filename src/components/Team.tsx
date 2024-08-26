@@ -156,7 +156,6 @@ const Team = React.forwardRef<HTMLDivElement, any>((props, ref) => {
         </div>
       </section>
 
-      {/* <Offer /> */}
       <div className="flex flex-col items-center justify-center ">
         <p className="text-center mb-8 text-2xl px-4  md:px-24 font-semibold mt-16">
           {t("carPackages.introText")}{" "}

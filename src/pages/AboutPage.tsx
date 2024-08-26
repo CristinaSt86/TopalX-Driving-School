@@ -111,9 +111,9 @@ const AboutPage: React.FC = () => {
               <h2 className="text-xl sm:text-2xl md:text-3xl mb-4 font-semibold">
                 {t("about.mission.title")}
               </h2>
-              <p className="text-base leading-6 sm:text-base md:text-lg font-medium">
+              <p className="text-base leading-6 sm:text-base md:text-lg font-medium hover:text-white">
                 {t("about.mission.description")}
-                <PiArrowDownLight className="absolute bottom-0 right-0 mb-4 mr-4 bounce-effect text-textColor hover:text-white " />
+                <PiArrowDownLight className="absolute bottom-0 right-0 mb-4 mr-4 bounce-effect  " />
               </p>
             </section>
 
@@ -124,7 +124,7 @@ const AboutPage: React.FC = () => {
               <h2 className="text-xl sm:text-2xl md:text-3xl mb-4 font-semibold">
                 {t("about.team.title")}
               </h2>
-              <p className="text-base leading-6 sm:text-base md:text-lg font-medium">
+              <p className="text-base leading-6 sm:text-base md:text-lg font-medium hover:text-white ">
                 {t("about.team.description")}
                 <PiArrowDownLight className="absolute bottom-0 right-0 mb-2 mr-2 bounce-effect  " />
               </p>

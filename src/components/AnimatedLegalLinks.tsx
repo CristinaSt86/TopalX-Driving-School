@@ -7,14 +7,13 @@ const AnimatedIcon: React.FC = () => {
     // Stop the animation after 2 seconds
     const timer = setTimeout(() => {
       setIsAnimating(false);
-    }, 2000); // Adjust the time as needed
+    }, 2000);
 
     return () => clearTimeout(timer); // Cleanup the timer
   }, []);
 
   return (
     <div className={isAnimating ? "animate-bounce" : ""}>
-      {/* Replace with your icon */}
       <svg
         className="w-8 h-8 text-blue-500"
         fill="none"

@@ -4,8 +4,9 @@ import { Helmet } from "react-helmet-async";
 import InputField from "./InputField";
 import TextareaField from "./TextareaField";
 import CheckboxField from "./CheckboxField";
-import ReCAPTCHA from "react-google-recaptcha";
+
 import useContactForm from "../utils/useContactForm";
+import ReCaptcha from "./ReCaptcha";
 
 interface ContactFormData {
   name: string;
@@ -27,14 +28,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
     success,
     handleChange,
     handleSubmit,
-    setRecaptchaToken,
   } = useContactForm();
-
-  const handleRecaptchaChange = (token: string | null) => {
-    setRecaptchaToken(token);
-  };
-
-  const siteKey = process.env.REACT_APP_RECAPTCHA_KEY as string;
 
   return (
     <div className="flex justify-center">
@@ -88,7 +82,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
         <meta property="twitter:site" content="@TopalXScoalaAuto" />
         <meta property="twitter:creator" content="@TopalXScoalaAuto" />
       </Helmet>
-      <div className="shadow-custom pb-6 pt-6 container w-[90%] rounded-2xl backdrop-blur md:w-1/2 md:pl-6 md:pr-6">
+      <div className="shadow-custom pb-6 pt-6 container w-[90%] rounded-xl backdrop-blur md:w-1/2 md:pl-6 md:pr-6">
         <form
           onSubmit={handleSubmit}
           className="max-w-md mx-auto p-4 md:mx-auto flex flex-col gap-4"
@@ -120,23 +114,14 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
             linkText={t("contactForm.privacyPolicy")}
             linkUrl="/privacy-policy"
           />
-          <div className="flex flex-col items-center">
-            <ReCAPTCHA sitekey={siteKey} onChange={handleRecaptchaChange} />
-            <button
-              type="submit"
-              disabled={submitting}
-              className="mt-6 w-fit bg-white text-textColor py-2 px-6 rounded-full font-semibold hover:bg-secondary transition duration-300 transform hover:scale-150 hover:shadow-lg"
-            >
-              {submitting ? t("contactForm.sending") : t("contactForm.send")}
-            </button>
-          </div>
+          <ReCaptcha submitting={submitting} />
           {error && (
-            <p className="text-red-500 mt-4 bg-white font-bold text-center rounded-full p-1">
+            <p className="text-red-500 mt-4 bg-white font-bold text-center rounded-lg p-1">
               {error}
             </p>
           )}
           {success && (
-            <p className="text-green-500 mt-4 bg-white font-bold text-center rounded-full p-1">
+            <p className="text-green-500 mt-4 bg-white font-bold text-center rounded-lg p-1">
               {success}
             </p>
           )}
