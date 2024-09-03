@@ -13,7 +13,7 @@ import skoda from "../images/sc2.webp";
 import mercedes from "../images/mercedes2.jpg";
 import volvo from "../images/volvo1.jpg";
 import Button from "../components/Button";
-import BuyNowPayLater from "./BuyNowPayLater";
+
 
 const AboutPage: React.FC = () => {
   const { t } = useTranslation();
