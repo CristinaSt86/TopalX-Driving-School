@@ -1,15 +1,11 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import Button from "./Button";
-//import { useNavigate } from "react-router-dom";
+
 
 const Offer: React.FC = () => {
   const { t } = useTranslation();
-  // const navigate = useNavigate();
 
-  // const goToContactPage = () => {
-  //   navigate("/contact");
-  // };
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
