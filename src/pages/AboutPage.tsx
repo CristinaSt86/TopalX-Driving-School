@@ -93,7 +93,7 @@ const AboutPage: React.FC = () => {
       </Helmet>
       <CineSuntemImg />
       <div id="about" className="mt-4 sm:mt-8 md:mt-12">
-        <main className="container mx-auto px-2 flex flex-col flex-wrap md:flex-row items-center justify-center gap-10 md:gap-16 md:mx-auto">
+        <main className="container mx-auto px-2 flex flex-col flex-wrap md:flex-row items-center justify-center gap-10 md:gap-16 md:mx-auto mb-10">
           <section className="backdrop-blur-sm rounded-2xl mb-4 border-l border-r border-b border-2 border-secondary p-4 sm:p-6 shadow-2xl">
             <h2 className="text-xl sm:text-2xl md:text-3xl mb-2 font-semibold">
               {t("about.keyInformation.titleInfo")}
@@ -133,7 +133,7 @@ const AboutPage: React.FC = () => {
           </div>
         </main>
       </div>
-      <div className="shadow-2xl border-2 rounded-2xl border-solid border-white bg-gradient-to-r from-yellow-100 via-yellow-200 to-yellow-300 p-3 container mx-auto mt-16 mb-16">
+      <div className="shadow-2xl border-2 rounded-2xl border-solid border-white bg-gradient-to-r from-yellow-100 via-yellow-200 to-yellow-300 p-3 container mx-auto my-10">
         <h1 className="text-4xl font-bold text-center mb-8 mt-8">
           {t("about.companyDescription.title")}
         </h1>

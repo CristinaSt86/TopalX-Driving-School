@@ -53,7 +53,7 @@ const CineSuntemImg: React.FC = () => {
             />
           ))}
         </div>
-        <header className="text-center py-4 text-textColor mx-auto px-2 sm:px-4 mt-8 sm:mt-12 md:mt-10 md:mb-10 container">
+        <header className="text-center py-4 text-textColor mx-auto px-2 sm:px-4 sm:mt-12 md:mt-10 md:mb-10 container">
           <h1 className="text-4xl font-bold text-center mb-8 mt-8">
             {t("about.headerTitle")}
           </h1>

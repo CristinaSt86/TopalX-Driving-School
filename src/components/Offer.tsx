@@ -17,11 +17,11 @@ const Offer: React.FC = () => {
 
 
   return (
-    <div className="p-6 mx-auto  flex flex-col items-center justify-center">
+    <div className="p-6 mx-auto my-10 flex flex-col items-center justify-center">
       <h2 className="text-3xl font-bold mb-3">{t("offer.title")}</h2>
       <p className="text-2xl mb-4">{t("offer.description1")}</p>
       <p className="text-xl mb-6">{t("offer.description2")}</p>
-      <Button onClick={() => scrollToSection("contact")} textKey="offer.btnText" additionalClasses=" border-4 border-secondary "/>
+      <Button onClick={() => scrollToSection("contact")} textKey="offer.btnText" additionalClasses=" border-4 border-secondary my-8"/>
     </div>
   );
 };

@@ -171,7 +171,7 @@ const HomePage: React.FC = () => {
         </script>
       </Helmet>
       <div
-        className={`flex flex-col items-center justify-center shadow-custom pt-12 sm:pt-16 pb-48 mt-0 bg-custom-home bg-center bg-cover bg-no-repeat text-white px-4 sm:p-16 text-center mb-8 h-auto md:pt-24 md:pb-48 ${
+        className={`flex flex-col items-center justify-center shadow-custom pt-12 sm:pt-16 pb-48 mt-0 bg-custom-home bg-center bg-cover bg-no-repeat text-white px-4 sm:p-16 text-center mb-10 h-auto md:pt-24 md:pb-48 ${
           window.innerWidth > 850 ? "bg-fixed" : "bg-scroll"
         }`}
       >
@@ -192,7 +192,7 @@ const HomePage: React.FC = () => {
           {t("home.description")}
         </p>
 
-        <Button onClick={scrollToAboutPage} textKey="home.learn_more" additionalClasses="md:mt-16" />
+        <Button onClick={scrollToAboutPage} textKey="home.learn_more" additionalClasses="mt-16" />
       </div>
 
       <div ref={aboutPageRef}>

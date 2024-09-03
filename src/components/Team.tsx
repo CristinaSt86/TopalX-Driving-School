@@ -115,7 +115,7 @@ const Team = React.forwardRef<HTMLDivElement, any>((props, ref) => {
         <meta property="twitter:creator" content="@TopalXScoalaAuto" />
       </Helmet>
 
-      <section className="bg-white pb-3 mb-28 mt-28 shadow-2xl">
+      <section className="bg-white pb-3 mb-10 shadow-2xl">
         <h2
           ref={ref}
           className="text-center text-3xl font-bold text-gray-800 mt-16 pl-3 pr-3 pt-12"
@@ -163,8 +163,8 @@ const Team = React.forwardRef<HTMLDivElement, any>((props, ref) => {
 
 
 
-      <div className="flex flex-col items-center justify-center ">
-        <p className="text-center mb-8 text-2xl px-4  md:px-24 font-semibold mt-16">
+      <div className="flex flex-col items-center justify-center mb-10">
+        <p className="text-center mb-10 text-2xl px-4  md:px-24 font-semibold mt-10">
           {t("carPackages.introText")}{" "}
           <Link to="/contact" className="text-logoBlue underline">
             {" "}
@@ -180,7 +180,7 @@ const Team = React.forwardRef<HTMLDivElement, any>((props, ref) => {
         <Button
           onClick={() => scrollToSection("contact")}
           textKey="carPackages.buttonText"
-          additionalClasses="border-4 border-secondary mb-12"
+          additionalClasses="border-4 border-secondary my-10"
         />
       </div>
     </>

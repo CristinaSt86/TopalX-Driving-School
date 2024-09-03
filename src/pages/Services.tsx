@@ -1,3 +1,4 @@
+
 import React, { useRef, useImperativeHandle, useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import CarPackages from "../components/CarPackages";
@@ -105,7 +106,7 @@ const Services = React.forwardRef((props, ref) => {
         </Helmet>
 
         <div
-          className={`bg-custom-services bg-center bg-cover bg-no-repeat p-2 mx-auto md:p-6 border-2 border-solid border-white mt-8 mb-16 ${
+          className={`bg-custom-services bg-center bg-cover bg-no-repeat p-2 mx-auto md:p-6 border-2 border-solid border-white mb-16 ${
             window.innerWidth > 850 ? "bg-fixed" : "bg-scroll"
           }`}
         >
@@ -140,8 +141,8 @@ const Services = React.forwardRef((props, ref) => {
         </div>
 
         <div
-          className="bg-primary text-white py-8 px-4 text-center shadow-lg alternating-banner"
-          style={{ marginBottom: "2rem" }}
+          className="bg-primary text-white py-8 px-4 text-center shadow-lg alternating-banner mb-16"
+       
         >
           <h2 className="text-xl sm:text-2xl font-bold mb-4">
             Cumperi acum, plătești mai târziu!
@@ -154,7 +155,7 @@ const Services = React.forwardRef((props, ref) => {
           <Button
             onClick={() => scrollToSection("buy-now-section")}
             textKey="home.learn_more"
-            additionalClasses=" border-4 border-secondary "
+            additionalClasses=" border-4 border-secondary my-10 "
           />
         </div>
 

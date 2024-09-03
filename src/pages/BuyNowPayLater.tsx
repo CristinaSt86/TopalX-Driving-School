@@ -6,7 +6,7 @@ const BuyNowPayLater: React.FC = () => {
 
   return (
     <div id="buy-now-section" className="container mx-auto mb-10 px-4 py-8">
-      <h1 className="text-center text-3xl font-bold mb-16 mt-16 pl-4 pr-4">
+      <h1 className="text-center text-3xl font-bold mb-10 mt-10 pl-4 pr-4">
         {t("buyNowPayLater.title")}
       </h1>
 
