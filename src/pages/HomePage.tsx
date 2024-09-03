@@ -7,11 +7,12 @@ import ContactPage from "./ContactPage";
 import "../index.css";
 import Button from "../components/Button";
 import Acasa from "../components/Acasa";
-//import Team from "../components/Team";
+import BuyNowPayLater from "./BuyNowPayLater";
 
 const HomePage: React.FC = () => {
   const { t } = useTranslation();
   const aboutPageRef = useRef<HTMLDivElement>(null);
+  // const buyNowRef = useRef<HTMLDivElement>(null);
   const [animate, setAnimate] = useState(false);
 
   const scrollToAboutPage = () => {
@@ -112,6 +113,7 @@ const HomePage: React.FC = () => {
     ],
   };
 
+
   return (
     <div id="home" className="overflow-x-hidden max-w-full mx-auto">
       <Helmet>
@@ -190,12 +192,14 @@ const HomePage: React.FC = () => {
           {t("home.description")}
         </p>
 
-        <Button onClick={scrollToAboutPage} textKey="home.learn_more" />
+        <Button onClick={scrollToAboutPage} textKey="home.learn_more" additionalClasses="md:mt-16" />
       </div>
 
       <div ref={aboutPageRef}>
+       
         <AboutPage />
         <Gallery />
+        <BuyNowPayLater />
         <ContactPage />
         <Acasa />
       </div>

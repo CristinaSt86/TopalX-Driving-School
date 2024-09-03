@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Loader from "./components/Loader";
 import ErrorBoundary from "./components/ErrB"; 
 
+
 const HomePage = lazy(() => import("./pages/HomePage"));
 const AboutPage = lazy(() => import("./pages/AboutPage"));
 const ContactPage = lazy(() => import("./pages/ContactPage"));
@@ -14,7 +15,8 @@ const TermsAndConditions = lazy(
   () => import("./components/TermsAndConditions")
 );
 const FAQ = lazy(() => import("./components/FAQ"));
-
+const BuyNowPayLater =lazy(()=> import("./pages/BuyNowPayLater"))
+ 
 const RoutesConfig: React.FC = () => {
   return (
     <Suspense fallback={<Loader />}>
@@ -29,6 +31,7 @@ const RoutesConfig: React.FC = () => {
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
           <Route path="/faq" element={<FAQ />} />
+          <Route path="/buy-now-pay-later" element={<BuyNowPayLater />} />
         </Routes>
       </ErrorBoundary>
     </Suspense>

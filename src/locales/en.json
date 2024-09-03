@@ -451,5 +451,40 @@
         "answer": "Yes, we offer discounts for students and groups. Contact us for more details about our current offers."
       }
     ]
+  },
+  "buyNowPayLater": {
+    "title": "Buy Now, Pay Later!",
+    "section1": {
+      "subtitle": "Enjoy everything you want, simply and quickly, in 4 interest-free installments",
+      "description": "Choose whatever you want from this store and pay easily and worry-free in 4 interest-free installments.",
+      "howItWorks": "How does it work?",
+      "steps": [
+        "Choose whatever you want from this store.",
+        "If your purchases are up to 2,000 lei, you can choose to pay them in 4 interest-free installments.",
+        "If they exceed 2,000 lei, you can pay in up to 60 fixed-rate installments with a fixed annual interest rate.",
+        "Request TBI installment payment in-store.",
+        "Get approval and response on the spot, in just a few minutes, without a credit card or bank visits."
+      ]
+    },
+    "section2": {
+      "subtitle": "Repay installments easily and quickly:",
+      "steps": [
+        "Directly from your phone, download the free TBI app.",
+        "Online, directly on the tbibank.ro website. You can also opt for recurring payment.",
+        "At PayPoint payment terminals, un-doi Payment Center, or SelfPay in your city.",
+        "By bank transfer or cash deposit."
+      ]
+    },
+    "section3": {
+      "subtitle": "Examples of costs and interest rates:",
+      "examples": [
+        "For a loan of 2,000 lei over 4 months with a fixed annual interest rate of 0%, the analysis fee is 60 lei, the life insurance premium is 0.00 lei, and the fixed monthly installment is 515.00 lei. The annual effective interest rate (APR) is 15.29%.",
+        "For a loan of 5,500 lei over 24 months with a fixed annual interest rate of 21%, the analysis fee is 170 lei, the life insurance premium is 612.36 lei, and the fixed monthly installment is 322.82 lei. The annual effective interest rate (APR) is 41.66%, and the total payable amount is 7,747.76 lei."
+      ]
+    },
+    "section4": {
+      "moreInfo": "Request complete details at any sales point or visit tbibank.ro for more information.",
+      "downloadApp": "Download the TBI app for free from Google Play or the Apple App Store."
+    }
   }
 }

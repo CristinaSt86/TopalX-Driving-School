@@ -25,7 +25,7 @@ const Offer: React.FC = () => {
       <h2 className="text-3xl font-bold mb-3">{t("offer.title")}</h2>
       <p className="text-2xl mb-4">{t("offer.description1")}</p>
       <p className="text-xl mb-6">{t("offer.description2")}</p>
-      <Button onClick={() => scrollToSection("contact")} textKey="offer.btnText" additionalClasses=" border-4 border-secondary mt-16 mb-16"/>
+      <Button onClick={() => scrollToSection("contact")} textKey="offer.btnText" additionalClasses=" border-4 border-secondary "/>
     </div>
   );
 };

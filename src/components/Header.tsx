@@ -7,7 +7,7 @@ import logo from "../images/logo.webp";
 
 const Header: React.FC = () => {
   const [isMobileView, setIsMobileView] = useState(false);
-  
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -15,13 +15,20 @@ const Header: React.FC = () => {
       setIsMobileView(width <= 850);
     };
 
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+
     window.addEventListener("resize", handleResize);
+    window.addEventListener("scroll", handleScroll);
 
     // Initial check
     handleResize();
+    handleScroll();
 
     return () => {
       window.removeEventListener("resize", handleResize);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -34,10 +41,10 @@ const Header: React.FC = () => {
 
   return (
     <>
-      <TopHeader />
+      {!isScrolled && <TopHeader />}
       <header
-        className={`bg-secondary flex items-center justify-between p-4 shadow-custom z-40 fixed w-full top-0 ${
-          isMobileView ? "mt-0" : "custom1:mt-12"
+        className={`bg-secondary flex items-center justify-between p-4 shadow-custom z-40 fixed w-full top-0 transition-all duration-300 ${
+          isScrolled || isMobileView ? "mt-0" : "custom1:mt-12"
         }`}
       >
         <Link to="/" className="flex flex-col items-center justify-center" onClick={handleLogoClick}>
@@ -51,9 +58,9 @@ const Header: React.FC = () => {
         </Link>
         <Navigation isMobileView={isMobileView} />
       </header>
-      <div className={`${isMobileView ? "mt-16" : "mt-0 custom1:mt-20"}`}>
+      <div className={`${isMobileView || isScrolled ? "mt-16" : "mt-0 custom1:mt-20"}`}>
         <main className="container mx-auto p-4">
-          {/*main content goes here */}
+          {/* main content goes here */}
         </main>
       </div>
     </>

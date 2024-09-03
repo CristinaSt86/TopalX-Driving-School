@@ -445,5 +445,40 @@
         "answer": "Da, oferim reduceri pentru studenți și pentru grupuri. Contactează-ne pentru a afla mai multe detalii despre ofertele noastre actuale."
       }
     ]
+  },
+  "buyNowPayLater": {
+    "title": "Cumperi acum, plătești mai târziu!",
+    "section1": {
+      "subtitle": "Bucură-te de tot ce îți dorești, simplu și rapid, în 4 rate fără dobândă",
+      "description": "Alege tot ce-ți dorești din acest magazin și plătește simplu și fără griji în 4 rate fără dobândă.",
+      "howItWorks": "Cum funcționează?",
+      "steps": [
+        "Alegi tot ce-ți dorești din acest magazin.",
+        "În cazul în care cumpărăturile tale sunt de maxim 2.000 de lei poți alege să le achiți în 4 rate fără dobândă.",
+        "Dacă depășesc 2.000 lei le poți plăti în până la 60 de rate fixe cu dobândă anuală fixă.",
+        "Soliciți în magazin plata în rate TBI.",
+        "Primești aprobarea și răspunsul pe loc, în doar câteva minute, fără card de credit sau drumuri la bancă."
+      ]
+    },
+    "section2": {
+      "subtitle": "Rambursezi ratele simplu și rapid:",
+      "steps": [
+        "Direct de pe telefon, descarcă gratuit aplicația tbi.",
+        "Online, direct pe site-ul tbibank.ro. Poți opta inclusiv pentru rambursare recurentă.",
+        "La terminalele de plata PayPoint, un-doi Centru de plăți sau SelfPay din orașul tău.",
+        "Prin transfer bancar sau depunere numerar."
+      ]
+    },
+    "section3": {
+      "subtitle": "Exemple de costuri și dobânzi:",
+      "examples": [
+        "Pentru un credit în valoare de 2.000 lei, pe o perioadă de 4 luni, cu o dobândă anuală fixă de 0%, comisionul de analiză este de 60 lei, prima de asigurare de viață este de 0,00 lei, rata lunară fixă este de 515,00 lei. Dobânda anuală efectivă (DAE) este de 15,29%.",
+        "Pentru un credit în valoare de 5.500 lei, pe o perioadă de 24 luni, cu o dobândă anuală fixă de 21%, comisionul de analiză este de 170 lei, prima de asigurare de viață este de 612,36 lei, rata lunară fixă este de 322,82 lei. Dobânda anuală efectivă (DAE) este de 41,66%, iar valoarea totală plătibilă este 7.747,76 lei."
+      ]
+    },
+    "section4": {
+      "moreInfo": "Solicitați detalii complete la orice punct de vânzare sau vizitați tbibank.ro pentru mai multe informații.",
+      "downloadApp": "Descarcă gratuit aplicația TBI din Google Play sau Apple App Store."
+    }
   }
 }
