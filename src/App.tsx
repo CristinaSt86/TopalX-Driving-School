@@ -9,7 +9,7 @@ import i18n from "./i18n";
 import { HelmetProvider } from "react-helmet-async";
 import RoutesConfig from "./RoutesConfig";
 import CookieConsent from "./components/CookieConsent";
-// import ScrollToTop from "./components/ScrollToTop";
+
 
 const App: React.FC = () => {
   return (

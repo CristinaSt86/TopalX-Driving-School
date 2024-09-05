@@ -31,7 +31,7 @@ module.exports = {
         "custom-services": "url('/src/images/visitCard.webp')",
       },
       colors: {
-        primary: "rgba(75, 91, 103, 1)",
+        primary: "rgba(120, 120, 120, 1)",
         secondary: "rgba(250, 206, 37, 1)",
         blue: "rgba(149, 202, 234, 0.8)",
         textColor: "rgba(51, 51, 51, 1)",

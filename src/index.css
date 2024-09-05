@@ -294,7 +294,7 @@ body {
 }
 
 .flip-card-back {
-  background-color: #4b5b67;
+  background-color: rgba(120, 120, 120, 1);
   color: white;
   transform: rotateY(180deg);
   border-radius: 1rem;
@@ -309,7 +309,8 @@ body {
 
 /* Visible banner that slides into place */
 .banner-visible {
-  animation: slideInFromLeft 0.7s forwards, alternateBackground 5s ease-in-out infinite;
+  animation: slideInFromLeft 0.7s forwards,
+    alternateBackground 5s ease-in-out infinite;
   opacity: 1;
   transform: translateX(0); /* Return to its original position */
 }
@@ -330,6 +331,6 @@ button {
 }
 
 .quiz-item button:hover {
-  color: #007bff;
+  color: rgb(40, 56, 144);
   text-decoration: underline;
 }
