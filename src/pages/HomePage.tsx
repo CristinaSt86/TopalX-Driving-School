@@ -113,7 +113,6 @@ const HomePage: React.FC = () => {
     ],
   };
 
-
   return (
     <div id="home" className="overflow-x-hidden max-w-full mx-auto">
       <Helmet>
@@ -192,11 +191,14 @@ const HomePage: React.FC = () => {
           {t("home.description")}
         </p>
 
-        <Button onClick={scrollToAboutPage} textKey="home.learn_more" additionalClasses="mt-16" />
+        <Button
+          onClick={scrollToAboutPage}
+          textKey="home.learn_more"
+          additionalClasses="mt-16"
+        />
       </div>
 
       <div ref={aboutPageRef}>
-       
         <AboutPage />
         <Gallery />
         <BuyNowPayLater />

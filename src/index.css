@@ -318,4 +318,47 @@ body {
   animation: alternateBackground 5s ease-in-out infinite;
 }
 
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 
+/* Initially hidden and off-screen */
+.banner-hidden {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+/* Visible banner that slides into place */
+.banner-visible {
+  animation: slideInFromLeft 0.7s forwards, alternateBackground 5s ease-in-out infinite;
+  opacity: 1;
+  transform: translateX(0); /* Return to its original position */
+}
+
+/* Make sure the quiz question looks clickable */
+button {
+  cursor: pointer;
+}
+
+.quiz-answer {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.quiz-answer.hidden {
+  opacity: 0;
+  display: none;
+}
+
+.quiz-item button:hover {
+  color: #007bff;
+  text-decoration: underline;
+}

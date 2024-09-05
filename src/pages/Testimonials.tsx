@@ -17,6 +17,7 @@ import c10 from "../images/c10.webp";
 import c6 from "../images/c6.jpg";
 import c4 from "../images/c4.jpg";
 import c8 from "../images/c8.webp";
+import TipsAndTricks from "../components/TipsAndTricks";
 
 export type Testimonial = {
   id: number;
@@ -65,9 +66,16 @@ const Testimonials = forwardRef<TestimonialsHandle, TestimonialsProps>(
     }, []);
 
     return (
-      <div id="testimonials" ref={internalRef} className={` ${animate ? "slide-in" : ""}`}>
+      <div
+        id="testimonials"
+        ref={internalRef}
+        className={` ${animate ? "slide-in" : ""}`}
+      >
         <Helmet>
-          <title>Testimoniale | Scoala de soferi TopalX | Școala de Șoferi din București</title>
+          <title>
+            Testimoniale | Scoala de soferi TopalX | Școala de Șoferi din
+            București
+          </title>
           <meta
             name="description"
             content="Citiți mărturiile studenților noștri despre experiența lor cu Scoala de soferi TopalX - școală de șoferi de încredere din București. Află de ce suntem alegerea potrivită pentru obținerea permisului auto."
@@ -117,8 +125,8 @@ const Testimonials = forwardRef<TestimonialsHandle, TestimonialsProps>(
           <meta property="twitter:site" content="@TopalXScoalaAuto" />
           <meta property="twitter:creator" content="@TopalXScoalaAuto" />
         </Helmet>
-       
-        <div className="p-8 mb-16 shadow-custom ellipse-img">
+
+        <div className="p-4 mb-8 md:mb-16 shadow-custom ellipse-img">
           <h2 className="text-3xl font-bold text-center mt-16 mb-16 pl-3 pr-3">
             {t("testimonials.title")}
           </h2>
@@ -145,6 +153,8 @@ const Testimonials = forwardRef<TestimonialsHandle, TestimonialsProps>(
             </div>
           </div>
         </div>
+
+        <TipsAndTricks />
       </div>
     );
   }

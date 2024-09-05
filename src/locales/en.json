@@ -486,5 +486,74 @@
       "moreInfo": "Request complete details at any sales point or visit tbibank.ro for more information.",
       "downloadApp": "Download the TBI app for free from Google Play or the Apple App Store."
     }
-  }
+  },
+  "tipsAndTricks": {
+    "title": "Tips & Tricks for Beginners",
+    "tipsTitle": "Driving Tips:",
+    "quizzesTitle": "Solved Quizzes:"
+  },
+  "tips": [
+    "Read the driving manual carefully and understand the basics.",
+    "Practice defensive driving to stay safe.",
+    "Take it slow and steady while learning to park.",
+    "Always check your mirrors before changing lanes.",
+    "Understand road signs and markings clearly.",
+    "Use your turn signals early to let others know your intentions.",
+    "Maintain a safe following distance, especially in poor weather.",
+    "Learn how to handle emergency situations (e.g., skidding or tire blowouts).",
+    "Be aware of cyclists and pedestrians, especially at crosswalks.",
+    "Get familiar with the car’s controls before driving in traffic."
+  ],
+  "quizzes": [
+    {
+      "question": "What is the correct stopping distance in wet conditions?",
+      "answer": "The correct stopping distance is double the normal distance.",
+      "feedback": "Well done! That's a key point to remember in rainy conditions. 🌧️"
+    },
+    {
+      "question": "What does a red traffic light mean?",
+      "answer": "It means stop.",
+      "feedback": "Simple but important! 🛑"
+    },
+    {
+      "question": "When should you use your headlights?",
+      "answer": "You should use them in low visibility conditions such as fog, rain, or at night.",
+      "feedback": "Great! Always make sure to stay visible to others. 🔦"
+    },
+    {
+      "question": "What does a yellow traffic light indicate?",
+      "answer": "It means slow down and prepare to stop if it’s safe to do so.",
+      "feedback": "Good! Make sure to be cautious at yellow lights. 🚦"
+    },
+    {
+      "question": "When can you legally use a mobile phone while driving?",
+      "answer": "Only when using a hands-free device.",
+      "feedback": "Correct! Hands-free is the way to go. 📱"
+    },
+    {
+      "question": "What should you do if you miss your exit on the highway?",
+      "answer": "Keep driving and take the next exit, never reverse or stop.",
+      "feedback": "That's right! Never reverse on a highway. 🛣️"
+    },
+    {
+      "question": "What’s the first thing you should do when your vehicle starts to skid?",
+      "answer": "Steer gently into the direction of the skid and avoid braking hard.",
+      "feedback": "Well done! Staying calm and steering gently is key. ❄️"
+    },
+    {
+      "question": "What is the speed limit in a residential area?",
+      "answer": "Typically, the speed limit is 30-40 km/h, but it can vary depending on local regulations.",
+      "feedback": "Good! Always check the posted signs in residential areas. 🏡"
+    },
+    {
+      "question": "What should you do if you approach a roundabout?",
+      "answer": "Give way to traffic already on the roundabout and always signal your exit.",
+      "feedback": "Exactly! Yield and signal properly. 🔄"
+    },
+    {
+      "question": "How do you check your blind spots?",
+      "answer": "Look over your shoulder in the direction of the lane you intend to merge into.",
+      "feedback": "Correct! Checking blind spots is crucial for safe driving. 👀"
+    }
+  ]
 }

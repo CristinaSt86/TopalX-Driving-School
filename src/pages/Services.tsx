@@ -1,11 +1,10 @@
-
 import React, { useRef, useImperativeHandle, useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import CarPackages from "../components/CarPackages";
 import { Helmet } from "react-helmet-async";
 import "../index.css";
 import { PiArrowLeftLight, PiArrowRightLight } from "react-icons/pi";
-import Button from "../components/Button";
+import Banner from "../components/Banner";
 
 export interface ServicesRef {
   scrollToPackages: () => void;
@@ -37,13 +36,6 @@ const Services = React.forwardRef((props, ref) => {
   useEffect(() => {
     setAnimate(true);
   }, []);
-
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
 
   return (
     <>
@@ -140,25 +132,7 @@ const Services = React.forwardRef((props, ref) => {
           </div>
         </div>
 
-        <div
-          className="bg-primary text-white py-8 px-4 text-center shadow-lg alternating-banner mb-16"
-       
-        >
-          <h2 className="text-xl sm:text-2xl font-bold mb-4">
-            Cumperi acum, plătești mai târziu!
-          </h2>
-          <p className="mb-4 text-lg">
-            Profitați de oferta noastră specială: 4 rate fără dobândă pentru
-            cumpărături de până în 2.000 lei. Aprobarea pe loc, direct în
-            magazin!
-          </p>
-          <Button
-            onClick={() => scrollToSection("buy-now-section")}
-            textKey="home.learn_more"
-            additionalClasses=" border-4 border-secondary my-10 "
-          />
-        </div>
-
+        <Banner />
         <CarPackages ref={carPackagesRef} />
       </div>
     </>
