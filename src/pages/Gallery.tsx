@@ -148,7 +148,7 @@ const Gallery: React.FC = () => {
             showFullscreenButton={true}
             showIndex={true}
             autoPlay={false}
-            slideDuration={1000}
+            slideDuration={500}
             slideInterval={2000}
           />
         </div>

@@ -149,7 +149,7 @@ const CarPackages = React.forwardRef<HTMLDivElement>(
         {carPackages.map((pkg, index) => (
           <section
             key={index}
-            className={` mx-auto md:mx-auto flex flex-col  items-center justify-around mb-16 md:flex-row ${
+            className={`container p-4 mx-auto md:mx-auto flex flex-col  items-center justify-around mb-16 md:flex-row ${
               index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
             }`}
           >

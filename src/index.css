@@ -268,6 +268,7 @@ body {
   transition: transform 0.6s;
   transform-style: preserve-3d;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
 }
 
 .flip-card:hover .flip-card-inner {
@@ -293,40 +294,10 @@ body {
 }
 
 .flip-card-back {
-  background-color: #283178;
+  background-color: #4b5b67;
   color: white;
   transform: rotateY(180deg);
   border-radius: 1rem;
-}
-
-@keyframes alternateBackground {
-  0% {
-    background-color: #4b5652;
-    color: white;
-  }
-  50% {
-    background-color: white;
-    color: #4b5652;
-  }
-  100% {
-    background-color: #4b5652;
-    color: white;
-  }
-}
-
-.alternating-banner {
-  animation: alternateBackground 5s ease-in-out infinite;
-}
-
-@keyframes slideInFromLeft {
-  from {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
 }
 
 /* Initially hidden and off-screen */

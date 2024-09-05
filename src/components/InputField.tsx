@@ -12,7 +12,7 @@ const InputField: React.FC<InputFieldProps> = ({ id, label, type, value, onChang
   <div className="mb-4">
     <label
       htmlFor={id}
-      className="block text-gray-700 text-lg font-bold mb-2 bg-white w-fit p-1 rounded-lg"
+      className="block text-gray-700 text-lg font-bold mb-2"
     >
       {label}
     </label>

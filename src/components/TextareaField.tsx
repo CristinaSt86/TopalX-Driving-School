@@ -11,7 +11,7 @@ const TextAreaField: React.FC<TextAreaFieldProps> = ({ id, label, value, onChang
   <div className="mb-6">
     <label
       htmlFor={id}
-      className="block text-gray-700 text-lg font-bold mb-2 bg-white w-fit p-1 rounded-lg"
+      className="block text-gray-700 text-lg font-bold mb-2"
     >
       {label}
     </label>

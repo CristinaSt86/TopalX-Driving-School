@@ -5,10 +5,8 @@ import NavigationLinks from "./NavigationLinks";
 import LegalLinks from "./LegalLinks";
 import logo from "../images/logo.webp";
 
-
 const Footer: React.FC = () => {
   const { t } = useTranslation();
-
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -17,9 +15,8 @@ const Footer: React.FC = () => {
     }
   };
 
-
   return (
-    <footer className="bg-gray-800 bg-opacity-75 text-white py-4 px-4 mx-auto">
+    <footer className="bg-primary bg-opacity-75 text-white py-4 px-4 mx-auto">
       <div className="container mx-auto flex flex-col items-center md:flex-row md:justify-between">
         <div className="flex flex-col justify-center items-center mb-4 md:mb-0 md:gap-4 md:w-[269.71px] md:pr-8">
           <button onClick={() => scrollToSection("home")} className="mb-4 md:mb-0">
@@ -43,11 +40,27 @@ const Footer: React.FC = () => {
           <LegalLinks />
         </div>
       </div>
+
       <div className="mt-4 text-center md:mt-6">
         <div
           className="text-sm md:hidden"
           dangerouslySetInnerHTML={{ __html: t("footer.rights") }}
         ></div>
+      </div>
+
+      {/* Developer Signature */}
+      <div className="text-xs text-gray-400 text-right mt-4">
+        <p>
+          Website developed by{" "}
+          <a
+            href="https://www.cristinastoian-developer.com"
+            className="hover:text-gray-200 underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Cristina Stoian
+          </a>
+        </p>
       </div>
     </footer>
   );

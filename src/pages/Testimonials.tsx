@@ -126,12 +126,12 @@ const Testimonials = forwardRef<TestimonialsHandle, TestimonialsProps>(
           <meta property="twitter:creator" content="@TopalXScoalaAuto" />
         </Helmet>
 
-        <div className="p-4 mb-8 md:mb-16 shadow-custom ellipse-img">
+        <div className="container mx-auto p-4 mb-8 md:mb-16 shadow-custom ellipse-img">
           <h2 className="text-3xl font-bold text-center mt-16 mb-16 pl-3 pr-3">
             {t("testimonials.title")}
           </h2>
           <div className="container mx-auto">
-            <div className="flex flex-wrap justify-center items-center ellipse-img">
+            <div className="flex flex-wrap justify-center gap-4 items-center ellipse-img">
               {finalTestimonials.map(({ id, avatar, caption }, index) => (
                 <div
                   key={id}
@@ -144,7 +144,7 @@ const Testimonials = forwardRef<TestimonialsHandle, TestimonialsProps>(
                   }`}
                 >
                   <img
-                    className="w-full h-full object-cover rounded-2xl"
+                    className="w-full h-full object-cover rounded-xl"
                     src={avatar}
                     alt={`Testimonial ${id}`}
                   />

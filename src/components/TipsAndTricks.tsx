@@ -21,7 +21,7 @@ const TipsAndTricks: React.FC = () => {
   const quizzes: Quiz[] = t("quizzes", { returnObjects: true }) as Quiz[] || [];
 
   return (
-    <div className="tips-and-tricks-section p-4 mb-16">
+    <div className="container mx-auto p-4 mb-16">
       <h2 className="text-3xl font-bold text-center mt-16 mb-16 pl-3 pr-3">
         {t("tipsAndTricks.title")} 🎓🚗
       </h2>
