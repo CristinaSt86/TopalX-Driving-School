@@ -49,7 +49,7 @@ const Footer: React.FC = () => {
       </div>
 
       {/* Developer Signature */}
-      <div className="text-xs text-gray-400 text-right mt-4">
+      <div className="text-xs text-gray-400 text-center md:text-right mt-4">
         <p>
           Website developed by{" "}
           <a

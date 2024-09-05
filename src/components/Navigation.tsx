@@ -70,7 +70,8 @@ const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
           <ul
             id="primary-menu"
             ref={menuRef}
-            className={`pt-6 md:pt-2 pb-2 z-1000 gap-6 md:gap-3  pl-1 pr-1 flex-col md:flex-row md:items-center md:flex space-y-2 md:space-y-0 md:space-x-4 absolute md:static bg-primary md:bg-transparent w-full md:w-auto left-0 md:left-auto top-24 md:top-auto ${
+          
+            className={`pt-6 md:pt-2 pb-2 z-1000 gap-6 md:gap-3  pl-1 pr-1 flex-col md:flex-row md:items-center md:flex space-y-2 md:space-y-0 md:space-x-4 absolute md:static bg-primary w-full md:w-auto left-0 md:left-auto top-24 md:top-auto ${
               isOpen
                 ? "flex items-center max-h-98 overflow-y-auto"
                 : "hidden md:flex"
@@ -79,7 +80,8 @@ const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
             <li>
               <button
                 onClick={() => scrollToSection("home")}
-                className="hover:text-secondary"
+                 className="hover:text-secondary relative after:absolute after:left-1/2 after:bottom-0 after:w-0 after:h-[2px] after:bg-secondary after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full
+"
               >
                 {t("navigation.home")}
               </button>
@@ -87,7 +89,8 @@ const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
             <li>
               <button
                 onClick={() => scrollToSection("about")}
-                className="hover:text-secondary"
+                className="hover:text-secondary relative after:absolute after:left-1/2 after:bottom-0 after:w-0 after:h-[2px] after:bg-secondary after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full
+"
               >
                 {t("navigation.about")}
               </button>
@@ -95,7 +98,8 @@ const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
             <li>
               <button
                 onClick={() => scrollToSection("services")}
-                className="hover:text-secondary"
+                className="hover:text-secondary relative after:absolute after:left-1/2 after:bottom-0 after:w-0 after:h-[2px] after:bg-secondary after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full
+"
               >
                 {t("navigation.services")}
               </button>
@@ -103,7 +107,8 @@ const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
             <li>
               <button
                 onClick={() => scrollToSection("testimonials")}
-                className="hover:text-secondary"
+                className="hover:text-secondary relative after:absolute after:left-1/2 after:bottom-0 after:w-0 after:h-[2px] after:bg-secondary after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full
+"
               >
                 {t("navigation.testimonials")}
               </button>
@@ -111,7 +116,8 @@ const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
             <li>
               <button
                 onClick={() => scrollToSection("gallery")}
-                className="hover:text-secondary"
+                className="hover:text-secondary relative after:absolute after:left-1/2 after:bottom-0 after:w-0 after:h-[2px] after:bg-secondary after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full
+"
               >
                 {t("navigation.gallery")}
               </button>
@@ -119,7 +125,8 @@ const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
             <li>
               <button
                 onClick={() => scrollToSection("contact")}
-                className="hover:text-secondary"
+                className="hover:text-secondary relative after:absolute after:left-1/2 after:bottom-0 after:w-0 after:h-[2px] after:bg-secondary after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full
+"
               >
                 {t("navigation.contact")}
               </button>
