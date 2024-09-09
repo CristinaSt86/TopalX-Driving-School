@@ -502,52 +502,52 @@
     {
       "question": "Care este distanța corectă de oprire în condiții de ploaie?",
       "answer": "Distanța corectă de oprire este dublul distanței normale.",
-      "feedback": "Bravo! Un punct esențial de reținut în condiții de ploaie. 🌧️"
+      "feedback": "Bravo! Un punct esențial de reținut în condiții de ploaie."
     },
     {
       "question": "Ce semnificație are lumina roșie a semaforului?",
       "answer": "Înseamnă oprire.",
-      "feedback": "Simplu dar important! 🛑"
+      "feedback": "Simplu dar important!"
     },
     {
       "question": "Când ar trebui să folosești farurile?",
       "answer": "Ar trebui să le folosești în condiții de vizibilitate scăzută, cum ar fi ceață, ploaie sau pe timp de noapte.",
-      "feedback": "Super! Asigură-te că ești vizibil pentru ceilalți. 🔦"
+      "feedback": "Super! Asigură-te că ești vizibil pentru ceilalți."
     },
     {
       "question": "Ce indică lumina galbenă a semaforului?",
       "answer": "Înseamnă încetinire și pregătire pentru oprire dacă este sigur să faci asta.",
-      "feedback": "Bine! Fii precaut la luminile galbene. 🚦"
+      "feedback": "Bine! Fii precaut la luminile galbene."
     },
     {
       "question": "Când poți folosi legal telefonul mobil în timp ce conduci?",
       "answer": "Numai atunci când folosești un dispozitiv hands-free.",
-      "feedback": "Corect! Hands-free este cea mai bună opțiune. 📱"
+      "feedback": "Corect! Hands-free este cea mai bună opțiune."
     },
     {
       "question": "Ce ar trebui să faci dacă ratezi ieșirea de pe autostradă?",
       "answer": "Continuă să conduci și ia următoarea ieșire, nu da înapoi și nu opri.",
-      "feedback": "Corect! Niciodată nu da înapoi pe autostradă. 🛣️"
+      "feedback": "Corect! Niciodată nu da înapoi pe autostradă."
     },
     {
       "question": "Care este primul lucru pe care ar trebui să îl faci când vehiculul începe să derapeze?",
       "answer": "Virajul ușor în direcția derapajului și evitarea frânării bruste.",
-      "feedback": "Bravo! Calm și viraj ușor este cheia. ❄️"
+      "feedback": "Bravo! Calm și viraj ușor este cheia."
     },
     {
       "question": "Care este limita de viteză în zona rezidențială?",
       "answer": "De obicei, limita de viteză este de 30-40 km/h, dar poate varia în funcție de reglementările locale.",
-      "feedback": "Corect! Verifică întotdeauna indicatoarele din zonele rezidențiale. 🏡"
+      "feedback": "Corect! Verifică întotdeauna indicatoarele din zonele rezidențiale."
     },
     {
       "question": "Ce ar trebui să faci când te apropii de un sens giratoriu?",
       "answer": "Cedează prioritatea vehiculelor deja aflate în sensul giratoriu și semnalizează ieșirea.",
-      "feedback": "Exact! Cedează și semnalizează corect. 🔄"
+      "feedback": "Exact! Cedează și semnalizează corect."
     },
     {
       "question": "Cum verifici unghiurile moarte?",
       "answer": "Întoarce capul peste umăr în direcția benzii în care intenționezi să intri.",
-      "feedback": "Corect! Verificarea unghiurilor moarte este esențială pentru siguranță. 👀"
+      "feedback": "Corect! Verificarea unghiurilor moarte este esențială pentru siguranță."
     }
   ]
 }

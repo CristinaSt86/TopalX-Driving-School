@@ -37,10 +37,57 @@ const Services = React.forwardRef((props, ref) => {
     setAnimate(true);
   }, []);
 
+
+  // Breadcrumb structured data
+  const breadcrumbData = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://www.topalxscoalaauto.ro",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Services",
+        item: "https://www.topalxscoalaauto.ro/services",
+      },
+    ],
+  };
+
+  // Organization structured data for the school
+  const organizationData = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    name: "Scoala de soferi TopalX",
+    description:
+      "Oferim servicii de calitate pentru permis auto și cursuri de conducere defensive la Scoala de soferi TopalX din București.",
+    url: "https://www.topalxscoalaauto.ro",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Calea Vitan 148A",
+      addressLocality: "București",
+      postalCode: "031301",
+      addressCountry: "RO",
+    },
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: "+40736 470 629",
+      contactType: "Customer Service",
+    },
+    sameAs: [
+      "https://www.facebook.com/scoaladesoferitopalx/",
+      "https://www.instagram.com/scoaladesoferitopalx/",
+    ],
+  };
+
   return (
     <>
       <div id="services" className={` ${animate ? "slide-in" : ""} `}>
-        <Helmet>
+      <Helmet>
           <title>
             Servicii | Scoala de soferi TopalX | Școala de Șoferi din București
           </title>
@@ -54,10 +101,7 @@ const Services = React.forwardRef((props, ref) => {
           />
           <meta name="author" content="Scoala de soferi TopalX" />
           <meta name="robots" content="index, follow" />
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
-          />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <meta
             property="og:title"
             content="Servicii - Scoala de soferi TopalX - Școala de Șoferi din București"
@@ -76,10 +120,7 @@ const Services = React.forwardRef((props, ref) => {
             content="https://www.topalxscoalaauto.ro/images/services.jpg"
           />
           <meta property="og:locale" content="ro_RO" />
-          <meta
-            property="og:site_name"
-            content="Scoala de Soferi | TopalX Scoala Auto "
-          />
+          <meta property="og:site_name" content="Scoala de Soferi | TopalX Scoala Auto " />
           <meta property="twitter:card" content="summary_large_image" />
           <meta
             property="twitter:title"
@@ -95,6 +136,9 @@ const Services = React.forwardRef((props, ref) => {
           />
           <meta property="twitter:site" content="@TopalXScoalaAuto" />
           <meta property="twitter:creator" content="@TopalXScoalaAuto" />
+          {/* Structured data scripts for breadcrumbs and organization */}
+          <script type="application/ld+json">{JSON.stringify(breadcrumbData)}</script>
+          <script type="application/ld+json">{JSON.stringify(organizationData)}</script>
         </Helmet>
 
         <div

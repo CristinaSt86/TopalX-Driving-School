@@ -23,6 +23,52 @@ const ContactPage: React.FC = () => {
     setAnimate(true);
   }, [t]);
 
+  // Breadcrumb structured data
+  const breadcrumbData = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://www.topalxscoalaauto.ro",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Contact",
+        item: "https://www.topalxscoalaauto.ro/contact",
+      },
+    ],
+  };
+
+  // Organization structured data for the school
+  const organizationData = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    name: "Scoala de soferi TopalX",
+    description:
+      "Oferim servicii de calitate pentru permis auto și cursuri de conducere defensive la Scoala de soferi TopalX din București.",
+    url: "https://www.topalxscoalaauto.ro",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Calea Vitan 148A",
+      addressLocality: "București",
+      postalCode: "031301",
+      addressCountry: "RO",
+    },
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: "+40736 470 629",
+      contactType: "Customer Service",
+    },
+    sameAs: [
+      "https://www.facebook.com/scoaladesoferitopalx/",
+      "https://www.instagram.com/scoaladesoferitopalx/",
+    ],
+  };
+
   return (
     <div id="contact" className={` ${animate ? "slide-in" : ""}`}>
       <Helmet>
@@ -56,9 +102,12 @@ const ContactPage: React.FC = () => {
           property="og:image"
           content="https://www.topalxscoalaauto.ro/images/contact.jpg"
         />
+        {/* Structured data for breadcrumbs and organization */}
+        <script type="application/ld+json">{JSON.stringify(breadcrumbData)}</script>
+        <script type="application/ld+json">{JSON.stringify(organizationData)}</script>
       </Helmet>
       <div className="shadow-custom relative items-center justify-center bg-opacity-custom pt-20 pb-20 md:flex-row md:gap-8 md:m-0">
-        <h1 className=" px-3 mt-8 mb-16 text-3xl font-bold text-center md:mb-16 md:mt-16 ">
+        <h1 className="px-3 mt-8 mb-16 text-3xl font-bold text-center md:mb-16 md:mt-16 ">
           {t("contactPage.title")}
         </h1>
         <div className="relative z-10">
@@ -70,14 +119,12 @@ const ContactPage: React.FC = () => {
           <h2 className="shadow-custom text-2xl text-white font-semibold mb-10 mt-10 bg-primary p-3 w-fit rounded-r-2xl">
             {t("contactPage.locationTitle")}
           </h2>
-          <div className="shadow-custom  text-white mb-10 mt-10 bg-primary p-4 w-fit rounded-l-3xl">
+          <div className="shadow-custom text-white mb-10 mt-10 bg-primary p-4 w-fit rounded-l-3xl">
             <p
               className="mb-2 whitespace-nowrap"
               dangerouslySetInnerHTML={{ __html: t("contactPage.address") }}
             ></p>
-            <p className="mb-2 whitespace-nowrap">
-              {t("contactPage.address2")}
-            </p>
+            <p className="mb-2 whitespace-nowrap">{t("contactPage.address2")}</p>
             <p
               className="mb-2 whitespace-nowrap"
               dangerouslySetInnerHTML={{ __html: t("contactPage.secretariat") }}
@@ -87,7 +134,7 @@ const ContactPage: React.FC = () => {
               dangerouslySetInnerHTML={{ __html: t("contactPage.manager") }}
             ></p>
             <p
-              className="mb-2 "
+              className="mb-2"
               dangerouslySetInnerHTML={{ __html: t("contactPage.email") }}
             ></p>
           </div>
