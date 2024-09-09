@@ -25,7 +25,7 @@ import {
 type Quiz = {
   question: string;
   answer: string;
-  feedback: string; 
+  feedback: string;
 };
 
 const TipsAndTricks: React.FC = () => {
@@ -36,35 +36,33 @@ const TipsAndTricks: React.FC = () => {
     setActiveQuiz(activeQuiz === index ? null : index);
   };
 
-  
   const getFeedbackIconByIndex = (index: number) => {
     switch (index) {
       case 0: // Quiz 1
-        return <FaCloudRain className="text-gray-500" />; // Icon for rain
-      case 1: // Quiz 2
-        return <FaHandPaper className="text-gray-500" />; // Icon for stop or important
+        return <FaCloudRain />; // Icon for rain
+      case 1: // Quiz
+        return <FaHandPaper />; // Icon for stop or important
       case 2: // Quiz 3
-        return <FaCarCrash className="text-gray-500" />; // Icon for visibility or driving safely
+        return <FaCarCrash />; // Icon for visibility or driving safely
       case 3: // Quiz 4
-        return <FaTrafficLight className="text-gray-500" />; // Icon for traffic lights or signals
+        return <FaTrafficLight />; // Icon for traffic lights or signals
       case 4: // Quiz 5
-        return <FaMobileAlt className="text-gray-500" />; // Icon for hands-free
+        return <FaMobileAlt />; // Icon for hands-free
       case 5: // Quiz 6
-        return <FaArrowRight className="text-gray-500" />; // Icon for forward movement (no reversing)
+        return <FaArrowRight />; // Icon for forward movement (no reversing)
       case 6: // Quiz 7
-        return <FaExclamationTriangle className="text-gray-500" />; // Icon for caution or gentle steering
+        return <FaExclamationTriangle />; // Icon for caution or gentle steering
       case 7: // Quiz 8
-        return <FaHome className="text-gray-500" />; // Icon for residential areas
+        return <FaHome />; // Icon for residential areas
       case 8: // Quiz 9
-        return <FaHandPointRight className="text-gray-500" />; // Icon for yielding and signaling
+        return <FaHandPointRight />; // Icon for yielding and signaling
       case 9: // Quiz 10
-        return <FaEyeSlash className="text-gray-500" />; // Icon for blind spots
+        return <FaEyeSlash />; // Icon for blind spots
       default:
         return null; // No icon by default
     }
   };
 
- 
   const tips: string[] = (t("tips", { returnObjects: true }) as string[]) || [];
   const quizzes: Quiz[] =
     (t("quizzes", { returnObjects: true }) as Quiz[]) || [];
@@ -81,19 +79,21 @@ const TipsAndTricks: React.FC = () => {
 
       {/* Tips Section */}
       <div className="tips-section mb-16">
-        <h3 className="text-xl font-semibold mb-4 flex items-center">
-          <span>{t("tipsAndTricks.tipsTitle")}</span>
-          <FaLightbulb className="ml-2" />
-        </h3>
-        <ul className="list-disc ml-6">
-          {tips.map((tip, index) => (
-            <li key={index} className="mb-2 flex items-start">
-              <FaBook className="mr-2 text-blue-500" />
-              <span>{tip}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
+  <h3 className="text-xl font-semibold mb-4 flex items-center">
+    <span>{t("tipsAndTricks.tipsTitle")}</span>
+    <FaLightbulb className="ml-2 text-xl" /> {/* Set a consistent size */}
+  </h3>
+  <ul className="list-disc ml-6">
+    {tips.map((tip, index) => (
+      <li key={index} className="mb-2 flex items-start">
+        {/* Icon with consistent size */}
+        <FaBook className="mr-2  text-md flex-shrink-0" /> 
+        <span>{tip}</span>
+      </li>
+    ))}
+  </ul>
+</div>
+
 
       {/* Solved Quizzes */}
       <div className="quiz-section">
@@ -108,7 +108,7 @@ const TipsAndTricks: React.FC = () => {
                 className="text-left w-full font-medium text-lg focus:outline-none flex items-center justify-between"
                 onClick={() => toggleQuiz(index)}
               >
-                <span>{quiz.question}</span>
+                <span className="mr-4">{quiz.question}</span>
                 <span>
                   {activeQuiz === index ? <FaChevronUp /> : <FaChevronDown />}
                 </span>

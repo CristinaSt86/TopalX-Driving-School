@@ -1,7 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
+import { useTranslation } from "react-i18next"; // Import the useTranslation hook
 import Button from "./Button";
 
 const Banner: React.FC = () => {
+  const { t } = useTranslation(); // Initialize translation
   const [isVisible, setIsVisible] = useState(false); // To track when the banner is in the viewport
   const bannerRef = useRef<HTMLDivElement>(null); // Reference to the banner element
 
@@ -47,16 +49,15 @@ const Banner: React.FC = () => {
       }`}
     >
       <h2 className="text-xl sm:text-2xl font-bold mb-4">
-        Cumperi acum, plătești mai târziu!
+        {t("banner.title")} 
       </h2>
       <p className="mb-4 text-lg">
-        Profitați de oferta noastră specială: 4 rate fără dobândă pentru
-        cumpărături de până în 2.000 lei. Aprobarea pe loc, direct în magazin!
+        {t("banner.description")} 
       </p>
       <Button
         onClick={() => scrollToSection("buy-now-section")}
-        textKey="home.learn_more"
-        additionalClasses=" border-4 border-secondary my-10 "
+        textKey="banner.learn_more"
+        additionalClasses="border-4 border-secondary my-10"
       />
     </div>
   );

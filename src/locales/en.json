@@ -555,5 +555,10 @@
       "answer": "Look over your shoulder in the direction of the lane you intend to merge into.",
       "feedback": "Correct! Checking blind spots is crucial for safe driving."
     }
-  ]
+  ],
+  "banner": {
+    "title": "Buy now, pay later!",
+    "description": "Take advantage of our special offer: 4 interest-free installments for purchases up to 2,000 lei. Instant approval, directly in-store!",
+    "learn_more": "Learn more"
+  }
 }

@@ -125,9 +125,9 @@
   },
   "carPackages": {
     "title": "Pachete Auto",
-    "introText": "Acum este momentul să obțineți permisul de conducere! Ce mai așteptați? Îndepliniți-vă dorința de mult timp și înscrieți-vă acum. Completați ",
+    "introText": "Acum este momentul să obții permisul de conducere! Ce mai aștepți? Îndeplinește-ți dorința de mult timp și înscrie-te acum. Completează ",
     "registrationFormText": "formularul de înscriere",
-    "orCallText": "sau sunați-ne la ",
+    "orCallText": "sau sună-ne la",
     "buttonText": "Înscrie-te acum",
     "price": "Preț",
     "transmission": "Transmisie",
@@ -549,5 +549,10 @@
       "answer": "Întoarce capul peste umăr în direcția benzii în care intenționezi să intri.",
       "feedback": "Corect! Verificarea unghiurilor moarte este esențială pentru siguranță."
     }
-  ]
+  ],
+  "banner": {
+    "title": "Cumperi acum, plătești mai târziu!",
+    "description": "Profită de oferta noastră specială: 4 rate fără dobândă pentru cumpărături de până în 2.000 lei. Aprobarea pe loc, direct în magazin!",
+    "learn_more": "Află mai multe"
+  }
 }
