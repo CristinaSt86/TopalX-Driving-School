@@ -25,7 +25,7 @@ import {
 type Quiz = {
   question: string;
   answer: string;
-  feedback: string; // Additional feedback for quizzes
+  feedback: string; 
 };
 
 const TipsAndTricks: React.FC = () => {
@@ -36,7 +36,7 @@ const TipsAndTricks: React.FC = () => {
     setActiveQuiz(activeQuiz === index ? null : index);
   };
 
-  // Icon mapping based on quiz index
+  
   const getFeedbackIconByIndex = (index: number) => {
     switch (index) {
       case 0: // Quiz 1
@@ -64,7 +64,7 @@ const TipsAndTricks: React.FC = () => {
     }
   };
 
-  // Tips and quizzes from the translation JSON with fallback to empty array
+ 
   const tips: string[] = (t("tips", { returnObjects: true }) as string[]) || [];
   const quizzes: Quiz[] =
     (t("quizzes", { returnObjects: true }) as Quiz[]) || [];
