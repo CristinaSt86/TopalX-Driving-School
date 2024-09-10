@@ -83,6 +83,8 @@ const AboutPage: React.FC = () => {
     ],
   };
 
+  const nicknames = t('carCard.nickname', { returnObjects: true }) as string[];
+
   return (
     <>
       <Helmet>
@@ -201,10 +203,10 @@ const AboutPage: React.FC = () => {
             <h2 className="text-2xl font-semibold">{t("about.categoryB")}</h2>
           </div>
           <div className="flex flex-wrap justify-center items-center">
-            <CarCard name="Mercedes" nickname="Topul Mare" image={mercedes} />
-            <CarCard name="Volvo V40" nickname="Topul Mic" image={volvo} />
-            <CarCard name="Skoda Fabia" nickname="Bombonica" image={skoda} />
-            <CarCard name="Fiat 500" nickname="Gărgărița" image={fiat} />
+            <CarCard name="Mercedes" nickname={nicknames[0]} image={mercedes} />
+            <CarCard name="Volvo V40" nickname={nicknames[1]} image={volvo} />
+            <CarCard name="Skoda Fabia" nickname={nicknames[2]} image={skoda} />
+            <CarCard name="Fiat 500" nickname={nicknames[3]} image={fiat} />
           </div>
           <Button
             onClick={scrollToPackages}

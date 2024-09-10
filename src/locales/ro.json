@@ -35,6 +35,10 @@
     "categoryB": "Categoria B",
     "button": "Alege Pachetul Potrivit"
   },
+  "carCard": {
+    "alias": "Sau",
+    "nickname": ["Topul Mare", "Topul Mic", "Bombonica", "Gărgărița"]
+  },
   "header": {
     "welcome": "Bine ați venit la",
     "schoolName": "Școala de Șoferi TopalX",
@@ -59,9 +63,7 @@
     "manager": "<strong>Manager:</strong> 0723 007 454",
     "email": "<strong>Email:</strong> topalxtrans@gmail.com"
   },
-  "carCard": {
-    "alias": "Sau"
-  },
+
   "services": {
     "titleHelm": "Servicii - TopalX",
     "description": "Descoperă gama noastră de servicii.",
@@ -250,9 +252,9 @@
     "info": "Pentru a-ți obține permisul de conducere, școala noastră îți vine în ajutor cu primul pas din cei 100 care trebuie parcurși, acesta fiind înscrierea la sediul nostru din Calea Vitan nr. 148A. Ai nevoie doar de buletin pentru acest prim pas!"
   },
   "contactForm": {
-    "name": "Nume",
-    "email": "Email",
-    "message": "Mesaj",
+    "name": "Nume*",
+    "email": "Email*",
+    "message": "Mesaj*",
     "sending": "Trimitere...",
     "send": "Trimite",
     "success": "Mesajul a fost trimis cu succes!",

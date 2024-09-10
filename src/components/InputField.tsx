@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 interface InputFieldProps {
   id: string;
@@ -6,26 +7,33 @@ interface InputFieldProps {
   type: string;
   value: string;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  required?: boolean;
 }
 
-const InputField: React.FC<InputFieldProps> = ({ id, label, type, value, onChange }) => (
-  <div className="mb-4">
-    <label
-      htmlFor={id}
-      className="block text-gray-700 text-lg font-bold mb-2"
-    >
-      {label}
-    </label>
-    <input
-      type={type}
-      id={id}
-      name={id}
-      value={value}
-      onChange={onChange}
-      required
-      className="appearance-none rounded-lg relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-    />
-  </div>
-);
+const InputField: React.FC<InputFieldProps> = ({
+  id,
+  label,
+  type,
+  value,
+  onChange,
+}) => {
+  const { t } = useTranslation();
+
+  return (
+    <div className="mb-4">
+      <label htmlFor={id} className="block text-gray-700 text-lg font-bold mb-2">
+        {label} {/* The label now contains the asterisk if required */}
+      </label>
+      <input
+        type={type}
+        id={id}
+        name={id}
+        value={value}
+        onChange={onChange}
+        className="appearance-none rounded-lg relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+      />
+    </div>
+  );
+};
 
 export default InputField;
