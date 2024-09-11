@@ -182,57 +182,11 @@ body {
   justify-items: center;
 }
 
-/* .image-gallery-thumbnail {
-  width: 6rem;
-  height: 6rem;
-  border-radius: 1rem;
-  overflow: hidden;
-  margin: 0.5rem;
-} */
 
 .image-gallery-thumbnail img {
   object-fit: cover;
   width: auto;
   height: auto;
-}
-
-/* .image-gallery-content .image-gallery-slide .image-gallery-image {
-  max-height: calc(80vh - 80px) !important;
-} */
-
-@keyframes glow {
-  0% {
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
-  }
-  50% {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-  }
-  100% {
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
-  }
-}
-
-.glow-effect {
-  animation: glow 5s infinite;
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1.5);
-    box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
-  }
-  70% {
-    transform: scale(1.05);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-  }
-  100% {
-    transform: scale(1);
-    box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
-  }
-}
-
-.pulse-effect {
-  animation: pulse 3s infinite;
 }
 
 @keyframes bounce {
@@ -268,7 +222,7 @@ body {
   transition: transform 0.6s;
   transform-style: preserve-3d;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 1rem;
+  border-radius: 0.5rem;
 }
 
 .flip-card-back::-webkit-scrollbar {
@@ -277,7 +231,7 @@ body {
 
 .flip-card-back::-webkit-scrollbar-thumb {
   background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 1rem;
+  border-radius: 0.5rem;
 }
 
 .flip-card:hover .flip-card-inner {
@@ -299,14 +253,14 @@ body {
 .flip-card-front {
   background-color: #fff;
   color: black;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
 }
 
 .flip-card-back {
   background-color: rgba(120, 120, 120, 1);
   color: white;
   transform: rotateY(180deg);
-  border-radius: 1rem;
+  border-radius: 0.5rem;
 }
 
 /* Initially hidden and off-screen */
@@ -324,7 +278,6 @@ body {
   transform: translateX(0); /* Return to its original position */
 }
 
-/* Make sure the quiz question looks clickable */
 button {
   cursor: pointer;
 }

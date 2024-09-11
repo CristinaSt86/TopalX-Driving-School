@@ -143,7 +143,7 @@ const AboutPage: React.FC = () => {
       <CineSuntemImg />
       <div id="about" className="mt-4 sm:mt-8 md:mt-12">
         <main className="container mx-auto px-2 flex flex-col flex-wrap md:flex-row items-center justify-center gap-10 md:gap-16 md:mx-auto mb-10">
-          <section className="rounded-2xl mb-4 p-4 sm:p-6 shadow-2xl">
+          <section className="rounded-md mb-4 p-4 sm:p-6 shadow-2xl">
             <h2 className="text-xl sm:text-2xl md:text-3xl mb-2 font-semibold">
               {t("about.keyInformation.titleInfo")}
             </h2>
@@ -157,7 +157,7 @@ const AboutPage: React.FC = () => {
           <div className="flex flex-col md:flex-col lg:flex-row gap-4 md:gap-8 items-center">
             <section
               onClick={scrollToTestimonials}
-              className="flex-1 h-fit max-h-fit-content overflow-hidden rounded-2xl mb-4 p-4 sm:p-6 shadow-2xl ease-in hover:bg-primary hover:text-white transition-transform duration-300 hover:scale-105 cursor-pointer"
+              className="flex-1 h-fit max-h-fit-content overflow-hidden rounded-md mb-4 p-4 sm:p-6 shadow-2xl ease-in hover:bg-primary hover:text-white transition-transform duration-300 hover:scale-105 cursor-pointer"
             >
               <h2 className="text-xl sm:text-2xl md:text-3xl mb-4 font-semibold">
                 {t("about.mission.title")}
@@ -170,7 +170,7 @@ const AboutPage: React.FC = () => {
 
             <section
               onClick={scrollToTeam}
-              className="flex-1 h-fit max-h-fit-content overflow-hidden rounded-2xl mb-4 p-4 sm:p-6 shadow-2xl ease-in hover:bg-primary hover:text-white transition-transform duration-300 hover:scale-105 cursor-pointer"
+              className="flex-1 h-fit max-h-fit-content overflow-hidden rounded-md mb-4 p-4 sm:p-6 shadow-2xl ease-in hover:bg-primary hover:text-white transition-transform duration-300 hover:scale-105 cursor-pointer"
             >
               <h2 className="text-xl sm:text-2xl md:text-3xl mb-4 font-semibold">
                 {t("about.team.title")}
@@ -183,7 +183,7 @@ const AboutPage: React.FC = () => {
           </div>
         </main>
       </div>
-      <div className="shadow-2xl rounded-2xl bg-gradient-to-r from-yellow-100 via-yellow-200 to-yellow-300 p-3 container mx-auto my-10">
+      <div className="shadow-2xl rounded-md bg-gradient-to-r from-yellow-100 via-yellow-200 to-yellow-300 p-3 container mx-auto my-10">
         <h1 className="text-4xl font-bold text-center mb-8 mt-8">
           {t("about.companyDescription.title")}
         </h1>

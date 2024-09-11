@@ -23,7 +23,7 @@ const ReCaptcha: React.FC<ReCaptchaProps> = ({ submitting }) => {
       <button
         type="submit"
         disabled={submitting}
-        className="mt-6 w-fit bg-white text-textColor py-2 px-6 rounded-lg font-semibold hover:bg-secondary transition duration-300 transform hover:scale-150 hover:shadow-lg"
+        className="mt-6 w-fit bg-white text-textColor py-2 px-6 rounded-md font-semibold hover:bg-secondary transition duration-300 transform hover:scale-150 hover:shadow-lg"
       >
         {submitting ? t("contactForm.sending") : t("contactForm.send")}
       </button>

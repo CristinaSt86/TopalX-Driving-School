@@ -153,7 +153,7 @@ const CarPackages = React.forwardRef<HTMLDivElement>(
               index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
             }`}
           >
-            <div className="p-6 rounded-xl shadow-custom mb-4 mt-4 ml-2 mr-2 bg-white md:w-1/3">
+            <div className="p-6 rounded-md shadow-custom mb-4 mt-4 ml-2 mr-2 bg-white md:w-1/3">
               <h2 className="text-2xl font-semibold mb-4">{pkg.name}</h2>
               <p>
                 <strong>{t("carPackages.price")}:</strong>
@@ -177,7 +177,7 @@ const CarPackages = React.forwardRef<HTMLDivElement>(
               <img
                 src={pkg.image}
                 alt={pkg.name}
-                className="rounded-xl w-full h-full max-w-lg md:max-w-lg object-cover pr-20 pl-20 md:mx-auto"
+                className="rounded-md w-full h-full max-w-lg md:max-w-lg object-cover pr-20 pl-20 md:mx-auto"
               />
             </div>
           </section>

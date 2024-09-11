@@ -175,7 +175,7 @@ const HomePage: React.FC = () => {
         }`}
       >
         <h1
-          className={`mt-8 text-xl sm:text-4xl font-extrabold mb-4 sm:mb-10 leading-normal backdrop-blur bg-customTextBg w-fit rounded-xl px-2 ${
+          className={`mt-8 text-xl sm:text-4xl font-extrabold mb-4 sm:mb-10 leading-normal backdrop-blur bg-customTextBg w-fit rounded-md px-2 ${
             animate ? "slide-in" : ""
           }`}
         >
@@ -184,7 +184,7 @@ const HomePage: React.FC = () => {
         </h1>
 
         <p
-          className={`text-lg sm:text-2xl md:text-4xl mt-2 sm:mt-4 md:leading-normal -tracking-normal bg-customTextBg w-fit rounded-2xl ${
+          className={`text-lg sm:text-2xl md:text-4xl mt-2 sm:mt-4 md:leading-normal -tracking-normal bg-customTextBg w-fit rounded-md ${
             animate ? "slide-in" : ""
           }`}
         >

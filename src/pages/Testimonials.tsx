@@ -126,7 +126,7 @@ const Testimonials = forwardRef<TestimonialsHandle, TestimonialsProps>(
           <meta property="twitter:creator" content="@TopalXScoalaAuto" />
         </Helmet>
 
-        <div className="container mx-auto p-4 mb-8 md:mb-16 shadow-custom ellipse-img">
+        <div className=" mx-auto p-4 mb-8 md:mb-16">
           <h2 className="text-3xl font-bold text-center mt-16 mb-16 pl-3 pr-3">
             {t("testimonials.title")}
           </h2>
@@ -135,7 +135,7 @@ const Testimonials = forwardRef<TestimonialsHandle, TestimonialsProps>(
               {finalTestimonials.map(({ id, avatar, caption }, index) => (
                 <div
                   key={id}
-                  className={`p-10 max-w-sm shadow-custom overflow-hidden m-4 ellipse-img ${
+                  className={`p-10 max-w-sm shadow-2xl overflow-hidden m-2 ellipse-img ${
                     animate
                       ? index < finalTestimonials.length / 2
                         ? "slide-in-left"
@@ -144,7 +144,7 @@ const Testimonials = forwardRef<TestimonialsHandle, TestimonialsProps>(
                   }`}
                 >
                   <img
-                    className="w-full h-full object-cover rounded-xl"
+                    className="w-full h-full object-cover rounded-md"
                     src={avatar}
                     alt={`Testimonial ${id}`}
                   />

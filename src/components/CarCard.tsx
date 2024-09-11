@@ -13,11 +13,11 @@ const CarCard: React.FC<CarCardProps> = ({ name, nickname, image }) => {
   const { t } = useTranslation(); // Hook for translation
 
   return (
-    <div className="m-4 p-4 max-w-sm bg-white rounded-lg border shadow-md">
+    <div className="m-4 p-4 max-w-sm bg-white rounded-md border shadow-md">
       <img
         src={image}
         alt={name}
-        className="rounded-t-lg w-52 h-52 object-cover"
+        className="rounded-t-md w-52 h-52 object-cover"
       />
       <div className="p-5">
         <h5 className="mb-2 text-2xl font-bold tracking-tight">{name}</h5>

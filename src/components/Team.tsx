@@ -133,7 +133,7 @@ const Team = React.forwardRef<HTMLDivElement, any>((props, ref) => {
             {teamMembers.map((member, index) => (
               <div
                 key={member.id}
-                className={`bg-gray-100 p-4 rounded-lg shadow-xl flex flex-col items-center sm:flex-row ${
+                className={`bg-gray-100 p-4 rounded-md shadow-xl flex flex-col items-center sm:flex-row ${
                   index % 2 === 0 ? "sm:flex-row" : "sm:flex-row-reverse"
                 }`}
               >

@@ -116,10 +116,10 @@ const ContactPage: React.FC = () => {
           </Suspense>
         </div>
         <div className="w-full md:w-auto flex md:flex-row gap-2 justify-between items-start mt-8 mb-8">
-          <h2 className="shadow-2xl text-2xl text-white font-semibold mb-10 mt-10 bg-primary p-3 w-fit rounded-r-2xl">
+          <h2 className="shadow-2xl text-2xl text-white font-semibold mb-10 mt-10 bg-primary p-3 w-fit rounded-r-md">
             {t("contactPage.locationTitle")}
           </h2>
-          <div className="shadow-2xl text-white mb-10 mt-10 bg-primary p-4 w-fit rounded-l-3xl">
+          <div className="shadow-2xl text-white mb-10 mt-10 bg-primary p-4 w-fit rounded-l-md">
             <p
               className="mb-2 whitespace-nowrap"
               dangerouslySetInnerHTML={{ __html: t("contactPage.address") }}
