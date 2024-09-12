@@ -17,7 +17,8 @@ const InputField: React.FC<InputFieldProps> = ({
   value,
   onChange,
 }) => {
-  const { t } = useTranslation();
+   // eslint-disable-next-line @typescript-eslint/no-unused-vars
+   const { t } = useTranslation();
 
   return (
     <div className="mb-4">

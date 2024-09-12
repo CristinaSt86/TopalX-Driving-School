@@ -1,35 +1,25 @@
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import cuplu from "../images/cuplu.webp";
-import s1 from "../images/mer.webp";
+//import mer from "../images/mer.webp";
 import clasa3 from "../images/clasa3.webp";
-import sisCostiElev from "../images/vol.webp";
+//import volvo from "../images/vol.webp";
 import sis from "../images/sis.jpg";
-import canDoIt from "../images/sk1.webp";
+//import skoda from "../images/sk1.webp";
 import clasa from "../images/clasa.webp";
-import s4 from "../images/f3.webp";
+//import fiat from "../images/f3.webp";
 import servicii from "../images/servicii.webp";
-import s5 from "../images/sisCostiElev.webp";
+import sisCostiElev from "../images/sisCostiElev.webp";
 import sis2 from "../images/sis2.jpg";
-import s6 from "../images/canDoIt.webp";
+
 
 const CineSuntemImg: React.FC = () => {
   const [animate, setAnimate] = useState(false);
   const { t } = useTranslation();
 
   const images: string[] = [
-    cuplu,
-    s1,
-    clasa3,
-    sisCostiElev,
-    sis,
-    canDoIt,
-    clasa,
-    s4,
-    servicii,
-    s5,
-    sis2,
-    s6,
+   sisCostiElev,servicii,sis2,clasa,sis,clasa3
+   
+    
   ];
 
   useEffect(() => {

@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef, useCallback } from "react";
 import { FaBars, FaTimes, FaPhoneAlt } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import LanguageButton from "./LanguageButton";
-import ErrorBoundary from "./ErrB"; 
+import ErrorBoundary from "./ErrB";
 
 const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -48,7 +48,7 @@ const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
   return (
     <ErrorBoundary>
       <nav
-        className="shadow-2xl p-3 md:py-2 md:px-6 bg-primary text-white sm:p-3 rounded-md"
+        className=" p-3 md:py-2 font-semibold text-textColor"
         aria-label="Main Navigation"
       >
         <div className="container mx-auto flex justify-between items-center">
@@ -70,17 +70,16 @@ const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
           <ul
             id="primary-menu"
             ref={menuRef}
-          
-            className={`pt-6 md:pt-2 pb-2 z-1000 gap-6 md:gap-3  pl-1 pr-1 flex-col md:flex-row md:items-center md:flex space-y-2 md:space-y-0 md:space-x-4 absolute md:static bg-primary w-full md:w-auto left-0 md:left-auto top-24 md:top-auto ${
+            className={`pt-6 md:pt-2 pb-2 z-1000 gap-6 md:gap-3 pl-1 pr-1 flex-col md:flex-row md:items-center md:flex space-y-2 md:space-y-0 md:space-x-4 absolute md:static w-full md:w-auto left-0 md:left-auto top-24 md:top-auto ${
               isOpen
-                ? "flex items-center max-h-98 overflow-y-auto"
+                ? "flex items-center max-h-98 overflow-y-auto md:hidden backdrop-blur-md bg-white/50" // Only apply blur and bg in mobile
                 : "hidden md:flex"
             }`}
           >
             <li>
               <button
                 onClick={() => scrollToSection("home")}
-                 className="hover:text-secondary relative after:absolute after:left-1/2 after:bottom-0 after:w-0 after:h-[2px] after:bg-secondary after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full
+                className="hover:text-primary relative after:absolute after:left-1/2 after:bottom-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full
 "
               >
                 {t("navigation.home")}
@@ -89,7 +88,7 @@ const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
             <li>
               <button
                 onClick={() => scrollToSection("about")}
-                className="hover:text-secondary relative after:absolute after:left-1/2 after:bottom-0 after:w-0 after:h-[2px] after:bg-secondary after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full
+                className="hover:text-primary relative after:absolute after:left-1/2 after:bottom-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full
 "
               >
                 {t("navigation.about")}
@@ -98,7 +97,7 @@ const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
             <li>
               <button
                 onClick={() => scrollToSection("services")}
-                className="hover:text-secondary relative after:absolute after:left-1/2 after:bottom-0 after:w-0 after:h-[2px] after:bg-secondary after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full
+                className="hover:text-primary relative after:absolute after:left-1/2 after:bottom-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full
 "
               >
                 {t("navigation.services")}
@@ -107,7 +106,7 @@ const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
             <li>
               <button
                 onClick={() => scrollToSection("testimonials")}
-                className="hover:text-secondary relative after:absolute after:left-1/2 after:bottom-0 after:w-0 after:h-[2px] after:bg-secondary after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full
+                className="hover:text-primary relative after:absolute after:left-1/2 after:bottom-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full
 "
               >
                 {t("navigation.testimonials")}
@@ -116,7 +115,7 @@ const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
             <li>
               <button
                 onClick={() => scrollToSection("gallery")}
-                className="hover:text-secondary relative after:absolute after:left-1/2 after:bottom-0 after:w-0 after:h-[2px] after:bg-secondary after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full
+                className="hover:text-primary relative after:absolute after:left-1/2 after:bottom-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full
 "
               >
                 {t("navigation.gallery")}
@@ -125,7 +124,7 @@ const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
             <li>
               <button
                 onClick={() => scrollToSection("contact")}
-                className="hover:text-secondary relative after:absolute after:left-1/2 after:bottom-0 after:w-0 after:h-[2px] after:bg-secondary after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full
+                className="hover:text-primary relative after:absolute after:left-1/2 after:bottom-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full
 "
               >
                 {t("navigation.contact")}
@@ -136,9 +135,11 @@ const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
             </li>
             {isOpen && isMobileView && (
               <li className="flex flex-col items-center space-y-4 pb-4">
-                <div className="flex items-center hover:text-secondary border-2 border-secondary rounded-md p-1">
+                <div className="flex items-center hover:text-primary border-2 border-primary rounded-md p-1">
                   <FaPhoneAlt />
-                  <a href="tel:0736470629">0736 470 629</a>
+                  <a className="ml-1" href="tel:0736470629">
+                    0736 470 629
+                  </a>
                 </div>
               </li>
             )}

@@ -41,7 +41,7 @@ module.exports = {
         customTextBg: "rgba(0, 0, 0, 0.2)",
       },
       fontFamily: {
-        sans: ["Helvetica Neue", "Helvetica", "Arial", "sans-serif"],
+        sans: ["Arial", "Helvetica Neue", "Helvetica", "sans-serif"],
       },
       keyframes: {
         drive: {

@@ -13,6 +13,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+
   /* overflow-x: hidden; */
 }
 
@@ -182,7 +183,6 @@ body {
   justify-items: center;
 }
 
-
 .image-gallery-thumbnail img {
   object-fit: cover;
   width: auto;
@@ -296,3 +296,23 @@ button {
   color: rgb(40, 56, 144);
   text-decoration: underline;
 }
+
+@media (min-width: 768px) and (max-width: 1024px), (min-width: 820px) and (max-width: 1180px) {
+  .desktop-menu {
+    display: none; /* Hide desktop menu */
+  }
+  .mobile-menu {
+    display: flex; /* Show mobile (hamburger) menu */
+  }
+}
+
+@media (min-width: 1025px), (min-width: 1181px) {
+  .desktop-menu {
+    display: flex; /* Show desktop menu for larger sizes */
+  }
+  .mobile-menu {
+    display: none; /* Hide mobile menu for larger sizes */
+  }
+}
+
+
