@@ -137,7 +137,7 @@ const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
               <li className="flex flex-col items-center space-y-4 pb-4">
                 <div className="flex items-center hover:text-primary border-2 border-primary rounded-md p-1">
                   <FaPhoneAlt />
-                  <a className="ml-1" href="tel:0736470629">
+                  <a className="ml-1" href="tel:0040736470629">
                     0736 470 629
                   </a>
                 </div>
