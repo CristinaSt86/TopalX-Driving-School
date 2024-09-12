@@ -127,7 +127,7 @@ const Testimonials = forwardRef<TestimonialsHandle, TestimonialsProps>(
         </Helmet>
 
         <div className=" mx-auto p-4 mb-8 md:mb-16">
-          <h2 className="text-3xl font-bold text-center mt-16 mb-16 pl-3 pr-3">
+          <h2 className="text-3xl font-bold text-center mt-8 mb-16 pl-3 pr-3">
             {t("testimonials.title")}
           </h2>
           <div className="container mx-auto">
