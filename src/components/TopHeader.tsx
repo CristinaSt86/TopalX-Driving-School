@@ -40,7 +40,7 @@ const TopHeader: React.FC = () => {
             href="tel:0736470629"
             className="flex items-center space-x-2 hover:text-gray-400 sm:mr-4 sm:pr-10 "
           >
-            <FaPhoneAlt />
+            <FaPhoneAlt className="bounce-effect" />
             <span>0736 470 629</span>
           </a>
 

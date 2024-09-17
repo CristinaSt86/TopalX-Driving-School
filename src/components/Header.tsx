@@ -43,7 +43,7 @@ const Header: React.FC = () => {
     <>
       {!isScrolled && <TopHeader />}
       <header
-        className={`bg-secondary flex items-center justify-between p-4 shadow-custom z-40 fixed w-full top-0 transition-all duration-300 ${
+        className={`bg-white/90 flex items-center justify-between p-4 shadow-custom z-40 fixed w-full top-0 transition-all duration-300 ${
           isScrolled || isMobileView ? "mt-0" : "custom1:mt-12"
         }`}
       >

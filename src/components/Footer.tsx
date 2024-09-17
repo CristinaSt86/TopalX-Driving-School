@@ -4,6 +4,7 @@ import SocialLinks from "./SocialLinks";
 import NavigationLinks from "./NavigationLinks";
 import LegalLinks from "./LegalLinks";
 import logo from "../images/logo.webp";
+import QRCodeComponent from "./QRCodeComponent";
 
 const Footer: React.FC = () => {
   const { t } = useTranslation();
@@ -19,12 +20,18 @@ const Footer: React.FC = () => {
     <footer className="bg-primary bg-opacity-75 text-white py-4 px-4 mx-auto">
       <div className="container mx-auto flex flex-col items-center md:flex-row md:justify-between">
         <div className="flex flex-col justify-center items-center mb-4 md:mb-0 md:gap-4 md:w-[269.71px] md:pr-8">
-          <button onClick={() => scrollToSection("home")} className="mb-4 md:mb-0">
-            <div className="aspect-w-1 aspect-h-1 w-16 rounded-full overflow-hidden">
+          <button
+            onClick={() => scrollToSection("home")}
+            className="mb-4 md:mb-0"
+          >
+            <div className="aspect-w-1 aspect-h-1 w-10 rounded-full overflow-hidden">
               <img src={logo} alt="Logo" className="object-cover" />
             </div>
           </button>
           <SocialLinks />
+          <div>
+            <QRCodeComponent />
+          </div>
         </div>
         <div className="text-sm mt-4 mb-4 relative max-w-xs md:max-w-md text-center md:px-8 lg:px-12">
           <span className="before:absolute before:left-0 before:top-0 before:bottom-0 before:w-px before:bg-white after:absolute after:right-0 after:top-0 after:bottom-0 after:w-px after:bg-white px-4">
