@@ -60,7 +60,6 @@
     "address": "<strong>Adresa:</strong> Calea Vitan 148A,",
     "address2": "031301 București, România",
     "secretariat": "<strong>Secretariat:</strong> 0736 470 629",
-    "manager": "<strong>Manager:</strong> 0723 007 454",
     "email": "<strong>Email:</strong> topalxtrans@gmail.com"
   },
 
@@ -328,8 +327,7 @@
       "content": "Dacă aveți întrebări sau nelămuriri cu privire la această Politică de Confidențialitate, ne puteți contacta la:",
       "email": "Email - topalxtrans@gmail.com",
       "address": "Adresă - Calea Vitan 148A, 031301 București, România.",
-      "telephone": "Secretariat - 0736 470 629 ",
-      "telephone1": "Manager - 0723 007 454 "
+      "telephone": "Secretariat - 0736 470 629 "
     }
   },
   "termsAndConditions": {
@@ -369,8 +367,7 @@
         "content": "Pentru orice întrebări sau nelămuriri cu privire la acești termeni și condiții, vă rugăm să ne contactați la:",
         "email": "topalxtrans@gmail.com",
         "address": "Calea Vitan 148A, 031301 București, România",
-        "telephone": "Secretariat - 0736 470 629",
-        "telephone1": "Manager - 0723 007 454"
+        "telephone": "Secretariat - 0736 470 629"
       }
     }
   },
@@ -408,8 +405,8 @@
   },
   "offer": {
     "title": "Pachet ședințe suplimentare de pregătire 4+1 cadou!",
-    "description1": "🎖️ Inclusiv pentru posesorii de permis.",
-    "description2": "Alege între cutie automată sau manuală. 🚗🚙",
+    "description1": "Inclusiv pentru posesorii de permis.",
+    "description2": "Alege între cutie automată sau manuală.",
     "btnText": "Profită de ofertă!"
   },
   "faq": {

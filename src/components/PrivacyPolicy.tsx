@@ -32,7 +32,6 @@ const PrivacyPolicy: React.FC = () => {
           <p>{t("privacyPolicy.contact.email")}</p>
           <p>{t("privacyPolicy.contact.address")}</p>
           <p>{t("privacyPolicy.contact.telephone")}</p>
-          <p>{t("privacyPolicy.contact.telephone1")}</p>
         </div>
       </div>
     </div>

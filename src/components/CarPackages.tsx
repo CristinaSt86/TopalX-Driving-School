@@ -153,7 +153,7 @@ const CarPackages = React.forwardRef<HTMLDivElement>(
               index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
             }`}
           >
-            <div className="p-6 rounded-md shadow-custom mb-4 mt-4 ml-2 mr-2 bg-white md:w-1/3">
+            <div className="p-6 rounded-md  mb-4 mt-4 ml-2 mr-2 bg-white md:w-1/3">
               <h2 className="text-2xl font-semibold mb-4">{pkg.name}</h2>
               <p>
                 <strong>{t("carPackages.price")}:</strong>

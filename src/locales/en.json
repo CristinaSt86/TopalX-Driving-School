@@ -61,7 +61,6 @@
     "address": "<strong>Address:</strong> Calea Vitan 148A,",
     "address2": "031301 Bucharest, Romania",
     "secretariat": "<strong>Secretariat:</strong> 0736 470 629",
-    "manager": "<strong>Manager:</strong> 0723 007 454",
     "email": "<strong>Email:</strong> topalxtrans@gmail.com"
   },
 
@@ -332,8 +331,8 @@
       "content": "If you have any questions or concerns regarding this Privacy Policy, you can contact us at:",
       "email": "Email - topalxtrans@gmail.com",
       "address": "Address - Calea Vitan 148A, 031301 Bucharest, Romania.",
-      "telephone": "Secretariat - 0736 470 629 ",
-      "telephone1": "Manager - 0723 007 454 "
+      "telephone": "Secretariat - 0736 470 629 "
+  
     }
   },
 
@@ -374,8 +373,7 @@
         "content": "For any questions or concerns regarding these terms and conditions, please contact us at:",
         "email": "Email: topalxtrans@gmail.com",
         "address": "Address: Calea Vitan 148A, 031301 Bucharest, Romania",
-        "telephone": "Secretariat - 0736 470 629",
-        "telephone1": "Manager - 0723 007 454"
+        "telephone": "Secretariat - 0736 470 629"
       }
     }
   },
@@ -413,8 +411,8 @@
   },
   "offer": {
     "title": "Supplementary training package 4+1 free!",
-    "description1": "🎖️ Including for license holders.",
-    "description2": "Choose between automatic or manual transmission. 🚗🚙",
+    "description1": "Including for license holders.",
+    "description2": "Choose between automatic or manual transmission.",
     "btnText": "Claim the Offer!"
   },
   "faq": {

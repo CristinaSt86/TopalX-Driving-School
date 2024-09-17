@@ -130,10 +130,6 @@ const ContactPage: React.FC = () => {
               dangerouslySetInnerHTML={{ __html: t("contactPage.secretariat") }}
             ></p>
             <p
-              className="mb-2 whitespace-nowrap"
-              dangerouslySetInnerHTML={{ __html: t("contactPage.manager") }}
-            ></p>
-            <p
               className="mb-2"
               dangerouslySetInnerHTML={{ __html: t("contactPage.email") }}
             ></p>

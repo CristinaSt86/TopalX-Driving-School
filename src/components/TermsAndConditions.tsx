@@ -31,7 +31,6 @@ const TermsAndConditions: React.FC = () => {
           <p>{t("termsAndConditions.sections.contact.email")}</p>
           <p>{t("termsAndConditions.sections.contact.address")}</p>
           <p>{t("termsAndConditions.sections.contact.telephone")}</p>
-          <p>{t("termsAndConditions.sections.contact.telephone1")}</p>
         </div>
       </div>
     </div>
