@@ -24,7 +24,7 @@ const QRCodeComponent: React.FC = () => {
   return (
     <div>
       <div ref={qrRef} className="flex flex-col items-center justify-center">
-        <QRCode value={websiteUrl} size={42} />
+        <QRCode value={websiteUrl} size={42} className="mt-4 md:mt-2"/>
         <p className="text-center mt-4 text-gray-400 ">
           Point your camera here to visit the website!
         </p>
