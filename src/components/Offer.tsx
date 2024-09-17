@@ -20,8 +20,6 @@ const Offer: React.FC = () => {
         {t("offer.description1")}{" "}
         <FaMedal className="inline-block align-middle ml-1" />
       </p>
-
-      {/* Cars section centered vertically with text */}
       <p className="text-xl mb-6 text-center">
         {t("offer.description2")}
         <span className="inline-block align-middle mx-2">
