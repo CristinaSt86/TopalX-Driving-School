@@ -249,7 +249,8 @@
     "privacyPolicy": "Politica de Confidențialitate",
     "termsAndConditions": "Termeni și Condiții",
     "faq": "Întrebări frecvente",
-    "info": "Pentru a-ți obține permisul de conducere, școala noastră îți vine în ajutor cu primul pas din cei 100 care trebuie parcurși, acesta fiind înscrierea la sediul nostru din Calea Vitan nr. 148A. Ai nevoie doar de buletin pentru acest prim pas!"
+    "info": "Pentru a-ți obține permisul de conducere, școala noastră îți vine în ajutor cu primul pas din cei 100 care trebuie parcurși, acesta fiind înscrierea la sediul nostru din Calea Vitan nr. 148A. Ai nevoie doar de buletin pentru acest prim pas!",
+    "developedBy": "Website dezvoltat de "
   },
   "contactForm": {
     "name": "Nume*",
@@ -556,5 +557,9 @@
     "title": "Cumperi acum, plătești mai târziu!",
     "description": "Profită de oferta noastră specială: 4 rate fără dobândă pentru cumpărături de până în 2.000 lei. Aprobarea pe loc, direct în magazin!",
     "learn_more": "Află mai multe"
+  },
+  "qrcode": {
+    "instruction": "Îndreaptă camera aici pentru a vizita site-ul!",
+    "downloadButton": "Descarcă codul QR"
   }
 }

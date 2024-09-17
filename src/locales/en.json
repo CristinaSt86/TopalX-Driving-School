@@ -251,8 +251,9 @@
     "contact": "Contact",
     "privacyPolicy": "Privacy Policy",
     "termsAndConditions": "Terms and Conditions",
-    "faq": "FAQ",
-    "info": "To obtain your driver's license, our school assists you with the first step out of the 100 required steps, which is registration at our office located at 148A Vitan Road. You only need your ID for this first step!"
+    "faq": "FAQs",
+    "info": "To obtain your driver's license, our school assists you with the first step out of the 100 required steps, which is registration at our office located at 148A Vitan Road. You only need your ID for this first step!",
+    "developedBy": "Website developed by "
   },
   "contactForm": {
     "name": "Name*",
@@ -561,5 +562,9 @@
     "title": "Buy now, pay later!",
     "description": "Take advantage of our special offer: 4 interest-free installments for purchases up to 2,000 lei. Instant approval, directly in-store!",
     "learn_more": "Learn more"
+  },
+  "qrcode": {
+    "instruction": "Point your camera here to visit the website!",
+    "downloadButton": "Download QR Code"
   }
 }

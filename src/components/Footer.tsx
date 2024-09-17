@@ -58,7 +58,7 @@ const Footer: React.FC = () => {
       {/* Developer Signature */}
       <div className="text-xs text-gray-400 text-center md:text-right mt-4">
         <p>
-          Website developed by{" "}
+         {t("footer.developedBy")}
           <a
             href="https://www.cristinastoian-developer.com"
             className="hover:text-gray-200 underline"
