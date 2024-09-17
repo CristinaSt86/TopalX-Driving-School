@@ -16,9 +16,7 @@ const Offer: React.FC = () => {
   return (
     <div className="p-6 mx-auto flex flex-col items-center justify-center">
       <h2 className="text-3xl font-bold mb-3 mx-2 text-center">{t("offer.title")}</h2>
-
-      {/* Medal icon comes directly after the text and stays on the same line */}
-      <p className="text-2xl mb-4" style={{ whiteSpace: "nowrap" }}>
+      <p className="text-2xl mb-4 whitespace-nowrap">
         {t("offer.description1")}{" "}
         <FaMedal className="inline-block align-middle ml-1" />
       </p>
