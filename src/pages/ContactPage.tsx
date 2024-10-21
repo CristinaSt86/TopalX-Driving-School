@@ -106,8 +106,8 @@ const ContactPage: React.FC = () => {
         <script type="application/ld+json">{JSON.stringify(breadcrumbData)}</script>
         <script type="application/ld+json">{JSON.stringify(organizationData)}</script>
       </Helmet>
-      <div className="shadow-custom relative items-center justify-center bg-opacity-custom pt-20 pb-20 md:flex-row md:gap-8 md:m-0">
-        <h1 className="px-3 mt-8 mb-16 text-3xl font-bold text-center md:mb-16 md:mt-16 ">
+      <div className="shadow-custom relative items-center justify-center bg-opacity-custom pt-12 pb-12 md:flex-row md:gap-8 md:m-0">
+        <h1 className="px-3 mt-8 mb-16 text-3xl font-bold text-center md:mb-16">
           {t("contactPage.title")}
         </h1>
         <div className="relative z-10">
@@ -130,7 +130,7 @@ const ContactPage: React.FC = () => {
               dangerouslySetInnerHTML={{ __html: t("contactPage.secretariat") }}
             ></p>
             <p
-              className="mb-2 whitespace-nowrap"
+              className="mb-2 "
               dangerouslySetInnerHTML={{ __html: t("contactPage.email") }}
             ></p>
           </div>

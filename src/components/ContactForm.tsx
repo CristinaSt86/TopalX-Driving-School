@@ -85,7 +85,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
       <div className="shadow-custom pb-6 pt-6 container max-w-lg rounded-md backdrop-blur md:w-1/2 md:pl-6 md:pr-6">
         <form
           onSubmit={handleSubmit}
-          className="max-w-sm mx-auto p-4 md:mx-auto flex flex-col gap-4"
+          className="max-w-xs md:max-w-sm mx-auto p-4  flex flex-col gap-4"
         >
           <InputField
             id="name"

@@ -43,7 +43,7 @@ const Header: React.FC = () => {
     <>
       {!isScrolled && <TopHeader />}
       <header
-        className={`bg-white/90 flex items-center justify-between p-4 shadow-custom z-40 fixed w-full top-0 transition-all duration-300 ${
+        className={` flex items-center justify-between p-4 absolute top-0 left-0 z-50 scroll w-full transition-all duration-300 ${
           isScrolled || isMobileView ? "mt-0" : "custom1:mt-12"
         }`}
       >
@@ -58,8 +58,8 @@ const Header: React.FC = () => {
         </Link>
         <Navigation isMobileView={isMobileView} />
       </header>
-      <div className={`${isMobileView || isScrolled ? "mt-16" : "mt-0 custom1:mt-20"}`}>
-        <main className="container mx-auto p-4">
+      <div className={`${isMobileView || isScrolled ?  "bg-transparent" : "bg-transparent"}`}>
+        <main className="container mx-auto ">
           {/* main content goes here */}
         </main>
       </div>

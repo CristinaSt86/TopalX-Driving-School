@@ -143,17 +143,17 @@ const CarPackages = React.forwardRef<HTMLDivElement>(
           <meta property="twitter:site" content="@TopalXScoalaAuto" />
           <meta property="twitter:creator" content="@TopalXScoalaAuto" />
         </Helmet>
-        <h1 className="text-3xl font-bold text-center mb-16 md:mb-28 md:mt-28 pl-3 pr-3 textShadow-mt">
+        <h1 className="text-3xl font-bold text-center mb-4 md:mb-28 md:mt-28 pl-3 pr-3 textShadow-mt">
           {t("carPackages.title")}
         </h1>
         {carPackages.map((pkg, index) => (
           <section
             key={index}
-            className={`container p-4 mx-auto md:mx-auto flex flex-col  items-center justify-around mb-16 md:flex-row ${
+            className={`container p-2 mx-auto md:mx-auto flex flex-col  items-center justify-around mb-16 md:flex-row ${
               index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
             }`}
           >
-            <div className="p-6 rounded-md  mb-4 mt-4 ml-2 mr-2 bg-white md:w-1/3">
+            <div className="p-2 rounded-md  mb-4 mt-4 ml-2 mr-2 bg-white md:w-1/3">
               <h2 className="text-2xl font-semibold mb-4">{pkg.name}</h2>
               <p>
                 <strong>{t("carPackages.price")}:</strong>

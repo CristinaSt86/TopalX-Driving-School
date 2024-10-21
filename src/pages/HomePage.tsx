@@ -8,11 +8,31 @@ import "../index.css";
 import Button from "../components/Button";
 import Acasa from "../components/Acasa";
 import BuyNowPayLater from "./BuyNowPayLater";
+import poza1 from "../images/bgHome2.webp";
+import poza2 from "../images/bg3.webp";
+import poza3 from "../images/bg4.webp";
+
+const backgroundImages = [
+  {
+    image: poza1,
+    title: "Slide 1 Title",
+    description: "This is the description for Slide 1.",
+  },
+  {
+    image: poza2,
+    title: "Slide 2 Title",
+    description: "This is the description for Slide 2.",
+  },
+  {
+    image: poza3,
+    title: "Slide 3 Title",
+    description: "This is the description for Slide 3.",
+  },
+];
 
 const HomePage: React.FC = () => {
   const { t } = useTranslation();
   const aboutPageRef = useRef<HTMLDivElement>(null);
-  // const buyNowRef = useRef<HTMLDivElement>(null);
   const [animate, setAnimate] = useState(false);
 
   const scrollToAboutPage = () => {
@@ -113,6 +133,18 @@ const HomePage: React.FC = () => {
     ],
   };
 
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentSlide((prevIndex) =>
+        prevIndex === backgroundImages.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 5000); // Change every 5 seconds
+
+    return () => clearInterval(intervalId); // Clean up on unmount
+  }, []);
+
   return (
     <div id="home" className="overflow-x-hidden max-w-full mx-auto">
       <Helmet>
@@ -170,12 +202,18 @@ const HomePage: React.FC = () => {
         </script>
       </Helmet>
       <div
-        className={`flex flex-col items-center justify-center shadow-custom pt-12 sm:pt-16 pb-48 mt-0 bg-custom-home bg-center bg-cover bg-no-repeat text-white px-4 sm:p-16 text-center mb-10 h-auto md:pt-24 md:pb-48 ${
+        className={`flex flex-col items-center justify-center shadow-custom  pb-48 mt-0 text-white px-4 sm:p-16 text-center mb-10 h-auto pt-32 md:pt-48 md:pb-48 ${
           window.innerWidth > 850 ? "bg-fixed" : "bg-scroll"
         }`}
+        style={{
+          backgroundImage: `url(${backgroundImages[currentSlide].image})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          transition: "background-image 1s ease-in-out", // Smooth transition effect
+        }}
       >
         <h1
-          className={`mt-8 text-xl sm:text-4xl font-extrabold mb-4 sm:mb-10 leading-normal backdrop-blur bg-customTextBg w-fit rounded-md px-2 ${
+          className={`mt-8 text-xl sm:text-4xl font-extrabold mb-4 sm:mb-10 leading-normal bg-customTextBg w-fit rounded-md px-2 ${
             animate ? "slide-in" : ""
           }`}
         >
