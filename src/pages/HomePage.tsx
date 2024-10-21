@@ -213,7 +213,7 @@ const HomePage: React.FC = () => {
         }}
       >
         <h1
-          className={`mt-8 text-xl sm:text-4xl font-extrabold mb-4 sm:mb-10 leading-normal bg-customTextBg w-fit rounded-md px-2 ${
+          className={`mt-2 text-xl sm:text-4xl font-extrabold mb-4 sm:mb-10 leading-normal bg-customTextBg w-fit rounded-md px-2 ${
             animate ? "slide-in" : ""
           }`}
         >
