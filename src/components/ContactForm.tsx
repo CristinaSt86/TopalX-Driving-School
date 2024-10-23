@@ -6,7 +6,7 @@ import TextareaField from "./TextareaField";
 import CheckboxField from "./CheckboxField";
 
 import useContactForm from "../utils/useContactForm";
-import ReCaptcha from "./ReCaptcha";
+//import ReCaptcha from "./ReCaptcha";
 
 interface ContactFormData {
   name: string;
@@ -23,7 +23,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
   const {
     formData,
     consent,
-    submitting,
+    // submitting,
     error,
     success,
     handleChange,
@@ -114,7 +114,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
             linkText={t("contactForm.privacyPolicy")}
             linkUrl="/privacy-policy"
           />
-          <ReCaptcha submitting={submitting} />
+          {/* <ReCaptcha submitting={submitting} /> */}
           {error && (
             <p className="text-red-500 mt-4 bg-white font-bold text-center rounded-md p-1">
               {error}

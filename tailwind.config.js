@@ -50,7 +50,7 @@ module.exports = {
         },
       },
       animation: {
-        drive: "drive 5s linear infinite",
+        drive: "drive 10s linear infinite",
       },
       clipPath: {
         hexagon:

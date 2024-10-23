@@ -27,14 +27,20 @@
 //     closeMenu();
 //   };
 
-//   const handleClickOutside = useCallback(
-//     (event: MouseEvent) => {
-//       if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
-//         closeMenu();
-//       }
-//     },
-//     [closeMenu]
-//   );
+  // Handle clicks inside the mobile dropdown menu but outside of links to close it
+  // const handleClickInsideMenu = useCallback(
+  //   (event: MouseEvent) => {
+  //     const target = event.target as HTMLElement;
+  //     if (
+  //       menuRef.current &&
+  //       !target.closest("a") && // If not a link
+  //       !target.closest("button") // If not a button
+  //     ) {
+  //       closeMenu(); // Close the menu if a non-link/button area is clicked
+  //     }
+  //   },
+  //   [closeMenu]
+  // );
 
 //   useEffect(() => {
 //     if (isOpen) {
@@ -277,7 +283,7 @@ const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
               isOpen && isMobileView
                 ? "absolute translate-y-0 opacity-100 visible backdrop-blur-sm items-center bg-black/60"
                 : isMobileView
-                ? "absolute -translate-y-full opacity-0 invisible items-center"
+                ? "absolute -translate-y-full opacity-0 items-center"
                 : "relative opacity-100 visible"
             }`}
           >
@@ -367,3 +373,6 @@ const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
 };
 
 export default Navigation;
+
+
+

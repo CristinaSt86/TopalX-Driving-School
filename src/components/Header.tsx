@@ -43,7 +43,7 @@ const Header: React.FC = () => {
     <>
       {!isScrolled && <TopHeader />}
       <header
-        className={` flex items-center justify-between p-4 absolute top-0 left-0 z-50 scroll w-full transition-all duration-300 ${
+        className={` flex items-center justify-between p-4 absolute top-0 left-0 z-1050 scroll w-full transition-all duration-300 ${
           isScrolled || isMobileView ? "mt-0" : "custom1:mt-12"
         }`}
       >
