@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
-import { useTranslation } from "react-i18next"; // Import the useTranslation hook
+// import { useTranslation } from "react-i18next";
 import Button from "./Button";
 import TPI from "../images/TPI.webp";
 
 const Banner: React.FC = () => {
-  const { t } = useTranslation(); // Initialize translation
+  // const { t } = useTranslation(); 
   const [isVisible, setIsVisible] = useState(false); // To track when the banner is in the viewport
   const bannerRef = useRef<HTMLDivElement>(null); // Reference to the banner element
 
@@ -45,7 +45,7 @@ const Banner: React.FC = () => {
   return (
     <div
       ref={bannerRef}
-      className={` text-white text-center shadow-lg mb-16 ${
+      className={` text-white text-center shadow-lg mb-16 mt-16 md:mb-32 md:mt-32 ${
         isVisible ? "slide-in" : ""
       }`}
     >
