@@ -457,7 +457,7 @@ const HomePage: React.FC = () => {
         <Button
           onClick={scrollToAboutPage}
           textKey="home.learn_more"
-          additionalClasses="md:mt-16"
+          additionalClasses="mt-20 md:mt-16"
         />
       </div>
 
