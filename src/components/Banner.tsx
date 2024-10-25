@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next"; // Import the useTranslation hook
 import Button from "./Button";
+import TPI from "../images/TPI.webp";
 
 const Banner: React.FC = () => {
   const { t } = useTranslation(); // Initialize translation
@@ -44,20 +45,16 @@ const Banner: React.FC = () => {
   return (
     <div
       ref={bannerRef}
-      className={`bg-primary text-white py-8 px-4 text-center shadow-lg mb-16 ${
+      className={` text-white text-center shadow-lg mb-16 ${
         isVisible ? "slide-in" : ""
       }`}
     >
-      <h2 className="text-xl sm:text-2xl font-bold mb-4">
-        {t("banner.title")} 
-      </h2>
-      <p className="mb-4 text-lg">
-        {t("banner.description")} 
-      </p>
+      <img src={TPI} alt="TPI OFFER" className="w-full h-auto" />
+
       <Button
         onClick={() => scrollToSection("buy-now-section")}
         textKey="banner.learn_more"
-        additionalClasses="border-4 border-secondary my-10"
+        additionalClasses="border-4 border-secondary my-4 text-sm md:text-lg"
       />
     </div>
   );

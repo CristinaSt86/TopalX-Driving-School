@@ -297,22 +297,7 @@ button {
   text-decoration: underline;
 }
 
-@media (min-width: 768px) and (max-width: 1024px), (min-width: 820px) and (max-width: 1180px) {
-  .desktop-menu {
-    display: none; 
-  }
-  .mobile-menu {
-    display: flex; 
-  }
-}
 
-@media (min-width: 1025px), (min-width: 1181px) {
-  .desktop-menu {
-    display: flex; 
-  }
-  .mobile-menu {
-    display: none; 
-  }
-}
+
 
 

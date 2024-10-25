@@ -425,14 +425,10 @@ const HomePage: React.FC = () => {
         </script>
       </Helmet>
       <div
-        className={`flex flex-col items-center justify-center shadow-custom  pb-48 mt-0 text-white px-4 sm:p-16 text-center mb-10 h-auto pt-32 md:pt-48 md:pb-48 ${
+        className={`bg-custom-home  bg-cover bg-center bg-fixed flex flex-col items-center justify-center shadow-custom  pb-48 mt-0 text-white px-4 sm:p-16 text-center mb-10 h-auto pt-32 md:pt-48 md:pb-48 ${
           window.innerWidth > 850 ? "bg-fixed" : "bg-scroll"
         }`}
-        style={{
-          backgroundImage: `url(${staticBgImage})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
+       
       >
         <h1
           className={`mt-2 text-xl sm:text-4xl font-extrabold mb-4 sm:mb-10 leading-normal bg-customTextBg w-fit rounded-md px-2 ${
@@ -444,7 +440,7 @@ const HomePage: React.FC = () => {
         </h1>
 
         <p
-          className={`text-lg sm:text-2xl md:text-4xl mt-2 sm:mt-4 md:leading-normal -tracking-normal bg-customTextBg w-fit rounded-md ${
+          className={`text-lg sm:text-2xl md:text-3xl mt-2 sm:mt-4 md:leading-normal -tracking-normal bg-customTextBg w-fit rounded-md ${
             animate ? "slide-in" : ""
           }`}
         >
@@ -454,7 +450,7 @@ const HomePage: React.FC = () => {
         <Button
           onClick={scrollToAboutPage}
           textKey="home.learn_more"
-          additionalClasses="mt-16"
+          additionalClasses="md:mt-16"
         />
       </div>
 

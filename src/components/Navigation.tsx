@@ -27,20 +27,20 @@
 //     closeMenu();
 //   };
 
-  // Handle clicks inside the mobile dropdown menu but outside of links to close it
-  // const handleClickInsideMenu = useCallback(
-  //   (event: MouseEvent) => {
-  //     const target = event.target as HTMLElement;
-  //     if (
-  //       menuRef.current &&
-  //       !target.closest("a") && // If not a link
-  //       !target.closest("button") // If not a button
-  //     ) {
-  //       closeMenu(); // Close the menu if a non-link/button area is clicked
-  //     }
-  //   },
-  //   [closeMenu]
-  // );
+// Handle clicks inside the mobile dropdown menu but outside of links to close it
+// const handleClickInsideMenu = useCallback(
+//   (event: MouseEvent) => {
+//     const target = event.target as HTMLElement;
+//     if (
+//       menuRef.current &&
+//       !target.closest("a") && // If not a link
+//       !target.closest("button") // If not a button
+//     ) {
+//       closeMenu(); // Close the menu if a non-link/button area is clicked
+//     }
+//   },
+//   [closeMenu]
+// );
 
 //   useEffect(() => {
 //     if (isOpen) {
@@ -279,13 +279,15 @@ const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
           <ul
             id="primary-menu"
             ref={menuRef}
-            className={`pt-6 md:pt-2 pb-2 z-1000 gap-6 md:gap-3 flex flex-col md:flex-row md:items-center space-y-4 md:space-y-0 md:space-x-4 w-full md:w-auto left-0 top-0 transition-all duration-700 ease-in-out transform ${
-              isOpen && isMobileView
-                ? "absolute translate-y-0 opacity-100 visible backdrop-blur-sm items-center bg-black/60"
-                : isMobileView
-                ? "absolute -translate-y-full opacity-0 items-center"
-                : "relative opacity-100 visible"
-            }`}
+            className={`desktop-menu pt-6 md:pt-2 pb-2 z-1000 gap-6 md:gap-3 flex flex-col md:flex-row md:items-center
+              space-y-4 md:space-y-0 md:space-x-4 w-full md:w-auto left-0 top-0 transition-all duration-700
+              ease-in-out transform ${
+                isOpen && isMobileView
+                  ? "absolute translate-y-0 opacity-100 visible backdrop-blur-sm items-center bg-black/60"
+                  : isMobileView
+                  ? "absolute -translate-y-full opacity-0 items-center justify-center"
+                  : "relative opacity-100 visible"
+              }`}
           >
             {isOpen && isMobileView && (
               <li className="mb-6">
@@ -373,6 +375,3 @@ const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
 };
 
 export default Navigation;
-
-
-

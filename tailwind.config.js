@@ -12,10 +12,18 @@ module.exports = {
         1000: "1000",
       },
       screens: {
-        custom1: "768px",
-        custom: "850px", // Custom breakpoint
-        customFooter: "970px",
-      },
+        custom1: "768px", // iPad Mini and mobile
+        custom: "850px",  // iPad Air and slightly larger devices
+        customFooter: "970px", // Custom for other needs
+              // iPad Mini
+              'ipad-mini-portrait': { 'raw': '(width: 768px) and (resolution: 163dpi)' },
+              'ipad-mini-landscape': { 'raw': '(width: 1024px) and (resolution: 163dpi)' },
+      
+              // iPad Air
+              'ipad-air-portrait': { 'raw': '(width: 820px) and (resolution: 264dpi)' },
+              'ipad-air-landscape': { 'raw': '(width: 1180px) and (resolution: 264dpi)' },
+            },
+    
       textShadow: {
         outline:
           "2px 2px 0 #000, -2px -2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000",
@@ -54,7 +62,7 @@ module.exports = {
       },
       clipPath: {
         hexagon:
-          "polygon(25% 6.7%, 75% 6.7%, 100% 50%, 75% 93.3%, 25% 93.3%, 0% 50%)",
+          "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
       },
     },
   },
