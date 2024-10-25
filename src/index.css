@@ -301,3 +301,9 @@ button {
 
 
 
+/* Optional: Add this in your CSS file if not using Tailwind */
+.transition-transform {
+  transition: transform 1s ease-in-out;
+}
+
+

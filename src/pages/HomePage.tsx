@@ -253,6 +253,13 @@
 
 
 
+
+
+
+
+
+
+
 import React, { useRef, useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
@@ -263,7 +270,7 @@ import "../index.css";
 import Button from "../components/Button";
 import Acasa from "../components/Acasa";
 import BuyNowPayLater from "./BuyNowPayLater";
-import staticBgImage from "../images/bgHome2.webp"; // Using a single static image
+
 
 const HomePage: React.FC = () => {
   const { t } = useTranslation();
@@ -467,3 +474,95 @@ const HomePage: React.FC = () => {
 
 export default HomePage;
 
+
+
+
+
+
+
+
+
+
+
+
+
+// import React, { useState, useEffect } from "react";
+// import { Link } from "react-router-dom";
+// import poza1 from "../images/bgHome2.webp";
+// import poza2 from "../images/bg3.webp";
+// import poza3 from "../images/bg4.webp";
+// import "../index.css";
+
+// const HomePage: React.FC = () => {
+//   const [currentSlide, setCurrentSlide] = useState(0);
+//   const backgroundImages = [
+//     {
+//       image: poza1,
+//       title: "Slide 1 Title",
+//       description: "This is the description for Slide 1.",
+//       buttonLabel: "Learn More",
+//       buttonLink: "#about",
+//     },
+//     {
+//       image: poza2,
+//       title: "Slide 2 Title",
+//       description: "This is the description for Slide 2.",
+//       buttonLabel: "Our Services",
+//       buttonLink: "#services",
+//     },
+//     {
+//       image: poza3,
+//       title: "Slide 3 Title",
+//       description: "This is the description for Slide 3.",
+//       buttonLabel: "Contact Us",
+//       buttonLink: "#contact",
+//     },
+//   ];
+
+//   // Update slide every 5 seconds
+//   useEffect(() => {
+//     const intervalId = setInterval(() => {
+//       setCurrentSlide((prevIndex) =>
+//         prevIndex === backgroundImages.length - 1 ? 0 : prevIndex + 1
+//       );
+//     }, 5000); // 5 seconds per slide
+
+//     return () => clearInterval(intervalId);
+//   }, [backgroundImages.length]);
+
+//   return (
+//     <div className="relative overflow-hidden h-screen">
+//       <div className="flex transition-transform duration-1000 ease-in-out"
+//         style={{
+//           transform: `translateX(-${currentSlide * 100}%)`,
+//         }}
+//       >
+//         {backgroundImages.map((slide, index) => (
+//           <div
+//             key={index}
+//             className="w-full h-screen flex-shrink-0 flex flex-col items-center justify-center text-center"
+//             style={{
+//               backgroundImage: `url(${slide.image})`,
+//               backgroundSize: "cover",
+//               backgroundPosition: "center",
+              
+//             }}
+//           >
+//             <h1 className="text-4xl font-bold text-white mb-4">
+//               {slide.title}
+//             </h1>
+//             <p className="text-xl text-white mb-6">{slide.description}</p>
+//             <Link
+//               to={slide.buttonLink}
+//               className="bg-white text-black py-2 px-4 rounded-full"
+//             >
+//               {slide.buttonLabel}
+//             </Link>
+//           </div>
+//         ))}
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default HomePage;
