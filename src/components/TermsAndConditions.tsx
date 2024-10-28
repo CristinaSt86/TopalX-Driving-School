@@ -7,7 +7,7 @@ const TermsAndConditions: React.FC = () => {
 
   return (
     <div className="container mx-auto p-6 mb-16 mt-16">
-      <h1 className="text-4xl font-bold mb-12 text-center">
+      <h1 className="text-4xl font-bold mb-14 mt-14 text-center">
         {t("termsAndConditions.title")}
       </h1>
       <div className="text-left font-semibold">
