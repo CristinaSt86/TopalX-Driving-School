@@ -140,9 +140,9 @@
 //       setCurrentSlide((prevIndex) =>
 //         prevIndex === backgroundImages.length - 1 ? 0 : prevIndex + 1
 //       );
-//     }, 5000); 
+//     }, 5000);
 
-//     return () => clearInterval(intervalId); 
+//     return () => clearInterval(intervalId);
 //   }, []);
 
 //   return (
@@ -209,7 +209,7 @@
 //           backgroundImage: `url(${backgroundImages[currentSlide].image})`,
 //           backgroundSize: "cover",
 //           backgroundPosition: "center",
-//           transition: "background-image 1s ease-in-out", 
+//           transition: "background-image 1s ease-in-out",
 //         }}
 //       >
 //         <h1
@@ -249,17 +249,6 @@
 
 // export default HomePage;
 
-
-
-
-
-
-
-
-
-
-
-
 import React, { useRef, useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
@@ -270,7 +259,8 @@ import "../index.css";
 import Button from "../components/Button";
 import Acasa from "../components/Acasa";
 import BuyNowPayLater from "./BuyNowPayLater";
-
+//import Snowflakes from "../components/Snowflakes";
+import SnowfallCanvas from "../components/SnowfallCanvas";
 
 const HomePage: React.FC = () => {
   const { t } = useTranslation();
@@ -431,12 +421,13 @@ const HomePage: React.FC = () => {
           {JSON.stringify(breadcrumbData)}
         </script>
       </Helmet>
+
       <div
         className={`bg-custom-home  bg-cover bg-center bg-fixed flex flex-col items-center justify-center shadow-custom  pb-48 mt-0 text-white px-4 sm:p-16 text-center mb-10 h-auto pt-32 md:pt-48 md:pb-48 ${
           window.innerWidth > 850 ? "bg-fixed" : "bg-scroll"
         }`}
-       
       >
+        <SnowfallCanvas />
         <h1
           className={`mt-2 text-xl sm:text-4xl font-extrabold mb-4 sm:mb-10 leading-normal bg-customTextBg w-fit rounded-md px-2 ${
             animate ? "slide-in" : ""
@@ -473,18 +464,6 @@ const HomePage: React.FC = () => {
 };
 
 export default HomePage;
-
-
-
-
-
-
-
-
-
-
-
-
 
 // import React, { useState, useEffect } from "react";
 // import { Link } from "react-router-dom";
@@ -545,7 +524,7 @@ export default HomePage;
 //               backgroundImage: `url(${slide.image})`,
 //               backgroundSize: "cover",
 //               backgroundPosition: "center",
-              
+
 //             }}
 //           >
 //             <h1 className="text-4xl font-bold text-white mb-4">

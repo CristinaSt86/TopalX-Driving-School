@@ -4,6 +4,7 @@ import ContactForm from "../components/ContactForm";
 import { Helmet } from "react-helmet-async";
 import Loader from "../components/Loader";
 import "../index.css";
+import SnowfallCanvas from "../components/SnowfallCanvas";
 
 const GoogleMapComponent = lazy(
   () => import("../components/GoogleMapComponent")
@@ -103,10 +104,15 @@ const ContactPage: React.FC = () => {
           content="https://www.topalxscoalaauto.ro/images/contact.jpg"
         />
         {/* Structured data for breadcrumbs and organization */}
-        <script type="application/ld+json">{JSON.stringify(breadcrumbData)}</script>
-        <script type="application/ld+json">{JSON.stringify(organizationData)}</script>
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbData)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(organizationData)}
+        </script>
       </Helmet>
       <div className="shadow-custom relative items-center justify-center bg-opacity-custom pt-12 pb-12 md:flex-row md:gap-8 md:m-0">
+        <SnowfallCanvas />
         <h1 className="px-3 mt-8 mb-16 text-3xl font-bold text-center md:mb-16">
           {t("contactPage.title")}
         </h1>
@@ -124,7 +130,9 @@ const ContactPage: React.FC = () => {
               className="mb-2 whitespace-nowrap"
               dangerouslySetInnerHTML={{ __html: t("contactPage.address") }}
             ></p>
-            <p className="mb-2 whitespace-nowrap">{t("contactPage.address2")}</p>
+            <p className="mb-2 whitespace-nowrap">
+              {t("contactPage.address2")}
+            </p>
             <p
               className="mb-2 whitespace-nowrap"
               dangerouslySetInnerHTML={{ __html: t("contactPage.secretariat") }}

@@ -13,29 +13,34 @@ module.exports = {
       },
       screens: {
         custom1: "768px", // iPad Mini and mobile
-        custom: "850px",  // iPad Air and slightly larger devices
+        custom: "850px", // iPad Air and slightly larger devices
         customFooter: "970px", // Custom for other needs
-              // iPad Mini
-              'ipad-mini-portrait': { 'raw': '(width: 768px) and (resolution: 163dpi)' },
-              'ipad-mini-landscape': { 'raw': '(width: 1024px) and (resolution: 163dpi)' },
-      
-              // iPad Air
-              'ipad-air-portrait': { 'raw': '(width: 820px) and (resolution: 264dpi)' },
-              'ipad-air-landscape': { 'raw': '(width: 1180px) and (resolution: 264dpi)' },
-            },
-    
+        // iPad Mini
+        "ipad-mini-portrait": {
+          raw: "(width: 768px) and (resolution: 163dpi)",
+        },
+        "ipad-mini-landscape": {
+          raw: "(width: 1024px) and (resolution: 163dpi)",
+        },
+
+        // iPad Air
+        "ipad-air-portrait": { raw: "(width: 820px) and (resolution: 264dpi)" },
+        "ipad-air-landscape": {
+          raw: "(width: 1180px) and (resolution: 264dpi)",
+        },
+      },
       textShadow: {
         outline:
           "2px 2px 0 #000, -2px -2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000",
       },
-      scale: ["hover"], 
+      scale: ["hover"],
       boxShadow: {
         custom: "0 0 10px 5px rgba(0, 0, 0, 0.5)",
         custom2: "0 0 10px 5px rgba(255, 255, 255, 0.7)",
       },
       backgroundImage: {
         // "custom-img": "url('/src/images/bgZid.jpg')",
-        "custom-home": "url('/src/images/bgHome2.webp')",
+        "custom-home": "url('/src/images/iarna1.webp')",
         "custom-services": "url('/src/images/visitCard.webp')",
       },
       colors: {
@@ -61,8 +66,7 @@ module.exports = {
         drive: "drive 10s linear infinite",
       },
       clipPath: {
-        hexagon:
-          "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+        hexagon: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
       },
     },
   },
