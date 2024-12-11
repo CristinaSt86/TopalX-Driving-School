@@ -423,7 +423,7 @@ const HomePage: React.FC = () => {
       </Helmet>
 
       <div
-        className={`bg-custom-home  bg-cover bg-center bg-fixed flex flex-col items-center justify-center shadow-custom  pb-48 mt-0 text-white px-4 sm:p-16 text-center mb-10 h-auto pt-32 md:pt-48 md:pb-48 ${
+        className={`bg-custom-home  bg-cover bg-center bg-fixed flex flex-col items-center justify-center shadow-custom pb-28 mt-0 text-white px-4 sm:p-16 text-center mb-10 h-auto pt-32 md:pt-48 md:pb-48 ${
           window.innerWidth > 850 ? "bg-fixed" : "bg-scroll"
         }`}
       >

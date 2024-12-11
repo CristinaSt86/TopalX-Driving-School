@@ -25,7 +25,7 @@ const SnowfallCanvas: React.FC = () => {
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
         radius: Math.random() * 3 + 1,
-        speed: Math.random() * 2 + 1,
+        speed: Math.random() * 1 + 1,
       }));
 
     // Animation loop
