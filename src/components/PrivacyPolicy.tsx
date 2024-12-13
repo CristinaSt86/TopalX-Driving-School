@@ -6,7 +6,7 @@ const PrivacyPolicy: React.FC = () => {
 
   return (
     <div className="container mx-auto p-6 mb-16 mt-16 w-full">
-      <h1 className="text-4xl font-bold mb-14 mt-14 text-center">
+      <h1 className="text-4xl font-bold mb-12 mt-12 text-center">
         {t("privacyPolicy.title")}
       </h1>
       <div className="text-left font-semibold">

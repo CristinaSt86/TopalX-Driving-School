@@ -13,7 +13,7 @@ const FAQ: React.FC = () => {
 
   return (
     <div className="max-w-2xl mx-auto my-16 p-4">
-      <h2 className="text-3xl font-bold mb-12 text-center">{t("faq.title")}</h2>
+      <h2 className="text-3xl font-bold mb-12 mt-12 text-center">{t("faq.title")}</h2>
       {faqs.map((faq: { question: string; answer: string }, index: number) => (
         <div key={index} className="mb-8">
           <h3 className="text-xl font-semibold mb-1">{faq.question}</h3>
