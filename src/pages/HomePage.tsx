@@ -259,8 +259,7 @@ import "../index.css";
 import Button from "../components/Button";
 import Acasa from "../components/Acasa";
 import BuyNowPayLater from "./BuyNowPayLater";
-//import Snowflakes from "../components/Snowflakes";
-import SnowfallCanvas from "../components/SnowfallCanvas";
+
 
 const HomePage: React.FC = () => {
   const { t } = useTranslation();
@@ -427,7 +426,7 @@ const HomePage: React.FC = () => {
           window.innerWidth > 850 ? "bg-fixed" : "bg-scroll"
         }`}
       >
-        <SnowfallCanvas />
+        {/* <SnowfallCanvas /> */}
         <h1
           className={`mt-2 text-xl sm:text-4xl font-extrabold mb-4 sm:mb-10 leading-normal bg-customTextBg w-fit rounded-md px-2 ${
             animate ? "slide-in" : ""

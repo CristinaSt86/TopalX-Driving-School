@@ -4,7 +4,7 @@ import ContactForm from "../components/ContactForm";
 import { Helmet } from "react-helmet-async";
 import Loader from "../components/Loader";
 import "../index.css";
-import SnowfallCanvas from "../components/SnowfallCanvas";
+
 
 const GoogleMapComponent = lazy(
   () => import("../components/GoogleMapComponent")
@@ -112,7 +112,7 @@ const ContactPage: React.FC = () => {
         </script>
       </Helmet>
       <div className="shadow-custom relative items-center justify-center bg-opacity-custom pt-12 pb-12 md:flex-row md:gap-8 md:m-0">
-        <SnowfallCanvas />
+        {/* <SnowfallCanvas /> */}
         <h1 className="px-3 mt-8 mb-16 text-3xl font-bold text-center md:mb-16">
           {t("contactPage.title")}
         </h1>

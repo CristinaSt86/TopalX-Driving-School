@@ -40,7 +40,7 @@ module.exports = {
       },
       backgroundImage: {
         // "custom-img": "url('/src/images/bgZid.jpg')",
-        "custom-home": "url('/src/images/iarna1.webp')",
+        "custom-home": "url('/src/images/bgHome2.webp')",
         "custom-services": "url('/src/images/visitCard.webp')",
       },
       colors: {
