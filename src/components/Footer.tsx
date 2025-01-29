@@ -60,12 +60,12 @@ const Footer: React.FC = () => {
         <p>
          {t("footer.developedBy")}
           <a
-            href="https://www.cristinastoian-developer.com"
+            href="https://www.csweb.pro"
             className="hover:text-gray-200 underline"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Cristina Stoian
+            CSweb.pro
           </a>
         </p>
       </div>
