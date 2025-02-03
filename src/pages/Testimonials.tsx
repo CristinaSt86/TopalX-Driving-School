@@ -147,6 +147,8 @@ const Testimonials = forwardRef<TestimonialsHandle, TestimonialsProps>(
                     className="w-full h-full object-cover rounded-md"
                     src={avatar}
                     alt={`Testimonial ${id}`}
+                    loading="lazy"
+                  
                   />
                 </div>
               ))}

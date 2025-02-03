@@ -178,6 +178,7 @@ const CarPackages = React.forwardRef<HTMLDivElement>(
                 src={pkg.image}
                 alt={pkg.name}
                 className="rounded-md w-full h-full max-w-lg md:max-w-lg object-cover pr-20 pl-20 md:mx-auto"
+                loading="lazy"
               />
             </div>
           </section>

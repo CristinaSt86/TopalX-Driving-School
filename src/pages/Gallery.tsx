@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
-import ImageGallery from "react-image-gallery";
+import ImageGallery, { ReactImageGalleryItem } from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 import '../index.css'
 import { useTranslation } from "react-i18next";
-
 
 import e1 from "../images/e1.jpg";
 import e2 from "../images/e2.webp";
@@ -37,12 +36,7 @@ import e29 from "../images/e29.webp";
 import e30 from "../images/e30.webp";
 import e31 from "../images/e31.jpg";
 
-interface ImageType {
-  original: string;
-  thumbnail: string;
-}
-
-const images: ImageType[] = [
+const images: ReactImageGalleryItem[] = [
   { original: e1, thumbnail: e1 },
   { original: e2, thumbnail: e2 },
   { original: e3, thumbnail: e3 },
@@ -82,6 +76,10 @@ const Gallery: React.FC = () => {
   useEffect(() => {
     setAnimate(true);
   }, []);
+
+  const renderItem = (item: ReactImageGalleryItem) => (
+    <img src={item.original} alt="" loading="lazy" className="w-1/2 mx-auto rounded-lg shadow-lg" />
+  );
 
   return (
     <div id="gallery" className={`${animate ? "slide-in" : ""}`}>
@@ -132,14 +130,12 @@ const Gallery: React.FC = () => {
         <meta property="twitter:site" content="@TopalXScoalaAuto" />
         <meta property="twitter:creator" content="@TopalXScoalaAuto" />
       </Helmet>
-     
+
       <div className="shadow-2xl container mx-auto rounded-md p-4 mb-10 border-2 border-secondary">
-      <h2 className="text-center text-3xl font-bold mb-16 mt-16 pl-4 pr-4">
-        {t("gallery.galleryTitle")}
-      </h2>
-        <p className="text-center mb-16">
-          {t("gallery.galleryDescription")}
-        </p>
+        <h2 className="text-center text-3xl font-bold mb-16 mt-16 pl-4 pr-4">
+          {t("gallery.galleryTitle")}
+        </h2>
+        <p className="text-center mb-16">{t("gallery.galleryDescription")}</p>
         <div className="gallery-wrapper">
           <ImageGallery
             items={images}
@@ -150,6 +146,7 @@ const Gallery: React.FC = () => {
             autoPlay={false}
             slideDuration={500}
             slideInterval={2000}
+            renderItem={renderItem}
           />
         </div>
       </div>
