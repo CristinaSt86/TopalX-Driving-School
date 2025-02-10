@@ -78,7 +78,7 @@ const Gallery: React.FC = () => {
   }, []);
 
   const renderItem = (item: ReactImageGalleryItem) => (
-    <img src={item.original} alt="" loading="lazy" className="w-auto mx-auto rounded shadow-md" />
+    <img src={item.original} alt="Fotografii cu elevi si instructori" loading="lazy" className="w-auto mx-auto rounded shadow-md" />
   );
 
   return (
@@ -144,7 +144,7 @@ const Gallery: React.FC = () => {
             showFullscreenButton={true}
             showIndex={true}
             autoPlay={false}
-            slideDuration={500}
+            slideDuration={300}
             slideInterval={2000}
             renderItem={renderItem}
           />
