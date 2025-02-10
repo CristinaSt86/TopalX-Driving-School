@@ -78,7 +78,7 @@ const Gallery: React.FC = () => {
   }, []);
 
   const renderItem = (item: ReactImageGalleryItem) => (
-    <img src={item.original} alt="" loading="lazy" className="w-1/2 mx-auto rounded-lg shadow-lg" />
+    <img src={item.original} alt="" loading="lazy" className="w-auto mx-auto rounded shadow-md" />
   );
 
   return (
@@ -131,7 +131,7 @@ const Gallery: React.FC = () => {
         <meta property="twitter:creator" content="@TopalXScoalaAuto" />
       </Helmet>
 
-      <div className="shadow-2xl container mx-auto rounded-md p-4 mb-10 border-2 border-secondary">
+      <div className="shadow-xl container mx-auto rounded-md p-4 mb-10 border-2 border-secondary">
         <h2 className="text-center text-3xl font-bold mb-16 mt-16 pl-4 pr-4">
           {t("gallery.galleryTitle")}
         </h2>
