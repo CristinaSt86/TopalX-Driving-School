@@ -42,13 +42,13 @@ const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
   }, []);
 
   // Scroll to section function
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-    closeMenu(); // Close the menu after clicking a section
-  };
+  // const scrollToSection = (sectionId: string) => {
+  //   const element = document.getElementById(sectionId);
+  //   if (element) {
+  //     element.scrollIntoView({ behavior: "smooth" });
+  //   }
+  //   closeMenu(); // Close the menu after clicking a section
+  // };
 
   // Handle clicks inside the mobile dropdown menu but outside of links to close it
   const handleClickInsideMenu = useCallback(
