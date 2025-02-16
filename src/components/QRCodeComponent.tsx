@@ -3,10 +3,15 @@ import QRCode from "react-qr-code";
 import { toPng } from "html-to-image";
 import { useTranslation } from "react-i18next";
 
-const QRCodeComponent: React.FC = () => {
+interface QRCodeProps {
+  title?: string; // Adaugă title ca o proprietate opțională
+}
+
+const QRCodeComponent: React.FC<QRCodeProps> = ({ title }) => {
   const qrRef = useRef<HTMLDivElement>(null);
   const websiteUrl = "https://topalxscoalaauto.ro";
   const { t } = useTranslation();
+
   const downloadQRCode = () => {
     if (qrRef.current) {
       toPng(qrRef.current)
@@ -24,9 +29,10 @@ const QRCodeComponent: React.FC = () => {
 
   return (
     <div>
+      {title && <h2 className="text-center text-lg font-semibold">{title}</h2>} {/* Adaugă titlul dacă există */}
       <div ref={qrRef} className="flex flex-col items-center justify-center">
         <QRCode value={websiteUrl} size={42} className="mt-4 md:mt-2" />
-        <p className="text-center mt-4 text-gray-400 ">
+        <p className="text-center mt-4 text-gray-400">
           {t("qrcode.instruction")}
         </p>
         <button

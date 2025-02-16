@@ -2,23 +2,20 @@ import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import ImageGallery, { ReactImageGalleryItem } from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
-import '../index.css'
+import "../index.css";
 import { useTranslation } from "react-i18next";
 
 import e1 from "../images/e1.jpg";
 import e2 from "../images/e2.webp";
 import e3 from "../images/e3.webp";
-import e4 from "../images/e4.webp";
 import e6 from "../images/e6.webp";
 import e7 from "../images/e7.webp";
-import e8 from "../images/e8.webp";
 import e9 from "../images/e9.webp";
 import e10 from "../images/e10.webp";
 import e11 from "../images/e11.webp";
 import e12 from "../images/e12.webp";
 import e13 from "../images/e13.webp";
 import e14 from "../images/e14.webp";
-import e15 from "../images/e15.jpg";
 import e16 from "../images/e16.webp";
 import e17 from "../images/e17.webp";
 import e18 from "../images/e18.webp";
@@ -31,7 +28,6 @@ import e24 from "../images/e24.jpg";
 import e25 from "../images/e25.webp";
 import e26 from "../images/e26.webp";
 import e27 from "../images/e27.webp";
-import e28 from "../images/e28.webp";
 import e29 from "../images/e29.webp";
 import e30 from "../images/e30.webp";
 import e31 from "../images/e31.jpg";
@@ -40,17 +36,14 @@ const images: ReactImageGalleryItem[] = [
   { original: e1, thumbnail: e1 },
   { original: e2, thumbnail: e2 },
   { original: e3, thumbnail: e3 },
-  { original: e4, thumbnail: e4 },
   { original: e6, thumbnail: e6 },
   { original: e7, thumbnail: e7 },
-  { original: e8, thumbnail: e8 },
   { original: e9, thumbnail: e9 },
   { original: e10, thumbnail: e10 },
   { original: e11, thumbnail: e11 },
   { original: e12, thumbnail: e12 },
   { original: e13, thumbnail: e13 },
   { original: e14, thumbnail: e14 },
-  { original: e15, thumbnail: e15 },
   { original: e16, thumbnail: e16 },
   { original: e17, thumbnail: e17 },
   { original: e18, thumbnail: e18 },
@@ -63,7 +56,6 @@ const images: ReactImageGalleryItem[] = [
   { original: e25, thumbnail: e25 },
   { original: e26, thumbnail: e26 },
   { original: e27, thumbnail: e27 },
-  { original: e28, thumbnail: e28 },
   { original: e29, thumbnail: e29 },
   { original: e30, thumbnail: e30 },
   { original: e31, thumbnail: e31 },
@@ -78,13 +70,20 @@ const Gallery: React.FC = () => {
   }, []);
 
   const renderItem = (item: ReactImageGalleryItem) => (
-    <img src={item.original} alt="Fotografii cu elevi si instructori" loading="lazy" className="w-auto mx-auto rounded shadow-md" />
+    <img
+      src={item.original}
+      alt="Fotografii cu elevi si instructori"
+      loading="lazy"
+      className="w-full h-[400px] object-cover mx-auto rounded shadow-md"
+    />
   );
-
   return (
     <div id="gallery" className={`${animate ? "slide-in" : ""}`}>
       <Helmet>
-        <title>Galerie Foto | Scoala de soferi TopalX | Școala de Șoferi din București</title>
+        <title>
+          Galerie Foto | Scoala de soferi TopalX | Școala de Șoferi din
+          București
+        </title>
         <meta
           name="description"
           content="Explorează galeria foto a Scoala de soferi TopalX - școala de șoferi din București. Vezi imagini cu instructorii noștri profesioniști, mașinile moderne și cursurile de conducere defensive."
