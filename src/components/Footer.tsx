@@ -25,12 +25,16 @@ const Footer: React.FC = () => {
             className="mb-4 md:mb-0"
           >
             <div className="aspect-w-1 aspect-h-1 w-10 rounded-full overflow-hidden">
-              <img src={logo} alt="Logo" className="object-cover" />
+              <img
+                src={logo}
+                alt="Scoala de soferi TopalX - Logo oficial"
+                className="object-cover"
+              />
             </div>
           </button>
           <SocialLinks />
           <div>
-            <QRCodeComponent />
+            <QRCodeComponent title="Scanează codul QR pentru detalii despre școala de șoferi TopalX" />
           </div>
         </div>
         <div className="text-sm mt-4 mb-4 relative max-w-xs md:max-w-md text-center md:px-8 lg:px-12">
@@ -57,13 +61,17 @@ const Footer: React.FC = () => {
 
       {/* Developer Signature */}
       <div className="text-xs text-gray-400 text-center md:text-right mt-4">
+        <h3 className="text-sm font-semibold text-gray-400">
+          {t("footer.developer")}
+        </h3>
         <p>
-         {t("footer.developedBy")}
+          {t("footer.developedBy")}
           <a
             href="https://www.csweb.pro"
             className="hover:text-gray-200 underline"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Accesează site-ul CSweb.pro pentru dezvoltare web"
           >
             CSweb.pro
           </a>
