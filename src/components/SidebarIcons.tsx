@@ -114,7 +114,7 @@ const SidebarIcons: React.FC = () => {
 
   return (
     <div
-      className={`fixed right-0 top-1/3 transform -translate-y-1/2 flex flex-col space-y-4 p-2 bg-black/30 rounded-l-lg shadow-lg z-[1002] transition-opacity duration-300 ${
+      className={`fixed right-0 top-1/3 transform -translate-y-1/2 flex flex-col space-y-4 p-px bg-black/30 rounded-l-lg shadow-lg z-[1002] transition-opacity duration-300 ${
         isVisible ? "opacity-100 visible" : "opacity-0 invisible"
       }`}
     >
