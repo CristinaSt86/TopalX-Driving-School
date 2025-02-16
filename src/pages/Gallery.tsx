@@ -74,7 +74,7 @@ const Gallery: React.FC = () => {
       src={item.original}
       alt="Fotografii cu elevi si instructori"
       loading="lazy"
-      className="w-full h-[400px] object-cover mx-auto rounded shadow-md"
+      className="w-full h-[400px] object-contain mx-auto rounded shadow-md"
     />
   );
   return (
