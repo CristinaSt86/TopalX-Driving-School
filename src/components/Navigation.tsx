@@ -6,11 +6,32 @@ import ErrorBoundary from "./ErrB";
 import logo from "../images/logo.webp";
 import { Link } from "react-router-dom";
 import SidebarIcons from "./SidebarIcons";
-
+import { useNavigate } from "react-router-dom";
+ 
 const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
   const [isOpen, setIsOpen] = useState(false);
   const { t } = useTranslation();
   const menuRef = useRef<HTMLUListElement>(null);
+  const navigate = useNavigate();
+
+  const handleMenuClick = (sectionId: string, route: string = "/") => {
+    if (window.location.pathname !== route) {
+      navigate(route);
+      setTimeout(() => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 500); // Delay ensures page loads first
+    } else {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  };
+  
+
 
   const toggleMenu = useCallback(() => {
     setIsOpen((prev) => !prev);
@@ -83,6 +104,9 @@ useEffect(() => {
     });
   };
 
+ 
+  
+
   return (
     <ErrorBoundary>
        <SidebarIcons /> {/* 🔹 Afișăm bara cu pictograme în dreapta */}
@@ -140,7 +164,7 @@ useEffect(() => {
             )}
             <li>
               <button
-                onClick={() => scrollToSection("home")}
+                onClick={() =>  handleMenuClick("home")}
                 className={buttonClassName}
               >
                 {t("navigation.home")}
@@ -148,7 +172,7 @@ useEffect(() => {
             </li>
             <li>
               <button
-                onClick={() => scrollToSection("about")}
+                onClick={() =>  handleMenuClick("home")}
                 className={buttonClassName}
               >
                 {t("navigation.about")}
@@ -156,7 +180,7 @@ useEffect(() => {
             </li>
             <li>
               <button
-                onClick={() => scrollToSection("services")}
+                onClick={() =>  handleMenuClick("home")}
                 className={buttonClassName}
               >
                 {t("navigation.services")}
@@ -164,7 +188,7 @@ useEffect(() => {
             </li>
             <li>
               <button
-                onClick={() => scrollToSection("testimonials")}
+                onClick={() =>  handleMenuClick("home")}
                 className={buttonClassName}
               >
                 {t("navigation.testimonials")}
@@ -172,7 +196,7 @@ useEffect(() => {
             </li>
             <li>
               <button
-                onClick={() => scrollToSection("gallery")}
+                onClick={() =>  handleMenuClick("home")}
                 className={buttonClassName}
               >
                 {t("navigation.gallery")}
@@ -180,7 +204,7 @@ useEffect(() => {
             </li>
             <li>
               <button
-                onClick={() => scrollToSection("contact")}
+                onClick={() =>  handleMenuClick("home")}
                 className={buttonClassName}
               >
                 {t("navigation.contact")}
