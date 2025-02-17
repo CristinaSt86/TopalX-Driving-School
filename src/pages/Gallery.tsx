@@ -134,6 +134,7 @@ const Gallery: React.FC = () => {
         <h2 className="text-center text-3xl font-bold mb-16 mt-16 pl-4 pr-4">
           {t("gallery.galleryTitle")}
         </h2>
+        <div className="w-16 h-[2px] bg-primary mx-auto my-8"></div>
         <p className="text-center mb-16">{t("gallery.galleryDescription")}</p>
         <div className="gallery-wrapper">
           <ImageGallery

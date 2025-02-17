@@ -146,6 +146,7 @@ const CarPackages = React.forwardRef<HTMLDivElement>(
         <h1 className="text-3xl font-bold text-center mb-4 md:mb-28 md:mt-28 pl-3 pr-3 textShadow-mt">
           {t("carPackages.title")}
         </h1>
+        <div className="w-16 h-[2px] bg-primary mx-auto my-8"></div>
         {carPackages.map((pkg, index) => (
           <section
             key={index}

@@ -183,10 +183,11 @@ const AboutPage: React.FC = () => {
           </div>
         </main>
       </div>
-      <div className="shadow-2xl rounded-md bg-gradient-to-r from-yellow-100 via-yellow-200 to-yellow-300 p-3 container mx-auto my-10">
+      <div className="shadow-2xl rounded-md bg-gradient-to-r from-yellow-50 via-yellow-100 to-yellow-200 p-3 container mx-auto my-10">
         <h1 className="text-4xl font-bold text-center mb-8 mt-8">
           {t("about.companyDescription.title")}
         </h1>
+        <div className="w-16 h-[2px] bg-primary mx-auto my-8"></div>
         <section className="container text-lg text-left mb-5 p-1 mx-auto md:p-6">
           <p>{t("about.companyDescription.paragraph1")}</p>
           <br />

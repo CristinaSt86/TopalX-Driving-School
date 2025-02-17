@@ -22,13 +22,14 @@ const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
         if (section) {
           section.scrollIntoView({ behavior: "smooth" });
         }
+        closeMenu()
       }, 500); // Delay ensures page loads first
     } else {
       const section = document.getElementById(sectionId);
       if (section) {
         section.scrollIntoView({ behavior: "smooth" });
       }
-    }
+    }closeMenu()
   };
   
 

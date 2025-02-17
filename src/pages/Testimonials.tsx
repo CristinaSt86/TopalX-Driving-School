@@ -130,6 +130,7 @@ const Testimonials = forwardRef<TestimonialsHandle, TestimonialsProps>(
           <h2 className="text-3xl font-bold text-center mt-8 mb-16 pl-3 pr-3">
             {t("testimonials.title")}
           </h2>
+          <div className="w-16 h-[2px] bg-primary mx-auto my-8"></div>
           <div className="container mx-auto">
             <div className="flex flex-wrap justify-center gap-4 items-center ellipse-img">
               {finalTestimonials.map(({ id, avatar, caption }, index) => (

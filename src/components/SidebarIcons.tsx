@@ -82,6 +82,7 @@ import {
   FaImages,
   FaEnvelope,
 } from "react-icons/fa";
+import LanguageButton from "./LanguageButton";
 
 const SidebarIcons: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -114,45 +115,48 @@ const SidebarIcons: React.FC = () => {
 
   return (
     <div
-      className={`fixed right-0 top-1/3 transform -translate-y-1/2 flex flex-col space-y-4 p-px bg-black/30 rounded-l-lg shadow-lg z-[1002] transition-opacity duration-300 ${
+      className={`fixed right-0 top-1/3 transform -translate-y-1/2 flex flex-col space-y-4 p-px bg-black/30 rounded-l-lg shadow-lg z-[1002] transition-opacity justify-center items-center duration-300 ${
         isVisible ? "opacity-100 visible" : "opacity-0 invisible"
       }`}
     >
       <button
         onClick={() => handleSidebarClick("home")}
-        className="text-white p-3 hover:scale-110 transition-transform"
+        className="text-white p-3 hover:scale-125 transition-transform"
       >
         <FaHome size={24} />
       </button>
       <button
         onClick={() => handleSidebarClick("about")}
-        className="text-white p-3 hover:scale-110 transition-transform"
+        className="text-white p-3 hover:scale-125 transition-transform"
       >
         <FaInfoCircle size={24} />
       </button>
       <button
         onClick={() => handleSidebarClick("services")}
-        className="text-white p-3 hover:scale-110 transition-transform"
+        className="text-white p-3 hover:scale-125 transition-transform"
       >
         <FaBriefcase size={24} />
       </button>
       <button
         onClick={() => handleSidebarClick("testimonials")}
-        className="text-white p-3 hover:scale-110 transition-transform"
+        className="text-white p-3 hover:scale-125 transition-transform"
       >
         <FaQuoteLeft size={24} />
       </button>
       <button
         onClick={() => handleSidebarClick("gallery")}
-        className="text-white p-3 hover:scale-110 transition-transform"
+        className="text-white p-3 hover:scale-125 transition-transform"
       >
         <FaImages size={24} />
       </button>
       <button
         onClick={() => handleSidebarClick("contact")}
-        className="text-white p-3 hover:scale-110 transition-transform"
+        className="text-white p-3 hover:scale-125 transition-transform"
       >
         <FaEnvelope size={24} />
+      </button>
+      <button className="text-white p-3 hover:scale-125 transition-transform">
+        <LanguageButton />
       </button>
     </div>
   );
