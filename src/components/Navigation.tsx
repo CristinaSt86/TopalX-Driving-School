@@ -78,17 +78,17 @@ const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
   }, [isOpen, isMobileView, handleClickInsideMenu]);
 
 
-useEffect(() => {
-  if (isOpen && isMobileView) {
-    document.body.style.overflow = "hidden"; // Disable scrolling
-  } else {
-    document.body.style.overflow = "auto"; // Enable scrolling
-  }
+// useEffect(() => {
+//   if (isOpen && isMobileView) {
+//     document.body.style.overflow = "hidden"; // Disable scrolling
+//   } else {
+//     document.body.style.overflow = "auto"; // Enable scrolling
+//   }
 
-  return () => {
-    document.body.style.overflow = "auto"; // Cleanup when component unmounts
-  };
-}, [isOpen, isMobileView]);
+//   return () => {
+//     document.body.style.overflow = "auto"; // Cleanup when component unmounts
+//   };
+// }, [isOpen, isMobileView]);
 
 
   const buttonClassName = `
@@ -109,7 +109,7 @@ useEffect(() => {
 
   return (
     <ErrorBoundary>
-       <SidebarIcons /> {/* 🔹 Afișăm bara cu pictograme în dreapta */}
+       <SidebarIcons /> {/* Afișăm bara cu pictograme în dreapta */}
       <nav
         className="p-3 md:py-2 font-semibold text-white"
         aria-label="Main Navigation"
