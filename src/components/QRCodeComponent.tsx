@@ -4,7 +4,7 @@ import { toPng } from "html-to-image";
 import { useTranslation } from "react-i18next";
 
 interface QRCodeProps {
-  title?: string; // Adaugă title ca o proprietate opțională
+  title?: React.ReactNode; // Adaugă title ca o proprietate opțională
 }
 
 const QRCodeComponent: React.FC<QRCodeProps> = ({ title }) => {

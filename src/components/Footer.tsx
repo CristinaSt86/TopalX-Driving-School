@@ -34,7 +34,14 @@ const Footer: React.FC = () => {
           </button>
           <SocialLinks />
           <div>
-            <QRCodeComponent title="Scanează codul QR pentru detalii despre școala de șoferi TopalX" />
+            <QRCodeComponent
+              title={
+                <span className="sr-only">
+                  Scanează codul QR pentru detalii despre școala de șoferi
+                  TopalX
+                </span>
+              }
+            />
           </div>
         </div>
         <div className="text-sm mt-4 mb-4 relative max-w-xs md:max-w-md text-center md:px-8 lg:px-12">

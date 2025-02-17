@@ -172,7 +172,7 @@ useEffect(() => {
             </li>
             <li>
               <button
-                onClick={() =>  handleMenuClick("home")}
+                onClick={() =>  handleMenuClick("about")}
                 className={buttonClassName}
               >
                 {t("navigation.about")}
@@ -180,7 +180,7 @@ useEffect(() => {
             </li>
             <li>
               <button
-                onClick={() =>  handleMenuClick("home")}
+                onClick={() =>  handleMenuClick("services")}
                 className={buttonClassName}
               >
                 {t("navigation.services")}
@@ -188,7 +188,7 @@ useEffect(() => {
             </li>
             <li>
               <button
-                onClick={() =>  handleMenuClick("home")}
+                onClick={() =>  handleMenuClick("testimonials")}
                 className={buttonClassName}
               >
                 {t("navigation.testimonials")}
@@ -196,7 +196,7 @@ useEffect(() => {
             </li>
             <li>
               <button
-                onClick={() =>  handleMenuClick("home")}
+                onClick={() =>  handleMenuClick("gallery")}
                 className={buttonClassName}
               >
                 {t("navigation.gallery")}
@@ -204,7 +204,7 @@ useEffect(() => {
             </li>
             <li>
               <button
-                onClick={() =>  handleMenuClick("home")}
+                onClick={() =>  handleMenuClick("contact")}
                 className={buttonClassName}
               >
                 {t("navigation.contact")}
