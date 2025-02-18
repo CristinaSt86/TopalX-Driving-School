@@ -558,6 +558,6 @@
   },
   "qrcode": {
     "instruction": "Îndreaptă camera aici pentru a vizita site-ul!",
-    "downloadButton": "Descarcă codul QR"
+    "downloadButton": "Scanează codul QR"
   }
 }

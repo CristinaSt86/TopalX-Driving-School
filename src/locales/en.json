@@ -564,6 +564,6 @@
   },
   "qrcode": {
     "instruction": "Point your camera here to visit the website!",
-    "downloadButton": "Download QR Code"
+    "downloadButton": "Scan the QR Code"
   }
 }
