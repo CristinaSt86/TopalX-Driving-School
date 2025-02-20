@@ -146,7 +146,7 @@ const Services = React.forwardRef((props, ref) => {
             window.innerWidth > 850 ? "bg-fixed" : "bg-scroll"
           }`}
         >
-          <h1 className="text-3xl font-bold text-center mt-16 mb-16 pl-3 pr-3">
+          <h1 className="text-3xl font-bold text-center mt-16 pl-3 pr-3">
             {t("services.title")}
           </h1>
           <div className="w-16 h-[2px] bg-primary mx-auto my-8"></div>

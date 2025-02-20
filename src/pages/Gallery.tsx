@@ -131,11 +131,11 @@ const Gallery: React.FC = () => {
       </Helmet>
 
       <div className="shadow-xl container mx-auto rounded-md p-4 mb-10 border-2 border-secondary">
-        <h2 className="text-center text-3xl font-bold mb-16 mt-16 pl-4 pr-4">
+        <h2 className="text-center text-3xl font-bold  mt-16 pl-4 pr-4">
           {t("gallery.galleryTitle")}
         </h2>
         <div className="w-16 h-[2px] bg-primary mx-auto my-8"></div>
-        <p className="text-center mb-16">{t("gallery.galleryDescription")}</p>
+        <p className="text-center mt-16 mb-16">{t("gallery.galleryDescription")}</p>
         <div className="gallery-wrapper">
           <ImageGallery
             items={images}

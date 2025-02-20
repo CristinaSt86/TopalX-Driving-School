@@ -7,7 +7,7 @@ import logo from "../images/logo.webp";
 import { Link } from "react-router-dom";
 import SidebarIcons from "./SidebarIcons";
 import { useNavigate } from "react-router-dom";
- 
+
 const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
   const [isOpen, setIsOpen] = useState(false);
   const { t } = useTranslation();
@@ -22,17 +22,16 @@ const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
         if (section) {
           section.scrollIntoView({ behavior: "smooth" });
         }
-        closeMenu()
+        closeMenu();
       }, 500); // Delay ensures page loads first
     } else {
       const section = document.getElementById(sectionId);
       if (section) {
         section.scrollIntoView({ behavior: "smooth" });
       }
-    }closeMenu()
+    }
+    closeMenu();
   };
-  
-
 
   const toggleMenu = useCallback(() => {
     setIsOpen((prev) => !prev);
@@ -78,24 +77,22 @@ const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
     };
   }, [isOpen, isMobileView, handleClickInsideMenu]);
 
+  // useEffect(() => {
+  //   if (isOpen && isMobileView) {
+  //     document.body.style.overflow = "hidden"; // Disable scrolling
+  //   } else {
+  //     document.body.style.overflow = "auto"; // Enable scrolling
+  //   }
 
-// useEffect(() => {
-//   if (isOpen && isMobileView) {
-//     document.body.style.overflow = "hidden"; // Disable scrolling
-//   } else {
-//     document.body.style.overflow = "auto"; // Enable scrolling
-//   }
-
-//   return () => {
-//     document.body.style.overflow = "auto"; // Cleanup when component unmounts
-//   };
-// }, [isOpen, isMobileView]);
-
+  //   return () => {
+  //     document.body.style.overflow = "auto"; // Cleanup when component unmounts
+  //   };
+  // }, [isOpen, isMobileView]);
 
   const buttonClassName = `
   hover:text-white relative after:absolute after:left-1/2 after:bottom-0
-  after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300
-  hover:after:left-0 hover:after:w-full text-lg font-semibold
+  after:w-0 after:h-[2px] after:bg-yellow-400 after:bg-white after:transition-all after:duration-300
+  hover:after:left-0 hover:after:w-full  hover:text-yellow-400 text-lg font-semibold shadow-2xl
   `;
 
   const handleLogoClick = () => {
@@ -105,12 +102,9 @@ const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
     });
   };
 
- 
-  
-
   return (
     <ErrorBoundary>
-       <SidebarIcons /> {/* Afișăm bara cu pictograme în dreapta */}
+      <SidebarIcons /> {/* Afișăm bara cu pictograme în dreapta */}
       <nav
         className="p-3 md:py-2 font-semibold text-white"
         aria-label="Main Navigation"
@@ -165,7 +159,7 @@ const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
             )}
             <li>
               <button
-                onClick={() =>  handleMenuClick("home")}
+                onClick={() => handleMenuClick("home")}
                 className={buttonClassName}
               >
                 {t("navigation.home")}
@@ -173,7 +167,7 @@ const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
             </li>
             <li>
               <button
-                onClick={() =>  handleMenuClick("about")}
+                onClick={() => handleMenuClick("about")}
                 className={buttonClassName}
               >
                 {t("navigation.about")}
@@ -181,7 +175,7 @@ const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
             </li>
             <li>
               <button
-                onClick={() =>  handleMenuClick("services")}
+                onClick={() => handleMenuClick("services")}
                 className={buttonClassName}
               >
                 {t("navigation.services")}
@@ -189,7 +183,7 @@ const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
             </li>
             <li>
               <button
-                onClick={() =>  handleMenuClick("testimonials")}
+                onClick={() => handleMenuClick("testimonials")}
                 className={buttonClassName}
               >
                 {t("navigation.testimonials")}
@@ -197,7 +191,7 @@ const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
             </li>
             <li>
               <button
-                onClick={() =>  handleMenuClick("gallery")}
+                onClick={() => handleMenuClick("gallery")}
                 className={buttonClassName}
               >
                 {t("navigation.gallery")}
@@ -205,7 +199,7 @@ const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
             </li>
             <li>
               <button
-                onClick={() =>  handleMenuClick("contact")}
+                onClick={() => handleMenuClick("contact")}
                 className={buttonClassName}
               >
                 {t("navigation.contact")}

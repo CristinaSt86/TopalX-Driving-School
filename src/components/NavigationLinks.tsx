@@ -27,7 +27,7 @@ const NavigationLinks: React.FC = () => {
 
   return (
     <nav className="mb-4 md:mb-0">
-      <ul className="flex flex-col items-center space-y-2 md:space-y-0 md:items-start md:gap-2">
+      <ul className="flex  flex-col items-center space-y-2 md:space-y-0 md:items-start md:gap-2">
         <li>
           <button onClick={() => scrollToSection("home")}>
             {t("footer.home")}
