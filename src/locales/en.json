@@ -243,7 +243,7 @@
     ]
   },
   "footer": {
-    "rights": "© 2024 TopalX. All rights reserved.",
+    "rights": "© 2024 TopalX",
     "home": "Home",
     "about": "About",
     "services": "Services",
@@ -333,7 +333,6 @@
       "email": "Email - topalxtrans@gmail.com",
       "address": "Address - Calea Vitan 148A, 031301 Bucharest, Romania.",
       "telephone": "Secretariat - 0736 470 629 "
-  
     }
   },
 

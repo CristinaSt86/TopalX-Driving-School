@@ -259,15 +259,6 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
               {success}
             </p>
           )}
-          {/* <button
-            type="submit"
-            disabled={submitting}
-            className={`mt-6 w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md transition duration-300 ${
-              submitting ? "opacity-50 cursor-not-allowed" : ""
-            }`}
-          >
-            {submitting ? t("contactForm.sending") : t("contactForm.send")}
-          </button> */}
           <Button
             onClick={() => {
               const fakeEvent = {
