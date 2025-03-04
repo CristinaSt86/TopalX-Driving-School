@@ -39,16 +39,15 @@ const SidebarIcons: React.FC = () => {
         section.scrollIntoView({ behavior: "smooth" });
       }
     }
-    // Închidem sidebar-ul automat după click pe mobil
-    setIsSidebarOpen(false);
+    setIsSidebarOpen(false); // Închide sidebar-ul pe mobil după click
   };
 
   return (
     <>
-      {/* Butonul de deschidere/închidere a sidebar-ului pe mobil */}
+      {/* Butonul de deschidere APEL PE MOBIL, DAR DOAR DUPĂ SCROLL > 300px */}
       {isVisible && (
         <button
-          className={`fixed top-1/2 transform -translate-y-1/2 p-2 bg-black/50 text-white rounded-full shadow-lg z-[1003] transition-transform 
+          className={`fixed top-1/2 transform -translate-y-1/2 p-2 bg-black/50 text-white rounded-full shadow-lg z-[1003] transition-transform lg:hidden 
           ${isSidebarOpen ? "right-[4rem]" : "right-2"}`}
           onClick={() => setIsSidebarOpen(!isSidebarOpen)}
         >
@@ -56,35 +55,35 @@ const SidebarIcons: React.FC = () => {
         </button>
       )}
 
-      {/* Sidebar-ul propriu-zis */}
-      <div
-        className={`fixed right-0 top-1/2 transform -translate-y-1/2 flex flex-col space-y-4 p-2 bg-black/30 rounded-l-lg shadow-lg z-[1002] transition-transform duration-300 justify-center items-center 
-          ${isVisible ? "opacity-100 visible" : "opacity-0 invisible"} 
-          ${isSidebarOpen ? "translate-x-0" : "translate-x-full"} 
-          lg:translate-x-0`}
-      >
-        <button onClick={() => handleSidebarClick("home")} className="text-white p-3 hover:scale-125 transition-transform">
-          <FaHome size={24} />
-        </button>
-        <button onClick={() => handleSidebarClick("about")} className="text-white p-3 hover:scale-125 transition-transform">
-          <FaInfoCircle size={24} />
-        </button>
-        <button onClick={() => handleSidebarClick("services")} className="text-white p-3 hover:scale-125 transition-transform">
-          <FaBriefcase size={24} />
-        </button>
-        <button onClick={() => handleSidebarClick("testimonials")} className="text-white p-3 hover:scale-125 transition-transform">
-          <FaQuoteLeft size={24} />
-        </button>
-        <button onClick={() => handleSidebarClick("gallery")} className="text-white p-3 hover:scale-125 transition-transform">
-          <FaImages size={24} />
-        </button>
-        <button onClick={() => handleSidebarClick("contact")} className="text-white p-3 hover:scale-125 transition-transform">
-          <FaEnvelope size={24} />
-        </button>
-        <button className="text-white p-3 hover:scale-125 transition-transform">
-          <LanguageButton />
-        </button>
-      </div>
+      {/* Sidebar-ul propriu-zis, vizibil doar după SCROLL > 300px pe AMBELE */}
+      {isVisible && (
+        <div
+          className={`fixed right-0 top-1/2 transform -translate-y-1/2 flex flex-col space-y-4 p-2 bg-black/30 rounded-l-lg shadow-lg z-[1002] transition-transform duration-300 justify-center items-center 
+          ${isSidebarOpen ? "translate-x-0" : "translate-x-full"} lg:translate-x-0`}
+        >
+          <button onClick={() => handleSidebarClick("home")} className="text-white p-3 hover:scale-125 transition-transform">
+            <FaHome size={24} />
+          </button>
+          <button onClick={() => handleSidebarClick("about")} className="text-white p-3 hover:scale-125 transition-transform">
+            <FaInfoCircle size={24} />
+          </button>
+          <button onClick={() => handleSidebarClick("services")} className="text-white p-3 hover:scale-125 transition-transform">
+            <FaBriefcase size={24} />
+          </button>
+          <button onClick={() => handleSidebarClick("testimonials")} className="text-white p-3 hover:scale-125 transition-transform">
+            <FaQuoteLeft size={24} />
+          </button>
+          <button onClick={() => handleSidebarClick("gallery")} className="text-white p-3 hover:scale-125 transition-transform">
+            <FaImages size={24} />
+          </button>
+          <button onClick={() => handleSidebarClick("contact")} className="text-white p-3 hover:scale-125 transition-transform">
+            <FaEnvelope size={24} />
+          </button>
+          <button className="text-white p-3 hover:scale-125 transition-transform">
+            <LanguageButton />
+          </button>
+        </div>
+      )}
     </>
   );
 };
