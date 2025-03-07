@@ -4,7 +4,7 @@ import Button from "./Button";
 import TPI from "../images/TPI.webp";
 
 const Banner: React.FC = () => {
-  // const { t } = useTranslation(); 
+  // const { t } = useTranslation();
   const [isVisible, setIsVisible] = useState(false); // To track when the banner is in the viewport
   const bannerRef = useRef<HTMLDivElement>(null); // Reference to the banner element
 
@@ -45,16 +45,22 @@ const Banner: React.FC = () => {
   return (
     <div
       ref={bannerRef}
-      className={` text-white text-center shadow-lg mb-16 mt-16 md:mb-32 md:mt-32 ${
+      className={`text-white text-center shadow-lg mb-16 mt-16 md:mb-32 md:mt-32 max-w-[80vw] mx-auto overflow-hidden ${
         isVisible ? "slide-in" : ""
       }`}
     >
-      <img src={TPI} alt="TPI OFFER" className="w-full h-auto" />
+      <img
+        src={TPI}
+        alt="TPI OFFER"
+        width={800}
+        height={450}
+        className="w-full max-w-[800px] h-auto"
+      />
 
       <Button
         onClick={() => scrollToSection("buy-now-section")}
         textKey="banner.learn_more"
-        additionalClasses="border-4 border-secondary my-4 text-sm md:text-lg"
+        additionalClasses="border-4 border-secondary my-2 text-xs md:text-sm"
       />
     </div>
   );
