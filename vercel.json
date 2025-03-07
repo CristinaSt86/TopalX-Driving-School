@@ -11,6 +11,14 @@
   ],
   "routes": [
     {
+      "src": "/robots.txt",
+      "dest": "/robots.txt"
+    },
+    {
+      "src": "/sitemap.xml",
+      "dest": "/sitemap.xml"
+    },
+    {
       "src": "/static/(.*)",
       "dest": "/static/$1"
     },
