@@ -117,7 +117,7 @@ const Services = React.forwardRef((props, ref) => {
           <meta property="og:type" content="website" />
           <meta
             property="og:image"
-            content="https://www.topalxscoalaauto.ro/images/services.jpg"
+            content="https://www.topalxscoalaauto.ro/images/servicii.webp"
           />
           <meta property="og:locale" content="ro_RO" />
           <meta property="og:site_name" content="Scoala de Soferi | TopalX Scoala Auto " />
@@ -132,7 +132,7 @@ const Services = React.forwardRef((props, ref) => {
           />
           <meta
             property="twitter:image"
-            content="https://www.topalxscoalaauto.ro/images/services.jpg"
+            content="https://www.topalxscoalaauto.ro/images/servicii.webp"
           />
           <meta property="twitter:site" content="@TopalXScoalaAuto" />
           <meta property="twitter:creator" content="@TopalXScoalaAuto" />

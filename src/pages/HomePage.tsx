@@ -144,7 +144,7 @@ const HomePage: React.FC = () => {
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content="https://www.topalxscoalaauto.ro/images/homepage.jpg"
+          content="https://www.topalxscoalaauto.ro/images/bgHome2.webp"
         />
         <meta property="og:locale" content="ro_RO" />
         <meta property="og:site_name" content="TopalX Scoala Auto" />
@@ -159,7 +159,7 @@ const HomePage: React.FC = () => {
         />
         <meta
           property="twitter:image"
-          content="https://www.topalxscoalaauto.ro/images/homepage.jpg"
+          content="https://www.topalxscoalaauto.ro/images/bgHome2.webp"
         />
         <meta property="twitter:site" content="@TopalXScoalaAuto" />
         <meta property="twitter:creator" content="@TopalXScoalaAuto" />

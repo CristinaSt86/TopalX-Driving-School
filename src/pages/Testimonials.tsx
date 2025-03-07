@@ -8,14 +8,14 @@ import React, {
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
 import "../index.css";
-import c1 from "../images/c1.jpg";
-import c2 from "../images/c2.jpg";
-import c3 from "../images/c3.jpg";
+import c1 from "../images/c1.webp";
+import c2 from "../images/c2.webp";
+import c3 from "../images/c3.webp";
 import c7 from "../images/c7.webp";
 import c9 from "../images/c9.webp";
 import c10 from "../images/c10.webp";
-import c6 from "../images/c6.jpg";
-import c4 from "../images/c4.jpg";
+import c6 from "../images/c6.webp";
+import c4 from "../images/c4.webp";
 import c8 from "../images/c8.webp";
 import TipsAndTricks from "../components/TipsAndTricks";
 
@@ -105,7 +105,7 @@ const Testimonials = forwardRef<TestimonialsHandle, TestimonialsProps>(
           <meta property="og:type" content="website" />
           <meta
             property="og:image"
-            content="https://www.topalxscoalaauto.ro/images/testimonials.jpg"
+            content="https://www.topalxscoalaauto.ro/images/c2.webp"
           />
           <meta property="og:locale" content="ro_RO" />
           <meta property="og:site_name" content="TopalX Scoala Auto" />
@@ -120,7 +120,7 @@ const Testimonials = forwardRef<TestimonialsHandle, TestimonialsProps>(
           />
           <meta
             property="twitter:image"
-            content="https://www.topalxscoalaauto.ro/images/testimonials.jpg"
+            content="https://www.topalxscoalaauto.ro/images/c1.webp"
           />
           <meta property="twitter:site" content="@TopalXScoalaAuto" />
           <meta property="twitter:creator" content="@TopalXScoalaAuto" />

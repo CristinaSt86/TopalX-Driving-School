@@ -8,10 +8,10 @@ import Services from "./Services";
 import Testimonials from "./Testimonials";
 import { PiArrowDownLight } from "react-icons/pi";
 import CineSuntemImg from "../components/CineSuntemImg";
-import fiat from "../images/f3.jpg";
+import fiat from "../images/fiat3.webp";
 import skoda from "../images/sc2.webp";
-import mercedes from "../images/mercedes2.jpg";
-import volvo from "../images/volvo1.jpg";
+import mercedes from "../images/mercedes2.webp";
+import volvo from "../images/volvo1.webp";
 import Button from "../components/Button";
 
 const AboutPage: React.FC = () => {
@@ -117,7 +117,7 @@ const AboutPage: React.FC = () => {
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content="https://www.topalxscoalaauto.ro/images/about.jpg"
+          content="https://www.topalxscoalaauto.ro/images/about.webp"
         />
         <meta property="og:locale" content="ro_RO" />
         <meta property="og:site_name" content="TopalX Scoala Auto" />
@@ -132,7 +132,7 @@ const AboutPage: React.FC = () => {
         />
         <meta
           property="twitter:image"
-          content="https://www.topalxscoalaauto.ro/images/about.jpg"
+          content="https://www.topalxscoalaauto.ro/images/about.webp"
         />
         <meta property="twitter:site" content="@TopalXScoalaAuto" />
         <meta property="twitter:creator" content="@TopalXScoalaAuto" />

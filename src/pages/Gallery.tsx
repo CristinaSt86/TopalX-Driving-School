@@ -5,7 +5,7 @@ import "react-image-gallery/styles/css/image-gallery.css";
 import "../index.css";
 import { useTranslation } from "react-i18next";
 
-import e1 from "../images/e1.jpg";
+import e1 from "../images/e1.webp";
 import e2 from "../images/e2.webp";
 import e3 from "../images/e3.webp";
 import e6 from "../images/e6.webp";
@@ -20,17 +20,17 @@ import e16 from "../images/e16.webp";
 import e17 from "../images/e17.webp";
 import e18 from "../images/e18.webp";
 import e19 from "../images/e19.webp";
-import e20 from "../images/e20.jpg";
+import e20 from "../images/e20.webp";
 import e21 from "../images/e21.webp";
 import e22 from "../images/e22.webp";
 import e23 from "../images/e23.webp";
-import e24 from "../images/e24.jpg";
+import e24 from "../images/e24.webp";
 import e25 from "../images/e25.webp";
 import e26 from "../images/e26.webp";
 import e27 from "../images/e27.webp";
 import e29 from "../images/e29.webp";
 import e30 from "../images/e30.webp";
-import e31 from "../images/e31.jpg";
+import e31 from "../images/e31.webp";
 
 const images: ReactImageGalleryItem[] = [
   { original: e1, thumbnail: e1 },
@@ -109,7 +109,7 @@ const Gallery: React.FC = () => {
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content="https://www.topalxscoalaauto.ro/images/gallery.jpg"
+          content="https://www.topalxscoalaauto.ro/images/e2.webp"
         />
         <meta property="og:locale" content="ro_RO" />
         <meta property="og:site_name" content="TopalX Scoala Auto" />
@@ -124,7 +124,7 @@ const Gallery: React.FC = () => {
         />
         <meta
           property="twitter:image"
-          content="https://www.topalxscoalaauto.ro/images/gallery.jpg"
+          content="https://www.topalxscoalaauto.ro/images/e19.webp"
         />
         <meta property="twitter:site" content="@TopalXScoalaAuto" />
         <meta property="twitter:creator" content="@TopalXScoalaAuto" />

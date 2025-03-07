@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import poza1 from "../images/bgHome2.webp";
-import poza2 from "../images/c4.jpg";
+import poza2 from "../images/c4.webp";
 import poza3 from "../images/clasa3.webp";
 
 const slides = [

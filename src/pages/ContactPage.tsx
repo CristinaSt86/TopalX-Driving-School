@@ -101,7 +101,7 @@ const ContactPage: React.FC = () => {
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content="https://www.topalxscoalaauto.ro/images/contact.jpg"
+          content="https://www.topalxscoalaauto.ro/images/contact.webp"
         />
         {/* Structured data for breadcrumbs and organization */}
         <script type="application/ld+json">

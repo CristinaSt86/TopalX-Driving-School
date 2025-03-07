@@ -123,7 +123,7 @@ const CarPackages = React.forwardRef<HTMLDivElement>(
           <meta property="og:type" content="website" />
           <meta
             property="og:image"
-            content="https://www.topalxscoalaauto.ro/images/car-packages.jpg"
+            content="https://www.topalxscoalaauto.ro/images/car-packages.webp"
           />
           <meta property="og:locale" content="ro_RO" />
           <meta property="og:site_name" content="TopalX Scoala Auto" />
@@ -138,7 +138,7 @@ const CarPackages = React.forwardRef<HTMLDivElement>(
           />
           <meta
             property="twitter:image"
-            content="https://www.topalxscoalaauto.ro/images/car-packages.jpg"
+            content="https://www.topalxscoalaauto.ro/images/car-packages.webp"
           />
           <meta property="twitter:site" content="@TopalXScoalaAuto" />
           <meta property="twitter:creator" content="@TopalXScoalaAuto" />

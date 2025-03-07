@@ -94,7 +94,7 @@ const Team = React.forwardRef<HTMLDivElement, any>((props, ref) => {
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content="https://www.topalxscoalaauto.ro/images/team.jpg"
+          content="https://www.topalxscoalaauto.ro/images/team.webp"
         />
         <meta property="og:locale" content="ro_RO" />
         <meta property="og:site_name" content="TopalX Scoala Auto" />
@@ -109,7 +109,7 @@ const Team = React.forwardRef<HTMLDivElement, any>((props, ref) => {
         />
         <meta
           property="twitter:image"
-          content="https://www.topalxscoalaauto.ro/images/team.jpg"
+          content="https://www.topalxscoalaauto.ro/images/team.webp"
         />
         <meta property="twitter:site" content="@TopalXScoalaAuto" />
         <meta property="twitter:creator" content="@TopalXScoalaAuto" />
