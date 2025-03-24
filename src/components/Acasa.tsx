@@ -22,7 +22,7 @@ const Acasa: React.FC = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           property="og:title"
-          content="Scoala de soferi TopalX - Cea mai bună școală de șoferi din București"
+          content="Scoala de soferi TopalX - Apreciată pentru profesionalism și rezultate excelente în București"
         />
         <meta
           property="og:description"
@@ -39,7 +39,7 @@ const Acasa: React.FC = () => {
         <meta property="twitter:card" content="summary_large_image" />
         <meta
           property="twitter:title"
-          content="Scoala de soferi TopalX - Cea mai bună școală de șoferi din București"
+          content="Scoala de soferi TopalX - Apreciată pentru profesionalism și rezultate excelente în București"
         />
         <meta
           property="twitter:description"

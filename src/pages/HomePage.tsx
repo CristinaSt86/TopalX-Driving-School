@@ -118,8 +118,7 @@ const HomePage: React.FC = () => {
     <div id="home" className="overflow-x-hidden max-w-full mx-auto">
       <Helmet>
         <title>
-          Acasă | Scoala de soferi TopalX | Cea mai bună școală de șoferi din
-          București
+          Acasă | Școala de șoferi TopalX | Școala de șoferi apreciată pentru profesionalism și rezultate excelente în București.
         </title>
         <meta
           name="description"
@@ -134,7 +133,7 @@ const HomePage: React.FC = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           property="og:title"
-          content="Scoala de soferi TopalX - Cea mai bună școală de șoferi din București"
+          content="Școala de șoferi TopalX | Școala de șoferi apreciată pentru profesionalism și rezultate excelente în București"
         />
         <meta
           property="og:description"
@@ -151,7 +150,7 @@ const HomePage: React.FC = () => {
         <meta property="twitter:card" content="summary_large_image" />
         <meta
           property="twitter:title"
-          content="Scoala de soferi TopalX - Cea mai bună școală de șoferi din București"
+          content="Școala de șoferi TopalX | Școala de șoferi apreciată pentru profesionalism și rezultate excelente în București"
         />
         <meta
           property="twitter:description"
