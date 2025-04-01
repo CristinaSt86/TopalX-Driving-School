@@ -68,9 +68,9 @@ const Footer: React.FC = () => {
 
       {/* Developer Signature */}
       <div className="text-xs text-gray-400 text-center md:text-right mt-4">
-        <h3 className="text-sm font-semibold text-gray-400">
+        {/* <h3 className="text-sm font-semibold text-gray-400">
           {t("footer.developer")}
-        </h3>
+        </h3> */}
         <p>
           {t("footer.developedBy")}
           <a
@@ -80,7 +80,7 @@ const Footer: React.FC = () => {
             rel="noopener noreferrer"
             aria-label="Accesează site-ul CSweb.pro pentru dezvoltare web"
           >
-            CSweb.pro
+            csweb.pro
           </a>
         </p>
       </div>

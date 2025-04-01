@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useTranslation } from "react-i18next";
 import clasa3 from "../images/clasa3.webp";
 import sis from "../images/sis.webp";
@@ -8,22 +8,13 @@ import sisCostiElev from "../images/sisCostiElev.webp";
 import sis2 from "../images/sis2.webp";
 
 const CineSuntemImg: React.FC = () => {
-  const [animate, setAnimate] = useState(false);
   const { t } = useTranslation();
 
   const images: string[] = [sisCostiElev, servicii, sis2, clasa, sis, clasa3];
 
-  useEffect(() => {
-    setAnimate(true);
-  }, []);
-
   return (
     <div>
-      <div
-        className={`flex flex-col items-center justify-center ${
-          animate ? "slide-in" : ""
-        }`}
-      >
+      <div className="flex flex-col items-center justify-center my-24">
         <div className="mt-8 sm:mt-16 flex flex-wrap justify-center items-center">
           {images.slice(0, Math.ceil(images.length / 2)).map((image, index) => (
             <img
@@ -34,11 +25,13 @@ const CineSuntemImg: React.FC = () => {
             />
           ))}
         </div>
+
         <header className="text-center py-4 text-textColor mx-auto px-2 sm:px-4 sm:mt-12 md:mt-10 md:mb-10 container">
           <h1 className="text-4xl font-bold text-center mb-8 mt-8">
             {t("about.headerTitle")}
           </h1>
         </header>
+
         <div className="mb-10 flex flex-wrap justify-center items-center md:mb-8">
           {images.slice(Math.ceil(images.length / 2)).map((image, index) => (
             <img

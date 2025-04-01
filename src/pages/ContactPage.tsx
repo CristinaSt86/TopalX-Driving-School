@@ -111,7 +111,7 @@ const ContactPage: React.FC = () => {
           {JSON.stringify(organizationData)}
         </script>
       </Helmet>
-      <div className="shadow-custom relative items-center justify-center bg-opacity-custom pt-12 pb-12 md:flex-row md:gap-8 md:m-0">
+      <div className="shadow-custom relative items-center justify-center bg-opacity-custom pt-12 pb-12 md:flex-row md:gap-8 md:m-0 my-24">
         {/* <SnowfallCanvas /> */}
         <h1 className="px-3 mt-8 mb-16 text-3xl font-bold text-center md:mb-16">
           {t("contactPage.title")}

@@ -115,7 +115,7 @@ const Team = React.forwardRef<HTMLDivElement, any>((props, ref) => {
         <meta property="twitter:creator" content="@TopalXScoalaAuto" />
       </Helmet>
 
-      <section className="bg-white pb-3 mb-10 shadow-2xl">
+      <section className="bg-white pb-3 my-24 shadow-2xl">
         <h2
           ref={ref}
           className="text-center text-3xl font-bold text-gray-800 mt-16 pl-3 pr-3 pt-12"
