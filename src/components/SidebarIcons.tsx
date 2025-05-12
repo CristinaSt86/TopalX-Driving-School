@@ -104,7 +104,7 @@ const SidebarIcons: React.FC = () => {
           >
             <FaEnvelope size={24} />
           </button>
-          <div className="text-white p-3 hover:scale-125 transition-transform cursor-pointer">
+          <div className="text-white p-3 hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer">
             <LanguageButton />
           </div>
         </div>
