@@ -51,7 +51,12 @@ const SidebarIcons: React.FC = () => {
           ${isSidebarOpen ? "right-[4rem]" : "right-2"}`}
           onClick={() => setIsSidebarOpen(!isSidebarOpen)}
         >
-          <FaChevronLeft size={20} className={`transition-transform ${isSidebarOpen ? "rotate-180" : ""}`} />
+          <FaChevronLeft
+            size={20}
+            className={`transition-transform ${
+              isSidebarOpen ? "rotate-180" : ""
+            }`}
+          />
         </button>
       )}
 
@@ -59,29 +64,49 @@ const SidebarIcons: React.FC = () => {
       {isVisible && (
         <div
           className={`fixed right-0 top-1/2 transform -translate-y-1/2 flex flex-col space-y-4 p-2 bg-black/30 rounded-l-lg shadow-lg z-[1002] transition-transform duration-300 justify-center items-center 
-          ${isSidebarOpen ? "translate-x-0" : "translate-x-full"} lg:translate-x-0`}
+          ${
+            isSidebarOpen ? "translate-x-0" : "translate-x-full"
+          } lg:translate-x-0`}
         >
-          <button onClick={() => handleSidebarClick("home")} className="text-white p-3 hover:scale-125 transition-transform">
+          <button
+            onClick={() => handleSidebarClick("home")}
+            className="text-white p-3 hover:scale-125 transition-transform"
+          >
             <FaHome size={24} />
           </button>
-          <button onClick={() => handleSidebarClick("about")} className="text-white p-3 hover:scale-125 transition-transform">
+          <button
+            onClick={() => handleSidebarClick("about")}
+            className="text-white p-3 hover:scale-125 transition-transform"
+          >
             <FaInfoCircle size={24} />
           </button>
-          <button onClick={() => handleSidebarClick("services")} className="text-white p-3 hover:scale-125 transition-transform">
+          <button
+            onClick={() => handleSidebarClick("services")}
+            className="text-white p-3 hover:scale-125 transition-transform"
+          >
             <FaBriefcase size={24} />
           </button>
-          <button onClick={() => handleSidebarClick("testimonials")} className="text-white p-3 hover:scale-125 transition-transform">
+          <button
+            onClick={() => handleSidebarClick("testimonials")}
+            className="text-white p-3 hover:scale-125 transition-transform"
+          >
             <FaQuoteLeft size={24} />
           </button>
-          <button onClick={() => handleSidebarClick("gallery")} className="text-white p-3 hover:scale-125 transition-transform">
+          <button
+            onClick={() => handleSidebarClick("gallery")}
+            className="text-white p-3 hover:scale-125 transition-transform"
+          >
             <FaImages size={24} />
           </button>
-          <button onClick={() => handleSidebarClick("contact")} className="text-white p-3 hover:scale-125 transition-transform">
+          <button
+            onClick={() => handleSidebarClick("contact")}
+            className="text-white p-3 hover:scale-125 transition-transform"
+          >
             <FaEnvelope size={24} />
           </button>
-          <button className="text-white p-3 hover:scale-125 transition-transform">
+          <div className="text-white p-3 hover:scale-125 transition-transform cursor-pointer">
             <LanguageButton />
-          </button>
+          </div>
         </div>
       )}
     </>

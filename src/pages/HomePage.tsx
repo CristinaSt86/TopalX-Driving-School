@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect, useState, Suspense } from "react";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import AboutPage from "./AboutPage";
@@ -186,7 +186,7 @@ const HomePage: React.FC = () => {
         </h1>
 
         <p
-          className={`text-lg sm:text-2xl md:text-3xl mt-2 sm:mt-4 md:leading-normal -tracking-normal bg-customTextBg w-fit rounded-md ${
+          className={`text-lg sm:text-2xl md:text-3xl mt-2 sm:mt-4 md:leading-normal -tracking-normal bg-black/40 w-fit rounded-md ${
             animate ? "slide-in" : ""
           }`}
         >
@@ -201,11 +201,25 @@ const HomePage: React.FC = () => {
       </div>
 
       <div ref={aboutPageRef}>
-        <AboutPage />
-        <Gallery />
-        <BuyNowPayLater />
-        <ContactPage />
-        <Acasa />
+        <Suspense fallback={<div className="text-center p-8">Se încarcă prezentarea...</div>}>
+          <AboutPage />
+        </Suspense>
+
+        <Suspense fallback={<div className="text-center p-8">Se încarcă galeria...</div>}>
+          <Gallery />
+        </Suspense>
+
+        <Suspense fallback={<div className="text-center p-8">Se încarcă oferta...</div>}>
+          <BuyNowPayLater />
+        </Suspense>
+
+        <Suspense fallback={<div className="text-center p-8">Se încarcă pagina de contact...</div>}>
+          <ContactPage />
+        </Suspense>
+
+        <Suspense fallback={<div className="text-center p-8">Se încarcă secțiunea finală...</div>}>
+          <Acasa />
+        </Suspense>
       </div>
     </div>
   );

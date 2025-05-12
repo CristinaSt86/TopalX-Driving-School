@@ -60,7 +60,7 @@ const Banner: React.FC = () => {
       <Button
         onClick={() => scrollToSection("buy-now-section")}
         textKey="banner.learn_more"
-        additionalClasses="border-4 border-secondary my-2 text-xs md:text-sm"
+        additionalClasses="my-2 text-xs md:text-sm"
       />
     </div>
   );

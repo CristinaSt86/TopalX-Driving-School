@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import clasa3 from "../images/clasa3.webp";
+import clasa3 from "../images/wha.webp";
 import sis from "../images/sis.webp";
 import clasa from "../images/top1.webp";
 import servicii from "../images/servicii.webp";

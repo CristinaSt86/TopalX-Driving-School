@@ -13,7 +13,7 @@ const TermsAndConditions: React.FC = () => {
         <meta name="robots" content="index, follow" />
       </Helmet>
       
-      <h1 className="text-4xl font-bold mb-12 mt-12 text-center">
+      <h1 className="text-4xl font-bold mb-12 mt-12 md:mt-28 text-center">
         {t("termsAndConditions.title")}
       </h1>
       

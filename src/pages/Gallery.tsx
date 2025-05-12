@@ -74,7 +74,7 @@ const Gallery: React.FC = () => {
       src={item.original}
       alt="Fotografii cu elevi si instructori"
       loading="lazy"
-      className="w-full h-[400px] object-contain mx-auto rounded shadow-md"
+      className="w-full max-h-[100vh] object-contain mx-auto"
     />
   );
   return (
@@ -135,7 +135,9 @@ const Gallery: React.FC = () => {
           {t("gallery.galleryTitle")}
         </h2>
         <div className="w-16 h-[2px] bg-primary mx-auto my-8"></div>
-        <p className="text-center mt-16 mb-16">{t("gallery.galleryDescription")}</p>
+        <p className="text-center mt-16 mb-16">
+          {t("gallery.galleryDescription")}
+        </p>
         <div className="gallery-wrapper">
           <ImageGallery
             items={images}

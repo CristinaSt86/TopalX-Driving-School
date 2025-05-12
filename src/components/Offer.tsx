@@ -34,7 +34,7 @@ const Offer: React.FC = () => {
       <Button
         onClick={() => scrollToSection("contact")}
         textKey="offer.btnText"
-        additionalClasses="border-4 border-secondary my-8"
+        additionalClasses="my-8"
       />
     </div>
   );
