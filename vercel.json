@@ -38,6 +38,10 @@
       "src": "/manifest.json",
       "dest": "/manifest.json"
     },
+     {
+      "src": "/flags/(.*)",
+      "dest": "/flags/$1"
+    },
     {
       "src": "/(.*)",
       "dest": "/index.html"
