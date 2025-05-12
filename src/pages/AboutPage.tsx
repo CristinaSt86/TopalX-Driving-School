@@ -6,7 +6,6 @@ import CarCard from "../components/CarCard";
 import Team from "../components/Team";
 import Services from "./Services";
 import Testimonials from "./Testimonials";
-import { PiArrowDownLight } from "react-icons/pi";
 import CineSuntemImg from "../components/CineSuntemImg";
 import fiat from "../images/fiat3.webp";
 import skoda from "../images/sc2.webp";
