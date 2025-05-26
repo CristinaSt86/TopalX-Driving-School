@@ -75,7 +75,7 @@ const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
     <ErrorBoundary>
       <SidebarIcons />
       <nav
-        className="p-3 md:py-2 font-semibold text-white md:backdrop-blur-md md:bg-black/40 md:rounded-sm md:border-b md:border-yellow-500 md:shadow-md"
+        className="p-3 md:py-2 font-semibold text-white md:backdrop-blur-md md:bg-black/50 md:rounded-2xl md:border-b md:border-yellow-500 md:shadow-md "
         aria-label="Main Navigation"
       >
         <div className="container mx-auto flex justify-between items-center">
