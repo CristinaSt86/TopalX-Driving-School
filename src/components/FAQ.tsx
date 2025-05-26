@@ -12,7 +12,7 @@ const FAQ: React.FC = () => {
   const faqs: FAQItem[] = t("faq.items", { returnObjects: true }) as FAQItem[];
 
   return (
-    <div className="max-w-2xl mx-auto my-16 py-12">
+    <div className="max-w-2xl mx-auto p-6 my-16 py-12">
       <h2 className="text-3xl font-bold my-20  md:mt-28 text-center">{t("faq.title")}</h2>
       {faqs.map((faq: { question: string; answer: string }, index: number) => (
         <div key={index} className="mb-12">
