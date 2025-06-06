@@ -182,7 +182,7 @@ const Team = React.forwardRef<HTMLDivElement, any>((props, ref) => {
         <Button
           onClick={() => scrollToSection("contact")}
           textKey="carPackages.buttonText"
-          additionalClasses="my-10 bg-secondary "
+          additionalClasses="mb-10 bg-secondary  "
         />
       </div>
     </>

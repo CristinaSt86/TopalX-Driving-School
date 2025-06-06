@@ -177,7 +177,7 @@ const HomePage: React.FC = () => {
       >
         {/* <SnowfallCanvas /> */}
         <h1
-          className={`mt-2 text-xl sm:text-4xl font-extrabold mb-4 sm:mb-10 leading-normal bg-black/50 w-fit rounded-md px-2 ${
+          className={`mt-2 text-xl sm:text-4xl font-extrabold text-white mb-4 sm:mb-10 leading-normal bg-black/50 w-fit rounded-md px-2 ${
             animate ? "slide-in" : ""
           }`}
         >
@@ -186,7 +186,7 @@ const HomePage: React.FC = () => {
         </h1>
 
         <p
-          className={`text-lg sm:text-2xl md:text-3xl mt-2 sm:mt-4 md:leading-normal -tracking-normal bg-black/50 w-fit rounded-md ${
+          className={`text-lg sm:text-2xl md:text-3xl text-white mt-2 sm:mt-4 md:leading-normal -tracking-normal bg-black/50 w-fit rounded-md ${
             animate ? "slide-in" : ""
           }`}
         >
@@ -196,7 +196,7 @@ const HomePage: React.FC = () => {
         <Button
           onClick={scrollToAboutPage}
           textKey="home.learn_more"
-          additionalClasses="mt-20 md:mt-16"
+          additionalClasses="mt-10 md:mt-14"
         />
       </div>
 

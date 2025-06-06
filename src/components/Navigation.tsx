@@ -45,7 +45,6 @@ const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
     [closeMenu]
   );
 
-  // Close menu on screen resize change (mobile ↔ desktop)
   useEffect(() => {
     setIsOpen(false);
   }, [isMobileView]);
@@ -62,10 +61,13 @@ const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
   }, [isOpen, isMobileView, handleClickInsideMenu]);
 
   const buttonClassName = `
-    hover:text-white relative after:absolute after:left-1/2 after:bottom-0
-    after:w-0 after:h-[2px] after:bg-yellow-400 after:bg-white after:transition-all after:duration-300
-    hover:after:left-0 hover:after:w-full  hover:text-yellow-400 text-lg font-semibold shadow-2xl
-  `;
+  relative text-lg font-medium text-white
+  hover:text-yellow-400 transition 
+  after:absolute after:left-1/2 after:bottom-0
+  after:w-0 after:h-[1px] after:bg-yellow-400 
+  after:transition-all after:duration-300 after:ease-in-out
+  hover:after:left-0 hover:after:w-full
+`;
 
   const handleLogoClick = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -75,88 +77,124 @@ const Navigation: React.FC<{ isMobileView: boolean }> = ({ isMobileView }) => {
     <ErrorBoundary>
       <SidebarIcons />
       <nav
-        className="p-3 md:py-2 font-semibold text-white md:backdrop-blur-md md:bg-black/50 md:rounded-2xl md:border-b md:border-yellow-500 md:shadow-md "
+        className="p-3 md:py-2 font-semibold text-white md:backdrop-blur-md md:bg-black/50 md:rounded-2xl md:border-b md:border-yellow-500 md:shadow-md"
         aria-label="Main Navigation"
       >
         <div className="container mx-auto flex justify-between items-center">
-          {/* Hamburger for mobile */}
           {isMobileView && (
             <button
-              title="Toggle Menu"
-              className="md:hidden text-primary"
-              onClick={toggleMenu}
-              aria-expanded={isOpen}
-              aria-controls="primary-menu"
+              onClick={() => setIsOpen(!isOpen)}
+              className="relative w-8 h-6 flex flex-col justify-between items-center group z-1000"
+              aria-label="Toggle menu"
             >
-              {isOpen ? (
-                <FaTimes className="w-6 h-6" />
-              ) : (
-                <FaBars className="w-6 h-6" />
-              )}
+              <span
+                className={`h-[3.5px] w-full bg-secondary rounded transition-all duration-300 ease-in-out 
+      ${isOpen ? "rotate-45 translate-y-2" : ""}`}
+              />
+              <span
+                className={`h-[2.5px] w-full bg-secondary rounded transition-all duration-300 ease-in-out 
+      ${isOpen ? "opacity-0" : ""}`}
+              />
+              <span
+                className={`h-[1.5px] w-full bg-secondary rounded transition-all duration-300 ease-in-out 
+      ${isOpen ? "-rotate-45 -translate-y-2" : ""}`}
+              />
             </button>
           )}
 
-          {/* Navigation menu */}
+          {/* ✅ NAVIGATION MENU */}
           <ul
             id="primary-menu"
             ref={menuRef}
-            className={`z-50 pt-6 md:pt-2 pb-2 gap-6 md:gap-3 space-y-4 md:space-y-0 md:space-x-4 w-full md:w-auto
-    ${
-      isMobileView && isOpen
-        ? "absolute top-0 left-0 bg-black/60 backdrop-blur-sm flex flex-col items-center justify-center opacity-100 translate-y-0 transition-all duration-500 ease-in-out"
-        : isMobileView
-        ? "hidden"
-        : "relative flex md:flex-row items-center opacity-100"
-    }`}
+            className={`z-50 w-full md:w-auto md:space-x-6 md:px-4
+              ${
+                isMobileView && isOpen
+                  ? "absolute top-0 left-0 bg-black/70 backdrop-blur-md flex flex-col items-start text-left transition-all duration-500 ease-in-out md:hidden"
+                  : isMobileView
+                  ? "hidden md:hidden"
+                  : "relative flex flex-row items-center space-x-4 text-white md:flex"
+              }`}
           >
+            {/* ✅ Logo pe mobil */}
             {isOpen && isMobileView && (
-              <li className="mb-6">
-                <Link
-                  to="/"
-                  className="flex flex-col items-center justify-center"
-                  onClick={handleLogoClick}
-                >
-                  <div className="w-16 h-16 rounded-full overflow-hidden">
+              <li className="w-full px-6 pt-6 pb-4 border-b border-white/40 border-[1.5px]">
+                <Link to="/" onClick={handleLogoClick}>
+                  <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-white">
                     <img
                       src={logo}
                       alt="logo"
-                      className="object-cover border-2 border-logo rounded-full"
+                      className="object-cover w-full h-full"
                     />
                   </div>
                 </Link>
               </li>
             )}
 
-            {[
-              { id: "home", label: t("navigation.home") },
-              { id: "about", label: t("navigation.about") },
-              { id: "services", label: t("navigation.services") },
-              { id: "testimonials", label: t("navigation.testimonials") },
-              { id: "gallery", label: t("navigation.gallery") },
-              { id: "contact", label: t("navigation.contact") },
-            ].map((item) => (
-              <li key={item.id}>
-                <button
-                  onClick={() => handleMenuClick(item.id)}
-                  className={buttonClassName}
-                >
-                  {item.label}
-                </button>
-              </li>
-            ))}
+            {/* ✅ Mobile menu list */}
+            {isMobileView && isOpen && (
+              <>
+                {[
+                  { id: "home", label: t("navigation.home") },
+                  { id: "about", label: t("navigation.about") },
+                  { id: "services", label: t("navigation.services") },
+                  { id: "testimonials", label: t("navigation.testimonials") },
+                  { id: "gallery", label: t("navigation.gallery") },
+                  { id: "contact", label: t("navigation.contact") },
+                ].map((item, index) => (
+                  <li key={item.id} className="w-full px-6 py-3">
+                    <button
+                      onClick={() => handleMenuClick(item.id)}
+                      className="w-full text-left font-semibold text-white transition hover:text-yellow-400 "
+                    >
+                      {item.label}
+                    </button>
 
-            <li>
-              <LanguageButton />
-            </li>
+                    {/* ✅ Linie scurtă sub fiecare item, dar nu după ultimul */}
+                    {index < 5 && (
+                      <div className="border-t border-white/30 w-2/3 mt-2 " />
+                    )}
+                  </li>
+                ))}
 
-            {isOpen && isMobileView && (
-              <li className="flex flex-col items-center space-y-4 pb-4">
-                <div className="flex items-center hover:text-white border-2 border-white rounded-md p-1">
-                  <FaPhoneAlt className="bounce-effect" />
-                  <a className="ml-1" href="tel:0040736470629">
+                <li className="w-full px-6 py-4 border-b border-white/40 border-[1.5px]">
+                  <LanguageButton />
+                </li>
+
+                <li className="w-full px-6 py-4 flex items-center gap-2 ">
+                  <FaPhoneAlt />
+                  <a
+                    className="hover:underline underline-offset-4 hover:text-yellow-400 decoration-yellow-400"
+                    href="tel:0040736470629"
+                  >
                     0736 470 629
                   </a>
-                </div>
+                </li>
+              </>
+            )}
+
+            {/* ✅ Desktop menu list fără modificări */}
+            {!isMobileView &&
+              [
+                { id: "home", label: t("navigation.home") },
+                { id: "about", label: t("navigation.about") },
+                { id: "services", label: t("navigation.services") },
+                { id: "testimonials", label: t("navigation.testimonials") },
+                { id: "gallery", label: t("navigation.gallery") },
+                { id: "contact", label: t("navigation.contact") },
+              ].map((item) => (
+                <li key={item.id}>
+                  <button
+                    onClick={() => handleMenuClick(item.id)}
+                    className={buttonClassName}
+                  >
+                    {item.label}
+                  </button>
+                </li>
+              ))}
+
+            {!isMobileView && (
+              <li>
+                <LanguageButton />
               </li>
             )}
           </ul>
