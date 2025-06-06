@@ -17,7 +17,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, handleMenuClick }) => {
 
   return (
     <ul className="absolute top-0 left-0 w-full bg-black/70 backdrop-blur-md flex flex-col items-start text-left z-50">
-      <li className="w-full px-6 pt-6 pb-4 border-b border-white/40 border-[1.5px]">
+      <li className="w-full px-6 pt-6 pb-4 border-b border-white/40">
         <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
           <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-white">
             <img src={logo} alt="logo" className="object-cover w-full h-full" />
@@ -26,7 +26,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, handleMenuClick }) => {
       </li>
 
       {menuItems.map((item, index) => (
-        <li key={item.id} className="w-full px-6 py-3">
+        <li key={item.id} className="w-full px-6 py-3 mt-2">
           <button onClick={() => handleMenuClick(item.id)} className="w-full text-left font-semibold text-white hover:text-yellow-400">
             {t(item.labelKey)}
           </button>
@@ -34,7 +34,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, handleMenuClick }) => {
         </li>
       ))}
 
-      <li className="w-full px-6 py-4 border-b border-white/40 border-[1.5px]">
+      <li className="w-full px-6 py-4 border-b border-t border-white/40">
         <LanguageButton />
       </li>
 
