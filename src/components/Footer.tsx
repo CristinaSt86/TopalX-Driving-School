@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import SocialLinks from "./SocialLinks";
-import NavigationLinks from "./NavigationLinks";
+import NavigationLinks from "./Navigation/NavigationLinks";
 import LegalLinks from "./LegalLinks";
 import logo from "../images/logo.webp";
 import QRCodeComponent from "./QRCodeComponent";
