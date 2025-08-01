@@ -138,11 +138,11 @@
     "packages": [
       {
         "name": "PRESIDENT PACKAGE MERCEDES BENZ",
-        "price": "2900 Lei",
+        "price": "3000 Lei",
         "transmission": "Automatic",
         "fuelType": "Diesel",
         "features": [
-          "Medical tests + psychological approval 150 Lei + 150 Lei",
+          "Medical tests + psychological approval 170 Lei + 170 Lei",
           "Theoretical road legislation courses",
           "Practical training courses – 30 teaching hours",
           "Fuel",
@@ -152,11 +152,11 @@
       },
       {
         "name": "SENSATION PACKAGE VOLVO",
-        "price": "2700 Lei",
+        "price": "2800 Lei",
         "transmission": "Manual",
         "fuelType": "Diesel",
         "features": [
-          "Medical tests + psychological approval 150 Lei + 150 Lei",
+          "Medical tests + psychological approval 170 Lei + 170 Lei",
           "Theoretical road legislation courses",
           "Practical training courses – 30 teaching hours",
           "Fuel",
@@ -166,11 +166,11 @@
       },
       {
         "name": "FIAT 500 PACKAGE",
-        "price": "2350 Lei",
+        "price": "2450 Lei",
         "transmission": "Manual",
         "fuelType": "Petrol",
         "features": [
-          "Medical tests + psychological approval 150 Lei + 150 Lei",
+          "Medical tests + psychological approval 170 Lei + 170 Lei",
           "Theoretical road legislation courses",
           "Practical training courses – 30 teaching hours",
           "Fuel",
@@ -180,11 +180,11 @@
       },
       {
         "name": "CITY BREAK PACKAGE SKODA",
-        "price": "2500 Lei",
+        "price": "2600 Lei",
         "transmission": "Manual",
         "fuelType": "Petrol",
         "features": [
-          "Medical tests + psychological approval 150 Lei + 150 Lei",
+          "Medical tests + psychological approval 170 Lei + 170 Lei",
           "Theoretical road legislation courses",
           "Practical training courses – 30 teaching hours",
           "Fuel",
