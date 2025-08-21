@@ -3,7 +3,7 @@ import LanguageButton from "../LanguageButton";
 import { menuItems } from "./menuItems";
 
 const buttonClassName = `
-  relative text-lg font-medium text-white
+  relative text-lg font-semibold text-white
   hover:text-yellow-400 transition 
   after:absolute after:left-1/2 after:bottom-0
   after:w-0 after:h-[1px] after:bg-yellow-400 

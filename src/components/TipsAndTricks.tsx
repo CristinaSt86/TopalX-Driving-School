@@ -69,16 +69,16 @@ const TipsAndTricks: React.FC = () => {
 
   return (
     <div className="container mx-auto p-4 mb-16">
-      <h2 className="text-3xl font-bold text-center mt-16 mb-16 pl-3 pr-3 flex flex-col items-center space-y-2 md:flex-row md:justify-center md:space-x-2 md:space-y-0">
+      <h2 className="text-3xl font-bold text-center mt-16 mb-10 pl-3 pr-3 flex flex-col items-center space-y-2 md:flex-row md:justify-center md:space-x-2 md:space-y-0">
         <span>{t("tipsAndTricks.title")}</span>
         <div className="flex space-x-2">
           <FaGraduationCap />
           <FaCar />
         </div>
       </h2>
-
+ <div className="w-64 h-[1px] bg-slate-400 mx-auto my-8"></div>
       {/* Tips Section */}
-      <div className="tips-section mb-16">
+      <div className="tips-section my-16">
   <h3 className="text-xl font-semibold mb-4 flex items-center">
     <span>{t("tipsAndTricks.tipsTitle")}</span>
     <FaLightbulb className="ml-2 text-xl" /> {/* Set a consistent size */}

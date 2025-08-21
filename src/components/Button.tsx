@@ -17,7 +17,7 @@ const Button: React.FC<ButtonProps> = ({
   return (
     <button
       onClick={onClick}
-      className={`border-4 border-white shadow-xl bounce-effect sm:mt-4 bg-secondary text-textColor py-2 px-4 sm:px-6 rounded-md font-semibold text-lg hover:bg-primary hover:text-white transition duration-300 transform hover:scale-110 sm:hover:scale-150 hover:shadow-lg ${additionalClasses}`}
+      className={` shadow-xl bounce-effect sm:mt-4 bg-secondary text-textColor py-2 px-10 md:px-16 sm:px-6 rounded-md font-semibold text-lg hover:bg-secondaryHover hover:text-white transition duration-300 transform hover:scale-110 sm:hover:scale-150 hover:shadow-lg ${additionalClasses}`}
     >
       {t(textKey)} 
     </button>

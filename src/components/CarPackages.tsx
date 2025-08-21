@@ -146,7 +146,7 @@ const CarPackages = React.forwardRef<HTMLDivElement>(
         <h1 className="text-3xl font-bold text-center mb-4 md:mb-28 md:mt-28 pl-3 pr-3 textShadow-mt">
           {t("carPackages.title")}
         </h1>
-        {/* <div className="w-16 h-[2px] bg-primary mx-auto my-8"></div> */}
+         {/* <div className="w-64 h-[1px] bg-slate-400 mx-auto my-8"></div> */}
         {carPackages.map((pkg, index) => (
           <section
             key={index}
@@ -156,6 +156,7 @@ const CarPackages = React.forwardRef<HTMLDivElement>(
           >
             <div className="p-2 rounded-md  mb-4 mt-4 ml-2 mr-2 bg-white md:w-1/3">
               <h2 className="text-2xl font-semibold mb-4">{pkg.name}</h2>
+              
               <p>
                 <strong>{t("carPackages.price")}:</strong>
                 <span className="font-bold text-xl"> {pkg.price}</span>

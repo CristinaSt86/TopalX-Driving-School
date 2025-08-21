@@ -127,12 +127,12 @@ const Testimonials = forwardRef<TestimonialsHandle, TestimonialsProps>(
         </Helmet>
 
         <div className=" mx-auto p-4 my-24">
-          <h2 className="text-3xl font-bold text-center mt-8 mb-16 pl-3 pr-3">
+          <h2 className="text-3xl font-bold text-center mt-8 mb-10 pl-3 pr-3">
             {t("testimonials.title")}
           </h2>
-          {/* <div className="w-16 h-[2px] bg-primary mx-auto my-8"></div> */}
+       <div className="w-64 h-[1px] bg-slate-400 mx-auto my-8"></div>
           <div className="container mx-auto">
-            <div className="flex flex-wrap justify-center gap-4 items-center ellipse-img">
+            <div className="flex flex-wrap justify-center gap-4 items-center ellipse-img mt-10 md:mt-16">
               {finalTestimonials.map(({ id, avatar, caption }, index) => (
                 <div
                   key={id}

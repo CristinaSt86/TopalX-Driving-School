@@ -122,7 +122,7 @@ const Team = React.forwardRef<HTMLDivElement, any>((props, ref) => {
         >
           {t("team2.title")}
         </h2>
-        <div className="w-16 h-[2px] bg-primary mx-auto my-8"></div>
+        <div className="w-64 h-[1px] bg-slate-400 mx-auto my-8"></div>
         <div className="relative w-full h-48 overflow-hidden">
           <div className="absolute bottom-1 left-0 w-80 h-auto animate-drive">
             <img src={FiatDrive} alt="Car" />

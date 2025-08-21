@@ -9,21 +9,26 @@ const BuyNowPayLater: React.FC = () => {
       <h1 className="text-center text-3xl font-bold  mt-10 pl-4 pr-4">
         {t("buyNowPayLater.title")}
       </h1>
-      <div className="w-16 h-[2px] bg-primary mx-auto my-8"></div>
+      <div className="w-64 h-[1px] bg-slate-400 mx-auto my-8"></div>
       <section className="mb-8">
         <h2 className="text-center text-xl sm:text-2xl font-bold mb-12 mt-12">
           {t("buyNowPayLater.section1.subtitle")}
         </h2>
+
         <p className="mb-4">{t("buyNowPayLater.section1.description")}</p>
-        <p className="mb-4 font-semibold">{t("buyNowPayLater.section1.howItWorks")}</p>
+        <p className="mb-4 font-semibold">
+          {t("buyNowPayLater.section1.howItWorks")}
+        </p>
         <ul className="list-disc pl-5 mb-4">
-          {(t("buyNowPayLater.section1.steps", { returnObjects: true }) as string[]).map(
-            (step, index) => (
-              <li key={index} className="mb-2 cursor-pointer">
-                {step}
-              </li>
-            )
-          )}
+          {(
+            t("buyNowPayLater.section1.steps", {
+              returnObjects: true,
+            }) as string[]
+          ).map((step, index) => (
+            <li key={index} className="mb-2 cursor-pointer">
+              {step}
+            </li>
+          ))}
         </ul>
       </section>
 
@@ -32,13 +37,15 @@ const BuyNowPayLater: React.FC = () => {
           {t("buyNowPayLater.section2.subtitle")}
         </h2>
         <ul className="list-disc pl-5 mb-4">
-          {(t("buyNowPayLater.section2.steps", { returnObjects: true }) as string[]).map(
-            (step, index) => (
-              <li key={index} className="mb-2 cursor-pointer">
-                {step}
-              </li>
-            )
-          )}
+          {(
+            t("buyNowPayLater.section2.steps", {
+              returnObjects: true,
+            }) as string[]
+          ).map((step, index) => (
+            <li key={index} className="mb-2 cursor-pointer">
+              {step}
+            </li>
+          ))}
         </ul>
       </section>
 
@@ -46,13 +53,15 @@ const BuyNowPayLater: React.FC = () => {
         <h2 className="text-xl sm:text-2xl font-bold mb-4">
           {t("buyNowPayLater.section3.subtitle")}
         </h2>
-        {(t("buyNowPayLater.section3.examples", { returnObjects: true }) as string[]).map(
-          (example, index) => (
-            <p key={index} className="mb-4">
-              {example}
-            </p>
-          )
-        )}
+        {(
+          t("buyNowPayLater.section3.examples", {
+            returnObjects: true,
+          }) as string[]
+        ).map((example, index) => (
+          <p key={index} className="mb-4">
+            {example}
+          </p>
+        ))}
       </section>
 
       <section className="text-center">
@@ -85,7 +94,8 @@ const BuyNowPayLater: React.FC = () => {
             rel="noopener noreferrer"
           >
             Apple App Store
-          </a>.
+          </a>
+          .
         </p>
       </section>
     </div>
