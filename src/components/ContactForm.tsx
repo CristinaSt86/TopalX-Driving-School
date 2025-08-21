@@ -134,7 +134,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
               handleSubmit(fakeEvent);
             }}
             textKey={submitting ? "contactForm.sending" : "contactForm.send"}
-            additionalClasses={`w-fit mx-auto mt-4 md:mt-6 ${
+            additionalClasses={`w-[100%] mx-auto mt-4 md:mt-6 ${
               submitting ? "opacity-50 cursor-not-allowed" : ""
             }`}
           />
