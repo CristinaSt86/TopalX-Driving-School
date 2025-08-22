@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="bg-primary bg-opacity-75 text-white py-4 px-4 mx-auto">
+    <footer className="bg-logoBlue bg-opacity-75 text-white py-4 px-4 mx-auto">
       <div className="container mx-auto flex flex-col items-center md:flex-row md:justify-between">
         <div className="flex flex-col justify-center items-center mb-4 md:mb-0 md:gap-4 md:w-[269.71px] md:pr-8">
           <button

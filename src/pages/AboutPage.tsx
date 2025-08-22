@@ -156,25 +156,25 @@ const AboutPage: React.FC = () => {
           <div className="flex flex-col md:flex-col lg:flex-row gap-4 md:gap-8 items-center">
             <section
               onClick={scrollToTestimonials}
-              className="flex-1 h-fit max-h-fit-content overflow-hidden rounded-md mb-4 p-4 sm:p-6 shadow-2xl ease-in hover:bg-primary hover:text-white transition-transform duration-300 hover:scale-[1.02] cursor-pointer"
+              className="flex-1 h-fit max-h-fit-content overflow-hidden rounded-md mb-4 p-4 sm:p-6 shadow-2xl ease-in hover:bg-btnHoverBg transition-transform duration-300 hover:scale-[1.02] cursor-pointer"
 
             >
               <h2 className="text-xl sm:text-2xl md:text-3xl mb-4 font-semibold">
                 {t("about.mission.title")}
               </h2>
-              <p className="relative text-base leading-6 sm:text-base md:text-lg font-medium hover:text-white">
+              <p className="relative text-base leading-6 sm:text-base md:text-lg font-medium s">
                 {t("about.mission.description")}
               </p>
             </section>
 
             <section
               onClick={scrollToTeam}
-              className="flex-1 h-fit max-h-fit-content overflow-hidden rounded-md mb-4 p-4 sm:p-6 shadow-2xl ease-in hover:bg-primary hover:text-white transition-transform duration-300 hover:scale-[1.02] cursor-pointer"
+              className="flex-1 h-fit max-h-fit-content overflow-hidden rounded-md mb-4 p-4 sm:p-6 shadow-2xl ease-in hover:bg-btnHoverBg transition-transform duration-300 hover:scale-[1.02] cursor-pointer"
             >
               <h2 className="text-xl sm:text-2xl md:text-3xl mb-4 font-semibold">
                 {t("about.team.title")}
               </h2>
-              <p className="relative text-base leading-6 sm:text-base md:text-lg font-medium hover:text-white ">
+              <p className="relative text-base leading-6 sm:text-base md:text-lg font-medium ">
                 {t("about.team.description")}
               </p>
             </section>

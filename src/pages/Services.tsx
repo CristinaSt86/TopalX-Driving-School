@@ -37,7 +37,6 @@ const Services = React.forwardRef((props, ref) => {
     setAnimate(true);
   }, []);
 
-
   // Breadcrumb structured data
   const breadcrumbData = {
     "@context": "https://schema.org",
@@ -87,7 +86,7 @@ const Services = React.forwardRef((props, ref) => {
   return (
     <>
       <div id="services" className={` ${animate ? "slide-in" : ""} `}>
-      <Helmet>
+        <Helmet>
           <title>
             Servicii | Scoala de soferi TopalX | Școala de Șoferi din București
           </title>
@@ -101,7 +100,10 @@ const Services = React.forwardRef((props, ref) => {
           />
           <meta name="author" content="Scoala de soferi TopalX" />
           <meta name="robots" content="index, follow" />
-          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+          />
           <meta
             property="og:title"
             content="Servicii - Scoala de soferi TopalX - Școala de Șoferi din București"
@@ -120,7 +122,10 @@ const Services = React.forwardRef((props, ref) => {
             content="https://www.topalxscoalaauto.ro/images/servicii.webp"
           />
           <meta property="og:locale" content="ro_RO" />
-          <meta property="og:site_name" content="Scoala de Soferi | TopalX Scoala Auto " />
+          <meta
+            property="og:site_name"
+            content="Scoala de Soferi | TopalX Scoala Auto "
+          />
           <meta property="twitter:card" content="summary_large_image" />
           <meta
             property="twitter:title"
@@ -137,8 +142,12 @@ const Services = React.forwardRef((props, ref) => {
           <meta property="twitter:site" content="@TopalXScoalaAuto" />
           <meta property="twitter:creator" content="@TopalXScoalaAuto" />
           {/* Structured data scripts for breadcrumbs and organization */}
-          <script type="application/ld+json">{JSON.stringify(breadcrumbData)}</script>
-          <script type="application/ld+json">{JSON.stringify(organizationData)}</script>
+          <script type="application/ld+json">
+            {JSON.stringify(breadcrumbData)}
+          </script>
+          <script type="application/ld+json">
+            {JSON.stringify(organizationData)}
+          </script>
         </Helmet>
 
         <div
@@ -149,26 +158,36 @@ const Services = React.forwardRef((props, ref) => {
           <h1 className="text-3xl font-bold text-center mt-16 pl-3 pr-3">
             {t("services.title")}
           </h1>
-       <div className="w-64 h-[1px] bg-slate-400 mx-auto my-8"></div>
+          <div className="w-64 h-[1px] mx-auto my-8"></div>
           <div className="container mx-auto p-4 mb-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-6">
             {services.map((service, index) => (
-              <div key={index} className="flip-card">
-                <div className="flip-card-inner">
-                  <div className="flip-card-front">
-                    <div className="flex flex-col items-center justify-center h-full">
+              <div
+                key={index}
+                className="group relative w-full h-64 [perspective:1000px]"
+              >
+                {/* inner */}
+                <div className="relative w-full h-full transition-transform duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                  {/* front */}
+                  <div className="absolute inset-0 flex items-center justify-center rounded-lg bg-white shadow-md [backface-visibility:hidden]">
+                    <div className="flex flex-col items-center justify-center px-4 text-center">
                       <h2 className="text-xl font-semibold mb-2">
                         {service.name}
                       </h2>
-                      <span className="text-green-500 text-center mb-4">
+                      <span className="text-green-500 mb-4">
                         {service.available}
                       </span>
-                      <div className="flip-icon-container">
-                        <PiArrowLeftLight className="flip-arrow" />
-                        <PiArrowRightLight className="flip-arrow" />
+                      <div className="flex items-center gap-2 opacity-60">
+                        <PiArrowLeftLight className="w-6 h-6" />
+                        <PiArrowRightLight className="w-6 h-6" />
                       </div>
                     </div>
                   </div>
-                  <div className="flip-card-back overflow-y-auto pt-6 bg-primary">
+
+                  {/* back */}
+                  <div
+                    className="absolute inset-0 rounded-lg !bg-btnHoverBg shadow-md [transform:rotateY(180deg)] [backface-visibility:hidden] 
+             flex items-center justify-center text-center p-6"
+                  >
                     <p>{service.description}</p>
                   </div>
                 </div>
