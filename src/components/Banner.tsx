@@ -1,67 +1,57 @@
 import React, { useEffect, useRef, useState } from "react";
-// import { useTranslation } from "react-i18next";
 import Button from "./Button";
 import TPI from "../images/TPI.webp";
 
 const Banner: React.FC = () => {
-  // const { t } = useTranslation();
-  const [isVisible, setIsVisible] = useState(false); // To track when the banner is in the viewport
-  const bannerRef = useRef<HTMLDivElement>(null); // Reference to the banner element
+  const [isVisible, setIsVisible] = useState(false);
+  const bannerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const bannerElement = bannerRef.current;
-
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setIsVisible(true); // Trigger animation when the banner comes into the viewport
-          } else {
-            setIsVisible(false); // Optionally remove animation when the banner leaves the viewport
-          }
+          setIsVisible(entry.isIntersecting);
         });
       },
-      { threshold: 0.1 } // Trigger when 10% of the banner is visible
+      { threshold: 0.1 }
     );
 
-    if (bannerElement) {
-      observer.observe(bannerElement);
-    }
-
+    if (bannerElement) observer.observe(bannerElement);
     return () => {
-      if (bannerElement) {
-        observer.unobserve(bannerElement); // Clean up observer when component unmounts
-      }
+      if (bannerElement) observer.unobserve(bannerElement);
     };
   }, []);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
+    if (element) element.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
     <div
       ref={bannerRef}
-      className={`text-white text-center shadow-lg mb-16 mt-16 md:mb-32 md:mt-32 max-w-[80vw] mx-auto overflow-hidden ${
-        isVisible ? "slide-in" : ""
-      }`}
+      className={`relative mb-16 mt-16 md:mb-32 md:mt-32 max-w-[90vw] md:max-w-[1000px] mx-auto overflow-hidden 
+                 rounded-2xl shadow-2xl ${isVisible ? "slide-in" : ""}`}
     >
+      {/* Imagine cu efect de zoom la hover */}
       <img
         src={TPI}
         alt="TPI OFFER"
-        width={800}
-        height={450}
-        className="w-full max-w-[800px] h-auto"
+        className="w-full h-auto object-cover transform transition-transform duration-700 ease-in-out hover:scale-105"
       />
 
-      <Button
-        onClick={() => scrollToSection("buy-now-section")}
-        textKey="banner.learn_more"
-        additionalClasses="my-2 text-xs md:text-sm"
-      />
+      {/* Overlay gradient */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+
+      {/* Conținut centrat */}
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-white px-6">
+        <Button
+          onClick={() => scrollToSection("buy-now-section")}
+          textKey="banner.learn_more"
+          additionalClasses="text-xs md:text-sm bg-logoBlue"
+        />
+      </div>
     </div>
   );
 };

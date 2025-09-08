@@ -19,7 +19,7 @@ const Button: React.FC<ButtonProps> = ({
       onClick={onClick}
       className={`shadow-xl sm:mt-4 bg-secondary text-textColor py-2 px-10 md:px-16 sm:px-6 rounded-md font-semibold text-lg 
               hover:bg-logoBlue hover:text-white 
-              transition duration-500 ease-in-out transform hover:scale-90 sm:hover:scale-105 hover:shadow-lg ${additionalClasses}`}
+              transition duration-500 ease-in-out transform hover:scale-105 sm:hover:scale-105 hover:shadow-lg ${additionalClasses}`}
     >
       {t(textKey)}
     </button>

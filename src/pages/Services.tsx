@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet-async";
 import "../index.css";
 import { PiArrowLeftLight, PiArrowRightLight } from "react-icons/pi";
 import Banner from "../components/Banner";
+import { Icon } from "@iconify/react";
 
 export interface ServicesRef {
   scrollToPackages: () => void;
@@ -176,9 +177,11 @@ const Services = React.forwardRef((props, ref) => {
                       <span className="text-green-500 mb-4">
                         {service.available}
                       </span>
-                      <div className="flex items-center gap-2 opacity-60">
-                        <PiArrowLeftLight className="w-6 h-6" />
-                        <PiArrowRightLight className="w-6 h-6" />
+                      <div className="flex items-center justify-center opacity-60">
+                        <Icon
+                          icon="mdi:rotate-3d-variant"
+                          className="w-7 h-7 text-slate-500"
+                        />
                       </div>
                     </div>
                   </div>
