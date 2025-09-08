@@ -103,7 +103,7 @@ const CarPackages = forwardRef<HTMLDivElement, CarPackagesProps>(
           />
         </Helmet>
 
-        <section className="container mx-auto px-4 py-16">
+        <section id="car-packages"  className="container mx-auto px-4 py-16">
           <h1 className="text-center text-3xl md:text-4xl font-bold mb-2">
             {t("carPackages.title")}
           </h1>

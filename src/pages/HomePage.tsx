@@ -14,6 +14,7 @@ import BuyNowPayLater from "./BuyNowPayLater";
 const HomePage: React.FC = () => {
   const { t } = useTranslation();
   const aboutPageRef = useRef<HTMLDivElement>(null);
+  const contactPageRef = useRef<HTMLDivElement>(null);
   const [animate, setAnimate] = useState(false);
 
   const scrollToAboutPage = () => {
@@ -21,6 +22,14 @@ const HomePage: React.FC = () => {
       aboutPageRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  const scrollToContactPage = () => {
+    if (contactPageRef.current) {
+      contactPageRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+
 
   useEffect(() => {
     setAnimate(true);
@@ -118,7 +127,8 @@ const HomePage: React.FC = () => {
     <div id="home" className="overflow-x-hidden max-w-full mx-auto">
       <Helmet>
         <title>
-          Acasă | Școala de șoferi TopalX | Școala de șoferi apreciată pentru profesionalism și rezultate excelente în București.
+          Acasă | Școala de șoferi TopalX | Școala de șoferi apreciată pentru
+          profesionalism și rezultate excelente în București.
         </title>
         <meta
           name="description"
@@ -171,13 +181,13 @@ const HomePage: React.FC = () => {
       </Helmet>
 
       <div
-        className={`bg-custom-home bg-cover bg-center bg-fixed flex flex-col items-center justify-center shadow-custom pb-28 mt-0 text-white px-4 sm:p-16 text-center mb-10 h-auto pt-32 md:pt-48 md:pb-48 ${
+        className={`bg-custom-home bg-cover bg-center bg-fixed flex flex-col items-center justify-center shadow-custom pb-28 mt-0 text-white px-4 sm:p-16 text-center mb-10 h-auto pt-48 md:pt-48 md:pb-48 ${
           window.innerWidth > 850 ? "bg-fixed" : "bg-scroll"
         }`}
       >
         {/* <SnowfallCanvas /> */}
         <h1
-          className={`mt-2 text-xl sm:text-4xl font-extrabold text-white mb-4 sm:mb-10 leading-normal bg-black/70 w-fit rounded-md px-2 ${
+          className={`mt-2 text-xl sm:text-4xl font-extrabold text-white mb-4 sm:mb-10 leading-normal backdrop-blur-lg  w-fit rounded-md px-2 ${
             animate ? "slide-in" : ""
           }`}
         >
@@ -186,38 +196,68 @@ const HomePage: React.FC = () => {
         </h1>
 
         <p
-          className={`text-lg sm:text-2xl md:text-3xl text-white mt-2 sm:mt-4 md:leading-normal -tracking-normal bg-black/70 w-fit rounded-md ${
+          className={`text-lg sm:text-2xl md:text-3xl text-white mt-2 sm:mt-4 md:leading-normal -tracking-normal backdrop-blur-lg  w-fit rounded-md ${
             animate ? "slide-in" : ""
           }`}
         >
           {t("home.description")}
         </p>
-
-        <Button
-          onClick={scrollToAboutPage}
-          textKey="home.learn_more"
-          additionalClasses="mt-10 md:mt-14"
-        />
+        <div className="flex flex-col md:flex-row gap-2 ">
+          <Button
+            onClick={scrollToContactPage}
+            textKey="home.learn_more"
+            additionalClasses="mt-10 md:mt-14"
+          />
+          <Button
+            onClick={scrollToAboutPage }
+            textKey="home.learn_more1"
+            additionalClasses="mt-4 md:mt-10 md:mt-14 bg-transparent hover:bg-secondary border-2 border-secondary text-white hover:text-textColor "
+          />
+        </div>
       </div>
 
       <div ref={aboutPageRef}>
-        <Suspense fallback={<div className="text-center p-8">Se încarcă prezentarea...</div>}>
+        <Suspense
+          fallback={
+            <div className="text-center p-8">Se încarcă prezentarea...</div>
+          }
+        >
           <AboutPage />
         </Suspense>
 
-        <Suspense fallback={<div className="text-center p-8">Se încarcă galeria...</div>}>
+        <Suspense
+          fallback={
+            <div className="text-center p-8">Se încarcă galeria...</div>
+          }
+        >
           <Gallery />
         </Suspense>
 
-        <Suspense fallback={<div className="text-center p-8">Se încarcă oferta...</div>}>
+        <Suspense
+          fallback={<div className="text-center p-8">Se încarcă oferta...</div>}
+        >
           <BuyNowPayLater />
         </Suspense>
 
-        <Suspense fallback={<div className="text-center p-8">Se încarcă pagina de contact...</div>}>
-          <ContactPage />
-        </Suspense>
+        <div ref={contactPageRef}>
+          <Suspense
+            fallback={
+              <div className="text-center p-8">
+                Se încarcă pagina de contact...
+              </div>
+            }
+          >
+            <ContactPage />
+          </Suspense>
+        </div>
 
-        <Suspense fallback={<div className="text-center p-8">Se încarcă secțiunea finală...</div>}>
+        <Suspense
+          fallback={
+            <div className="text-center p-8">
+              Se încarcă secțiunea finală...
+            </div>
+          }
+        >
           <Acasa />
         </Suspense>
       </div>
@@ -226,84 +266,3 @@ const HomePage: React.FC = () => {
 };
 
 export default HomePage;
-
-// import React, { useState, useEffect } from "react";
-// import { Link } from "react-router-dom";
-// import poza1 from "../images/bgHome2.webp";
-// import poza2 from "../images/bg3.webp";
-// import poza3 from "../images/bg4.webp";
-// import "../index.css";
-
-// const HomePage: React.FC = () => {
-//   const [currentSlide, setCurrentSlide] = useState(0);
-//   const backgroundImages = [
-//     {
-//       image: poza1,
-//       title: "Slide 1 Title",
-//       description: "This is the description for Slide 1.",
-//       buttonLabel: "Learn More",
-//       buttonLink: "#about",
-//     },
-//     {
-//       image: poza2,
-//       title: "Slide 2 Title",
-//       description: "This is the description for Slide 2.",
-//       buttonLabel: "Our Services",
-//       buttonLink: "#services",
-//     },
-//     {
-//       image: poza3,
-//       title: "Slide 3 Title",
-//       description: "This is the description for Slide 3.",
-//       buttonLabel: "Contact Us",
-//       buttonLink: "#contact",
-//     },
-//   ];
-
-//   // Update slide every 5 seconds
-//   useEffect(() => {
-//     const intervalId = setInterval(() => {
-//       setCurrentSlide((prevIndex) =>
-//         prevIndex === backgroundImages.length - 1 ? 0 : prevIndex + 1
-//       );
-//     }, 5000); // 5 seconds per slide
-
-//     return () => clearInterval(intervalId);
-//   }, [backgroundImages.length]);
-
-//   return (
-//     <div className="relative overflow-hidden h-screen">
-//       <div className="flex transition-transform duration-1000 ease-in-out"
-//         style={{
-//           transform: `translateX(-${currentSlide * 100}%)`,
-//         }}
-//       >
-//         {backgroundImages.map((slide, index) => (
-//           <div
-//             key={index}
-//             className="w-full h-screen flex-shrink-0 flex flex-col items-center justify-center text-center"
-//             style={{
-//               backgroundImage: `url(${slide.image})`,
-//               backgroundSize: "cover",
-//               backgroundPosition: "center",
-
-//             }}
-//           >
-//             <h1 className="text-4xl font-bold text-white mb-4">
-//               {slide.title}
-//             </h1>
-//             <p className="text-xl text-white mb-6">{slide.description}</p>
-//             <Link
-//               to={slide.buttonLink}
-//               className="bg-white text-black py-2 px-4 rounded-full"
-//             >
-//               {slide.buttonLabel}
-//             </Link>
-//           </div>
-//         ))}
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default HomePage;
