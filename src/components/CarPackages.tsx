@@ -1,13 +1,15 @@
-import React, { ForwardedRef } from "react";
+import React, { forwardRef } from "react";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
+import { Icon } from "@iconify/react";
+
 import mer from "../images/mer.webp";
 import vol from "../images/vol.webp";
 import f3 from "../images/f3.webp";
 import sk1 from "../images/sk1.webp";
 import Offer from "./Offer";
 
-interface CarPackage {
+type CarPackage = {
   name: string;
   price: string;
   transmission: string;
@@ -15,12 +17,13 @@ interface CarPackage {
   features: string[];
   note: string;
   image: string;
-}
+};
 
-const CarPackages = React.forwardRef<HTMLDivElement>(
-  (props, ref: ForwardedRef<HTMLDivElement>) => {
+type CarPackagesProps = {};
+
+const CarPackages = forwardRef<HTMLDivElement, CarPackagesProps>(
+  (_props, ref) => {
     const { t } = useTranslation();
-    // const navigate = useNavigate();
 
     const carPackages: CarPackage[] = [
       {
@@ -85,111 +88,117 @@ const CarPackages = React.forwardRef<HTMLDivElement>(
       },
     ];
 
-    // const goToContactPage = () => {
-    //   navigate("/contact");
-    // };
-
-   
-
     return (
       <div ref={ref}>
         <Helmet>
           <title>
-            Pachete Auto | Scoala de soferi TopalX | Școala de Șoferi din
-            București
+            {t("carPackages.seo.title", "Car Packages | TopalX Driving School")}
           </title>
           <meta
             name="description"
-            content="Descoperă pachetele auto oferite de Scoala de soferi TopalX - școală de șoferi din București. Alege dintre mașini moderne și instrucție profesională pentru a obține permisul auto."
+            content={t(
+              "carPackages.seo.description",
+              "Choose from modern cars and professional training."
+            )}
           />
-          <meta
-            name="keywords"
-            content="pachete auto, școală de șoferi, Scoala de soferi TopalX, cursuri de conducere, permis auto, mașini moderne, școală de șoferi București, instructori profesioniști, transmisie manuală, transmisie automată"
-          />
-          <meta name="author" content="Scoala de soferi TopalX" />
-          <meta name="robots" content="index, follow" />
-          <meta
-            property="og:title"
-            content="Pachete Auto - Scoala de soferi TopalX - Școala de Șoferi din București"
-          />
-          <meta
-            property="og:description"
-            content="Descoperă pachetele auto oferite de Scoala de soferi TopalX - școală de șoferi din București. Alege dintre mașini moderne și instrucție profesională pentru a obține permisul auto."
-          />
-          <meta
-            property="og:url"
-            content="https://www.topalxscoalaauto.ro/car-packages"
-          />
-          <meta property="og:type" content="website" />
-          <meta
-            property="og:image"
-            content="https://www.topalxscoalaauto.ro/images/car-packages.webp"
-          />
-          <meta property="og:locale" content="ro_RO" />
-          <meta property="og:site_name" content="TopalX Scoala Auto" />
-          <meta property="twitter:card" content="summary_large_image" />
-          <meta
-            property="twitter:title"
-            content="Pachete Auto - Scoala de soferi TopalX - Școala de Șoferi din București"
-          />
-          <meta
-            property="twitter:description"
-            content="Descoperă pachetele auto oferite de Scoala de soferi TopalX - școală de șoferi din București. Alege dintre mașini moderne și instrucție profesională pentru a obține permisul auto."
-          />
-          <meta
-            property="twitter:image"
-            content="https://www.topalxscoalaauto.ro/images/car-packages.webp"
-          />
-          <meta property="twitter:site" content="@TopalXScoalaAuto" />
-          <meta property="twitter:creator" content="@TopalXScoalaAuto" />
         </Helmet>
-        <h1 className="text-3xl font-bold text-center mb-4 md:mb-28 md:mt-28 pl-3 pr-3 textShadow-mt">
-          {t("carPackages.title")}
-        </h1>
-         {/* <div className="w-64 h-[1px] bg-slate-400 mx-auto my-8"></div> */}
-        {carPackages.map((pkg, index) => (
-          <section
-            key={index}
-            className={`container p-2 mx-auto md:mx-auto flex flex-col  items-center justify-around mb-16 md:flex-row ${
-              index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-            }`}
-          >
-            <div className="p-2 rounded-md  mb-4 mt-4 ml-2 mr-2 bg-white md:w-1/3">
-              <h2 className="text-2xl font-semibold mb-4">{pkg.name}</h2>
-              
-              <p>
-                <strong>{t("carPackages.price")}:</strong>
-                <span className="font-bold text-xl"> {pkg.price}</span>
-              </p>
-              <p>
-                <strong>{t("carPackages.transmission")}:</strong>{" "}
-                {pkg.transmission}
-              </p>
-              <p>
-                <strong>{t("carPackages.fuelType")}:</strong> {pkg.fuelType}
-              </p>
-              <ul className="list-disc list-inside">
-                {pkg.features.map((feature, idx) => (
-                  <li key={idx}>{feature} &#10003;</li>
-                ))}
-              </ul>
-              <p className="text-red-500">{pkg.note}</p>
-            </div>
-            <div className="w-full md:w-1/2 flex justify-center shadow-2xl backdrop-blur-sm border-black border-y-2">
-              <img
-                src={pkg.image}
-                alt={pkg.name}
-                className="rounded-md w-full h-full max-w-lg md:max-w-lg object-cover pr-20 pl-20 md:mx-auto"
-                loading="lazy"
-              />
-            </div>
-          </section>
-        ))}
-        <Offer />
-        
+
+        <section className="container mx-auto px-4 py-16">
+          <h1 className="text-center text-3xl md:text-4xl font-bold mb-2">
+            {t("carPackages.title")}
+          </h1>
+          <div className="w-64 h-[1px] bg-slate-400 mx-auto my-8"></div>
+
+          {/* GRID of pricing-style cards */}
+          <div className="grid gap-6 md:gap-8 md:grid-cols-2">
+            {carPackages.map((pkg, i) => (
+              <article
+                key={i}
+                className="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl"
+              >
+                {/* Image */}
+                <div className="p-4">
+                  <div className="aspect-[16/9] overflow-hidden rounded-xl bg-slate-50">
+                    <img
+                      src={pkg.image}
+                      alt={pkg.name}
+                      loading="lazy"
+                      decoding="async"
+                      className="h-full w-full object-contain transition-transform duration-500 group-hover:scale-[1.03]"
+                    />
+                  </div>
+                </div>
+
+                {/* Text content */}
+                <div className="px-5 pb-6">
+                  <div className="flex items-start justify-between gap-3">
+                    <h2 className="text-xl font-semibold">{pkg.name}</h2>
+                    <span className="shrink-0 rounded-full bg-emerald-50 px-3 py-1 text-sm font-semibold text-emerald-700 ring-1 ring-emerald-100">
+                      {pkg.price}
+                    </span>
+                  </div>
+
+                  {/* Meta badges */}
+                  <div className="mt-3 flex flex-wrap gap-2">
+                    <span className="inline-flex items-center gap-1 rounded-full bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-700">
+                      <Icon
+                        icon="mdi:transmission-tower"
+                        className="text-slate-500"
+                      />
+                      {t("carPackages.transmission")}: {pkg.transmission}
+                    </span>
+                    <span className="inline-flex items-center gap-1 rounded-full bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-700">
+                      <Icon
+                        icon="mdi:gas-station-outline"
+                        className="text-slate-500"
+                      />
+                      {t("carPackages.fuelType")}: {pkg.fuelType}
+                    </span>
+                  </div>
+
+                  {/* Features */}
+                  <ul className="mt-4 space-y-2">
+                    {pkg.features.map((feature, idx) => (
+                      <li
+                        key={idx}
+                        className="flex items-start gap-2 text-slate-700"
+                      >
+                        <Icon
+                          icon="mdi:check-circle-outline"
+                          className="mt-[2px] text-emerald-600"
+                        />
+                        <span>{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+
+                  {/* Note + CTA */}
+                  <p className="mt-3 text-sm text-red-600">{pkg.note}</p>
+
+                  <div className="mt-5 flex flex-wrap gap-3">
+                    <a
+                      href="#contact"
+                      className="inline-flex items-center justify-center rounded-xl bg-blue-600 px-4 py-2 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-blue-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-600/40"
+                    >
+                      {t("common.cta.contact", "Contact")}
+                    </a>
+                  </div>
+                </div>
+
+                {/* subtle accent ring on hover */}
+                <span className="pointer-events-none absolute inset-0 rounded-2xl ring-1 ring-transparent transition group-hover:ring-blue-600/20" />
+              </article>
+            ))}
+          </div>
+
+          <div className="mt-12">
+            <Offer />
+          </div>
+        </section>
       </div>
     );
   }
 );
 
+CarPackages.displayName = "CarPackages";
 export default CarPackages;

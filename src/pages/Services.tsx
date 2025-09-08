@@ -151,7 +151,7 @@ const Services = React.forwardRef((props, ref) => {
         </Helmet>
 
         <div
-          className={`bg-gradient-to-r from-yellow-50 via-yellow-50 to-yellow-100 p-2 mx-auto md:p-6 mb-16 shadow-lg ${
+          className={`bg-yellow-50 p-2 mx-auto md:p-6 mb-16 shadow-lg ${
             window.innerWidth > 850 ? "bg-fixed" : "bg-scroll"
           }`}
         >

@@ -79,7 +79,7 @@ const TipsAndTricks: React.FC = () => {
  <div className="w-64 h-[1px] bg-slate-400 mx-auto my-8"></div>
       {/* Tips Section */}
       <div className="tips-section my-16">
-  <h3 className="text-xl font-semibold mb-4 flex items-center">
+  <h3 className="text-xl font-semibold mb-4 flex items-center ">
     <span>{t("tipsAndTricks.tipsTitle")}</span>
     <FaLightbulb className="ml-2 text-xl" /> {/* Set a consistent size */}
   </h3>

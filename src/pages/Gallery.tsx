@@ -1,8 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useRef, useState } from "react";
 import { Helmet } from "react-helmet-async";
-import ImageGallery, { ReactImageGalleryItem } from "react-image-gallery";
-import "react-image-gallery/styles/css/image-gallery.css";
-import "../index.css";
 import { useTranslation } from "react-i18next";
 
 import e1 from "../images/e1.webp";
@@ -32,125 +29,115 @@ import e29 from "../images/e29.webp";
 import e30 from "../images/e30.webp";
 import e31 from "../images/e31.webp";
 
-const images: ReactImageGalleryItem[] = [
-  { original: e1, thumbnail: e1 },
-  { original: e2, thumbnail: e2 },
-  { original: e3, thumbnail: e3 },
-  { original: e6, thumbnail: e6 },
-  { original: e7, thumbnail: e7 },
-  { original: e9, thumbnail: e9 },
-  { original: e10, thumbnail: e10 },
-  { original: e11, thumbnail: e11 },
-  { original: e12, thumbnail: e12 },
-  { original: e13, thumbnail: e13 },
-  { original: e14, thumbnail: e14 },
-  { original: e16, thumbnail: e16 },
-  { original: e17, thumbnail: e17 },
-  { original: e18, thumbnail: e18 },
-  { original: e19, thumbnail: e19 },
-  { original: e20, thumbnail: e20 },
-  { original: e21, thumbnail: e21 },
-  { original: e22, thumbnail: e22 },
-  { original: e23, thumbnail: e23 },
-  { original: e24, thumbnail: e24 },
-  { original: e25, thumbnail: e25 },
-  { original: e26, thumbnail: e26 },
-  { original: e27, thumbnail: e27 },
-  { original: e29, thumbnail: e29 },
-  { original: e30, thumbnail: e30 },
-  { original: e31, thumbnail: e31 },
+type ImgItem = { src: string; alt?: string };
+
+const items: ImgItem[] = [
+  { src: e1, alt: "Elevi și instructori" },
+  { src: e2, alt: "Elevi și instructori" },
+  { src: e3, alt: "Elevi și instructori" },
+  { src: e6, alt: "Elevi și instructori" },
+  { src: e7, alt: "Elevi și instructori" },
+  { src: e9, alt: "Elevi și instructori" },
+  { src: e10, alt: "Elevi și instructori" },
+  { src: e11, alt: "Elevi și instructori" },
+  { src: e12, alt: "Elevi și instructori" },
+  { src: e13, alt: "Elevi și instructori" },
+  { src: e14, alt: "Elevi și instructori" },
+  { src: e16, alt: "Elevi și instructori" },
+  { src: e17, alt: "Elevi și instructori" },
+  { src: e18, alt: "Elevi și instructori" },
+  { src: e19, alt: "Elevi și instructori" },
+  { src: e20, alt: "Elevi și instructori" },
+  { src: e21, alt: "Elevi și instructori" },
+  { src: e22, alt: "Elevi și instructori" },
+  { src: e23, alt: "Elevi și instructori" },
+  { src: e24, alt: "Elevi și instructori" },
+  { src: e25, alt: "Elevi și instructori" },
+  { src: e26, alt: "Elevi și instructori" },
+  { src: e27, alt: "Elevi și instructori" },
+  { src: e29, alt: "Elevi și instructori" },
+  { src: e30, alt: "Elevi și instructori" },
+  { src: e31, alt: "Elevi și instructori" }
 ];
 
 const Gallery: React.FC = () => {
   const { t } = useTranslation();
-  const [animate, setAnimate] = useState(false);
+  const dialogRef = useRef<HTMLDialogElement>(null);
+  const [active, setActive] = useState<ImgItem | null>(null);
 
-  useEffect(() => {
-    setAnimate(true);
-  }, []);
+  const open = (item: ImgItem) => {
+    setActive(item);
+    dialogRef.current?.showModal();
+  };
+  const close = () => dialogRef.current?.close();
 
-  const renderItem = (item: ReactImageGalleryItem) => (
-    <img
-      src={item.original}
-      alt="Fotografii cu elevi si instructori"
-      loading="lazy"
-      className="w-full max-h-[100vh] object-contain mx-auto"
-    />
-  );
   return (
-    <div id="gallery" className={`${animate ? "slide-in" : ""}`}>
+    <div id="gallery" className="fade-in">
       <Helmet>
         <title>
-          Galerie Foto | Scoala de soferi TopalX | Școala de Șoferi din
-          București
+          Galerie Foto | Scoala de soferi TopalX | Școala de Șoferi din București
         </title>
         <meta
           name="description"
           content="Explorează galeria foto a Scoala de soferi TopalX - școala de șoferi din București. Vezi imagini cu instructorii noștri profesioniști, mașinile moderne și cursurile de conducere defensive."
         />
-        <meta
-          name="keywords"
-          content="galerie foto școală de șoferi, imagini școală de șoferi, instructori profesioniști, mașini moderne, cursuri de conducere defensive, permis auto, TopalX București"
-        />
-        <meta name="author" content="Scoala de soferi TopalX" />
-        <meta name="robots" content="index, follow" />
-        <meta
-          property="og:title"
-          content="Galerie Foto - Scoala de soferi TopalX - Școala de Șoferi din București"
-        />
-        <meta
-          property="og:description"
-          content="Explorează galeria foto a Scoala de soferi TopalX - școala de șoferi din București. Vezi imagini cu instructorii noștri profesioniști, mașinile moderne și cursurile de conducere defensive."
-        />
-        <meta
-          property="og:url"
-          content="https://www.topalxscoalaauto.ro/gallery"
-        />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:image"
-          content="https://www.topalxscoalaauto.ro/images/e2.webp"
-        />
-        <meta property="og:locale" content="ro_RO" />
-        <meta property="og:site_name" content="TopalX Scoala Auto" />
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta
-          property="twitter:title"
-          content="Galerie Foto - Scoala de soferi TopalX - Școala de Șoferi din București"
-        />
-        <meta
-          property="twitter:description"
-          content="Explorează galeria foto a Scoala de soferi TopalX - școala de șoferi din București. Vezi imagini cu instructorii noștri profesioniști, mașinile moderne și cursurile de conducere defensive."
-        />
-        <meta
-          property="twitter:image"
-          content="https://www.topalxscoalaauto.ro/images/e19.webp"
-        />
-        <meta property="twitter:site" content="@TopalXScoalaAuto" />
-        <meta property="twitter:creator" content="@TopalXScoalaAuto" />
       </Helmet>
 
-      <div className="shadow-xl container mx-auto rounded-md p-4 my-24 border-2 border-secondary">
-        <h2 className="text-center text-3xl font-bold  mt-16 pl-4 pr-4">
+      <div className="container mx-auto px-4 py-16">
+        <h2 className="text-center text-3xl font-bold">
           {t("gallery.galleryTitle")}
         </h2>
-         <div className="w-64 h-[1px] bg-slate-400 mx-auto my-8"></div>
-        <p className="text-center mt-16 mb-16 md:px-24">
+        <div className="w-24 h-[2px] bg-slate-300 mx-auto my-6" />
+        <p className="text-center text-slate-600 mb-10">
           {t("gallery.galleryDescription")}
         </p>
-        <div className="gallery-wrapper">
-          <ImageGallery
-            items={images}
-            showThumbnails={false}
-            showPlayButton={true}
-            showFullscreenButton={true}
-            showIndex={true}
-            autoPlay={false}
-            slideDuration={300}
-            slideInterval={2000}
-            renderItem={renderItem}
-          />
+
+        {/* Grid */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
+          {items.map((it, i) => (
+            <button
+              key={i}
+              onClick={() => open(it)}
+              className="group relative aspect-[4/3] overflow-hidden rounded-lg bg-slate-100"
+              aria-label={`Deschide imaginea ${i + 1}`}
+            >
+              <img
+                src={it.src}
+                alt={it.alt ?? "galerie"}
+                loading="lazy"
+                decoding="async"
+                className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+              />
+              <span className="pointer-events-none absolute inset-x-0 bottom-0 m-2 rounded-md bg-black/40 px-2 py-1 text-xs text-white opacity-0 backdrop-blur-sm transition-opacity duration-200 group-hover:opacity-100">
+                {it.alt ?? "TopalX"}
+              </span>
+            </button>
+          ))}
         </div>
+
+        {/* Lightbox dialog */}
+        <dialog
+          ref={dialogRef}
+          className="backdrop:bg-black/70 rounded-xl p-0 outline-none"
+          onClose={() => setActive(null)}
+        >
+          <div className="relative">
+            <button
+              onClick={close}
+              className="absolute right-3 top-3 z-10 rounded-full bg-black/60 px-3 py-1 text-white text-sm"
+              aria-label="Închide"
+            >
+              ✕
+            </button>
+            {active && (
+              <img
+                src={active.src}
+                alt={active.alt ?? "galerie"}
+                className="max-h-[85vh] w-auto object-contain rounded-xl"
+              />
+            )}
+          </div>
+        </dialog>
       </div>
     </div>
   );

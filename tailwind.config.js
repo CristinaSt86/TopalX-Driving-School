@@ -35,7 +35,7 @@ module.exports = {
       },
       scale: ["hover"],
       boxShadow: {
-        custom: "0 0 10px 5px rgba(0, 0, 0, 0.5)",
+        custom: "0 0 10px 5px rgba(0, 0, 0, 0.2)",
         custom2: "0 0 10px 5px rgba(255, 255, 255, 0.7)",
       },
       backgroundImage: {
