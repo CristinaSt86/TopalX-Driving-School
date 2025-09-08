@@ -3,7 +3,6 @@ import { useTranslation } from "react-i18next";
 import CarPackages from "../components/CarPackages";
 import { Helmet } from "react-helmet-async";
 import "../index.css";
-import { PiArrowLeftLight, PiArrowRightLight } from "react-icons/pi";
 import Banner from "../components/Banner";
 import { Icon } from "@iconify/react";
 
