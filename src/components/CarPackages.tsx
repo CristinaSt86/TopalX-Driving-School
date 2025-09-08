@@ -175,14 +175,14 @@ const CarPackages = forwardRef<HTMLDivElement, CarPackagesProps>(
                   {/* Note + CTA */}
                   <p className="mt-3 text-sm text-red-600">{pkg.note}</p>
 
-                  <div className="mt-5 flex flex-wrap gap-3">
+                  {/* <div className="mt-5 flex flex-wrap gap-3">
                     <a
                       href="#contact"
                       className="inline-flex items-center justify-center rounded-xl bg-blue-600 px-4 py-2 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-blue-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-600/40"
                     >
                       {t("common.cta.contact", "Contact")}
                     </a>
-                  </div>
+                  </div> */}
                 </div>
 
                 {/* subtle accent ring on hover */}
