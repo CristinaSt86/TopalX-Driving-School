@@ -202,7 +202,7 @@ const HomePage: React.FC = () => {
         >
           {t("home.description")}
         </p>
-        <div className="flex flex-col md:flex-row gap-2 ">
+        <div className="flex flex-col md:flex-row gap-2 md:gap-10 ">
           <Button
             onClick={scrollToContactPage}
             textKey="home.learn_more"
