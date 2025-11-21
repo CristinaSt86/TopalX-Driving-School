@@ -35,8 +35,8 @@ const Navigation: React.FC<NavigationProps> = ({ isMobileView }) => {
   return (
     <ErrorBoundary>
       <SidebarIcons />
-      <nav className="p-3 md:py-2 font-semibold text-white bg-black/50 backdrop-blur-sm md:rounded-2xl md:shadow-md">
-        <div className="container mx-auto flex justify-between items-center ">
+      <nav className="p-3 md:py-2 font-semibold text-white md:bg-black/50 md:backdrop-blur-sm md:rounded-2xl md:shadow-md">
+        <div className="container mx-auto flex justify-between items-center">
           {isMobileView && (
             <HamburgerButton
               isOpen={isOpen}
