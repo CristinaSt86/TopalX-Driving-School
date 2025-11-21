@@ -19,7 +19,7 @@ const DesktopMenu: React.FC<DesktopMenuProps> = ({ handleMenuClick }) => {
   const { t } = useTranslation();
 
   return (
-    <ul className="hidden md:flex items-center space-x-6">
+    <ul className="hidden md:flex items-center space-x-6 ">
       {menuItems.map((item) => (
         <li key={item.id}>
           <button onClick={() => handleMenuClick(item.id)} className={buttonClassName}>

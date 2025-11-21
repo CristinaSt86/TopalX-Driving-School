@@ -38,7 +38,7 @@ const Banner: React.FC = () => {
       <img
         src={TPI}
         alt="TPI OFFER"
-        className="w-full h-auto object-cover transform transition-transform duration-700 ease-in-out hover:scale-105"
+        className="w-full h-24 object-cover transform transition-transform duration-700 ease-in-out hover:scale-105"
       />
 
       {/* Overlay gradient */}

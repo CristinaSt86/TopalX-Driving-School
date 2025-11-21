@@ -126,7 +126,7 @@ const Testimonials = forwardRef<TestimonialsHandle, TestimonialsProps>(
           <meta property="twitter:creator" content="@TopalXScoalaAuto" />
         </Helmet>
 
-        <div className=" mx-auto p-4 my-24">
+        <div className=" mx-auto p-4 my-16">
           <h2 className="text-3xl font-bold text-center mt-8 mb-10 pl-3 pr-3">
             {t("testimonials.title")}
           </h2>

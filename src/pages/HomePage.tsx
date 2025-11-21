@@ -8,6 +8,7 @@ import "../index.css";
 import Button from "../components/Button";
 import Acasa from "../components/Acasa";
 import BuyNowPayLater from "./BuyNowPayLater";
+import SnowfallCanvas from "../components/SnowfallCanvas";
 //import Snowflakes from "../components/Snowflakes";
 //import SnowfallCanvas from "../components/SnowfallCanvas";
 
@@ -28,8 +29,6 @@ const HomePage: React.FC = () => {
       contactPageRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
-
-
 
   useEffect(() => {
     setAnimate(true);
@@ -181,37 +180,44 @@ const HomePage: React.FC = () => {
       </Helmet>
 
       <div
-        className={`bg-custom-home bg-cover bg-center bg-fixed flex flex-col items-center justify-center shadow-custom pb-28 mt-0 text-white px-4 sm:p-16 text-center mb-10 h-auto pt-48 md:pt-48 md:pb-48 ${
-          window.innerWidth > 850 ? "bg-fixed" : "bg-scroll"
-        }`}
+        className={`bg-custom-home bg-cover bg-center bg-fixed flex flex-col items-center justify-center 
+  shadow-custom pb-28 mt-0 text-white px-4 sm:p-16 text-center mb-10 h-auto pt-48 md:pt-48 md:pb-48 ${
+    window.innerWidth > 850 ? "bg-fixed" : "bg-scroll"
+  }`}
       >
-        {/* <SnowfallCanvas /> */}
-        <h1
-          className={`mt-2 text-xl sm:text-4xl font-extrabold text-white mb-4 sm:mb-10 leading-normal backdrop-blur-lg  w-fit rounded-md px-2 ${
-            animate ? "slide-in" : ""
-          }`}
-        >
-          {t("home.title2")}{" "}
-          <span className="text-secondary">{t("home.school")}</span> TopalX!
-        </h1>
+          <SnowfallCanvas /> 
+        {/* Container unic pentru titlu + subtitlu */}
+        <div className="bg-black/50 backdrop-blur-sm p-5 sm:p-6 rounded-xl shadow-xl shadow-black/30 max-w-[90%] mx-auto">
+  <h1
+    className={`text-xl sm:text-4xl font-extrabold text-white leading-normal ${
+      animate ? "slide-in" : ""
+    }`}
+  >
+    {t("home.title2")}{" "}
+    <span className="text-secondary">{t("home.school")}</span> TopalX!
+  </h1>
 
-        <p
-          className={`text-lg sm:text-2xl md:text-3xl text-white mt-2 sm:mt-4 md:leading-normal -tracking-normal backdrop-blur-lg  w-fit rounded-md ${
-            animate ? "slide-in" : ""
-          }`}
-        >
-          {t("home.description")}
-        </p>
-        <div className="flex flex-col md:flex-row gap-2 md:gap-10 ">
+  <p
+    className={`text-lg sm:text-2xl md:text-3xl text-white mt-8 md:leading-normal ${
+      animate ? "slide-in" : ""
+    }`}
+  >
+    {t("home.description")}
+  </p>
+</div>
+
+
+        {/* Butoanele */}
+        <div className="flex flex-col mt-10 md:flex-row gap-2 md:gap-10">
           <Button
             onClick={scrollToContactPage}
             textKey="home.learn_more"
             additionalClasses="mt-10 md:mt-14"
           />
           <Button
-            onClick={scrollToAboutPage }
+            onClick={scrollToAboutPage}
             textKey="home.learn_more1"
-            additionalClasses="mt-4 md:mt-10 md:mt-14 bg-transparent hover:bg-secondary border-2 border-secondary text-white hover:text-textColor "
+            additionalClasses="mt-8 md:mt-10 md:mt-14 bg-transparent hover:bg-secondary border-2 border-secondary text-white hover:text-textColor"
           />
         </div>
       </div>

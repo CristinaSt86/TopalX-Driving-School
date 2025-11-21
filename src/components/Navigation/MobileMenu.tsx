@@ -34,7 +34,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, handleMenuClick }) => {
         </li>
       ))}
 
-      <li className="w-full px-6 py-4 border-b border-t border-white/40">
+      <li className="w-full px-6 py-4 border-b border-t border-white/40 ">
         <LanguageButton />
       </li>
 

@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
       <div className="container mx-auto flex flex-col items-center md:flex-row md:justify-between md:items-start gap-8 md:gap-0">
         {/* STÂNGA */}
         <div className="flex flex-col items-center md:items-center md:w-[270px] md:pr-8">
-          <button onClick={() => scrollToSection("home")} className="mb-4">
+          <button onClick={() => scrollToSection("home")} className="mb-10">
             <div className="w-12 h-12 rounded-full overflow-hidden">
               <img
                 src={logo}
@@ -92,28 +92,28 @@ const Footer: React.FC = () => {
           <nav className="flex flex-col text-sm mb-4 text-center md:text-left space-y-2">
             <a
               href="#home"
-              className="hover:text-logoBlue flex items-center justify-center md:justify-start gap-2"
+              className="hover:text-logoBlue flex items-center justify-start md:justify-start gap-2"
             >
               <Icon icon="mdi:home-outline" className="opacity-70" />
               {t("navigation.home")}
             </a>
             <a
               href="#about"
-              className="hover:text-logoBlue flex items-center justify-center md:justify-start gap-2"
+              className="hover:text-logoBlue flex items-center justify-start md:justify-start gap-2"
             >
               <Icon icon="mdi:information-outline" className="opacity-70" />
               {t("navigation.about")}
             </a>
             <a
               href="#services"
-              className="hover:text-logoBlue flex items-center justify-center md:justify-start gap-2"
+              className="hover:text-logoBlue flex items-center justify-startmd:justify-start gap-2"
             >
               <Icon icon="mdi:briefcase-outline" className="opacity-70" />
               {t("navigation.services")}
             </a>
             <a
               href="#contact"
-              className="hover:text-logoBlue flex items-center justify-center md:justify-start gap-2"
+              className="hover:text-logoBlue flex items-center justify-start md:justify-start gap-2"
             >
               <Icon icon="mdi:phone-outline" className="opacity-70" />
               {t("navigation.contact")}
@@ -126,14 +126,14 @@ const Footer: React.FC = () => {
           {/* Legal */}
           <div className="flex flex-col text-sm text-center md:text-left space-y-2">
             <a
-              href="/privacy"
+              href="/privacy-policy"
               className="hover:text-logoBlue flex items-center justify-center md:justify-start gap-2"
             >
               <Icon icon="mdi:shield-account-outline" className="opacity-70" />
               {t("privacyPolicy.title")}
             </a>
             <a
-              href="/terms"
+              href="/terms-and-conditions"
               className="hover:text-logoBlue flex items-center justify-center md:justify-start gap-2"
             >
               <Icon icon="mdi:file-document-outline" className="opacity-70" />
