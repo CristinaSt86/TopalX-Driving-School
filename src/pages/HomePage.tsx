@@ -185,27 +185,26 @@ const HomePage: React.FC = () => {
     window.innerWidth > 850 ? "bg-fixed" : "bg-scroll"
   }`}
       >
-          <SnowfallCanvas /> 
+        <SnowfallCanvas />
         {/* Container unic pentru titlu + subtitlu */}
         <div className="bg-black/50 backdrop-blur-sm p-5 sm:p-6 rounded-xl shadow-xl shadow-black/30 max-w-[90%] mx-auto">
-  <h1
-    className={`text-xl sm:text-4xl font-extrabold text-white leading-normal ${
-      animate ? "slide-in" : ""
-    }`}
-  >
-    {t("home.title2")}{" "}
-    <span className="text-secondary">{t("home.school")}</span> TopalX!
-  </h1>
+          <h1
+            className={`text-xl sm:text-4xl font-extrabold text-white leading-normal ${
+              animate ? "slide-in" : ""
+            }`}
+          >
+            {t("home.title2")}{" "}
+            <span className="text-secondary">{t("home.school")}</span> TopalX!
+          </h1>
 
-  <p
-    className={`text-lg sm:text-2xl md:text-3xl text-white mt-8 md:leading-normal ${
-      animate ? "slide-in" : ""
-    }`}
-  >
-    {t("home.description")}
-  </p>
-</div>
-
+          <p
+            className={`text-lg sm:text-2xl md:text-3xl text-white mt-8 md:leading-normal ${
+              animate ? "slide-in" : ""
+            }`}
+          >
+            {t("home.description")}
+          </p>
+        </div>
 
         {/* Butoanele */}
         <div className="flex flex-col mt-10 md:flex-row gap-2 md:gap-10">
