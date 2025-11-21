@@ -19,7 +19,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, handleMenuClick }) => {
     <ul className="absolute top-0 left-0 w-full bg-black/70 backdrop-blur-md flex flex-col items-start text-left z-50">
       <li className="w-full px-6 pt-6 pb-4 border-b border-white/40">
         <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
-          <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-white">
+          <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-secondary">
             <img src={logo} alt="logo" className="object-cover w-full h-full" />
           </div>
         </Link>
