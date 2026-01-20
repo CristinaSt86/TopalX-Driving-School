@@ -17,13 +17,16 @@ const Button: React.FC<ButtonProps> = ({
   return (
     <button
       onClick={onClick}
-      className={`shadow-xl sm:mt-4 bg-secondary text-textColor
-        py-2 px-6 rounded-md font-semibold text-lg
-        hover:brightness-90 hover:text-textColor
-        transition duration-500 ease-in-out transform hover:scale-105 hover:shadow-lg
-        w-[260px] text-center
-        whitespace-nowrap overflow-hidden text-ellipsis
-        ${additionalClasses}`}
+      className={`shadow-md sm:mt-4 bg-secondary text-textColor
+    py-2 px-6 rounded-md font-semibold text-lg
+    transition-all duration-200 ease-out
+    hover:brightness-95
+    hover:shadow-lg
+    hover:scale-[1.03]
+    focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary/40
+    w-[260px] text-center
+    whitespace-nowrap overflow-hidden text-ellipsis border-2 border-secondary
+    ${additionalClasses}`}
     >
       {t(textKey)}
     </button>
