@@ -46,7 +46,7 @@ module.exports = {
         primary: "rgba(90, 90, 90, 1)",
         secondary: "rgba(250, 206, 37, 1)",
         secondaryHover: "rgba(213, 218, 240, 1)",
-        btnHoverBg:"rgba(213, 218, 240, 1)",
+        btnHoverBg: "rgba(213, 218, 240, 1)",
         blue: "rgba(149, 202, 234, 0.8)",
         textColor: "rgba(51, 51, 51, 1)",
         logo: "rgb(255,241,12)",
@@ -55,7 +55,18 @@ module.exports = {
         customTextBg: "rgba(0, 0, 0, 0.2)",
       },
       fontFamily: {
-        sans: ["Arial", "Helvetica Neue", "Helvetica", "sans-serif"],
+        sans: [
+          "ui-sans-serif",
+          "system-ui",
+          "-apple-system",
+          "BlinkMacSystemFont",
+          "Segoe UI",
+          "Roboto",
+          "Helvetica Neue",
+          "Arial",
+          "Noto Sans",
+          "sans-serif",
+        ],
       },
       keyframes: {
         drive: {

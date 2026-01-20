@@ -150,53 +150,55 @@ const Services = React.forwardRef((props, ref) => {
           </script>
         </Helmet>
 
-        <div
-          className={`bg-yellow-50 p-2 mx-auto md:p-6 mb-16 shadow-lg ${
-            window.innerWidth > 850 ? "bg-fixed" : "bg-scroll"
-          }`}
-        >
-          <h1 className="text-3xl font-bold text-center mt-16 pl-3 pr-3">
-            {t("services.title")}
-          </h1>
-          <div className="w-64 h-[1px] mx-auto my-8"></div>
-          <div className="container mx-auto p-4 mb-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-6">
-            {services.map((service, index) => (
-              <div
-                key={index}
-                className="group relative w-full h-64 [perspective:1000px]"
-              >
-                {/* inner */}
-                <div className="relative w-full h-full transition-transform duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-                  {/* front */}
-                  <div className="absolute inset-0 flex items-center justify-center rounded-lg bg-white shadow-md [backface-visibility:hidden]">
-                    <div className="flex flex-col items-center justify-center px-4 text-center">
-                      <h2 className="text-xl font-semibold mb-2">
-                        {service.name}
-                      </h2>
-                      <span className="text-green-500 mb-4">
-                        {service.available}
-                      </span>
-                      <div className="flex items-center justify-center opacity-60">
-                        <Icon
-                          icon="mdi:rotate-3d-variant"
-                          className="w-7 h-7 text-slate-500"
-                        />
-                      </div>
-                    </div>
-                  </div>
+        <div className="bg-yellow-50/70 py-14 sm:py-16 shadow-sm">
+  {/* WRAPPER max width */}
+  <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8">
+    <header className="text-center">
+      <h1 className="text-3xl sm:text-4xl font-bold text-gray-900">
+        {t("services.title")}
+      </h1>
+      <div className="mx-auto mt-4 h-[2px] w-24 rounded-full bg-logoBlue/60" />
+      <p className="mx-auto mt-4 max-w-2xl text-base sm:text-lg text-gray-700">
+         {t("services.subtitluServ")}
+      </p>
+    </header>
 
-                  {/* back */}
-                  <div
-                    className="absolute inset-0 rounded-lg !bg-btnHoverBg shadow-md [transform:rotateY(180deg)] [backface-visibility:hidden] 
-             flex items-center justify-center text-center p-6"
-                  >
-                    <p>{service.description}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
+    {/* GRID – max-width se aplică prin wrapper */}
+    <div className="mt-10 md:mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+      {services.map((service, index) => (
+        <article
+          key={index}
+          className="
+            group rounded-2xl border border-black/10 bg-white p-6
+            shadow-sm transition hover:-translate-y-0.5 hover:shadow-lg
+          "
+        >
+          <div className="flex items-start justify-between gap-4">
+            <h2 className="text-lg sm:text-xl font-semibold text-gray-900">
+              {service.name}
+            </h2>
+
+            {/* status badge */}
+            <span className="shrink-0 inline-flex items-center rounded-full bg-green-50 px-3 py-1 text-xs font-semibold text-green-700 ring-1 ring-green-200">
+              {service.available}
+            </span>
           </div>
-        </div>
+
+          {/* Description – clamp pentru premium UI (optional) */}
+          <p className="mt-4 text-sm sm:text-base leading-6 text-gray-700 line-clamp-4">
+            {service.description}
+          </p>
+
+          {/* micro CTA */}
+          <div className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-logoBlue">
+    
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</div>
+
 
         <Banner />
         <CarPackages ref={carPackagesRef} />

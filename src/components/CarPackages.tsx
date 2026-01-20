@@ -103,96 +103,138 @@ const CarPackages = forwardRef<HTMLDivElement, CarPackagesProps>(
           />
         </Helmet>
 
-        <section id="car-packages"  className="container mx-auto px-4 pt-16 pb-12">
-          <h1 className="text-center text-3xl md:text-4xl font-bold mb-2">
-            {t("carPackages.title")}
-          </h1>
-          <div className="w-64 h-[1px] bg-slate-400 mx-auto my-8"></div>
+        <section id="car-packages" className="py-16">
+          {/* MAX WIDTH WRAPPER */}
+          <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8">
+            <header className="text-center">
+              <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
+                {t("carPackages.title")}
+              </h1>
+              <div className="mx-auto mt-4 h-[2px] w-24 rounded-full bg-logoBlue/60" />
+              <p className="mx-auto mt-4 max-w-2xl text-base md:text-lg text-gray-700">
+                {t("carPackages.subtitluCars")}
+              </p>
+            </header>
 
-          {/* GRID of pricing-style cards */}
-          <div className="grid gap-6 md:gap-8 md:grid-cols-2">
-            {carPackages.map((pkg, i) => (
-              <article
-                key={i}
-                className="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl"
-              >
-                {/* Image */}
-                <div className="p-4">
-                  <div className="aspect-[16/9] overflow-hidden rounded-xl bg-slate-50">
-                    <img
-                      src={pkg.image}
-                      alt={pkg.name}
-                      loading="lazy"
-                      decoding="async"
-                      className="h-full w-full object-contain transition-transform duration-500 group-hover:scale-[1.03]"
-                    />
-                  </div>
-                </div>
+            {/* GRID */}
+            <div className="mt-10 grid gap-6 md:gap-8 md:grid-cols-2">
+              {carPackages.map((pkg, i) => {
+                const isFeatured = i === 0; // primul pachet “featured”
 
-                {/* Text content */}
-                <div className="px-5 pb-6">
-                  <div className="flex items-start justify-between gap-3">
-                    <h2 className="text-xl font-semibold">{pkg.name}</h2>
-                    <span className="shrink-0 rounded-full bg-emerald-50 px-3 py-1 text-sm font-semibold text-emerald-700 ring-1 ring-emerald-100">
-                      {pkg.price}
-                    </span>
-                  </div>
+                return (
+                  <article
+                    key={i}
+                    className={`
+                    group relative overflow-hidden rounded-2xl border border-slate-200 bg-white
+                    shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl
+                    ${isFeatured ? "md:col-span-2" : ""}
+                  `}
+                  >
+                    {/* Featured badge */}
+                    {isFeatured && (
+                      <div className="absolute left-4 top-4 z-10 inline-flex items-center rounded-full bg-secondary/90 px-3 py-1 text-xs font-semibold text-white shadow-sm">
+                        {t("carPackages.featured.cipReco")}
+                      </div>
+                    )}
 
-                  {/* Meta badges */}
-                  <div className="mt-3 flex flex-wrap gap-2">
-                    <span className="inline-flex items-center gap-1 rounded-full bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-700">
-                      <Icon
-                        icon="mdi:transmission-tower"
-                        className="text-slate-500"
-                      />
-                      {t("carPackages.transmission")}: {pkg.transmission}
-                    </span>
-                    <span className="inline-flex items-center gap-1 rounded-full bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-700">
-                      <Icon
-                        icon="mdi:gas-station-outline"
-                        className="text-slate-500"
-                      />
-                      {t("carPackages.fuelType")}: {pkg.fuelType}
-                    </span>
-                  </div>
+                    <div className={isFeatured ? "md:flex md:gap-6" : ""}>
+                      {/* Image */}
+                      <div className={isFeatured ? "md:w-[46%] p-4" : "p-4"}>
+                        <div className="aspect-[16/9] overflow-hidden rounded-xl bg-slate-50">
+                          <img
+                            src={pkg.image}
+                            alt={pkg.name}
+                            loading="lazy"
+                            decoding="async"
+                            className="h-full w-full object-contain transition-transform duration-500 group-hover:scale-[1.03]"
+                          />
+                        </div>
+                      </div>
 
-                  {/* Features */}
-                  <ul className="mt-4 space-y-2">
-                    {pkg.features.map((feature, idx) => (
-                      <li
-                        key={idx}
-                        className="flex items-start gap-2 text-slate-700"
+                      {/* Text */}
+                      <div
+                        className={
+                          isFeatured
+                            ? "md:w-[54%] px-5 pb-6 md:pt-5"
+                            : "px-5 pb-6"
+                        }
                       >
-                        <Icon
-                          icon="mdi:check-circle-outline"
-                          className="mt-[2px] text-emerald-600"
-                        />
-                        <span>{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
+                        <div className="flex items-start justify-between gap-3">
+                          <h2 className="text-xl font-semibold text-gray-900">
+                            {pkg.name}
+                          </h2>
+                          <span className="shrink-0 rounded-full bg-emerald-50 px-3 py-1 text-sm font-semibold text-emerald-700 ring-1 ring-emerald-100">
+                            {pkg.price}
+                          </span>
+                        </div>
 
-                  {/* Note + CTA */}
-                  <p className="mt-3 text-sm text-red-600">{pkg.note}</p>
+                        {/* Meta badges */}
+                        <div className="mt-3 flex flex-wrap gap-2">
+                          <span className="inline-flex items-center gap-1 rounded-full bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-700">
+                            <Icon
+                              icon="mdi:car-shift-pattern"
+                              className="text-slate-500"
+                            />
+                            {t("carPackages.transmission")}: {pkg.transmission}
+                          </span>
+                          <span className="inline-flex items-center gap-1 rounded-full bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-700">
+                            <Icon icon="mdi:fuel" className="text-slate-500" />
+                            {t("carPackages.fuelType")}: {pkg.fuelType}
+                          </span>
+                        </div>
 
-                  {/* <div className="mt-5 flex flex-wrap gap-3">
-                    <a
-                      href="#contact"
-                      className="inline-flex items-center justify-center rounded-xl bg-blue-600 px-4 py-2 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-blue-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-600/40"
-                    >
-                      {t("common.cta.contact", "Contact")}
-                    </a>
-                  </div> */}
-                </div>
+                        {/* Features */}
+                        <ul className="mt-4 space-y-2">
+                          {pkg.features.map((feature, idx) => (
+                            <li
+                              key={idx}
+                              className="flex items-start gap-2 text-slate-700"
+                            >
+                              <Icon
+                                icon="mdi:check-circle-outline"
+                                className="mt-[2px] text-emerald-600"
+                              />
+                              <span>{feature}</span>
+                            </li>
+                          ))}
+                        </ul>
 
-                {/* subtle accent ring on hover */}
-                <span className="pointer-events-none absolute inset-0 rounded-2xl ring-1 ring-transparent transition group-hover:ring-blue-600/20" />
-              </article>
-            ))}
-          </div>
+                        {/* Note (premium alert) */}
+                        {pkg.note && (
+                          <div className="mt-4 rounded-xl bg-red-50 px-4 py-3 text-sm text-red-700 ring-1 ring-red-100">
+                            {pkg.note}
+                          </div>
+                        )}
 
-          <div className="mt-12">
-            <Offer />
+                        {/* CTA (real) */}
+                        <div className="mt-6 flex flex-wrap gap-3">
+                          <a
+                            href="#contact"
+                            className="inline-flex items-center justify-center rounded-xl bg-secondary px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:opacity-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary/40"
+                          >
+                            {t("carPackages.cta.contact")}
+                          </a>
+
+                          <a
+                            href="tel:+40736470629"
+                            className="inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-800 shadow-sm transition hover:bg-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-400/30"
+                          >
+                            {t("carPackages.cta.call")}
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* subtle accent ring on hover */}
+                    <span className="pointer-events-none absolute inset-0 rounded-2xl ring-1 ring-transparent transition group-hover:ring-logoBlue/20" />
+                  </article>
+                );
+              })}
+            </div>
+
+            <div className="mt-12">
+              <Offer />
+            </div>
           </div>
         </section>
       </div>

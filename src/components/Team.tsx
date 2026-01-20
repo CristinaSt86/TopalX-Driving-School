@@ -11,7 +11,9 @@ import FiatDrive from "../images/FiatDrive.webp";
 import { Link } from "react-router-dom";
 import Button from "./Button";
 
-const Team = React.forwardRef<HTMLDivElement, any>((props, ref) => {
+type TeamProps = any;
+
+const Team = React.forwardRef<HTMLDivElement, TeamProps>((props, ref) => {
   const { t } = useTranslation();
 
   const teamMembers = [
@@ -54,9 +56,7 @@ const Team = React.forwardRef<HTMLDivElement, any>((props, ref) => {
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
+    if (element) element.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -113,77 +113,90 @@ const Team = React.forwardRef<HTMLDivElement, any>((props, ref) => {
         <meta property="twitter:creator" content="@TopalXScoalaAuto" />
       </Helmet>
 
-      <section className="bg-white pb-3 my-24 shadow-2xl">
-        <h2
-          ref={ref}
-          className="text-center text-3xl font-bold text-gray-800 mt-16 pl-3 pr-3 pt-12"
-        >
-          {t("team2.title")}
-        </h2>
-        <div className="w-64 h-[1px] bg-slate-400 mx-auto my-8"></div>
-        <div className="relative w-full h-48 overflow-hidden">
-          <div className="absolute bottom-1 left-0 w-80 h-auto animate-drive">
-            <img src={FiatDrive} alt="Car" />
+      <section className="relative bg-white py-6 md:py-8">
+        {/* car animation (mai “curat”, mai mic) */}
+        <div className="relative mt-4 h-32 overflow-hidden">
+          <div className="absolute bottom-0 left-0 w-56 animate-drive opacity-90">
+            <img src={FiatDrive} alt="Car" loading="lazy" />
           </div>
         </div>
+        {/* decor subtil */}
+        <div className="pointer-events-none absolute inset-0">
+          <div className="absolute -top-24 left-1/2 h-72 w-72 -translate-x-1/2 rounded-full bg-black/5 blur-3xl" />
+        </div>
 
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex flex-wrap gap-6 justify-center">
-            {teamMembers.map((member, index) => (
-              <div
+        <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2
+              ref={ref}
+              className="mt-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+            >
+              {t("team2.title")}
+            </h2>
+
+            <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-gray-600">
+               {t("team2.subtitluTeam")}
+            </p>
+          </div>
+
+          {/* grid modern */}
+          <div className="mt-20 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {teamMembers.map((member) => (
+              <article
                 key={member.id}
-                className={`bg-gray-100 p-4 rounded-md shadow-xl flex flex-col items-center sm:flex-row ${
-                  index % 2 === 0 ? "sm:flex-row" : "sm:flex-row-reverse"
-                }`}
+                className="group rounded-2xl border border-black/10 bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-lg"
               >
-                <div
-                  className="flex-shrink-0 w-28 h-28 md:w-32 md:h-32 lg:w-36 lg:h-36 
-                rounded-full overflow-hidden 
-                border-4 border-white shadow-lg 
-                mx-auto"
-                >
-                  {member.image && (
+                <div className="flex items-center gap-4">
+                  <div className="h-16 w-16 overflow-hidden rounded-2xl ring-1 ring-black/10">
                     <img
                       src={member.image}
                       alt={member.name}
-                      className="w-full h-full object-cover"
+                      className="h-full w-full object-cover transition group-hover:scale-105"
                       loading="lazy"
                     />
-                  )}
+                  </div>
+
+                  <div className="min-w-0">
+                    <h3 className="truncate text-lg font-bold text-gray-900">
+                      {member.name}
+                    </h3>
+                    <div className="mt-1 inline-flex items-center rounded-full bg-black/5 px-2.5 py-1 text-xs font-semibold text-gray-700">
+                      {member.role}
+                    </div>
+                  </div>
                 </div>
 
-                <div className="mt-4 sm:mt-0 sm:ml-4">
-                  <h3 className="text-xl font-semibold text-center">
-                    {member.name} <br /> - {member.role} -
-                  </h3>
-                  <p className="text-center mx-6 my-6">{member.description}</p>
-                </div>
-              </div>
+                <p className="mt-4 text-md leading-relaxed text-gray-600">
+                  {member.description}
+                </p>
+              </article>
             ))}
+          </div>
+
+          {/* CTA modern */}
+          <div className="my-16 rounded-2xl border border-black/10 bg-gradient-to-b from-white to-black/5 p-6 md:p-8">
+            <p className="mx-auto max-w-3xl text-center text-lg font-semibold leading-relaxed text-gray-900">
+              {t("carPackages.introText")}{" "}
+              <Link to="/contact" className="text-logoBlue underline">
+                {t("carPackages.registrationFormText")}
+              </Link>{" "}
+              {t("carPackages.orCallText")}{" "}
+              <a href="tel:+40736470629" className="text-logoBlue underline">
+                0736 470 629
+              </a>
+              .
+            </p>
+
+            <div className="mt-6 flex justify-center">
+              <Button
+                onClick={() => scrollToSection("contact")}
+                textKey="carPackages.buttonText"
+                additionalClasses="bg-secondary"
+              />
+            </div>
           </div>
         </div>
       </section>
-
-      <div className="flex flex-col items-center justify-center mb-10">
-        <p className="text-center mb-10 text-2xl px-4  md:px-24 font-semibold mt-10">
-          {t("carPackages.introText")}{" "}
-          <Link to="/contact" className="text-logoBlue underline">
-            {" "}
-            {t("carPackages.registrationFormText")}
-          </Link>{" "}
-          {t("carPackages.orCallText")}{" "}
-          <a href="tel:+40736470629" className="text-logoBlue underline">
-            {" "}
-            0736 470 629
-          </a>
-          .
-        </p>
-        <Button
-          onClick={() => scrollToSection("contact")}
-          textKey="carPackages.buttonText"
-          additionalClasses="mb-10 bg-secondary  "
-        />
-      </div>
     </>
   );
 });

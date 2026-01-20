@@ -33,33 +33,33 @@ const TipsAndTricks: React.FC = () => {
   const { t } = useTranslation();
 
   const toggleQuiz = (index: number) => {
-    setActiveQuiz(activeQuiz === index ? null : index);
+    setActiveQuiz((prev) => (prev === index ? null : index));
   };
 
   const getFeedbackIconByIndex = (index: number) => {
     switch (index) {
-      case 0: // Quiz 1
-        return <FaCloudRain />; // Icon for rain
-      case 1: // Quiz
-        return <FaHandPaper />; // Icon for stop or important
-      case 2: // Quiz 3
-        return <FaCarCrash />; // Icon for visibility or driving safely
-      case 3: // Quiz 4
-        return <FaTrafficLight />; // Icon for traffic lights or signals
-      case 4: // Quiz 5
-        return <FaMobileAlt />; // Icon for hands-free
-      case 5: // Quiz 6
-        return <FaArrowRight />; // Icon for forward movement (no reversing)
-      case 6: // Quiz 7
-        return <FaExclamationTriangle />; // Icon for caution or gentle steering
-      case 7: // Quiz 8
-        return <FaHome />; // Icon for residential areas
-      case 8: // Quiz 9
-        return <FaHandPointRight />; // Icon for yielding and signaling
-      case 9: // Quiz 10
-        return <FaEyeSlash />; // Icon for blind spots
+      case 0:
+        return <FaCloudRain />;
+      case 1:
+        return <FaHandPaper />;
+      case 2:
+        return <FaCarCrash />;
+      case 3:
+        return <FaTrafficLight />;
+      case 4:
+        return <FaMobileAlt />;
+      case 5:
+        return <FaArrowRight />;
+      case 6:
+        return <FaExclamationTriangle />;
+      case 7:
+        return <FaHome />;
+      case 8:
+        return <FaHandPointRight />;
+      case 9:
+        return <FaEyeSlash />;
       default:
-        return null; // No icon by default
+        return null;
     }
   };
 
@@ -68,73 +68,117 @@ const TipsAndTricks: React.FC = () => {
     (t("quizzes", { returnObjects: true }) as Quiz[]) || [];
 
   return (
-    <div className="container mx-auto p-4 mb-16">
-      <h2 className="text-3xl font-bold text-center mt-16 mb-10 pl-3 pr-3 flex flex-col items-center space-y-2 md:flex-row md:justify-center md:space-x-2 md:space-y-0">
-        <span>{t("tipsAndTricks.title")}</span>
-        <div className="flex space-x-2">
-          <FaGraduationCap />
-          <FaCar />
-        </div>
-      </h2>
- <div className="w-64 h-[1px] bg-slate-400 mx-auto my-8"></div>
-      {/* Tips Section */}
-      <div className="tips-section my-16">
-  <h3 className="text-xl font-semibold mb-4 flex items-center ">
-    <span>{t("tipsAndTricks.tipsTitle")}</span>
-    <FaLightbulb className="ml-2 text-xl" /> {/* Set a consistent size */}
-  </h3>
-  <ul className="list-disc ml-6">
-    {tips.map((tip, index) => (
-      <li key={index} className="mb-2 flex items-start">
-        {/* Icon with consistent size */}
-        <FaBook className="mr-2  text-md flex-shrink-0" /> 
-        <span>{tip}</span>
-      </li>
-    ))}
-  </ul>
-</div>
+    <section className="py-16">
+      <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8">
+        {/* Header */}
+        <header className="text-center">
+          <h2 className="mt-5 text-3xl sm:text-4xl font-bold text-gray-900">
+            {t("tipsAndTricks.title")}
+          </h2>
+          <div className="mx-auto mt-4 h-[2px] w-24 rounded-full bg-logoBlue/60" />
+          <p className="mx-auto mt-4 max-w-2xl text-slate-600">
+            {t("tipsAndTricks.subtitluTandT")}
+          </p>
+        </header>
 
+        <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-start">
+          {/* Tips */}
+          <div className="rounded-3xl border border-black/10 bg-white shadow-sm p-6 sm:p-8">
+            <div className="flex items-center justify-between gap-4">
+              <h3 className="text-xl font-semibold text-gray-900 flex items-center gap-2">
+                <span>{t("tipsAndTricks.tipsTitle")}</span>
+                <FaLightbulb className="opacity-80" />
+              </h3>
+            </div>
 
-      {/* Solved Quizzes */}
-      <div className="quiz-section">
-        <h3 className="text-xl font-semibold mb-4 flex items-center">
-          <span>{t("tipsAndTricks.quizzesTitle")}</span>
-          <FaQuestionCircle className="ml-2" />
-        </h3>
-        {quizzes.length > 0 ? (
-          quizzes.map((quiz, index) => (
-            <div key={index} className="quiz-item mb-4 border-b pb-2">
-              <button
-                className="text-left w-full font-medium text-lg focus:outline-none flex items-center justify-between"
-                onClick={() => toggleQuiz(index)}
-              >
-                <span className="mr-4">{quiz.question}</span>
-                <span>
-                  {activeQuiz === index ? <FaChevronUp /> : <FaChevronDown />}
-                </span>
-              </button>
-              {activeQuiz === index && (
-                <div className="quiz-answer mt-2 text-gray-600 transition-opacity duration-300">
-                  <p>
-                    {quiz.answer}{" "}
-                    <FaCheckCircle className="inline text-green-500" />
-                  </p>
-                  {/* Feedback with appropriate icons based on index */}
-                  <p className="mt-2 text-green-500">
-                    <span className="inline">{quiz.feedback}</span>
-                    <span className="inline-block ml-1 align-middle">
-                      {getFeedbackIconByIndex(index)}
-                    </span>
-                  </p>
+            {/* Tips as cards */}
+            <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {tips.map((tip, index) => (
+                <div
+                  key={index}
+                  className="rounded-2xl border border-black/10 bg-slate-50 p-4 shadow-sm"
+                >
+                  <div className="flex items-start gap-3">
+                    <div className="mt-1 rounded-xl bg-white border border-black/10 p-2 shadow-sm">
+                      <FaBook className="text-slate-700" />
+                    </div>
+                    <p className="text-sm text-gray-900 leading-relaxed">
+                      {tip}
+                    </p>
+                  </div>
                 </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Quizzes */}
+          <div className="rounded-3xl border border-black/10 bg-white shadow-sm p-6 sm:p-8">
+            <h3 className="text-xl font-semibold text-gray-900 flex items-center gap-2">
+              <span>{t("tipsAndTricks.quizzesTitle")}</span>
+              <FaQuestionCircle className="opacity-80" />
+            </h3>
+
+            <div className="mt-6 space-y-3">
+              {quizzes.length > 0 ? (
+                quizzes.map((quiz, index) => {
+                  const opened = activeQuiz === index;
+
+                  return (
+                    <div
+                      key={index}
+                      className="rounded-2xl border border-black/10 bg-white shadow-sm overflow-hidden"
+                    >
+                      <button
+                        className="w-full text-left p-4 sm:p-5 flex items-center justify-between gap-4"
+                        onClick={() => toggleQuiz(index)}
+                        type="button"
+                      >
+                        <div className="flex items-start gap-3">
+                          <div className="mt-0.5 rounded-xl bg-slate-50 border border-black/10 p-2">
+                            {getFeedbackIconByIndex(index)}
+                          </div>
+                          <span className="font-semibold text-gray-900">
+                            {quiz.question}
+                          </span>
+                        </div>
+
+                        <span className="shrink-0 text-slate-600">
+                          {opened ? <FaChevronUp /> : <FaChevronDown />}
+                        </span>
+                      </button>
+
+                      {opened && (
+                        <div className="px-4 sm:px-5 pb-4 sm:pb-5">
+                          <div className="rounded-xl bg-slate-50 border border-black/10 p-4">
+                            <p className="text-sm text-gray-800">
+                              {quiz.answer}{" "}
+                              <FaCheckCircle className="inline text-emerald-600" />
+                            </p>
+
+                            <p className="mt-2 text-sm text-emerald-700 font-semibold flex items-center gap-2">
+                              <span>{quiz.feedback}</span>
+                              <span className="opacity-90">
+                                {getFeedbackIconByIndex(index)}
+                              </span>
+                            </p>
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  );
+                })
+              ) : (
+                <p className="text-sm text-slate-600">
+                  {t("tipsAndTricks.noQuizzes", {
+                    defaultValue: "Momentan nu sunt întrebări disponibile.",
+                  })}
+                </p>
               )}
             </div>
-          ))
-        ) : (
-          <p>No quizzes available at the moment.</p>
-        )}
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -12,163 +12,229 @@ const Footer: React.FC = () => {
     if (el) el.scrollIntoView({ behavior: "smooth" });
   };
 
-  return (
-    <footer className="bg-white/50 backdrop-blur-md border-t border-white/20 text-textColor py-8 px-4">
-      <div className="container mx-auto flex flex-col items-center md:flex-row md:justify-between md:items-start gap-8 md:gap-0">
-        {/* STÂNGA */}
-        <div className="flex flex-col items-center md:items-center md:w-[270px] md:pr-8">
-          <button onClick={() => scrollToSection("home")} className="mb-10">
-            <div className="w-12 h-12 rounded-full overflow-hidden">
-              <img
-                src={logo}
-                alt="Scoala de soferi TopalX - Logo oficial"
-                className="object-cover"
-              />
-            </div>
-          </button>
+  const linkBase =
+    "inline-flex items-center rounded-xl px-3 py-2 text-sm text-slate-600 transition hover:bg-black/5 hover:text-logoBlue focus:outline-none focus-visible:ring-2 focus-visible:ring-logoBlue/30";
 
-          {/* Social */}
-          <div className="flex items-center gap-5 text-[22px] mb-4">
-            <a
-              href="https://www.facebook.com/scoaladesoferitopalx/"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="Facebook"
-              className="hover:text-logoBlue"
+  return (
+    <footer className="relative overflow-hidden border-t border-black/10 bg-gradient-to-b from-white to-slate-50">
+      {/* blur layer */}
+      <div className="pointer-events-none absolute inset-0 bg-white/40 backdrop-blur-md" />
+
+      <div className="relative mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8 py-12">
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-3 md:gap-8">
+          {/* BRAND */}
+          <div className="flex flex-col items-center md:items-start">
+            <button
+              type="button"
+              onClick={() => scrollToSection("home")}
+              className="group inline-flex items-center gap-3"
+              aria-label="Înapoi sus"
             >
-              <Icon icon="mdi:facebook" />
-            </a>
-            <a
-              href="https://www.instagram.com/scoaladesoferitopalx/"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="Instagram"
-              className="hover:text-logoBlue"
-            >
-              <Icon icon="mdi:instagram" />
-            </a>
-            <a
-              href="mailto:topalxtrans@gmail.com"
-              title="Email"
-              className="hover:text-logoBlue"
-            >
-              <Icon icon="mdi:email-outline" />
-            </a>
+              <span className="relative h-12 w-12 overflow-hidden rounded-full ring-1 ring-black/10 shadow-sm transition group-hover:shadow-md">
+                <img
+                  src={logo}
+                  alt="TopalX logo"
+                  className="h-full w-full object-cover"
+                />
+              </span>
+
+              <span className="text-base font-semibold text-gray-900">
+                TopalX
+                <span className="block text-xs font-medium text-slate-500">
+                  {t("footer.shortTagline")}
+                </span>
+              </span>
+            </button>
+
+            {/* SOCIAL */}
+            <div className="mt-5 flex items-center gap-3 text-[22px] text-slate-700">
+              <a
+                href="https://www.facebook.com/scoaladesoferitopalx/"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Facebook"
+                className="rounded-full p-2 transition hover:bg-black/5 hover:text-logoBlue focus:outline-none focus-visible:ring-2 focus-visible:ring-logoBlue/30"
+              >
+                <Icon icon="mdi:facebook" />
+              </a>
+              <a
+                href="https://www.instagram.com/scoaladesoferitopalx/"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Instagram"
+                className="rounded-full p-2 transition hover:bg-black/5 hover:text-logoBlue focus:outline-none focus-visible:ring-2 focus-visible:ring-logoBlue/30"
+              >
+                <Icon icon="mdi:instagram" />
+              </a>
+              <a
+                href="mailto:topalxtrans@gmail.com"
+                title="Email"
+                className="rounded-full p-2 transition hover:bg-black/5 hover:text-logoBlue focus:outline-none focus-visible:ring-2 focus-visible:ring-logoBlue/30"
+              >
+                <Icon icon="mdi:email-outline" />
+              </a>
+              <a
+                href="tel:+40736470629"
+                title="Telefon"
+                className="rounded-full p-2 transition hover:bg-black/5 hover:text-logoBlue focus:outline-none focus-visible:ring-2 focus-visible:ring-logoBlue/30"
+              >
+                <Icon icon="mdi:phone-outline" />
+              </a>
+            </div>
+
+            {/* QR */}
+            <div className="mt-6 w-full max-w-[220px] md:max-w-[240px]">
+              <div className="rounded-2xl border border-black/10 bg-white/70 p-4 shadow-sm">
+                <p className="mb-3 text-center text-xs font-semibold text-slate-600 md:text-center">
+                  {t("footer.qrTitle")}
+                </p>
+                <QRCodeComponent
+                  title={
+                    <span className="sr-only">
+                      Scanează codul QR pentru detalii despre TopalX
+                    </span>
+                  }
+                />
+              </div>
+            </div>
           </div>
 
-          {/* QR */}
-          <div className="mt-2">
-            <QRCodeComponent
-              title={
-                <span className="sr-only">
-                  Scanează codul QR pentru detalii despre școala de șoferi
-                  TopalX
-                </span>
-              }
-            />
+          {/* INFO */}
+          <div className="md:px-2">
+            <h3 className="text-sm font-semibold tracking-wide text-gray-900">
+              {t("footer.infoTitle", { defaultValue: "Informații" })}
+            </h3>
+
+            <p className="mt-4 text-sm leading-relaxed text-slate-600">
+              {t("footer.info")}
+            </p>
+
+            {/* chips */}
+            <div className="mt-5 flex flex-wrap gap-2">
+              <span className="rounded-full border border-black/10 bg-white/70 px-3 py-1 text-xs font-semibold text-slate-700">
+                {t("footer.chip2")}
+              </span>
+              <span className="rounded-full border border-black/10 bg-white/70 px-3 py-1 text-xs font-semibold text-slate-700">
+                {t("footer.chip3", { defaultValue: "Calea Vitan 148A" })}
+              </span>
+            </div>
+
+            <div className="mt-6">
+              <button
+                type="button"
+                onClick={() => scrollToSection("contact")}
+                className="inline-flex items-center gap-2 rounded-xl bg-secondary px-4 py-2 text-sm font-semibold leading-none text-white shadow-sm transition hover:opacity-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary/40"
+              >
+                <Icon icon="mdi:message-outline" className="h-5 w-5 shrink-0" />
+                <span className="leading-none">{t("footer.ctaFooter")}</span>
+              </button>
+            </div>
+          </div>
+
+          {/* LINKS */}
+          <div className="flex flex-col md:items-end">
+            <div className="w-full max-w-[360px] md:max-w-[320px]">
+              <h3 className="text-sm font-semibold tracking-wide text-gray-900 md:text-right pr-3">
+                {t("footer.linksMenu")}
+              </h3>
+
+              <nav className="mt-4 grid grid-cols-2 gap-x-3 gap-y-2 md:justify-items-end">
+                <a href="#home" className={linkBase}>
+                  <Icon
+                    icon="mdi:home-outline"
+                    className="text-slate-400 text-[18px]"
+                  />
+                  {t("navigation.home")}
+                </a>
+
+                <a href="#about" className={linkBase}>
+                  <Icon
+                    icon="mdi:information-outline"
+                    className="text-slate-400 text-[18px]"
+                  />
+                  {t("navigation.about")}
+                </a>
+
+                <a href="#services" className={linkBase}>
+                  <Icon
+                    icon="mdi:briefcase-outline"
+                    className="text-slate-400 text-[18px]"
+                  />
+                  {t("navigation.services")}
+                </a>
+
+                <a href="#contact" className={linkBase}>
+                  <Icon
+                    icon="mdi:phone-outline"
+                    className="text-slate-400 text-[18px]"
+                  />
+                  {t("navigation.contact")}
+                </a>
+              </nav>
+
+              <div className="my-6 h-px w-full bg-black/10" />
+
+              <h3 className="text-sm font-semibold tracking-wide text-gray-900 md:text-right pr-3">
+                {t("footer.legalTitle", { defaultValue: "Legal" })}
+              </h3>
+
+              <div className="mt-4 grid gap-2 md:justify-items-end">
+                <a
+                  href="/privacy-policy"
+                  className={`${linkBase} flex items-center gap-0.5`}
+                >
+                  <Icon
+                    icon="mdi:shield-account-outline"
+                    className="text-slate-400"
+                  />
+                  <span>{t("privacyPolicy.title")}</span>
+                </a>
+
+                <a
+                  href="/terms-and-conditions"
+                  className={`${linkBase} flex items-center gap-0.5`}
+                >
+                  <Icon
+                    icon="mdi:file-document-outline"
+                    className="text-slate-400"
+                  />
+                  <span>{t("termsAndConditions.title")}</span>
+                </a>
+
+                <a
+                  href="/faq"
+                  className={`${linkBase} flex items-center gap-0.5`}
+                >
+                  <Icon
+                    icon="mdi:help-circle-outline"
+                    className="text-slate-400"
+                  />
+                  <span>{t("faq.title")}</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
 
-        {/* CENTRU */}
-        <div className="text-sm text-center md:text-center max-w-[28rem] px-4 md:px-8 lg:px-12 relative">
-          {/* separatoare DOAR pe desktop */}
-          <span
-            className="mx-1 mt-0 md:mt-10 md:before:absolute md:before:left-0 md:before:top-0 md:before:bottom-0 md:before:w-px md:before:bg-gray-300
-                         md:after:absolute md:after:right-0 md:after:top-0 md:after:bottom-0 md:after:w-px md:after:bg-gray-300
-                         inline-block"
-          >
-            {t("footer.info")}
-          </span>
-
-          {/* drepturi: pe mobil îl mutăm jos, pe desktop rămâne aici */}
+        {/* BOTTOM BAR */}
+        <div className="mt-12 flex flex-col gap-4 border-t border-black/10 pt-6 md:flex-row md:items-center md:justify-between">
           <div
-            className="hidden md:block pt-6"
+            className="text-xs text-slate-500 text-center md:text-left"
             dangerouslySetInnerHTML={{ __html: t("footer.rights") }}
           />
-        </div>
 
-        <div className="w-full md:w-auto flex flex-col items-center md:items-start md:pl-8 mb-6 md:mb-0">
-          {/* Navigație */}
-          <nav className="flex flex-col text-sm mb-4 text-center md:text-left space-y-2">
+          <div className="text-xs text-slate-400 text-center md:text-right">
+            <span>{t("footer.developedBy")}</span>
             <a
-              href="#home"
-              className="hover:text-logoBlue flex items-center justify-start md:justify-start gap-2"
+              href="https://www.csweb.pro"
+              className="ml-1 underline transition hover:text-logoBlue"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <Icon icon="mdi:home-outline" className="opacity-70" />
-              {t("navigation.home")}
-            </a>
-            <a
-              href="#about"
-              className="hover:text-logoBlue flex items-center justify-start md:justify-start gap-2"
-            >
-              <Icon icon="mdi:information-outline" className="opacity-70" />
-              {t("navigation.about")}
-            </a>
-            <a
-              href="#services"
-              className="hover:text-logoBlue flex items-center justify-startmd:justify-start gap-2"
-            >
-              <Icon icon="mdi:briefcase-outline" className="opacity-70" />
-              {t("navigation.services")}
-            </a>
-            <a
-              href="#contact"
-              className="hover:text-logoBlue flex items-center justify-start md:justify-start gap-2"
-            >
-              <Icon icon="mdi:phone-outline" className="opacity-70" />
-              {t("navigation.contact")}
-            </a>
-          </nav>
-
-          {/* Separator */}
-          <div className="w-24 md:w-full h-px bg-gray-300 my-3" />
-
-          {/* Legal */}
-          <div className="flex flex-col text-sm text-center md:text-left space-y-2">
-            <a
-              href="/privacy-policy"
-              className="hover:text-logoBlue flex items-center justify-center md:justify-start gap-2"
-            >
-              <Icon icon="mdi:shield-account-outline" className="opacity-70" />
-              {t("privacyPolicy.title")}
-            </a>
-            <a
-              href="/terms-and-conditions"
-              className="hover:text-logoBlue flex items-center justify-center md:justify-start gap-2"
-            >
-              <Icon icon="mdi:file-document-outline" className="opacity-70" />
-              {t("termsAndConditions.title")}
-            </a>
-            <a
-              href="/faq"
-              className="hover:text-logoBlue flex items-center justify-center md:justify-start gap-2"
-            >
-              <Icon icon="mdi:help-circle-outline" className="opacity-70" />
-              {t("faq.title")}
+              csweb.pro
             </a>
           </div>
         </div>
-      </div>
-
-      {/* Rights pe mobil (sub tot footerul) */}
-      <div
-        className="mt-6 text-center md:hidden text-sm px-6"
-        dangerouslySetInnerHTML={{ __html: t("footer.rights") }}
-      />
-
-      {/* Developer */}
-      <div className="text-xs text-gray-400 text-center md:text-right mt-4">
-        <p>
-          {t("footer.developedBy")}
-          <a
-            href="https://www.csweb.pro"
-            className="hover:text-logoBlue underline ml-1"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            csweb.pro
-          </a>
-        </p>
       </div>
     </footer>
   );

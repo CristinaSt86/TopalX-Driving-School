@@ -2,12 +2,10 @@ import React, {
   useImperativeHandle,
   useRef,
   forwardRef,
-  useState,
-  useEffect,
 } from "react";
 import { useTranslation } from "react-i18next";
-import { Helmet } from "react-helmet-async";
 import "../index.css";
+
 import c1 from "../images/c1.webp";
 import c2 from "../images/c2.webp";
 import c3 from "../images/c3.webp";
@@ -17,6 +15,7 @@ import c10 from "../images/c10.webp";
 import c6 from "../images/c6.webp";
 import c4 from "../images/c4.webp";
 import c8 from "../images/c8.webp";
+
 import TipsAndTricks from "../components/TipsAndTricks";
 
 export type Testimonial = {
@@ -29,7 +28,7 @@ interface TestimonialsProps {
   testimonials?: Testimonial[];
 }
 
-interface TestimonialsHandle {
+export interface TestimonialsHandle {
   scrollToTestimonials: () => void;
 }
 
@@ -37,7 +36,6 @@ const Testimonials = forwardRef<TestimonialsHandle, TestimonialsProps>(
   ({ testimonials = [] }, ref) => {
     const internalRef = useRef<HTMLDivElement>(null);
     const { t } = useTranslation();
-    const [animate, setAnimate] = useState(false);
 
     useImperativeHandle(ref, () => ({
       scrollToTestimonials: () => {
@@ -61,106 +59,66 @@ const Testimonials = forwardRef<TestimonialsHandle, TestimonialsProps>(
       ? testimonials
       : localTestimonials;
 
-    useEffect(() => {
-      setAnimate(true);
-    }, []);
-
     return (
-      <div
-        id="testimonials"
-        ref={internalRef}
-        className={` ${animate ? "slide-in" : ""}`}
-      >
-        <Helmet>
-          <title>
-            Testimoniale | Scoala de soferi TopalX | Școala de Șoferi din
-            București
-          </title>
-          <meta
-            name="description"
-            content="Citiți mărturiile studenților noștri despre experiența lor cu Scoala de soferi TopalX - școală de șoferi de încredere din București. Află de ce suntem alegerea potrivită pentru obținerea permisului auto."
-          />
-          <meta
-            name="keywords"
-            content="testimoniale școală de șoferi, mărturii studenți Scoala de soferi TopalX, experiențe școală de șoferi București, TopalX București, permis auto, cursuri de conducere defensive"
-          />
-          <meta name="author" content="Scoala de soferi TopalX" />
-          <meta name="robots" content="index, follow" />
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
-          />
-          <meta
-            property="og:title"
-            content="Testimoniale - Scoala de soferi TopalX - Școala de Șoferi din București"
-          />
-          <meta
-            property="og:description"
-            content="Citiți mărturiile studenților noștri despre experiența lor cu Scoala de soferi TopalX - școală de șoferi de încredere din București. Află de ce suntem alegerea potrivită pentru obținerea permisului auto."
-          />
-          <meta
-            property="og:url"
-            content="https://www.topalxscoalaauto.ro/testimonials"
-          />
-          <meta property="og:type" content="website" />
-          <meta
-            property="og:image"
-            content="https://www.topalxscoalaauto.ro/images/c2.webp"
-          />
-          <meta property="og:locale" content="ro_RO" />
-          <meta property="og:site_name" content="TopalX Scoala Auto" />
-          <meta property="twitter:card" content="summary_large_image" />
-          <meta
-            property="twitter:title"
-            content="Testimoniale - Scoala de soferi TopalX - Școala de Șoferi din București"
-          />
-          <meta
-            property="twitter:description"
-            content="Citiți mărturiile studenților noștri despre experiența lor cu Scoala de soferi TopalX - școală de șoferi de încredere din București. Află de ce suntem alegerea potrivită pentru obținerea permisului auto."
-          />
-          <meta
-            property="twitter:image"
-            content="https://www.topalxscoalaauto.ro/images/c1.webp"
-          />
-          <meta property="twitter:site" content="@TopalXScoalaAuto" />
-          <meta property="twitter:creator" content="@TopalXScoalaAuto" />
-        </Helmet>
+      <>
+        <section id="testimonials" ref={internalRef} className="py-20">
+          <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8">
+            {/* HEADER + TRUST */}
+            <header className="text-center mb-12">
+              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
+                {t("testimonials.title")}
+              </h2>
 
-        <div className=" mx-auto p-4 my-16">
-          <h2 className="text-3xl font-bold text-center mt-8 mb-10 pl-3 pr-3">
-            {t("testimonials.title")}
-          </h2>
-       <div className="w-64 h-[1px] bg-slate-400 mx-auto my-8"></div>
-          <div className="container mx-auto">
-            <div className="flex flex-wrap justify-center gap-4 items-center ellipse-img mt-10 md:mt-16">
-              {finalTestimonials.map(({ id, avatar, caption }, index) => (
-                <div
-                  key={id}
-                  className={`p-10 max-w-sm shadow-2xl overflow-hidden m-2 ellipse-img ${
-                    animate
-                      ? index < finalTestimonials.length / 2
-                        ? "slide-in-left"
-                        : "slide-in-right"
-                      : ""
-                  }`}
+              <div className="mx-auto mt-4 h-[2px] w-24 rounded-full bg-logoBlue/60" />
+
+              <div className="mt-6 flex flex-wrap items-center justify-center gap-4">
+                <span className="rounded-full border border-black/10 bg-white px-4 py-2 text-sm font-semibold shadow-sm">
+                  {t("testimonials.cipGoogRev")}
+                </span>
+
+                <span className="rounded-full border border-black/10 bg-white px-4 py-2 text-sm font-semibold shadow-sm">
+                 {t("testimonials.cipOver500")}
+                </span>
+              </div>
+            </header>
+
+            {/* PROOF WALL */}
+            <div
+              className="
+                flex gap-4 overflow-x-auto pb-4
+                snap-x snap-mandatory
+                lg:grid lg:grid-cols-3 lg:gap-6 lg:overflow-visible
+              "
+            >
+              {finalTestimonials.map((item) => (
+                <article
+                  key={item.id}
+                  className="
+                    snap-start
+                    min-w-[260px] sm:min-w-[300px] lg:min-w-0
+                    rounded-2xl border border-black/10 bg-white
+                    shadow-sm
+                  "
                 >
-                  <img
-                    className="w-full h-full object-cover rounded-md"
-                    src={avatar}
-                    alt={`Testimonial ${id}`}
-                    loading="lazy"
-                  
-                  />
-                </div>
+                  <div className="aspect-[3/4] bg-slate-50 p-3 rounded-2xl">
+                    <img
+                      src={item.avatar}
+                      alt={item.caption || "Google Review"}
+                      loading="lazy"
+                      className="h-full w-full object-contain rounded-xl"
+                    />
+                  </div>
+                </article>
               ))}
             </div>
           </div>
-        </div>
+        </section>
 
         <TipsAndTricks />
-      </div>
+      </>
     );
   }
 );
 
+Testimonials.displayName = "Testimonials";
 export default Testimonials;

@@ -2,6 +2,7 @@
   "home": {
     "title": "Acasă - TopalX",
     "descriptionHelm": "Bun venit pe pagina noastră de pornire.",
+    "cipHome": "București • Categoria B",
     "title2": "Bine ați venit la",
     "school": "Școala de Șoferi",
     "description": "Pregătire teoretică și practică, adaptată nevoilor tale. Instructori cu experiență, focus pe siguranță și încredere la volan.",
@@ -20,11 +21,13 @@
     },
     "mission": {
       "title": "Misiunea Noastră",
-      "description": "La Școala de șoferi TopalX, ne dedicăm formării șoferilor responsabili și încrezători, care să contribuie activ la siguranța rutieră. Oferim cursuri de conducere personalizate, de înaltă calitate, folosind metode moderne de predare și autoturisme de ultimă generație pentru a asigura o pregătire completă și eficientă. Însă, nu trebuie să vă bazați doar pe cuvintele noastre. Mândria noastră provine din recenziile și poveștile de succes ale cursanților noștri, care nu doar că au obținut permisul de conducere, dar s-au bucurat de o experiență de învățare adaptată nevoilor lor. Vă invităm să vizitați secțiunea de testimoniale de pe site-ul nostru pentru a descoperi relatări autentice care subliniază calitatea serviciilor noastre și impactul lor pozitiv asupra comunității de șoferi."
+      "description": "La Școala de șoferi TopalX, ne dedicăm formării șoferilor responsabili și încrezători, care să contribuie activ la siguranța rutieră. Oferim cursuri de conducere personalizate, de înaltă calitate, folosind metode moderne de predare și autoturisme de ultimă generație pentru a asigura o pregătire completă și eficientă. Însă, nu trebuie să vă bazați doar pe cuvintele noastre. Mândria noastră provine din recenziile și poveștile de succes ale cursanților noștri, care nu doar că au obținut permisul de conducere, dar s-au bucurat de o experiență de învățare adaptată nevoilor lor. Vă invităm să vizitați secțiunea de testimoniale de pe site-ul nostru pentru a descoperi relatări autentice care subliniază calitatea serviciilor noastre și impactul lor pozitiv asupra comunității de șoferi.",
+      "seeRev": "Vezi recenziile →"
     },
     "team": {
       "title": "Cunoașteți Echipa",
-      "description": "Echipa noastră este formată din profesioniști cu experiență, pasionați de educația auto. Cunoașteți persoanele care fac totul posibil."
+      "description": "Echipa noastră este formată din profesioniști cu experiență, pasionați de educația auto. Cunoașteți persoanele care fac totul posibil.",
+      "meetTeam": "Cunoaște echipa →"
     },
     "companyDescription": {
       "title": "Despre Noi",
@@ -57,8 +60,18 @@
     "titleHelm": "Contactați-ne - TopalX",
     "description": "Contactează-ne.",
     "title": "Permisul dumneavoastră de conducere este la un click distanță!",
+    "subtitluContact": "Sună pentru programare sau trimite-ne un mesaj și îți răspundem rapid.",
+    "titluForm": "Trimite un mesaj",
+    "subtitluForm": "Completează formularul și revenim cât mai repede.",
     "locationTitle": "Locația noastră",
-    "address": "<strong>Adresa:</strong> Calea Vitan 148A,",
+    "cipFindUsHere": "Ne găsești aici",
+    "cipOpenMaps": "Deschide în Maps",
+    "adres": "Adresă",
+    "telef": "Telefon",
+    "ctaContact": "Sună acum",
+    "ctaEmail": "Trimite email",
+    "quickAnswer": "Răspundem rapid la apeluri și mesaje.",
+    "address": "Calea Vitan 148A,",
     "address2": "031301 București, România",
     "secretariat": "<strong>Secretariat:</strong> 0736 470 629",
     "email": "<strong>Email:</strong> topalxtrans@gmail.com"
@@ -68,6 +81,7 @@
     "titleHelm": "Servicii - TopalX",
     "description": "Descoperă gama noastră de servicii.",
     "title": "Servicii Oferite",
+    "subtitluServ": "Alege serviciul potrivit și programează-te rapid.",
     "serviceList": [
       {
         "name": "Cursuri pregătire teoretică",
@@ -127,6 +141,14 @@
   },
   "carPackages": {
     "title": "Pachete Auto",
+    "subtitluCars": "Pachetul potrivit pentru tine. Pregătire pe o mașină modernă.",
+    "featured": {
+      "cipReco": "Recomandat"
+    },
+    "cta": {
+      "contact": "Înscrie-te acum",
+      "call": "Sună pentru detalii"
+    },
     "introText": "Acum este momentul să obții permisul de conducere! Ce mai aștepți? Îndeplinește-ți dorința de mult timp și înscrie-te acum. Completează ",
     "registrationFormText": "formularul de înscriere",
     "orCallText": "sau sună-ne la",
@@ -197,6 +219,8 @@
     "titleHelm": "Testimoniale - TopalX",
     "description": "Citește ce spun clienții noștri.",
     "title": "Experiențele cursanților",
+    "cipGoogRev": "⭐ 4.9 / 5 • Recenzii Google",
+    "cipOver500": "Peste 500 cursanți",
     "items": [
       {
         "id": 1,
@@ -241,7 +265,7 @@
     ]
   },
   "footer": {
-    "rights": "© 2024 TopalX",
+    "rights": "© 2024–2026 TopalX",
     "home": "Acasă",
     "about": "Despre noi",
     "services": "Servicii",
@@ -251,7 +275,12 @@
     "faq": "Întrebări frecvente",
     "info": "Pentru a-ți obține permisul de conducere, școala noastră îți vine în ajutor cu primul pas din cei 100 care trebuie parcurși, acesta fiind înscrierea la sediul nostru din Calea Vitan nr. 148A. Ai nevoie doar de buletin pentru acest prim pas!",
     "developer": "Dezvoltator site",
-    "developedBy": "Website dezvoltat de "
+    "developedBy": "Website dezvoltat de ",
+    "qrTitle": "Scanează pentru detalii",
+    "shortTagline": "Școală de șoferi • București",
+    "linksMenu": "Navigație",
+    "chip2": "Programări simple",
+    "ctaFooter": "Contactează-ne"
   },
   "contactForm": {
     "name": "Nume*",
@@ -264,8 +293,17 @@
     "consent": "Sunt de acord cu",
     "privacyPolicy": " Politica de Confidențialitate",
     "consentRequired": "Acordul dumneavoastră cu politica de confidențialitate este necesar.",
-    "recaptchaRequired": "Vă rugăm să completați verificarea reCAPTCHA pentru a continua."
+    "recaptchaRequired": "Vă rugăm să completați verificarea reCAPTCHA pentru a continua.",
+    "bifeazaAcordul": "Pentru a continua, este necesar acordul privind Politica de Confidențialitate."
   },
+
+  "cookie": {
+    "message": "Acest site folosește cookie-uri pentru a-ți oferi cea mai bună experiență.",
+    "learnMore": "Află mai multe",
+    "accept": "Am înțeles",
+    "ariaLabel": "Consimțământ cookie"
+  },
+
   "topHeader": {
     "phone": "0736 470 629",
     "email": "topalxtrans@gmail.com",
@@ -377,6 +415,7 @@
     "titleHelm": "Echipa noastra - TopalX",
     "descriptionHelm": "Cunoaște echipa noastră dedicată.",
     "title": "Profesioniștii care fac diferența",
+    "subtitluTeam": "Instructori cu experiență, comunicare clară și focus pe siguranță.",
     "members": [
       {
         "name": "Constantin Topală",
@@ -409,7 +448,12 @@
     "title": "Pachet ședințe suplimentare de pregătire 4+1 cadou!",
     "description1": "Inclusiv pentru posesorii de permis.",
     "description2": "Alege între cutie automată sau manuală.",
-    "btnText": "Profită de ofertă!"
+    "btnText": "Profită de ofertă!",
+    "cipInstructor": "Instructor cu experiență",
+    "cipMasini": "Mașini moderne",
+    "cipPachete": "Pachete flexibile",
+    "sunaAcum": "Sună acum: 0736 470 629",
+    "raspundemRapid": "Răspundem rapid la mesaje • Programări simple • Locație: Calea Vitan 148A"
   },
   "faq": {
     "title": "Întrebări frecvente",
@@ -485,6 +529,7 @@
   },
   "tipsAndTricks": {
     "title": "Sfaturi & Trucuri pentru Începători",
+    "subtitluTandT": "Sfaturi utile + întrebări rezolvate, ca să fii pregătit la ore și la examen.",
     "tipsTitle": "Sfaturi pentru Conducere:",
     "quizzesTitle": "Chestionare Rezolvate:"
   },

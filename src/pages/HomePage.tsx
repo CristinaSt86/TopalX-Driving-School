@@ -187,9 +187,13 @@ const HomePage: React.FC = () => {
       >
         <SnowfallCanvas />
         {/* Container unic pentru titlu + subtitlu */}
-        <div className="bg-black/50 backdrop-blur-sm p-5 sm:p-6 rounded-xl shadow-xl shadow-black/30 max-w-[90%] mx-auto">
+        <div className="bg-black/50 backdrop-blur-sm p-5 sm:p-6 rounded-xl shadow-xl shadow-black/30 max-w-[90%] md:max-w-[80%]  mx-auto">
+          <div className="inline-flex items-center rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs mb-4 font-semibold text-white/90 backdrop-blur">
+            {t("home.cipHome")}
+          </div>
+
           <h1
-            className={`text-xl sm:text-4xl font-extrabold text-white leading-normal ${
+            className={`text-xl sm:text-4xl font-extrabold text-white leading-tight ${
               animate ? "slide-in" : ""
             }`}
           >
@@ -207,16 +211,16 @@ const HomePage: React.FC = () => {
         </div>
 
         {/* Butoanele */}
-        <div className="flex flex-col mt-10 md:flex-row gap-2 md:gap-10">
+        <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
           <Button
             onClick={scrollToContactPage}
             textKey="home.learn_more"
-            additionalClasses="mt-10 md:mt-14"
+            additionalClasses="whitespace-nowrap"
           />
           <Button
             onClick={scrollToAboutPage}
             textKey="home.learn_more1"
-            additionalClasses="mt-8 md:mt-10 md:mt-14 bg-transparent hover:bg-secondary border-2 border-secondary text-white hover:text-textColor"
+            additionalClasses="whitespace-nowrap bg-transparent border-2 border-secondary text-white hover:bg-secondary hover:text-textColor"
           />
         </div>
       </div>
@@ -227,6 +231,7 @@ const HomePage: React.FC = () => {
             <div className="text-center p-8">Se încarcă prezentarea...</div>
           }
         >
+         
           <AboutPage />
         </Suspense>
 

@@ -7,6 +7,9 @@
   display: flex;
   flex-direction: column;
 }
+body {
+  @apply font-sans text-gray-900;
+}
 
 html,
 body {
@@ -297,13 +300,7 @@ button {
   text-decoration: underline;
 }
 
-
-
-
-
 /* Optional: Add this in your CSS file if not using Tailwind */
 .transition-transform {
   transition: transform 1s ease-in-out;
 }
-
-

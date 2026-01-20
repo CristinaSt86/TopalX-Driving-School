@@ -62,7 +62,8 @@ const AboutPage: React.FC = () => {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: "Scoala de soferi TopalX",
-    description: "Școală de șoferi de top în București, oferim cursuri de conducere defensive și pregătire pentru permis auto.",
+    description:
+      "Școală de șoferi de top în București, oferim cursuri de conducere defensive și pregătire pentru permis auto.",
     url: "https://www.topalxscoalaauto.ro",
     address: {
       "@type": "PostalAddress",
@@ -82,7 +83,7 @@ const AboutPage: React.FC = () => {
     ],
   };
 
-  const nicknames = t('carCard.nickname', { returnObjects: true }) as string[];
+  const nicknames = t("carCard.nickname", { returnObjects: true }) as string[];
 
   return (
     <>
@@ -136,84 +137,146 @@ const AboutPage: React.FC = () => {
         <meta property="twitter:site" content="@TopalXScoalaAuto" />
         <meta property="twitter:creator" content="@TopalXScoalaAuto" />
         {/* Structured data scripts for breadcrumbs and organization */}
-        <script type="application/ld+json">{JSON.stringify(breadcrumbData)}</script>
-        <script type="application/ld+json">{JSON.stringify(organizationData)}</script>
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbData)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(organizationData)}
+        </script>
       </Helmet>
+
       <CineSuntemImg />
-      <div id="about" className="mt-4 sm:mt-8 md:mt-12">
-        <main className="container mx-auto px-2 flex flex-col flex-wrap md:flex-row items-center justify-center gap-10 md:gap-16 md:mx-auto mb-10">
-          <section className="rounded-md mb-4 p-4 sm:p-6 shadow-2xl">
-            <h2 className="text-xl sm:text-2xl md:text-3xl mb-2 font-semibold">
-              {t("about.keyInformation.titleInfo")}
-            </h2>
-            <ul className="text-base leading-6 list-disc pl-5 font-medium">
-              <li>{t("about.keyInformation.founded")}</li>
-              <li>{t("about.keyInformation.employees")}</li>
-              <li>{t("about.keyInformation.location")}</li>
-            </ul>
-          </section>
-          {/* Additional content sections */}
-          <div className="flex flex-col md:flex-col lg:flex-row gap-4 md:gap-8 items-center">
+
+      {/* PAGE WRAPPER */}
+      <div
+        id="about"
+        className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8"
+      >
+        {/* TOP GRID: Key info + 2 clickable cards */}
+        <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 gap-6 lg:gap-8">
+            {/* 1) Featured card: Mission */}
             <section
               onClick={scrollToTestimonials}
-              className="flex-1 h-fit max-h-fit-content overflow-hidden rounded-md mb-4 p-4 sm:p-6 shadow-2xl ease-in hover:bg-btnHoverBg transition-transform duration-300 hover:scale-[1.02] cursor-pointer"
-
+              className="rounded-2xl border border-black/10 bg-white p-6 sm:p-8 shadow-sm transition hover:shadow-lg cursor-pointer"
             >
-              <h2 className="text-xl sm:text-2xl md:text-3xl mb-4 font-semibold">
+              <h2 className="text-2xl sm:text-3xl font-semibold mb-4">
                 {t("about.mission.title")}
               </h2>
-              <p className="relative text-base leading-6 sm:text-base md:text-lg font-medium s">
+
+              {/* Text lung ok aici */}
+              <p className="text-base md:text-lg leading-7 font-medium text-gray-800">
                 {t("about.mission.description")}
               </p>
+
+              <div className="mt-6 inline-flex items-center text-sm font-semibold text-logoBlue">
+                  {t("about.mission.seeRev")}
+              </div>
             </section>
 
-            <section
-              onClick={scrollToTeam}
-              className="flex-1 h-fit max-h-fit-content overflow-hidden rounded-md mb-4 p-4 sm:p-6 shadow-2xl ease-in hover:bg-btnHoverBg transition-transform duration-300 hover:scale-[1.02] cursor-pointer"
-            >
-              <h2 className="text-xl sm:text-2xl md:text-3xl mb-4 font-semibold">
-                {t("about.team.title")}
-              </h2>
-              <p className="relative text-base leading-6 sm:text-base md:text-lg font-medium ">
-                {t("about.team.description")}
-              </p>
-            </section>
+            {/* 2) Two compact cards */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+              <section className="rounded-2xl border border-black/10 bg-white p-6 shadow-sm">
+                <h2 className="text-2xl font-semibold mb-3">
+                  {t("about.keyInformation.titleInfo")}
+                </h2>
+                <ul className="text-base leading-6 list-disc pl-5 font-medium text-gray-800">
+                  <li>{t("about.keyInformation.founded")}</li>
+                  <li>{t("about.keyInformation.employees")}</li>
+                  <li>{t("about.keyInformation.location")}</li>
+                </ul>
+              </section>
+
+              <section
+                onClick={scrollToTeam}
+                className="rounded-2xl border border-black/10 bg-white p-6 shadow-sm transition hover:shadow-lg cursor-pointer"
+              >
+                <h2 className="text-2xl font-semibold mb-3">
+                  {t("about.team.title")}
+                </h2>
+                <p className="text-base md:text-lg leading-7 font-medium text-gray-800">
+                  {t("about.team.description")}
+                </p>
+
+                <div className="mt-6 inline-flex items-center text-sm font-semibold text-logoBlue">
+                  {t("about.team.meetTeam")}
+                </div>
+              </section>
+            </div>
           </div>
-        </main>
-      </div>
-      <div className="shadow-2xl rounded-md bg-yellow-50 p-3 container mx-auto my-24">
-        <h1 className="text-4xl font-bold text-center mb-8 mt-8">
-          {t("about.companyDescription.title")}
-        </h1>
-        <div className="w-64 h-[1px] bg-slate-400 mx-auto my-8"></div>
-        <section className="container text-lg text-left mb-5 p-1 mx-auto md:p-6">
-          <p>{t("about.companyDescription.paragraph1")}</p>
-          <br />
-          <p>{t("about.companyDescription.paragraph2")}</p>
-          <br />
-          <p>{t("about.companyDescription.paragraph3")}</p>
-        </section>
-        <div className="flex flex-col items-center justify-center">
-          <h1 className="text-3xl font-bold text-center mt-8 mb-8 pr-3 pl-3">
-            {t("about.carIntro")}{" "}
-            <span className="bounce inline-block">&darr;</span>
-          </h1>
-          <div className="text-center mb-8">
-            <h2 className="text-2xl font-semibold">{t("about.categoryB")}</h2>
-          </div>
-          <div className="flex flex-wrap justify-center items-center">
-            <CarCard name="Mercedes" nickname={nicknames[0]} image={mercedes} />
-            <CarCard name="Volvo V40" nickname={nicknames[1]} image={volvo} />
-            <CarCard name="Skoda Fabia" nickname={nicknames[2]} image={skoda} />
-            <CarCard name="Fiat 500" nickname={nicknames[3]} image={fiat} />
-          </div>
-          <Button
-            onClick={scrollToPackages}
-            textKey="about.button"
-            additionalClasses="mt-8 mb-8"
-          />
         </div>
       </div>
+
+      {/* COMPANY DESCRIPTION "PAPER CARD" */}
+      <section className="mx-auto my-20 w-full max-w-[1200px] px-4 sm:px-6 lg:px-8">
+        <div className="rounded-2xl border border-black/10 bg-yellow-50/70 p-6 sm:p-10 shadow-sm">
+          {/* Header */}
+          <div className="text-center">
+            <h1 className="text-3xl sm:text-4xl font-bold">
+              {t("about.companyDescription.title")}
+            </h1>
+
+            <div className="mx-auto mt-4 h-[2px] w-24 rounded-full bg-logoBlue/60" />
+            {/* micro-subtitle optional (daca vrei) */}
+            {/* <p className="mt-4 text-base text-gray-700">Pasiune, siguranță, rezultate.</p> */}
+          </div>
+
+          {/* Text content – modern readability */}
+          <div className="mx-auto mt-10 md:mt-16 max-w-[1100px] px-2 sm:px-6">
+            <div className="md:columns-2 md:gap-14 text-[16px] md:text-[17px] leading-8 text-gray-900">
+              <p className="[break-inside:avoid] mb-6">
+                {t("about.companyDescription.paragraph1")}
+              </p>
+               <p className="[break-inside:avoid] mb-0">
+                {t("about.companyDescription.paragraph3")}
+              </p>
+
+              <p className="[break-inside:avoid] mb-6">
+                {t("about.companyDescription.paragraph2")}
+              </p>
+
+             
+            </div>
+          </div>
+
+          {/* Cars section */}
+          <div className="mt-14">
+            <h2 className="text-center text-2xl sm:text-3xl font-bold px-3">
+              {t("about.carIntro")}{" "}
+              <span className="bounce inline-block">&darr;</span>
+            </h2>
+
+            <p className="mt-3 text-center text-lg font-semibold text-gray-800">
+              {t("about.categoryB")}
+            </p>
+
+            <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 place-items-center">
+              <CarCard
+                name="Mercedes"
+                nickname={nicknames[0]}
+                image={mercedes}
+              />
+              <CarCard name="Volvo V40" nickname={nicknames[1]} image={volvo} />
+              <CarCard
+                name="Skoda Fabia"
+                nickname={nicknames[2]}
+                image={skoda}
+              />
+              <CarCard name="Fiat 500" nickname={nicknames[3]} image={fiat} />
+            </div>
+
+            <div className="mt-10 flex justify-center">
+              <Button
+                onClick={scrollToPackages}
+                textKey="about.button"
+                additionalClasses=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* REST */}
       <div>
         <Team ref={teamRef} />
         <Services ref={servicesRef} />

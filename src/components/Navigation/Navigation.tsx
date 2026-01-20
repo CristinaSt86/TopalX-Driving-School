@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import HamburgerButton from "./HamburgerButton";
 import MobileMenu from "./MobileMenu";
@@ -6,13 +6,11 @@ import DesktopMenu from "./DesktopMenu";
 import ErrorBoundary from "../ErrB";
 import SidebarIcons from "../SidebarIcons";
 
-interface NavigationProps {
-  isMobileView: boolean;
-}
-
-const Navigation: React.FC<NavigationProps> = ({ isMobileView }) => {
+const Navigation: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
+
+  const closeMenu = () => setIsOpen(false);
 
   const handleMenuClick = (sectionId: string, route: string = "/") => {
     if (window.location.pathname !== route) {
@@ -25,29 +23,30 @@ const Navigation: React.FC<NavigationProps> = ({ isMobileView }) => {
     } else {
       const section = document.getElementById(sectionId);
       if (section) section.scrollIntoView({ behavior: "smooth" });
+      closeMenu();
     }
-    closeMenu();
   };
-
-  const closeMenu = useCallback(() => setIsOpen(false), []);
-  useEffect(() => setIsOpen(false), [isMobileView]);
 
   return (
     <ErrorBoundary>
       <SidebarIcons />
-      <nav className="p-3 md:py-2 font-semibold text-white md:bg-black/50 md:backdrop-blur-sm md:rounded-lg md:shadow-md">
+
+      <nav className="p-3 lg:py-2 font-semibold text-white lg:bg-black/50 lg:backdrop-blur-sm lg:rounded-lg lg:shadow-md">
         <div className="container mx-auto flex justify-between items-center">
-          {isMobileView && (
-            <HamburgerButton
-              isOpen={isOpen}
-              onClick={() => setIsOpen(!isOpen)}
-            />
-          )}
-          {isMobileView ? (
-            <MobileMenu isOpen={isOpen} handleMenuClick={handleMenuClick} />
-          ) : (
+          {/* Mobile/Tablet: hamburger (incl. iPad) */}
+          <div className="lg:hidden">
+            <HamburgerButton isOpen={isOpen} onClick={() => setIsOpen(!isOpen)} />
+          </div>
+
+          {/* Desktop: menu */}
+          <div className="hidden lg:block">
             <DesktopMenu handleMenuClick={handleMenuClick} />
-          )}
+          </div>
+        </div>
+
+        {/* Mobile dropdown panel */}
+        <div className="lg:hidden">
+          <MobileMenu isOpen={isOpen} handleMenuClick={handleMenuClick} />
         </div>
       </nav>
     </ErrorBoundary>
