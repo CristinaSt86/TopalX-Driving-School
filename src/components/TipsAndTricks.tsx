@@ -4,8 +4,6 @@ import "../index.css";
 import {
   FaLightbulb,
   FaQuestionCircle,
-  FaCar,
-  FaGraduationCap,
   FaBook,
   FaCheckCircle,
   FaChevronDown,

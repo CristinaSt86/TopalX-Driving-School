@@ -4,7 +4,7 @@ import CarPackages from "../components/CarPackages";
 import { Helmet } from "react-helmet-async";
 import "../index.css";
 import Banner from "../components/Banner";
-import { Icon } from "@iconify/react";
+
 
 export interface ServicesRef {
   scrollToPackages: () => void;
