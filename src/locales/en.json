@@ -6,8 +6,8 @@
     "title2": "Welcome to",
     "school": "Driving School",
     "description": "Theoretical and practical training tailored to your needs. Experienced instructors focused on safety and building your confidence behind the wheel.",
-    "learn_more": "Book a lesson",
-    "learn_more1": "Get to know us better"
+    "learn_more": "Get started",
+    "learn_more1": "Get to know us"
   },
   "about": {
     "title": "About Us - TopalX",
@@ -37,7 +37,7 @@
     },
     "carIntro": "Meet our cars",
     "categoryB": "Category B",
-    "button": "Choose the Right Package"
+    "button": "Choose a package"
   },
   "carCard": {
     "alias": "Or",
@@ -285,7 +285,8 @@
     "shortTagline": "Driving School • Bucharest",
     "linksMenu": "Navigation",
     "chip2": "Easy booking",
-    "ctaFooter": "Get in touch"
+    "ctaFooter": "Get in touch",
+    "infoTitle":"Information"
   },
   "contactForm": {
     "name": "Name*",

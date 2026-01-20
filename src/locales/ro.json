@@ -6,8 +6,8 @@
     "title2": "Bine ați venit la",
     "school": "Școala de Șoferi",
     "description": "Pregătire teoretică și practică, adaptată nevoilor tale. Instructori cu experiență, focus pe siguranță și încredere la volan.",
-    "learn_more": "Programează o ședință",
-    "learn_more1": "Cunoaște-ne mai bine"
+    "learn_more": "Rezervă acum",
+    "learn_more1": "Cine suntem"
   },
   "about": {
     "title": "Despre Noi - TopalX",
@@ -37,7 +37,7 @@
     },
     "carIntro": "Faceți cunoștință cu autoturismele noastre",
     "categoryB": "Categoria B",
-    "button": "Alege Pachetul Potrivit"
+    "button": "Alege pachetul"
   },
   "carCard": {
     "alias": "Sau",
@@ -280,7 +280,8 @@
     "shortTagline": "Școală de șoferi • București",
     "linksMenu": "Navigație",
     "chip2": "Programări simple",
-    "ctaFooter": "Contactează-ne"
+    "ctaFooter": "Contactează-ne",
+    "infoTitle":"Informații"
   },
   "contactForm": {
     "name": "Nume*",

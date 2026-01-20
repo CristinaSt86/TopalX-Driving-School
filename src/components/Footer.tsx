@@ -100,9 +100,9 @@ const Footer: React.FC = () => {
           </div>
 
           {/* INFO */}
-          <div className="md:px-2">
+          <div className="px-3 md:px-2">
             <h3 className="text-sm font-semibold tracking-wide text-gray-900">
-              {t("footer.infoTitle", { defaultValue: "Informații" })}
+              {t("footer.infoTitle")}
             </h3>
 
             <p className="mt-4 text-sm leading-relaxed text-slate-600">
@@ -134,7 +134,7 @@ const Footer: React.FC = () => {
           {/* LINKS */}
           <div className="flex flex-col md:items-end">
             <div className="w-full max-w-[360px] md:max-w-[320px]">
-              <h3 className="text-sm font-semibold tracking-wide text-gray-900 md:text-right pr-3">
+              <h3 className="text-sm font-semibold tracking-wide text-gray-900 md:text-right pl-3 md:pl-0 md:pr-3">
                 {t("footer.linksMenu")}
               </h3>
 
@@ -174,7 +174,7 @@ const Footer: React.FC = () => {
 
               <div className="my-6 h-px w-full bg-black/10" />
 
-              <h3 className="text-sm font-semibold tracking-wide text-gray-900 md:text-right pr-3">
+              <h3 className="text-sm font-semibold tracking-wide text-gray-900 md:text-right pl-3 md:pl-0 pr-3">
                 {t("footer.legalTitle", { defaultValue: "Legal" })}
               </h3>
 
