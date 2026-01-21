@@ -7,9 +7,9 @@ import {
   FaQuoteLeft,
   FaImages,
   FaEnvelope,
-  FaChevronLeft,
   FaTimes,
 } from "react-icons/fa";
+import { HiChevronLeft } from "react-icons/hi";
 import LanguageButton from "./LanguageButton";
 
 const SidebarIcons: React.FC = () => {
@@ -40,7 +40,6 @@ const SidebarIcons: React.FC = () => {
     setIsSidebarOpen(false);
   };
 
-  // dacă user a închis sidebarul, nu-l mai afișăm
   if (!isVisible || isClosedByUser) return null;
 
   return (
@@ -50,15 +49,16 @@ const SidebarIcons: React.FC = () => {
         onClick={() => setIsSidebarOpen(!isSidebarOpen)}
         aria-label="Toggle quick menu"
         className={`fixed top-1/2 -translate-y-1/2 lg:hidden z-[1003]
-          h-11 w-11 grid place-items-center rounded-full
-          bg-black/45 backdrop-blur-md text-white shadow-lg
-          ring-1 ring-white/10 transition-all duration-200
-          hover:bg-black/55 active:scale-95
-          ${isSidebarOpen ? "right-[4rem]" : "right-2"}`}
+          h-8 w-8 grid place-items-center rounded-full
+          bg-black/30 backdrop-blur-md text-white shadow-lg
+          transition-all duration-200 ease-out
+          hover:bg-black/30 hover:scale-105
+          focus:outline-none focus-visible:ring-2 focus-visible:ring-white/40
+          ${isSidebarOpen ? "right-[3.5rem]" : "right-1"}`}
       >
-        <FaChevronLeft
+        <HiChevronLeft
           size={18}
-          className={`transition-transform ${
+          className={`transition-transform duration-200 ease-out ${
             isSidebarOpen ? "rotate-180" : ""
           }`}
         />
@@ -67,7 +67,7 @@ const SidebarIcons: React.FC = () => {
       {/* Sidebar */}
       <div
         className={`fixed right-0 top-1/2 -translate-y-1/2 z-[1002]
-          flex flex-col items-center gap-2 p-2
+          flex flex-col items-center gap-2 p-1
           rounded-l-2xl bg-black/30 backdrop-blur-md
           shadow-xl ring-1 ring-white/10
           transition-transform duration-300
@@ -80,7 +80,9 @@ const SidebarIcons: React.FC = () => {
           onClick={() => setIsClosedByUser(true)}
           className="w-10 h-10 rounded-xl grid place-items-center
             text-white/80 hover:bg-white/10 hover:text-white
-            transition active:scale-95 mb-1"
+            transition-all duration-200 ease-out
+            active:scale-95 mb-1
+            focus:outline-none focus-visible:ring-2 focus-visible:ring-white/30"
           title="Close"
         >
           <FaTimes size={18} />
@@ -99,9 +101,10 @@ const SidebarIcons: React.FC = () => {
             key={id as string}
             onClick={() => handleSidebarClick(id as string)}
             className="w-11 h-11 rounded-2xl grid place-items-center
-              text-white/90 transition-all duration-200
+              text-white/90 transition-all duration-200 ease-out
               hover:bg-white/10 hover:text-white hover:-translate-x-[2px]
-              active:scale-95"
+              active:scale-95
+              focus:outline-none focus-visible:ring-2 focus-visible:ring-white/30"
           >
             {icon}
           </button>
@@ -109,8 +112,11 @@ const SidebarIcons: React.FC = () => {
 
         {/* Language */}
         <div className="mt-1 pt-2 w-full flex justify-center border-t border-white/10">
-          <div className="w-11 h-11 rounded-2xl grid place-items-center
-            text-white/90 hover:bg-white/10 transition">
+          <div
+            className="w-11 h-11 rounded-2xl grid place-items-center
+            text-white/90 hover:bg-white/10 transition-all duration-200 ease-out
+            focus-within:ring-2 focus-within:ring-white/30 focus-within:rounded-2xl"
+          >
             <LanguageButton />
           </div>
         </div>

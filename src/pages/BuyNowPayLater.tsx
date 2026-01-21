@@ -5,9 +5,15 @@ const BuyNowPayLater: React.FC = () => {
   const { t } = useTranslation();
   const [openExamples, setOpenExamples] = useState(false);
 
-  const s1Steps = t("buyNowPayLater.section1.steps", { returnObjects: true }) as string[];
-  const s2Steps = t("buyNowPayLater.section2.steps", { returnObjects: true }) as string[];
-  const examples = t("buyNowPayLater.section3.examples", { returnObjects: true }) as string[];
+  const s1Steps = t("buyNowPayLater.section1.steps", {
+    returnObjects: true,
+  }) as string[];
+  const s2Steps = t("buyNowPayLater.section2.steps", {
+    returnObjects: true,
+  }) as string[];
+  const examples = t("buyNowPayLater.section3.examples", {
+    returnObjects: true,
+  }) as string[];
 
   return (
     <section id="buy-now-section" className="py-16 sm:py-20">
@@ -27,10 +33,7 @@ const BuyNowPayLater: React.FC = () => {
         <div className="mt-10 grid grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-6 items-start">
           {/* Card 1 */}
           <article className="rounded-3xl border border-black/10 bg-white p-6 shadow-sm">
-            <h3 className="text-lg font-semibold text-gray-900">
-              {t("buyNowPayLater.section1.subtitle")}
-            </h3>
-            <p className="mt-3 text-slate-700 leading-relaxed">
+            <p className="text-slate-700 leading-relaxed">
               {t("buyNowPayLater.section1.description")}
             </p>
 
@@ -68,9 +71,7 @@ const BuyNowPayLater: React.FC = () => {
                     {idx + 1}
                   </span>
 
-                  <p className="text-slate-700 leading-relaxed">
-                    {step}
-                  </p>
+                  <p className="text-slate-700 leading-relaxed">{step}</p>
                 </li>
               ))}
             </ol>
@@ -106,13 +107,18 @@ const BuyNowPayLater: React.FC = () => {
               onClick={() => setOpenExamples((v) => !v)}
               className="mt-4 inline-flex items-center justify-center rounded-2xl border border-black/10 bg-white px-4 py-2 text-sm font-semibold text-gray-900 shadow-sm hover:bg-slate-50"
             >
-              {openExamples ? "Ascunde exemple" : "Vezi exemple complete"}
+              {openExamples
+                ? t("buyNowPayLater.section3.hideExamples")
+                : t("buyNowPayLater.section3.viewFullExamples")}
             </button>
 
             {openExamples && (
               <div className="mt-4 space-y-3 rounded-2xl bg-slate-50 p-4 border border-black/10">
                 {examples.map((ex, idx) => (
-                  <p key={idx} className="text-sm text-slate-700 leading-relaxed">
+                  <p
+                    key={idx}
+                    className="text-sm text-slate-700 leading-relaxed"
+                  >
                     {ex}
                   </p>
                 ))}
@@ -151,8 +157,8 @@ const BuyNowPayLater: React.FC = () => {
             </div>
 
             <p className="mt-3 text-xs text-slate-500">
-              {t("buyNowPayLater.section4.downloadApp")} {t("buyNowPayLater.section4.or")}{" "}
-              tbibank.ro
+              {t("buyNowPayLater.section4.downloadApp")}{" "}
+              {t("buyNowPayLater.section4.or")} tbibank.ro
             </p>
           </article>
         </div>

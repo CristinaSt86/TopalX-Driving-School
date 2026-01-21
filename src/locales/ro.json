@@ -281,7 +281,7 @@
     "linksMenu": "Navigație",
     "chip2": "Programări simple",
     "ctaFooter": "Contactează-ne",
-    "infoTitle":"Informații"
+    "infoTitle": "Informații"
   },
   "contactForm": {
     "name": "Nume*",
@@ -518,6 +518,8 @@
     },
     "section3": {
       "subtitle": "Exemple de costuri și dobânzi:",
+      "viewFullExamples": "Vezi exemple complete",
+      "hideExamples": "Ascunde exemple",
       "examples": [
         "Pentru un credit în valoare de 2.000 lei, pe o perioadă de 4 luni, cu o dobândă anuală fixă de 0%, comisionul de analiză este de 60 lei, prima de asigurare de viață este de 0,00 lei, rata lunară fixă este de 515,00 lei. Dobânda anuală efectivă (DAE) este de 15,29%.",
         "Pentru un credit în valoare de 5.500 lei, pe o perioadă de 24 luni, cu o dobândă anuală fixă de 21%, comisionul de analiză este de 170 lei, prima de asigurare de viață este de 612,36 lei, rata lunară fixă este de 322,82 lei. Dobânda anuală efectivă (DAE) este de 41,66%, iar valoarea totală plătibilă este 7.747,76 lei."
@@ -525,7 +527,8 @@
     },
     "section4": {
       "moreInfo": "Solicitați detalii complete la orice punct de vânzare sau vizitați tbibank.ro pentru mai multe informații.",
-      "downloadApp": "Descarcă gratuit aplicația TBI din Google Play sau Apple App Store."
+      "downloadApp": "Descarcă gratuit aplicația TBI din Google Play sau Apple App Store.",
+      "or": "sau vizitează"
     }
   },
   "tipsAndTricks": {

@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { FaChevronUp } from 'react-icons/fa';
+import React, { useState, useEffect } from "react";
+import { HiChevronUp } from "react-icons/hi";
 
 const BackToTopButton: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -15,14 +15,14 @@ const BackToTopButton: React.FC = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', toggleVisibility);
+    window.addEventListener("scroll", toggleVisibility);
     return () => {
-      window.removeEventListener('scroll', toggleVisibility);
+      window.removeEventListener("scroll", toggleVisibility);
     };
   }, []);
 
@@ -31,9 +31,18 @@ const BackToTopButton: React.FC = () => {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="p-2 bg-black/50 text-white rounded-full shadow-md hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-800 focus:ring-opacity-50 transition duration-300"
+          className="
+    p-2.5
+    rounded-full
+    bg-black/40 backdrop-blur-md
+    text-white
+    shadow-lg
+    transition-all duration-200 ease-out
+    hover:bg-black/60 hover:scale-105
+    focus:outline-none focus-visible:ring-2 focus-visible:ring-white/40
+  "
         >
-          <FaChevronUp  size={20} />
+          <HiChevronUp size={18} />
         </button>
       )}
     </div>

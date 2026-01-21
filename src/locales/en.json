@@ -286,7 +286,7 @@
     "linksMenu": "Navigation",
     "chip2": "Easy booking",
     "ctaFooter": "Get in touch",
-    "infoTitle":"Information"
+    "infoTitle": "Information"
   },
   "contactForm": {
     "name": "Name*",
@@ -523,6 +523,8 @@
     },
     "section3": {
       "subtitle": "Examples of costs and interest rates:",
+      "viewFullExamples": "View detailed examples",
+      "hideExamples": "Hide examples",
       "examples": [
         "For a loan of 2,000 lei over 4 months with a fixed annual interest rate of 0%, the analysis fee is 60 lei, the life insurance premium is 0.00 lei, and the fixed monthly installment is 515.00 lei. The annual effective interest rate (APR) is 15.29%.",
         "For a loan of 5,500 lei over 24 months with a fixed annual interest rate of 21%, the analysis fee is 170 lei, the life insurance premium is 612.36 lei, and the fixed monthly installment is 322.82 lei. The annual effective interest rate (APR) is 41.66%, and the total payable amount is 7,747.76 lei."
@@ -530,7 +532,8 @@
     },
     "section4": {
       "moreInfo": "Request complete details at any sales point or visit tbibank.ro for more information.",
-      "downloadApp": "Download the TBI app for free from Google Play or the Apple App Store."
+      "downloadApp": "Download the TBI app for free from Google Play or the Apple App Store.",
+      "or": "or visit"
     }
   },
   "tipsAndTricks": {
