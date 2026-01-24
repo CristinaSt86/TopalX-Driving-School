@@ -98,7 +98,7 @@ const CarPackages = forwardRef<HTMLDivElement, CarPackagesProps>(
             name="description"
             content={t(
               "carPackages.seo.description",
-              "Choose from modern cars and professional training."
+              "Choose from modern cars and professional training.",
             )}
           />
         </Helmet>
@@ -110,7 +110,7 @@ const CarPackages = forwardRef<HTMLDivElement, CarPackagesProps>(
               <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
                 {t("carPackages.title")}
               </h1>
-              <div className="mx-auto mt-4 h-[2px] w-24 rounded-full bg-logoBlue/60" />
+              <div className="mx-auto mt-5 h-[2px] w-32 rounded-full bg-gradient-to-r from-logoBlue/20 via-logoBlue to-logoBlue/20" />
               <p className="mx-auto mt-4 max-w-2xl text-base md:text-lg text-gray-700">
                 {t("carPackages.subtitluCars")}
               </p>
@@ -239,7 +239,7 @@ const CarPackages = forwardRef<HTMLDivElement, CarPackagesProps>(
         </section>
       </div>
     );
-  }
+  },
 );
 
 CarPackages.displayName = "CarPackages";

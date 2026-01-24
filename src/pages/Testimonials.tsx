@@ -69,7 +69,7 @@ const Testimonials = forwardRef<TestimonialsHandle, TestimonialsProps>(
                 {t("testimonials.title")}
               </h2>
 
-              <div className="mx-auto mt-4 h-[2px] w-24 rounded-full bg-logoBlue/60" />
+              <div className="mx-auto mt-5 h-[2px] w-32 rounded-full bg-gradient-to-r from-logoBlue/20 via-logoBlue to-logoBlue/20" />
 
               <div className="mt-6 flex flex-wrap items-center justify-center gap-4">
                 <span className="rounded-full border border-black/10 bg-white px-4 py-2 text-sm font-semibold shadow-sm">

@@ -1,16 +1,16 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import sis2 from "../images/wha.webp";
-import sis from "../images/sis.webp";
+import sis from "../images/clasa3.webp";
 import clasa from "../images/top1.webp";
-import servicii from "../images/servicii.webp";
+import servicii from "../images/sediuOUT.webp";
 import sisCostiElev from "../images/sisCostiElev.webp";
 import clasa3 from "../images/sis2.webp";
 
 const CineSuntemImg: React.FC = () => {
   const { t } = useTranslation();
 
-  const images: string[] = [sis2, clasa3, sis, sisCostiElev, servicii,  clasa];
+  const images: string[] = [sis2, clasa3, sis, sisCostiElev, servicii, clasa];
 
   return (
     <section className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8 pt-14 md:mb-12 sm:pt-16">
@@ -19,7 +19,7 @@ const CineSuntemImg: React.FC = () => {
         <h1 className="text-3xl sm:text-4xl font-bold text-textColor">
           {t("about.headerTitle")}
         </h1>
-        <div className="mx-auto mt-4 h-[2px] w-24 rounded-full bg-logoBlue/60" />
+        <div className="mx-auto mt-5 h-[2px] w-32 rounded-full bg-gradient-to-r from-logoBlue/20 via-logoBlue to-logoBlue/20" />
       </header>
 
       {/* Mosaic grid */}

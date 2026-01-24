@@ -68,7 +68,7 @@ const Gallery: React.FC = () => {
 
   const active = useMemo(
     () => (activeIndex === null ? null : items[activeIndex]),
-    [activeIndex]
+    [activeIndex],
   );
 
   const open = (index: number) => {
@@ -107,7 +107,8 @@ const Gallery: React.FC = () => {
     <div id="gallery" className="fade-in">
       <Helmet>
         <title>
-          Galerie Foto | Scoala de soferi TopalX | Școala de Șoferi din București
+          Galerie Foto | Scoala de soferi TopalX | Școala de Șoferi din
+          București
         </title>
         <meta
           name="description"
@@ -122,7 +123,7 @@ const Gallery: React.FC = () => {
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
               {t("gallery.galleryTitle")}
             </h2>
-            <div className="mx-auto mt-4 h-[2px] w-24 rounded-full bg-logoBlue/60" />
+            <div className="mx-auto mt-5 h-[2px] w-32 rounded-full bg-gradient-to-r from-logoBlue/20 via-logoBlue to-logoBlue/20" />
             <p className="mx-auto mt-4 max-w-2xl text-slate-600">
               {t("gallery.galleryDescription")}
             </p>
@@ -145,7 +146,9 @@ const Gallery: React.FC = () => {
                   `}
                   aria-label={`Deschide imaginea ${i + 1}`}
                 >
-                  <div className={`${isFeatured ? "aspect-[16/10]" : "aspect-[4/3]"} w-full`}>
+                  <div
+                    className={`${isFeatured ? "aspect-[16/10]" : "aspect-[4/3]"} w-full`}
+                  >
                     <img
                       src={it.src}
                       alt={it.alt ?? "galerie TopalX"}
@@ -156,7 +159,6 @@ const Gallery: React.FC = () => {
                   </div>
 
                   {/* index badge discret (nu text redundant) */}
-               
                 </button>
               );
             })}

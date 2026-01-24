@@ -26,8 +26,6 @@ const Offer: React.FC = () => {
                 {t("offer.title")}
               </h2>
 
-              <div className="mx-auto mt-4 h-[2px] w-24 rounded-full bg-logoBlue/60" />
-
               <p className="mx-auto mt-5 max-w-2xl text-lg sm:text-xl text-slate-700 leading-relaxed">
                 {t("offer.description1")}
               </p>
@@ -73,7 +71,6 @@ const Offer: React.FC = () => {
 
             {/* micro text */}
             <p className="mt-4 text-center text-xs text-slate-500">
-              
               {t("offer.raspundemRapid")}
             </p>
           </div>

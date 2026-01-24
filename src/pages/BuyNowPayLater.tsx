@@ -23,7 +23,7 @@ const BuyNowPayLater: React.FC = () => {
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
             {t("buyNowPayLater.title")}
           </h2>
-          <div className="mx-auto mt-4 h-[2px] w-24 rounded-full bg-logoBlue/60" />
+          <div className="mx-auto mt-5 h-[2px] w-32 rounded-full bg-gradient-to-r from-logoBlue/20 via-logoBlue to-logoBlue/20" />
           <p className="mx-auto mt-4 max-w-2xl text-slate-600">
             {t("buyNowPayLater.section1.subtitle")}
           </p>

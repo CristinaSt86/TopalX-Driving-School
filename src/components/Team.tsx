@@ -132,6 +132,7 @@ const Team = React.forwardRef<HTMLDivElement, TeamProps>((props, ref) => {
               className="mt-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
             >
               {t("team2.title")}
+              <div className="mx-auto mt-5 h-[2px] w-32 rounded-full bg-gradient-to-r from-logoBlue/20 via-logoBlue to-logoBlue/20" />
             </h2>
 
             <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-gray-600">

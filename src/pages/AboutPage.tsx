@@ -170,7 +170,7 @@ const AboutPage: React.FC = () => {
               </p>
 
               <div className="mt-6 inline-flex items-center text-sm font-semibold text-logoBlue">
-                  {t("about.mission.seeRev")}
+                {t("about.mission.seeRev")}
               </div>
             </section>
 
@@ -216,7 +216,8 @@ const AboutPage: React.FC = () => {
               {t("about.companyDescription.title")}
             </h1>
 
-            <div className="mx-auto mt-4 h-[2px] w-24 rounded-full bg-logoBlue/60" />
+            <div className="mx-auto mt-5 h-[2px] w-32 rounded-full bg-gradient-to-r from-logoBlue/20 via-logoBlue to-logoBlue/20" />
+
             {/* micro-subtitle optional (daca vrei) */}
             {/* <p className="mt-4 text-base text-gray-700">Pasiune, siguranță, rezultate.</p> */}
           </div>
@@ -227,15 +228,13 @@ const AboutPage: React.FC = () => {
               <p className="[break-inside:avoid] mb-6">
                 {t("about.companyDescription.paragraph1")}
               </p>
-               <p className="[break-inside:avoid] mb-0">
+              <p className="[break-inside:avoid] mb-0">
                 {t("about.companyDescription.paragraph3")}
               </p>
 
               <p className="[break-inside:avoid] mb-6">
                 {t("about.companyDescription.paragraph2")}
               </p>
-
-             
             </div>
           </div>
 

@@ -5,7 +5,6 @@ import { Helmet } from "react-helmet-async";
 import "../index.css";
 import Banner from "../components/Banner";
 
-
 export interface ServicesRef {
   scrollToPackages: () => void;
 }
@@ -151,54 +150,51 @@ const Services = React.forwardRef((props, ref) => {
         </Helmet>
 
         <div className="bg-yellow-50/70 py-14 sm:py-16 shadow-sm">
-  {/* WRAPPER max width */}
-  <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8">
-    <header className="text-center">
-      <h1 className="text-3xl sm:text-4xl font-bold text-gray-900">
-        {t("services.title")}
-      </h1>
-      <div className="mx-auto mt-4 h-[2px] w-24 rounded-full bg-logoBlue/60" />
-      <p className="mx-auto mt-4 max-w-2xl text-base sm:text-lg text-gray-700">
-         {t("services.subtitluServ")}
-      </p>
-    </header>
+          {/* WRAPPER max width */}
+          <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8">
+            <header className="text-center">
+              <h1 className="text-3xl sm:text-4xl font-bold text-gray-900">
+                {t("services.title")}
+              </h1>
+              <div className="mx-auto mt-5 h-[2px] w-32 rounded-full bg-gradient-to-r from-logoBlue/20 via-logoBlue to-logoBlue/20" />
+              <p className="mx-auto mt-4 max-w-2xl text-base sm:text-lg text-gray-700">
+                {t("services.subtitluServ")}
+              </p>
+            </header>
 
-    {/* GRID – max-width se aplică prin wrapper */}
-    <div className="mt-10 md:mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
-      {services.map((service, index) => (
-        <article
-          key={index}
-          className="
+            {/* GRID – max-width se aplică prin wrapper */}
+            <div className="mt-10 md:mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+              {services.map((service, index) => (
+                <article
+                  key={index}
+                  className="
             group rounded-2xl border border-black/10 bg-white p-6
             shadow-sm transition hover:-translate-y-0.5 hover:shadow-lg
           "
-        >
-          <div className="flex items-start justify-between gap-4">
-            <h2 className="text-lg sm:text-xl font-semibold text-gray-900">
-              {service.name}
-            </h2>
+                >
+                  <div className="flex items-start justify-between gap-4">
+                    <h2 className="text-lg sm:text-xl font-semibold text-gray-900">
+                      {service.name}
+                    </h2>
 
-            {/* status badge */}
-            <span className="shrink-0 inline-flex items-center rounded-full bg-green-50 px-3 py-1 text-xs font-semibold text-green-700 ring-1 ring-green-200">
-              {service.available}
-            </span>
+                    {/* status badge */}
+                    <span className="shrink-0 inline-flex items-center rounded-full bg-green-50 px-3 py-1 text-xs font-semibold text-green-700 ring-1 ring-green-200">
+                      {service.available}
+                    </span>
+                  </div>
+
+                  {/* Description – clamp pentru premium UI (optional) */}
+                  <p className="mt-4 text-sm sm:text-base leading-6 text-gray-700 line-clamp-4">
+                    {service.description}
+                  </p>
+
+                  {/* micro CTA */}
+                  <div className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-logoBlue"></div>
+                </article>
+              ))}
+            </div>
           </div>
-
-          {/* Description – clamp pentru premium UI (optional) */}
-          <p className="mt-4 text-sm sm:text-base leading-6 text-gray-700 line-clamp-4">
-            {service.description}
-          </p>
-
-          {/* micro CTA */}
-          <div className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-logoBlue">
-    
-          </div>
-        </article>
-      ))}
-    </div>
-  </div>
-</div>
-
+        </div>
 
         <Banner />
         <CarPackages ref={carPackagesRef} />
