@@ -8,7 +8,7 @@ import "../index.css";
 import Button from "../components/Button";
 import Acasa from "../components/Acasa";
 import BuyNowPayLater from "./BuyNowPayLater";
-import SnowfallCanvas from "../components/SnowfallCanvas";
+//import SnowfallCanvas from "../components/SnowfallCanvas";
 //import Snowflakes from "../components/Snowflakes";
 //import SnowfallCanvas from "../components/SnowfallCanvas";
 
