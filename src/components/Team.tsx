@@ -5,7 +5,7 @@ import "../index.css";
 import cos2 from "../images/cos2.webp";
 import sisOffice from "../images/sisOffice.webp";
 import ins2 from "../images/ins2.webp";
-import ins1 from "../images/ins1.webp";
+//import ins1 from "../images/ins1.webp";
 import prof1 from "../images/prof1.webp";
 import FiatDrive from "../images/FiatDrive.webp";
 import { Link } from "react-router-dom";
@@ -38,13 +38,7 @@ const Team = React.forwardRef<HTMLDivElement, TeamProps>((props, ref) => {
       description: t("team2.members.2.description"),
       image: ins2,
     },
-    {
-      id: 4,
-      name: t("team2.members.3.name"),
-      role: t("team2.members.3.role"),
-      description: t("team2.members.3.description"),
-      image: ins1,
-    },
+
     {
       id: 5,
       name: t("team2.members.4.name"),
@@ -113,7 +107,7 @@ const Team = React.forwardRef<HTMLDivElement, TeamProps>((props, ref) => {
         <meta property="twitter:creator" content="@TopalXScoalaAuto" />
       </Helmet>
 
-      <section className="relative bg-white py-6 md:py-8">
+      <section className="relative bg-white py-4 md:py-8">
         {/* car animation (mai “curat”, mai mic) */}
         <div className="relative mt-4 h-32 overflow-hidden">
           <div className="absolute bottom-0 left-0 w-56 animate-drive opacity-90">
@@ -136,7 +130,7 @@ const Team = React.forwardRef<HTMLDivElement, TeamProps>((props, ref) => {
             </h2>
 
             <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-gray-600">
-               {t("team2.subtitluTeam")}
+              {t("team2.subtitluTeam")}
             </p>
           </div>
 

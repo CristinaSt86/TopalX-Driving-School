@@ -208,7 +208,7 @@ const AboutPage: React.FC = () => {
       </div>
 
       {/* COMPANY DESCRIPTION "PAPER CARD" */}
-      <section className="mx-auto my-20 w-full max-w-[1200px] px-4 sm:px-6 lg:px-8">
+      <section className="mx-auto mb-10 mt-16 w-full max-w-[1200px] px-4 sm:px-6 lg:px-8">
         <div className="rounded-2xl border border-black/10 bg-yellow-50/70 p-6 sm:p-10 shadow-sm">
           {/* Header */}
           <div className="text-center">
