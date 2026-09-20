@@ -131,29 +131,35 @@ const BuyNowPayLater: React.FC = () => {
                 href="https://www.tbibank.ro"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded-2xl bg-secondary px-5 py-3 text-sm font-semibold text-white shadow-sm hover:opacity-95"
+                className="inline-flex items-center justify-center rounded-2xl bg-secondary px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:opacity-95"
               >
                 {t("buyNowPayLater.section4.moreInfo")} • tbibank.ro
               </a>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
                 <a
-                  href="https://play.google.com/store/apps/details?id=com.tbibank"
+                  href="https://play.google.com/store/apps/details?id=com.tbi.shoppingapp"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center rounded-2xl border border-black/10 bg-white px-5 py-3 text-sm font-semibold text-gray-900 shadow-sm hover:bg-slate-50"
+                  className="inline-flex items-center justify-center rounded-2xl border border-black/10 bg-white px-5 py-3 text-sm font-semibold text-gray-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-50 hover:shadow-md"
                 >
                   Google Play
                 </a>
+
                 <a
-                  href="https://apps.apple.com/ro/app/tbi-bank/id1466051318"
+                  href="https://apps.apple.com/ro/app/tbi-romania/id1642302184"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center rounded-2xl border border-black/10 bg-white px-5 py-3 text-sm font-semibold text-gray-900 shadow-sm hover:bg-slate-50"
+                  className="inline-flex items-center justify-center rounded-2xl border border-black/10 bg-white px-5 py-3 text-sm font-semibold text-gray-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-50 hover:shadow-md"
                 >
                   App Store
                 </a>
               </div>
+
+              <p className="text-xs text-slate-500">
+                {t("buyNowPayLater.section4.downloadApp")}{" "}
+                {t("buyNowPayLater.section4.or")} tbibank.ro
+              </p>
             </div>
 
             <p className="mt-3 text-xs text-slate-500">
