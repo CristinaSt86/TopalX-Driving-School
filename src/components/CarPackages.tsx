@@ -159,11 +159,11 @@ const CarPackages = forwardRef<HTMLDivElement, CarPackagesProps>(
                             : "px-5 pb-6"
                         }
                       >
-                        <div className="flex items-start justify-between gap-3">
-                          <h2 className="text-xl font-semibold text-gray-900">
+                        <div className="flex flex-col items-start gap-3 sm:flex-row sm:justify-between">
+                          <h2 className="min-w-0 break-words text-xl font-semibold text-gray-900">
                             {pkg.name}
                           </h2>
-                          <span className="shrink-0 rounded-full bg-emerald-50 px-3 py-1 text-sm font-semibold text-emerald-700 ring-1 ring-emerald-100">
+                          <span className="max-w-full rounded-full bg-emerald-50 px-3 py-1 text-left text-sm font-semibold leading-snug text-emerald-700 ring-1 ring-emerald-100 sm:shrink-0">
                             {pkg.price}
                           </span>
                         </div>

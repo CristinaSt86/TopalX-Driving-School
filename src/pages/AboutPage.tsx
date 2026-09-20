@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
-import "../index.css";
+//import "../index.css";
 import CarCard from "../components/CarCard";
 import Team from "../components/Team";
 import Services from "./Services";
@@ -150,22 +150,21 @@ const AboutPage: React.FC = () => {
       {/* PAGE WRAPPER */}
       <div
         id="about"
-        className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8"
+        className="mx-auto w-full max-w-[1280px] px-4 py-10 sm:px-6 sm:py-12 lg:px-8 lg:py-16"
       >
         {/* TOP GRID: Key info + 2 clickable cards */}
-        <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 gap-5 sm:gap-6 lg:gap-8">
             {/* 1) Featured card: Mission */}
             <section
               onClick={scrollToTestimonials}
-              className="rounded-2xl border border-black/10 bg-white p-6 sm:p-8 shadow-sm transition hover:shadow-lg cursor-pointer"
+              className="cursor-pointer rounded-2xl border border-black/10 bg-white p-5 shadow-sm transition hover:shadow-lg sm:p-7 lg:p-8"
             >
-              <h2 className="text-2xl sm:text-3xl font-semibold mb-4">
+              <h2 className="mb-4 text-2xl font-semibold sm:text-3xl">
                 {t("about.mission.title")}
               </h2>
 
               {/* Text lung ok aici */}
-              <p className="text-base md:text-lg leading-7 font-medium text-gray-800">
+              <p className="text-base leading-7 text-gray-800 sm:text-lg">
                 {t("about.mission.description")}
               </p>
 
@@ -175,12 +174,12 @@ const AboutPage: React.FC = () => {
             </section>
 
             {/* 2) Two compact cards */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-              <section className="rounded-2xl border border-black/10 bg-white p-6 shadow-sm">
-                <h2 className="text-2xl font-semibold mb-3">
+            <div className="grid grid-cols-1 gap-5 sm:gap-6 md:grid-cols-2 lg:gap-8">
+              <section className="rounded-2xl border border-black/10 bg-white p-5 shadow-sm sm:p-7 lg:p-8">
+                <h2 className="mb-4 text-2xl font-semibold sm:text-3xl">
                   {t("about.keyInformation.titleInfo")}
                 </h2>
-                <ul className="text-base leading-6 list-disc pl-5 font-medium text-gray-800">
+                <ul className="list-disc space-y-2 pl-5 text-base font-medium leading-7 text-gray-800 sm:text-lg">
                   <li>{t("about.keyInformation.founded")}</li>
                   <li>{t("about.keyInformation.employees")}</li>
                   <li>{t("about.keyInformation.location")}</li>
@@ -189,12 +188,12 @@ const AboutPage: React.FC = () => {
 
               <section
                 onClick={scrollToTeam}
-                className="rounded-2xl border border-black/10 bg-white p-6 shadow-sm transition hover:shadow-lg cursor-pointer"
+                className="cursor-pointer rounded-2xl border border-black/10 bg-white p-5 shadow-sm transition hover:shadow-lg sm:p-7 lg:p-8"
               >
-                <h2 className="text-2xl font-semibold mb-3">
+                <h2 className="mb-4 text-2xl font-semibold sm:text-3xl">
                   {t("about.team.title")}
                 </h2>
-                <p className="text-base md:text-lg leading-7 font-medium text-gray-800">
+                <p className="text-base leading-7 text-gray-800 sm:text-lg">
                   {t("about.team.description")}
                 </p>
 
@@ -203,13 +202,12 @@ const AboutPage: React.FC = () => {
                 </div>
               </section>
             </div>
-          </div>
         </div>
       </div>
 
       {/* COMPANY DESCRIPTION "PAPER CARD" */}
-      <section className="mx-auto mb-10 mt-16 w-full max-w-[1200px] px-4 sm:px-6 lg:px-8">
-        <div className="rounded-2xl border border-black/10 bg-yellow-50/70 p-6 sm:p-10 shadow-sm">
+      <section className="mx-auto mb-10 w-full max-w-[1280px] px-4 sm:mb-12 sm:px-6 lg:mb-16 lg:px-8">
+        <div className="rounded-2xl border border-black/10 bg-yellow-50/70 p-5 shadow-sm sm:p-7 lg:p-8">
           {/* Header */}
           <div className="text-center">
             <h1 className="text-3xl sm:text-4xl font-bold">
@@ -223,24 +221,24 @@ const AboutPage: React.FC = () => {
           </div>
 
           {/* Text content – modern readability */}
-          <div className="mx-auto mt-10 md:mt-16 max-w-[1100px] px-2 sm:px-6">
-            <div className="md:columns-2 md:gap-14 text-[16px] md:text-[17px] leading-8 text-gray-900">
+          <div className="mx-auto mt-8 max-w-[1160px] sm:mt-10 lg:mt-12">
+            <div className="text-base leading-8 text-gray-900 md:columns-2 md:gap-10 md:text-[17px] lg:gap-12">
               <p className="[break-inside:avoid] mb-6">
                 {t("about.companyDescription.paragraph1")}
               </p>
-              <p className="[break-inside:avoid] mb-0">
+              <p className="[break-inside:avoid] mb-6">
                 {t("about.companyDescription.paragraph3")}
               </p>
 
-              <p className="[break-inside:avoid] mb-6">
+              <p className="[break-inside:avoid] mb-0">
                 {t("about.companyDescription.paragraph2")}
               </p>
             </div>
           </div>
 
           {/* Cars section */}
-          <div className="mt-14">
-            <h2 className="text-center text-2xl sm:text-3xl font-bold px-3">
+          <div className="mt-10 sm:mt-12 lg:mt-14">
+            <h2 className="px-1 text-center text-2xl font-bold sm:text-3xl">
               {t("about.carIntro")}{" "}
               <span className="bounce inline-block">&darr;</span>
             </h2>
@@ -249,7 +247,7 @@ const AboutPage: React.FC = () => {
               {t("about.categoryB")}
             </p>
 
-            <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 place-items-center">
+            <div className="mt-8 grid grid-cols-1 place-items-center gap-5 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4 lg:gap-8">
               <CarCard
                 name="Mercedes"
                 nickname={nicknames[0]}

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "../components/Navigation/Navigation";
 import TopHeader from "./TopHeader";
-import "../index.css";
+//import "../index.css";
 import logo from "../images/logo.webp";
 
 const Header: React.FC = () => {
@@ -62,7 +62,7 @@ const Header: React.FC = () => {
             className="flex flex-col items-center justify-center"
             onClick={handleLogoClick}
           >
-            <div className="aspect-w-1 aspect-h-1 w-16 h-16 rounded-full overflow-hidden">
+            <div className="aspect-w-1 aspect-h-1 w-16 h-16 lg:h-20 lg:w-20 rounded-full overflow-hidden">
               <img
                 src={logo}
                 alt="logo"

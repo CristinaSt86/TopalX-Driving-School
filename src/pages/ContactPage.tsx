@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import ContactForm from "../components/ContactForm";
 import { Helmet } from "react-helmet-async";
 import Loader from "../components/Loader";
-import "../index.css";
+//import "../index.css";
 
 const GoogleMapComponent = lazy(
   () => import("../components/GoogleMapComponent")
@@ -13,7 +13,7 @@ const ContactPage: React.FC = () => {
   const { t } = useTranslation();
   const [animate, setAnimate] = useState(false);
 
-  const handleFormSubmit = (formData: {
+  const handleFormSubmit = (_formData: {
     name: string;
     email: string;
     message: string;
@@ -110,46 +110,7 @@ const ContactPage: React.FC = () => {
           {JSON.stringify(organizationData)}
         </script>
       </Helmet>
-      <div id="contact" className={`${animate ? "slide-in" : ""}`}>
-        <Helmet>
-          <title>
-            Contact Scoala de soferi TopalX | Școală de șoferi accesibila și de
-            calitate în București
-          </title>
-          <meta
-            name="description"
-            content="Contactați Scoala de soferi TopalX - școala de șoferi accesibila și de calitate din București. Oferim cursuri de conducere defensive, permis auto, și pregătire pentru examen auto."
-          />
-          <meta
-            name="keywords"
-            content="școală de șoferi ieftină, școală de șoferi București, cursuri de conducere defensive, permis auto, pregătire examen auto"
-          />
-          <meta
-            property="og:title"
-            content="Contact Scoala de soferi TopalX - Școală de șoferi ieftină și de calitate în București"
-          />
-          <meta
-            property="og:description"
-            content="Contactați Scoala de soferi TopalX - școala de șoferi accesibila și de calitate din București."
-          />
-          <meta
-            property="og:url"
-            content="https://www.topalxscoalaauto.ro/contact"
-          />
-          <meta property="og:type" content="website" />
-          <meta
-            property="og:image"
-            content="https://www.topalxscoalaauto.ro/images/contact.webp"
-          />
-          <script type="application/ld+json">
-            {JSON.stringify(breadcrumbData)}
-          </script>
-          <script type="application/ld+json">
-            {JSON.stringify(organizationData)}
-          </script>
-        </Helmet>
-
-        <section className="py-20">
+      <section className="py-20">
           <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8">
             {/* SPLIT */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -259,8 +220,7 @@ const ContactPage: React.FC = () => {
               </div>
             </div>
           </div>
-        </section>
-      </div>
+      </section>
     </div>
   );
 };

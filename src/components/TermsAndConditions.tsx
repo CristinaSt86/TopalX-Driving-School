@@ -74,7 +74,7 @@ const TermsAndConditions: React.FC = () => {
               <div className="grid gap-3 text-sm sm:text-base text-slate-700">
                 <p>
                   Email{" "}
-                  <span className="text-slate-400">—</span>{" "}
+                  <span className="text-slate-400">-</span>{" "}
                   <a
                     href="mailto:topalxtrans@gmail.com"
                     className="font-semibold underline underline-offset-4 decoration-black/20 hover:decoration-black/50 hover:text-logoBlue transition"
@@ -90,7 +90,7 @@ const TermsAndConditions: React.FC = () => {
 
                 <p>
                   Telefon{" "}
-                  <span className="text-slate-400">—</span>{" "}
+                  <span className="text-slate-400">-</span>{" "}
                   <a
                     href="tel:+40736470629"
                     className="font-semibold underline underline-offset-4 decoration-black/20 hover:decoration-black/50 hover:text-logoBlue transition"
