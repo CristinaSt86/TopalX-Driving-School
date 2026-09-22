@@ -41,7 +41,7 @@
   },
   "carCard": {
     "alias": "Sau",
-    "nickname": ["Orangina", "Bombonica", "Gărgărița"]
+    "nickname": ["Orangina","Gărgărița", "Bombonica"]
   },
   "header": {
     "welcome": "Bine ați venit la",
