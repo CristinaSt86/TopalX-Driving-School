@@ -41,7 +41,7 @@
   },
   "carCard": {
     "alias": "Sau",
-    "nickname": ["Topul Mare", "Topul Mic", "Bombonica", "Gărgărița"]
+    "nickname": ["Orangina", "Bombonica", "Gărgărița"]
   },
   "header": {
     "welcome": "Bine ați venit la",
@@ -140,81 +140,80 @@
     ]
   },
   "carPackages": {
-    "title": "Pachete Auto",
-    "subtitluCars": "Pachetul potrivit pentru tine. Pregătire pe o mașină modernă.",
-    "featured": {
-      "cipReco": "Recomandat"
-    },
-    "cta": {
-      "contact": "Înscrie-te acum",
-      "call": "Sună pentru detalii"
-    },
-    "introText": "Acum este momentul să obții permisul de conducere! Ce mai aștepți? Îndeplinește-ți dorința de mult timp și înscrie-te acum. Completează ",
-    "registrationFormText": "formularul de înscriere",
-    "orCallText": "sau sună-ne la",
-    "buttonText": "Înscrie-te acum",
-    "price": "Preț",
-    "transmission": "Transmisie",
-    "fuelType": "Tip Combustibil",
-    "packages": [
-      {
-        "name": "PACHET PRESIDENT MERCEDES BENZ",
-        "price": "Ofertă personalizată disponibilă la cerere",
-        "transmission": "Cutie automată",
-        "fuelType": "Diesel",
-        "features": [
-          "Analize medicale și aviz psihologic - 350 lei",
-          "Cursuri teoretice legislație rutieră",
-          "Cursuri pregătire practică - 30 de ore didactice",
-          "Combustibil",
-          "Dosar programare D.R.P.C.I.V"
-        ],
-        "note": "Analizele medicale și avizul psihologic nu sunt incluse în pachet!"
-      },
-      {
-        "name": "PACHET SENSATION VOLVO",
-        "price": "Ofertă personalizată disponibilă la cerere",
-        "transmission": "Cutie manuală",
-        "fuelType": "Diesel",
-        "features": [
-          "Analize medicale și aviz psihologic - 350 lei",
-          "Cursuri teoretice legislație rutieră",
-          "Cursuri pregătire practică - 30 de ore didactice",
-          "Combustibil",
-          "Dosar programare D.R.P.C.I.V"
-        ],
-        "note": "Analizele medicale și avizul psihologic nu sunt incluse în pachet!"
-      },
-      {
-        "name": "PACHET FIAT 500",
-        "price": "Ofertă personalizată disponibilă la cerere",
-        "transmission": "Cutie manuală",
-        "fuelType": "Benzină",
-        "features": [
-          "Analize medicale și aviz psihologic - 350 lei",
-          "Cursuri teoretice legislație rutieră",
-          "Cursuri pregătire practică - 30 de ore didactice",
-          "Combustibil",
-          "Dosar programare D.R.P.C.I.V"
-        ],
-        "note": "Analizele medicale și avizul psihologic nu sunt incluse în pachet!"
-      },
-      {
-        "name": "PACHET CITY BREAK SKODA",
-        "price": "Ofertă personalizată disponibilă la cerere",
-        "transmission": "Cutie manuală",
-        "fuelType": "Benzină",
-        "features": [
-          "Analize medicale și aviz psihologic - 350 lei",
-          "Cursuri teoretice legislație rutieră",
-          "Cursuri pregătire practică - 30 de ore didactice",
-          "Combustibil",
-          "Dosar programare D.R.P.C.I.V"
-        ],
-        "note": "Analizele medicale și avizul psihologic nu sunt incluse în pachet!"
-      }
-    ]
+  "title": "Pachete Auto",
+  "subtitluCars": "Alege pachetul potrivit pentru tine și pregătește-te pe o mașină modernă.",
+
+  "featured": {
+    "cipReco": "Recomandat"
   },
+
+  "cta": {
+    "contact": "Înscrie-te acum",
+    "call": "Sună pentru detalii"
+  },
+
+  "introText": "Acum este momentul să obții permisul de conducere! Ce mai aștepți? Îndeplinește-ți dorința și înscrie-te acum. Completează",
+  "registrationFormText": "formularul de înscriere",
+  "orCallText": "sau sună-ne la",
+  "buttonText": "Înscrie-te acum",
+
+  "price": "Preț",
+  "transmission": "Transmisie",
+  "fuelType": "Tip combustibil",
+
+  "packages": [
+    {
+      "name": "PACHET ORANGINA – VOLKSWAGEN GOLF",
+      "price": "Ofertă personalizată disponibilă la cerere",
+      "transmission": "Cutie automată",
+      "fuelType": "Diesel",
+
+      "features": [
+        "Analize medicale și aviz psihologic – 350 lei",
+        "Cursuri teoretice de legislație rutieră",
+        "Pregătire practică – 30 de ore didactice",
+        "Combustibil",
+        "Dosar pentru programarea la D.R.P.C.I.V."
+      ],
+
+      "note": "Analizele medicale și avizul psihologic nu sunt incluse în prețul pachetului!"
+    },
+
+    {
+      "name": "PACHET FIAT 500",
+      "price": "Ofertă personalizată disponibilă la cerere",
+      "transmission": "Cutie manuală",
+      "fuelType": "Benzină",
+
+      "features": [
+        "Analize medicale și aviz psihologic – 350 lei",
+        "Cursuri teoretice de legislație rutieră",
+        "Pregătire practică – 30 de ore didactice",
+        "Combustibil",
+        "Dosar pentru programarea la D.R.P.C.I.V."
+      ],
+
+      "note": "Analizele medicale și avizul psihologic nu sunt incluse în prețul pachetului!"
+    },
+
+    {
+      "name": "PACHET CITY BREAK – ŠKODA",
+      "price": "Ofertă personalizată disponibilă la cerere",
+      "transmission": "Cutie manuală",
+      "fuelType": "Benzină",
+
+      "features": [
+        "Analize medicale și aviz psihologic – 350 lei",
+        "Cursuri teoretice de legislație rutieră",
+        "Pregătire practică – 30 de ore didactice",
+        "Combustibil",
+        "Dosar pentru programarea la D.R.P.C.I.V."
+      ],
+
+      "note": "Analizele medicale și avizul psihologic nu sunt incluse în prețul pachetului!"
+    }
+  ]
+},
   "testimonials": {
     "titleHelm": "Testimoniale - TopalX",
     "description": "Citește ce spun clienții noștri.",
@@ -450,7 +449,7 @@
     "description1": "Inclusiv pentru posesorii de permis.",
     "description2": "Alege între cutie automată sau manuală.",
     "btnText": "Profită de ofertă!",
-    "cipInstructor": "Instructor cu experiență",
+    "cipInstructor": "Instructori cu experiență",
     "cipMasini": "Mașini moderne",
     "cipPachete": "Pachete flexibile",
     "sunaAcum": "Sună acum: 0736 470 629",

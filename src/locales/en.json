@@ -41,7 +41,7 @@
   },
   "carCard": {
     "alias": "Or",
-    "nickname": ["The Big Top", "The Little Top", "The Candy", "The Ladybird"]
+    "nickname": ["Orangina", "The Candy", "The Ladybird"]
   },
   "header": {
     "welcome": "Welcome to",
@@ -143,7 +143,8 @@
   },
   "carPackages": {
     "title": "Car Packages",
-    "subtitluCars": "The right package. A modern car. Your driving journey starts here.",
+    "subtitluCars": "Choose the right package for you and learn to drive in a modern car.",
+
     "featured": {
       "cipReco": "Recommended"
     },
@@ -153,69 +154,65 @@
       "call": "Call for details"
     },
 
-    "introText": "Is time to get your driving license! What are you waiting for? Fulfill your long-held wish and sign up now. Fill out the",
+    "introText": "Now is the time to get your driving licence! What are you waiting for? Take the first step and sign up today. Complete the",
     "registrationFormText": "registration form",
     "orCallText": "or call us at",
-    "buttonText": "Sign Up Now",
+    "buttonText": "Sign up now",
+
     "price": "Price",
     "transmission": "Transmission",
-    "fuelType": "Fuel Type",
+    "fuelType": "Fuel type",
+
     "packages": [
       {
-        "name": "PRESIDENT PACKAGE MERCEDES BENZ",
-        "price": "Personalized offer available upon request",
-        "transmission": "Automatic",
+        "name": "ORANGINA PACKAGE – VOLKSWAGEN GOLF",
+        "price": "Personalised offer available upon request",
+        "transmission": "Automatic transmission",
         "fuelType": "Diesel",
+
         "features": [
-          "Medical tests and psychological approval - 350 Lei",
+          "Medical examinations and psychological assessment – 350 lei",
           "Theoretical road legislation courses",
-          "Practical training courses - 30 teaching hours",
+          "Practical driving training – 30 teaching hours",
           "Fuel",
-          "Appointment file for D.R.P.C.I.V"
+          "D.R.P.C.I.V. appointment file"
         ],
-        "note": "Medical tests and psychological approval are not included in the package!"
+
+        "note": "The medical examinations and psychological assessment are not included in the package price!"
       },
-      {
-        "name": "SENSATION PACKAGE VOLVO",
-        "price": "Personalized offer available upon request",
-        "transmission": "Manual",
-        "fuelType": "Diesel",
-        "features": [
-          "Medical tests and psychological approval - 350 Lei",
-          "Theoretical road legislation courses",
-          "Practical training courses - 30 teaching hours",
-          "Fuel",
-          "Appointment file for D.R.P.C.I.V"
-        ],
-        "note": "Medical tests and psychological approval are not included in the package!"
-      },
+
       {
         "name": "FIAT 500 PACKAGE",
-        "price": "Personalized offer available upon request",
-        "transmission": "Manual",
+        "price": "Personalised offer available upon request",
+        "transmission": "Manual transmission",
         "fuelType": "Petrol",
+
         "features": [
-          "Medical tests and psychological approval - 350 Lei",
+          "Medical examinations and psychological assessment – 350 lei",
           "Theoretical road legislation courses",
-          "Practical training courses - 30 teaching hours",
+          "Practical driving training – 30 teaching hours",
           "Fuel",
-          "Appointment file for D.R.P.C.I.V"
+          "D.R.P.C.I.V. appointment file"
         ],
-        "note": "Medical tests and psychological approval are not included in the package!"
+
+        "note": "The medical examinations and psychological assessment are not included in the package price!"
       },
+
       {
-        "name": "CITY BREAK PACKAGE SKODA",
-        "price": "Personalized offer available upon request",
-        "transmission": "Manual",
+        "name": "CITY BREAK PACKAGE – ŠKODA",
+        "price": "Personalised offer available upon request",
+        "transmission": "Manual transmission",
         "fuelType": "Petrol",
+
         "features": [
-          "Medical tests and psychological approval - 350 Lei",
+          "Medical examinations and psychological assessment – 350 lei",
           "Theoretical road legislation courses",
-          "Practical training courses - 30 teaching hours",
+          "Practical driving training – 30 teaching hours",
           "Fuel",
-          "Appointment file for D.R.P.C.I.V"
+          "D.R.P.C.I.V. appointment file"
         ],
-        "note": "Medical tests and psychological approval are not included in the package!"
+
+        "note": "The medical examinations and psychological assessment are not included in the package price!"
       }
     ]
   },

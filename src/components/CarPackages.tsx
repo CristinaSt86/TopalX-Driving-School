@@ -3,236 +3,225 @@ import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
 import { Icon } from "@iconify/react";
 
-import mer from "../images/mer.webp";
-import vol from "../images/vol.webp";
-import f3 from "../images/f3.webp";
-import sk1 from "../images/sk1.webp";
+import VW from "../images/VW.webp";
+import FIAT from "../images/FIAT.webp";
+import SKODA from "../images/SKODA.webp";
 import Offer from "./Offer";
 
 type CarPackage = {
-  name: string;
-  price: string;
-  transmission: string;
-  fuelType: string;
-  features: string[];
-  note: string;
+  id: "volkswagen" | "fiat" | "skoda";
+  translationIndex: number;
   image: string;
+  featured?: boolean;
 };
 
 type CarPackagesProps = {};
+
+const cars: CarPackage[] = [
+  {
+    id: "volkswagen",
+    translationIndex: 0,
+    image: VW,
+    featured: true,
+  },
+  {
+    id: "fiat",
+    translationIndex: 1,
+    image: FIAT,
+  },
+  {
+    id: "skoda",
+    translationIndex: 2,
+    image: SKODA,
+  },
+];
 
 const CarPackages = forwardRef<HTMLDivElement, CarPackagesProps>(
   (_props, ref) => {
     const { t } = useTranslation();
 
-    const carPackages: CarPackage[] = [
-      {
-        name: t("carPackages.packages.0.name"),
-        price: t("carPackages.packages.0.price"),
-        transmission: t("carPackages.packages.0.transmission"),
-        fuelType: t("carPackages.packages.0.fuelType"),
-        features: [
-          t("carPackages.packages.0.features.0"),
-          t("carPackages.packages.0.features.1"),
-          t("carPackages.packages.0.features.2"),
-          t("carPackages.packages.0.features.3"),
-          t("carPackages.packages.0.features.4"),
-        ],
-        note: t("carPackages.packages.0.note"),
-        image: mer,
-      },
-      {
-        name: t("carPackages.packages.1.name"),
-        price: t("carPackages.packages.1.price"),
-        transmission: t("carPackages.packages.1.transmission"),
-        fuelType: t("carPackages.packages.1.fuelType"),
-        features: [
-          t("carPackages.packages.1.features.0"),
-          t("carPackages.packages.1.features.1"),
-          t("carPackages.packages.1.features.2"),
-          t("carPackages.packages.1.features.3"),
-          t("carPackages.packages.1.features.4"),
-        ],
-        note: t("carPackages.packages.1.note"),
-        image: vol,
-      },
-      {
-        name: t("carPackages.packages.2.name"),
-        price: t("carPackages.packages.2.price"),
-        transmission: t("carPackages.packages.2.transmission"),
-        fuelType: t("carPackages.packages.2.fuelType"),
-        features: [
-          t("carPackages.packages.2.features.0"),
-          t("carPackages.packages.2.features.1"),
-          t("carPackages.packages.2.features.2"),
-          t("carPackages.packages.2.features.3"),
-          t("carPackages.packages.2.features.4"),
-        ],
-        note: t("carPackages.packages.2.note"),
-        image: f3,
-      },
-      {
-        name: t("carPackages.packages.3.name"),
-        price: t("carPackages.packages.3.price"),
-        transmission: t("carPackages.packages.3.transmission"),
-        fuelType: t("carPackages.packages.3.fuelType"),
-        features: [
-          t("carPackages.packages.3.features.0"),
-          t("carPackages.packages.3.features.1"),
-          t("carPackages.packages.3.features.2"),
-          t("carPackages.packages.3.features.3"),
-          t("carPackages.packages.3.features.4"),
-        ],
-        note: t("carPackages.packages.3.note"),
-        image: sk1,
-      },
-    ];
-
     return (
       <div ref={ref}>
         <Helmet>
           <title>
-            {t("carPackages.seo.title", "Car Packages | TopalX Driving School")}
+            {t(
+              "carPackages.seo.title",
+              "Pachete auto | Școala de șoferi TopalX",
+            )}
           </title>
+
           <meta
             name="description"
             content={t(
               "carPackages.seo.description",
-              "Choose from modern cars and professional training.",
+              "Alege mașina potrivită și începe pregătirea pentru permisul de conducere alături de TopalX.",
             )}
           />
         </Helmet>
 
-        <section id="car-packages" className="py-16">
-          {/* MAX WIDTH WRAPPER */}
-          <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8">
-            <header className="text-center">
-              <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
+        <section
+          id="car-packages"
+          className="relative overflow-hidden bg-gradient-to-b from-white via-slate-50/60 to-white py-16 md:py-20"
+        >
+          {/* Decorative background */}
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute left-1/2 top-0 h-72 w-72 -translate-x-1/2 rounded-full bg-logoBlue/5 blur-3xl"
+          />
+
+          <div className="relative mx-auto w-full max-w-[1280px] px-4 sm:px-6 lg:px-8">
+            {/* Header */}
+            <header className="mx-auto max-w-3xl text-center">
+              <h1 className="mt-5 text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl md:text-5xl">
                 {t("carPackages.title")}
               </h1>
+
               <div className="mx-auto mt-5 h-[2px] w-32 rounded-full bg-gradient-to-r from-logoBlue/20 via-logoBlue to-logoBlue/20" />
-              <p className="mx-auto mt-4 max-w-2xl text-base md:text-lg text-gray-700">
+
+              <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-slate-600 md:text-lg">
                 {t("carPackages.subtitluCars")}
               </p>
             </header>
 
-            {/* GRID */}
-            <div className="mt-10 grid gap-6 md:gap-8 md:grid-cols-2">
-              {carPackages.map((pkg, i) => {
-                const isFeatured = i === 0; // primul pachet “featured”
+            {/* Cars grid */}
+            <div className="mt-12 grid items-stretch gap-7 md:grid-cols-2 lg:grid-cols-3">
+              {cars.map((car) => {
+                const basePath = `carPackages.packages.${car.translationIndex}`;
+
+                const name = t(`${basePath}.name`);
+                const price = t(`${basePath}.price`);
+                const transmission = t(`${basePath}.transmission`);
+                const fuelType = t(`${basePath}.fuelType`);
+                const note = t(`${basePath}.note`);
+
+                const features = Array.from({ length: 5 }, (_, index) =>
+                  t(`${basePath}.features.${index}`),
+                );
 
                 return (
                   <article
-                    key={i}
-                    className={`
-                    group relative overflow-hidden rounded-2xl border border-slate-200 bg-white
-                    shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl
-                    ${isFeatured ? "md:col-span-2" : ""}
-                  `}
+                    key={car.id}
+                    className={`group relative flex h-full flex-col overflow-hidden rounded-[28px] border bg-white transition-all duration-500 hover:-translate-y-1.5 hover:shadow-2xl ${
+                      car.featured
+                        ? "border-secondary/40 shadow-xl shadow-secondary/10 ring-1 ring-secondary/10"
+                        : "border-slate-200 shadow-lg shadow-slate-900/5"
+                    }`}
                   >
-                    {/* Featured badge */}
-                    {isFeatured && (
-                      <div className="absolute left-4 top-4 z-10 inline-flex items-center rounded-full bg-secondary/90 px-3 py-1 text-xs font-semibold text-white shadow-sm">
+                    {/* Recommended badge */}
+                    {car.featured && (
+                      <div className="absolute left-4 top-4 z-20 inline-flex items-center gap-1.5 rounded-full bg-secondary px-3 py-1.5 text-xs font-bold text-white shadow-lg shadow-secondary/25">
+                        <Icon icon="mdi:star" className="text-sm" />
                         {t("carPackages.featured.cipReco")}
                       </div>
                     )}
 
-                    <div className={isFeatured ? "md:flex md:gap-6" : ""}>
-                      {/* Image */}
-                      <div className={isFeatured ? "md:w-[46%] p-4" : "p-4"}>
-                        <div className="aspect-[16/9] overflow-hidden rounded-xl bg-slate-50">
-                          <img
-                            src={pkg.image}
-                            alt={pkg.name}
-                            loading="lazy"
-                            decoding="async"
-                            className="h-full w-full object-contain transition-transform duration-500 group-hover:scale-[1.03]"
-                          />
-                        </div>
-                      </div>
+                    {/* Image */}
+                    <div className="p-3">
+                      <div className="relative aspect-square overflow-hidden rounded-[22px] bg-gradient-to-br from-slate-100 to-slate-50">
+                        <img
+                          src={car.image}
+                          alt={name}
+                          loading={car.featured ? "eager" : "lazy"}
+                          decoding="async"
+                          className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
+                        />
 
-                      {/* Text */}
-                      <div
-                        className={
-                          isFeatured
-                            ? "md:w-[54%] px-5 pb-6 md:pt-5"
-                            : "px-5 pb-6"
-                        }
-                      >
-                        <div className="flex flex-col items-start gap-3 sm:flex-row sm:justify-between">
-                          <h2 className="min-w-0 break-words text-xl font-semibold text-gray-900">
-                            {pkg.name}
-                          </h2>
-                          <span className="max-w-full rounded-full bg-emerald-50 px-3 py-1 text-left text-sm font-semibold leading-snug text-emerald-700 ring-1 ring-emerald-100 sm:shrink-0">
-                            {pkg.price}
-                          </span>
-                        </div>
-
-                        {/* Meta badges */}
-                        <div className="mt-3 flex flex-wrap gap-2">
-                          <span className="inline-flex items-center gap-1 rounded-full bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-700">
-                            <Icon
-                              icon="mdi:car-shift-pattern"
-                              className="text-slate-500"
-                            />
-                            {t("carPackages.transmission")}: {pkg.transmission}
-                          </span>
-                          <span className="inline-flex items-center gap-1 rounded-full bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-700">
-                            <Icon icon="mdi:fuel" className="text-slate-500" />
-                            {t("carPackages.fuelType")}: {pkg.fuelType}
-                          </span>
-                        </div>
-
-                        {/* Features */}
-                        <ul className="mt-4 space-y-2">
-                          {pkg.features.map((feature, idx) => (
-                            <li
-                              key={idx}
-                              className="flex items-start gap-2 text-slate-700"
-                            >
-                              <Icon
-                                icon="mdi:check-circle-outline"
-                                className="mt-[2px] text-emerald-600"
-                              />
-                              <span>{feature}</span>
-                            </li>
-                          ))}
-                        </ul>
-
-                        {/* Note (premium alert) */}
-                        {pkg.note && (
-                          <div className="mt-4 rounded-xl bg-red-50 px-4 py-3 text-sm text-red-700 ring-1 ring-red-100">
-                            {pkg.note}
-                          </div>
-                        )}
-
-                        {/* CTA (real) */}
-                        <div className="mt-6 flex flex-wrap gap-3">
-                          <a
-                            href="#contact"
-                            className="inline-flex items-center justify-center rounded-xl bg-secondary px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:opacity-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary/40"
-                          >
-                            {t("carPackages.cta.contact")}
-                          </a>
-
-                          <a
-                            href="tel:+40736470629"
-                            className="inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-800 shadow-sm transition hover:bg-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-400/30"
-                          >
-                            {t("carPackages.cta.call")}
-                          </a>
-                        </div>
+                        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-950/10 via-transparent to-transparent" />
                       </div>
                     </div>
 
-                    {/* subtle accent ring on hover */}
-                    <span className="pointer-events-none absolute inset-0 rounded-2xl ring-1 ring-transparent transition group-hover:ring-logoBlue/20" />
+                    {/* Content */}
+                    <div className="flex flex-1 flex-col px-6 pb-7 pt-3">
+                      <h2 className="text-xl font-bold leading-snug text-slate-950 md:text-2xl">
+                        {name}
+                      </h2>
+
+                      {/* Price */}
+                      <div className="mt-4 rounded-2xl bg-emerald-50 px-4 py-3 text-sm font-semibold leading-5 text-emerald-700 ring-1 ring-inset ring-emerald-200/70">
+                        {price}
+                      </div>
+
+                      {/* Meta information */}
+                      <div className="mt-4 flex flex-wrap gap-2">
+                        <span className="inline-flex items-center gap-1.5 rounded-full bg-slate-100 px-3 py-1.5 text-xs font-semibold text-slate-700">
+                          <Icon
+                            icon="mdi:car-shift-pattern"
+                            className="text-base text-logoBlue"
+                          />
+                          {transmission}
+                        </span>
+
+                        <span className="inline-flex items-center gap-1.5 rounded-full bg-slate-100 px-3 py-1.5 text-xs font-semibold text-slate-700">
+                          <Icon
+                            icon="mdi:fuel"
+                            className="text-base text-logoBlue"
+                          />
+                          {fuelType}
+                        </span>
+                      </div>
+
+                      {/* Features */}
+                      <ul className="mt-6 flex-1 space-y-3">
+                        {features.map((feature, index) => (
+                          <li
+                            key={`${car.id}-feature-${index}`}
+                            className="flex items-start gap-2.5 text-sm leading-6 text-slate-600"
+                          >
+                            <Icon
+                              icon="mdi:check-circle"
+                              className="mt-1 shrink-0 text-lg text-emerald-600"
+                            />
+
+                            <span>{feature}</span>
+                          </li>
+                        ))}
+                      </ul>
+
+                      {/* Note */}
+                      {note && (
+                        <div className="mt-6 flex items-start gap-2.5 rounded-2xl bg-red-50 px-4 py-3.5 text-sm leading-5 text-red-700 ring-1 ring-inset ring-red-200/70">
+                          <Icon
+                            icon="mdi:information-outline"
+                            className="mt-0.5 shrink-0 text-lg"
+                          />
+
+                          <span>{note}</span>
+                        </div>
+                      )}
+
+                      {/* Buttons */}
+                      <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
+                        <a
+                          href="#contact"
+                          className="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl bg-secondary px-4 py-2.5 text-sm font-bold text-white shadow-lg shadow-secondary/20 transition hover:-translate-y-0.5 hover:opacity-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary/50 focus-visible:ring-offset-2"
+                        >
+                          <Icon
+                            icon="mdi:account-edit-outline"
+                            className="text-lg"
+                          />
+
+                          {t("carPackages.cta.contact")}
+                        </a>
+
+                        <a
+                          href="tel:+40736470629"
+                          aria-label={`${t("carPackages.cta.call")} +40 736 470 629`}
+                          className="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm font-bold text-slate-800 shadow-sm transition hover:-translate-y-0.5 hover:border-logoBlue/30 hover:bg-logoBlue/5 hover:text-logoBlue focus:outline-none focus-visible:ring-2 focus-visible:ring-logoBlue/30 focus-visible:ring-offset-2"
+                        >
+                          <Icon icon="mdi:phone" className="text-lg" />
+
+                          {t("carPackages.cta.call")}
+                        </a>
+                      </div>
+                    </div>
+
+                    <span className="pointer-events-none absolute inset-0 rounded-[28px] ring-1 ring-transparent transition duration-300 group-hover:ring-logoBlue/20" />
                   </article>
                 );
               })}
             </div>
 
-            <div className="mt-12">
+            <div className="mt-14">
               <Offer />
             </div>
           </div>
@@ -243,4 +232,5 @@ const CarPackages = forwardRef<HTMLDivElement, CarPackagesProps>(
 );
 
 CarPackages.displayName = "CarPackages";
+
 export default CarPackages;
