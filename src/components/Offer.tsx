@@ -17,7 +17,8 @@ const Offer: React.FC = () => {
         <div className="relative overflow-hidden rounded-3xl border border-black/10 bg-white shadow-sm">
           {/* subtle background */}
           <div className="pointer-events-none absolute -top-24 -right-24 h-64 w-64 rounded-full bg-secondary/20 blur-3xl" />
-          <div className="pointer-events-none absolute -bottom-24 -left-24 h-64 w-64 rounded-full bg-logoBlue/15 blur-3xl" />
+
+          <div className="pointer-events-none absolute inset-0 rounded-3xl bg-[radial-gradient(circle_at_bottom_left,rgba(148,163,184,0.22),transparent_45%)]" />
 
           <div className="relative p-6 sm:p-10">
             {/* Header */}
