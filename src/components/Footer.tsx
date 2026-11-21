@@ -9,10 +9,10 @@ const Footer: React.FC = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
 
-  const scrollToSection = (sectionId: string) => {
-    const el = document.getElementById(sectionId);
-    if (el) el.scrollIntoView({ behavior: "smooth" });
-  };
+  // const scrollToSection = (sectionId: string) => {
+  // const el = document.getElementById(sectionId);
+  //if (el) el.scrollIntoView({ behavior: "smooth" });
+  //};
 
   const handleLogoClick = () => {
     navigate("/");
