@@ -4,13 +4,12 @@ import { useTranslation } from "react-i18next";
 import AboutPage from "./AboutPage";
 import Gallery from "./Gallery";
 import ContactPage from "./ContactPage";
-import "../index.css";
+//import "../index.css";
 import Button from "../components/Button";
 import Acasa from "../components/Acasa";
 import BuyNowPayLater from "./BuyNowPayLater";
-//import SnowfallCanvas from "../components/SnowfallCanvas";
-//import Snowflakes from "../components/Snowflakes";
-//import SnowfallCanvas from "../components/SnowfallCanvas";
+import SnowfallCanvas from "../components/SnowfallCanvas";
+
 
 const HomePage: React.FC = () => {
   const { t } = useTranslation();
@@ -185,7 +184,7 @@ const HomePage: React.FC = () => {
     window.innerWidth > 850 ? "bg-fixed" : "bg-scroll"
   }`}
       >
-        {/* <SnowfallCanvas /> */}
+        <SnowfallCanvas /> 
         {/* Container unic pentru titlu + subtitlu */}
         <div className="bg-black/50 backdrop-blur-sm p-5 sm:p-6 rounded-xl shadow-xl shadow-black/30 max-w-[90%] md:max-w-[90%]  mx-auto">
           <div className="inline-flex items-center rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs mb-4 font-semibold text-white/90 backdrop-blur">

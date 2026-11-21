@@ -20,7 +20,7 @@ const SnowfallCanvas: React.FC = () => {
     window.addEventListener("resize", resizeCanvas);
 
     // Snowflake properties
-    const snowflakes = Array.from({ length: 60 }, () => ({
+    const snowflakes = Array.from({ length: 90 }, () => ({
       x: Math.random() * canvas.width,
       y: Math.random() * canvas.height,
       radius: Math.random() * 2 + 0.8,

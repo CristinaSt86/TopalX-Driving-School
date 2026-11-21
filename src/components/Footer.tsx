@@ -145,17 +145,17 @@ const Footer: React.FC = () => {
                 })}
               </span>
             </div>
-
             <div className="mt-6">
-              <button
-                type="button"
-                onClick={() => scrollToSection("contact")}
+              <a
+                href="https://wa.me/40736470629"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-xl bg-secondary px-4 py-2 text-sm font-semibold leading-none text-white shadow-sm transition hover:opacity-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary/40"
               >
-                <Icon icon="mdi:message-outline" className="h-5 w-5 shrink-0" />
+                <Icon icon="mdi:whatsapp" className="h-5 w-5 shrink-0" />
 
                 <span className="leading-none">{t("footer.ctaFooter")}</span>
-              </button>
+              </a>
             </div>
           </div>
 
