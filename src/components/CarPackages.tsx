@@ -72,11 +72,11 @@ const CarPackages = forwardRef<HTMLDivElement, CarPackagesProps>(
           <div className="relative mx-auto w-full max-w-[1280px] px-4 sm:px-6 lg:px-8">
             {/* Header */}
             <header className="mx-auto max-w-3xl text-center">
-              <h1 className="mt-5 text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl md:text-5xl">
-                {t("carPackages.title")}
-              </h1>
+              <h2 className="mt-5 text-3xl sm:text-4xl font-bold text-gray-900">
+  {t("carPackages.title")}
+</h2>
 
-              <div className="mx-auto mt-5 h-[2px] w-32 rounded-full bg-gradient-to-r from-logoBlue/20 via-logoBlue to-logoBlue/20" />
+             <div className="mx-auto mt-5 h-[2px] w-32 rounded-full bg-gradient-to-r from-logoBlue/20 via-logoBlue to-logoBlue/20" />
 
               <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-slate-600 md:text-lg">
                 {t("carPackages.subtitluCars")}
