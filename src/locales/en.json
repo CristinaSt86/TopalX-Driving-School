@@ -171,14 +171,13 @@
         "fuelType": "Diesel",
 
         "features": [
-          "Medical examinations and psychological assessment",
           "Theoretical road legislation courses",
           "Practical driving training – 30 teaching hours",
           "Fuel",
           "D.R.P.C.I.V. appointment file"
         ],
 
-        "note": "The medical examinations and psychological assessment are not included in the package price!"
+        "note": "Medical examinations and the psychological assessment are charged separately and are not included in the package price."
       },
 
       {
@@ -188,14 +187,13 @@
         "fuelType": "Petrol",
 
         "features": [
-          "Medical examinations and psychological assessment",
           "Theoretical road legislation courses",
           "Practical driving training – 30 teaching hours",
           "Fuel",
           "D.R.P.C.I.V. appointment file"
         ],
 
-        "note": "The medical examinations and psychological assessment are not included in the package price!"
+        "note": "Medical examinations and the psychological assessment are charged separately and are not included in the package price."
       },
 
       {
@@ -205,14 +203,13 @@
         "fuelType": "Petrol",
 
         "features": [
-          "Medical examinations and psychological assessment",
           "Theoretical road legislation courses",
           "Practical driving training – 30 teaching hours",
           "Fuel",
           "D.R.P.C.I.V. appointment file"
         ],
 
-        "note": "The medical examinations and psychological assessment are not included in the package price!"
+        "note": "Medical examinations and the psychological assessment are charged separately and are not included in the package price."
       }
     ]
   },

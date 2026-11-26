@@ -41,7 +41,7 @@
   },
   "carCard": {
     "alias": "Sau",
-    "nickname": ["Orangina","Gărgărița", "Bombonica"]
+    "nickname": ["Orangina", "Gărgărița", "Bombonica"]
   },
   "header": {
     "welcome": "Bine ați venit la",
@@ -140,80 +140,77 @@
     ]
   },
   "carPackages": {
-  "title": "Pachete Auto",
-  "subtitluCars": "Alege pachetul potrivit pentru tine și pregătește-te pe o mașină modernă.",
+    "title": "Pachete Auto",
+    "subtitluCars": "Alege pachetul potrivit pentru tine și pregătește-te pe o mașină modernă.",
 
-  "featured": {
-    "cipReco": "Recomandat"
-  },
-
-  "cta": {
-    "contact": "Înscrie-te acum",
-    "call": "Sună pentru detalii"
-  },
-
-  "introText": "Acum este momentul să obții permisul de conducere! Ce mai aștepți? Îndeplinește-ți dorința și înscrie-te acum. Completează",
-  "registrationFormText": "formularul de înscriere",
-  "orCallText": "sau sună-ne la",
-  "buttonText": "Înscrie-te acum",
-
-  "price": "Preț",
-  "transmission": "Transmisie",
-  "fuelType": "Tip combustibil",
-
-  "packages": [
-    {
-      "name": "PACHET ORANGINA – VOLKSWAGEN GOLF",
-      "price": "Ofertă personalizată disponibilă la cerere",
-      "transmission": "Cutie automată",
-      "fuelType": "Diesel",
-
-      "features": [
-        "Analize medicale și aviz psihologic",
-        "Cursuri teoretice de legislație rutieră",
-        "Pregătire practică – 30 de ore didactice",
-        "Combustibil",
-        "Dosar pentru programarea la D.R.P.C.I.V."
-      ],
-
-      "note": "Analizele medicale și avizul psihologic nu sunt incluse în prețul pachetului!"
+    "featured": {
+      "cipReco": "Recomandat"
     },
 
-    {
-      "name": "PACHET FIAT 500",
-      "price": "Ofertă personalizată disponibilă la cerere",
-      "transmission": "Cutie manuală",
-      "fuelType": "Benzină",
-
-      "features": [
-        "Analize medicale și aviz psihologic",
-        "Cursuri teoretice de legislație rutieră",
-        "Pregătire practică – 30 de ore didactice",
-        "Combustibil",
-        "Dosar pentru programarea la D.R.P.C.I.V."
-      ],
-
-      "note": "Analizele medicale și avizul psihologic nu sunt incluse în prețul pachetului!"
+    "cta": {
+      "contact": "Înscrie-te acum",
+      "call": "Sună pentru detalii"
     },
 
-    {
-      "name": "PACHET CITY BREAK – ŠKODA",
-      "price": "Ofertă personalizată disponibilă la cerere",
-      "transmission": "Cutie manuală",
-      "fuelType": "Benzină",
+    "introText": "Acum este momentul să obții permisul de conducere! Ce mai aștepți? Îndeplinește-ți dorința și înscrie-te acum. Completează",
+    "registrationFormText": "formularul de înscriere",
+    "orCallText": "sau sună-ne la",
+    "buttonText": "Înscrie-te acum",
 
-      "features": [
-        "Analize medicale și aviz psihologic",
-        "Cursuri teoretice de legislație rutieră",
-        "Pregătire practică – 30 de ore didactice",
-        "Combustibil",
-        "Dosar pentru programarea la D.R.P.C.I.V."
-      ],
+    "price": "Preț",
+    "transmission": "Transmisie",
+    "fuelType": "Tip combustibil",
 
-      "note": "Analizele medicale și avizul psihologic nu sunt incluse în prețul pachetului!"
-    }
-  ]
-},
+    "packages": [
+      {
+        "name": "PACHET ORANGINA – VOLKSWAGEN GOLF",
+        "price": "Ofertă personalizată disponibilă la cerere",
+        "transmission": "Cutie automată",
+        "fuelType": "Diesel",
+
+        "features": [
+          "Cursuri teoretice de legislație rutieră",
+          "Pregătire practică – 30 de ore didactice",
+          "Combustibil",
+          "Dosar pentru programarea la D.R.P.C.I.V."
+        ],
+
+        "note": "Analizele medicale și avizul psihologic se achită separat și nu sunt incluse în prețul pachetului."
+      },
+
+      {
+        "name": "PACHET FIAT 500",
+        "price": "Ofertă personalizată disponibilă la cerere",
+        "transmission": "Cutie manuală",
+        "fuelType": "Benzină",
+
+        "features": [
+          "Cursuri teoretice de legislație rutieră",
+          "Pregătire practică – 30 de ore didactice",
+          "Combustibil",
+          "Dosar pentru programarea la D.R.P.C.I.V."
+        ],
+
+        "note": "Analizele medicale și avizul psihologic se achită separat și nu sunt incluse în prețul pachetului."
+      },
+
+      {
+        "name": "PACHET CITY BREAK – ŠKODA",
+        "price": "Ofertă personalizată disponibilă la cerere",
+        "transmission": "Cutie manuală",
+        "fuelType": "Benzină",
+
+        "features": [
+          "Cursuri teoretice de legislație rutieră",
+          "Pregătire practică – 30 de ore didactice",
+          "Combustibil",
+          "Dosar pentru programarea la D.R.P.C.I.V."
+        ],
+
+        "note": "Analizele medicale și avizul psihologic se achită separat și nu sunt incluse în prețul pachetului."
+      }
+    ]
+  },
   "testimonials": {
     "titleHelm": "Testimoniale - TopalX",
     "description": "Citește ce spun clienții noștri.",

@@ -73,10 +73,10 @@ const CarPackages = forwardRef<HTMLDivElement, CarPackagesProps>(
             {/* Header */}
             <header className="mx-auto max-w-3xl text-center">
               <h2 className="mt-5 text-3xl sm:text-4xl font-bold text-gray-900">
-  {t("carPackages.title")}
-</h2>
+                {t("carPackages.title")}
+              </h2>
 
-             <div className="mx-auto mt-5 h-[2px] w-32 rounded-full bg-gradient-to-r from-logoBlue/20 via-logoBlue to-logoBlue/20" />
+              <div className="mx-auto mt-5 h-[2px] w-32 rounded-full bg-gradient-to-r from-logoBlue/20 via-logoBlue to-logoBlue/20" />
 
               <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-slate-600 md:text-lg">
                 {t("carPackages.subtitluCars")}
@@ -94,7 +94,7 @@ const CarPackages = forwardRef<HTMLDivElement, CarPackagesProps>(
                 const fuelType = t(`${basePath}.fuelType`);
                 const note = t(`${basePath}.note`);
 
-                const features = Array.from({ length: 5 }, (_, index) =>
+                const features = [0, 1, 2, 3].map((index) =>
                   t(`${basePath}.features.${index}`),
                 );
 
@@ -178,11 +178,12 @@ const CarPackages = forwardRef<HTMLDivElement, CarPackagesProps>(
                       </ul>
 
                       {/* Note */}
+                      {/* Note */}
                       {note && (
-                        <div className="mt-6 flex items-start gap-2.5 rounded-2xl bg-red-50 px-4 py-3.5 text-sm leading-5 text-red-700 ring-1 ring-inset ring-red-200/70">
+                        <div className="mt-6 flex items-start gap-2.5 rounded-2xl bg-slate-50 px-4 py-3.5 text-sm leading-6 text-slate-600 ring-1 ring-inset ring-slate-200">
                           <Icon
                             icon="mdi:information-outline"
-                            className="mt-0.5 shrink-0 text-lg"
+                            className="mt-0.5 shrink-0 text-lg text-slate-500"
                           />
 
                           <span>{note}</span>
